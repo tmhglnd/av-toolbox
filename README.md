@@ -4,6 +4,8 @@
 
 **or become a patron on http://patreon.com/timohoogland**
 
+Suggestions, bug reports and feature requests are much appreciated. Please add them to the issues.
+
 ---
 
 ## About
