@@ -181,7 +181,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 				}
 
@@ -243,6 +243,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-436", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-436", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
