@@ -44,6 +44,10 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.movie~**
 
+- **av.sync~**
+
+- **av.testpattern**
+
 ## Install
 
 ```
