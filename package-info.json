@@ -1,0 +1,44 @@
+{
+	"name" : "av-toolkit",
+	"displayname" : "",
+	"version" : "1.0.0",
+	"author" : "Timo Hoogland",
+	"authors" : [  ],
+	"description" : "This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport and more. Objects like: av.timepoint, av.follow~, av.spectrum~ and av.movie~",
+	"tags" : [ "jitter", "max", "msp", "utility", "tool", "audiovisual", "av"],
+	"website" : "http://www.gumroad.com/tmhglnd",
+	"extends" : "",
+	"extensible" : 0,
+	"max_version_min" : "8.0",
+	"max_version_max" : "none",
+	"os" : 	{
+		"macintosh" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+,
+		"windows" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+	}
+,
+	"homepatcher" : "",
+	"package_extra" : 	{
+		"reverse_domain" : "com.cycling74",
+		"copyright" : "Copyright (c) 2023 Timo Hoogland"
+	}
+,
+	"filelist" : 	{
+		"examples" : [],
+		"externals" : [],
+		"patchers" : [ ],
+		"help" : [ ],
+		"docs" : [ ],
+		"code" : [],
+		"extras" : []
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3638166346
+}
