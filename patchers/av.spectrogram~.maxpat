@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 135.0, 105.0, 51.0, 22.0 ],
+					"patching_rect" : [ 261.0, 105.0, 51.0, 22.0 ],
 					"text" : "unjoin 2"
 				}
 
@@ -130,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 180.0, 160.0, 29.5, 22.0 ],
+					"patching_rect" : [ 180.0, 120.0, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -154,7 +154,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 160.0, 80.0, 22.0 ],
+					"patching_rect" : [ 50.0, 195.0, 80.0, 22.0 ],
 					"text" : "av.spectrum~"
 				}
 
@@ -212,12 +212,12 @@
 				"box" : 				{
 					"comment" : "(int) attack time in frames",
 					"id" : "obj-429",
-					"index" : 2,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.5, 40.0, 30.0, 30.0 ]
+					"patching_rect" : [ 128.5, 40.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -225,12 +225,12 @@
 				"box" : 				{
 					"comment" : "(int) release time in frames",
 					"id" : "obj-430",
-					"index" : 3,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.5, 40.0, 30.0, 30.0 ]
+					"patching_rect" : [ 163.5, 40.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -238,12 +238,12 @@
 				"box" : 				{
 					"comment" : "(int) frame amount",
 					"id" : "obj-431",
-					"index" : 4,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.0, 40.0, 30.0, 30.0 ]
+					"patching_rect" : [ 90.0, 40.0, 30.0, 30.0 ]
 				}
 
 			}
