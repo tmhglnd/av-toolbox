@@ -232,7 +232,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 354.0, 490.0, 144.0, 22.0 ],
+									"patching_rect" : [ 360.0, 490.0, 144.0, 22.0 ],
 									"text" : "loadmess turn 0.3 0.1 0.5"
 								}
 
