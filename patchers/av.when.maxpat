@@ -69,7 +69,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 263.5, 135.0, 143.0, 22.0 ],
+					"patching_rect" : [ 252.0, 113.0, 143.0, 22.0 ],
 					"text" : "routepass defer transport"
 				}
 
@@ -125,24 +125,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 101.5, 45.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 211.5, 105.0, 71.0, 22.0 ],
+					"patching_rect" : [ 200.0, 83.0, 71.0, 22.0 ],
 					"text" : "route active"
 				}
 
@@ -154,7 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 101.5, 75.0, 129.0, 22.0 ],
+					"patching_rect" : [ 90.0, 53.0, 129.0, 22.0 ],
 					"text" : "patcherargs @active 0"
 				}
 
@@ -166,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 211.5, 181.0, 49.0, 22.0 ],
+					"patching_rect" : [ 200.0, 159.0, 49.0, 22.0 ],
 					"text" : "metro 5"
 				}
 
@@ -356,13 +344,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-5", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}

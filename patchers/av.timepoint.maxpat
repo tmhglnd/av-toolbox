@@ -58,7 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 270.0, 241.0, 114.0 ],
-					"presentation_linecount" : 8,
 					"text" : "Arguments:\nminutes (default = 0)\nseconds (default = 0)\nmilliseconds (default = 0)\n\nAttributes:\n@transport - bind to a named transport (default = none)"
 				}
 
@@ -70,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 368.0, 270.0, 112.0, 22.0 ],
+					"patching_rect" : [ 300.0, 210.0, 112.0, 22.0 ],
 					"text" : "routepass transport"
 				}
 
@@ -82,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 210.0, 240.0, 47.0 ],
+					"patching_rect" : [ 510.0, 210.0, 241.0, 47.0 ],
 					"text" : "Converts the mm:ss:ms to a total of milliseconds, and converts the milliseconds to ticks based on the transport tempo"
 				}
 
@@ -94,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 120.0, 240.0, 74.0 ],
+					"patching_rect" : [ 510.0, 120.0, 242.0, 74.0 ],
 					"text" : "An update to the timepoint object allowing the user to set the time in mm:ss:ms format instead of b.b.u or ticks\n\nfor bbu or ticks use regular [timepoint]"
 				}
 
@@ -114,24 +113,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 285.0, 30.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 285.0, 90.0, 55.0, 22.0 ],
+					"patching_rect" : [ 270.0, 60.0, 55.0, 22.0 ],
 					"text" : "zl.slice 3"
 				}
 
@@ -143,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 285.0, 60.0, 102.0, 22.0 ],
+					"patching_rect" : [ 270.0, 30.0, 102.0, 22.0 ],
 					"text" : "patcherargs 0 0 0"
 				}
 
@@ -152,7 +139,7 @@
 				"box" : 				{
 					"comment" : "(int/float) minutes (list) mm ss ms",
 					"id" : "obj-72",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -165,7 +152,7 @@
 				"box" : 				{
 					"comment" : "(int/float) seconds",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -178,7 +165,7 @@
 				"box" : 				{
 					"comment" : "(int/float) milliseconds",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -191,7 +178,7 @@
 				"box" : 				{
 					"comment" : "(bang) when clock reaches target time",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -355,13 +342,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-72", 0 ]
 				}
@@ -381,9 +361,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

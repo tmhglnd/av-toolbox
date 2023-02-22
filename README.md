@@ -16,37 +16,39 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ### Signal analysis
 
-- **av.amp~**
+- **av.amp~** - A simple envelope follower for audioreactive visuals
 
-- **av.follow~**
+- **av.follow~** - A more sophisticated envelope follower with low and highpass cutoff and a fast and slow follower to detect transients better and filter out low frequency information.
 
-- **av.trigger~**
+- **av.trigger~** - An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold.
 
-- **av.catch~**
+- **av.catch~** - Catch amplitudes of 3 different signals in time and output as 3-plane matrix. Generates a 3-dimensional oscilloscope (X Y Z).
 
-- **av.spectrum~**
+- **av.spectrum~** - Grab an FFT frame (spectrum) from an incoming signal and output as a one-dimensional jitter matrix.
 
-- **av.spectrogram~**
+- **av.spectrogram~** - Grab a history of successive FFT frames (spectrum) from an incoming signal and output as a 2-dimensional jitter matrix.
 
-- **av.3cross~**
+- **av.3cross~** - 
 
-- **av.3band~**
+- **av.3band~** - 
+
+- **av.midside~** - Split a stereo signal into mid (R+L) and side (R-L, L-R) information
 
 ### Timeline control
 
-- **av.timepoint**
+- **av.timepoint** - Combine with `[transport]`. Outputs a bang at a specified timepoint in `min:sec:ms`
 
-- **av.when**
+- **av.when** -  Combine with `[transport]`. Displays the current time in `min:sec:ms`
 
 ### Jitter extensions
 
-- **av.world**
+- **av.world** - Initialize a jit.world with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1]`
 
-- **av.movie~**
+- **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
 
-- **av.sync~**
+- **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
 
-- **av.testpattern**
+- **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
 
 ## Install
 
