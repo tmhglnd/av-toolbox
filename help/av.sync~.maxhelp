@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 714.0, 608.0 ],
+		"rect" : [ 204.0, 190.0, 714.0, 608.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 714.0, 582.0 ],
+						"rect" : [ 204.0, 216.0, 714.0, 582.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -204,7 +204,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 90.0, 390.0, 51.0, 22.0 ],
+									"patching_rect" : [ 405.0, 225.0, 51.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -296,8 +296,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "jit_gl_texture", "bang", "" ],
-									"patching_rect" : [ 405.0, 257.0, 240.0, 35.0 ],
-									"text" : "jit.world @size 640 360 @dim 1280 720 @visible 0 @enable 1 @output_texture 1"
+									"patching_rect" : [ 405.0, 257.0, 265.0, 35.0 ],
+									"text" : "jit.world help-ctx @size 640 360 @dim 1280 720 @visible 0 @enable 1 @output_texture 1"
 								}
 
 							}
@@ -368,7 +368,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.0, 270.0, 69.0, 22.0 ],
+									"patching_rect" : [ 163.0, 263.5, 69.0, 22.0 ],
 									"text" : "r help-bang"
 								}
 
@@ -414,7 +414,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 300.0, 207.0, 80.0 ],
+									"patching_rect" : [ 188.0, 300.0, 207.0, 80.0 ],
 									"text" : "Arguments:\n(int) - burst length in milliseconds (optional, default = 100)\n\nAttributes:\n@drawto - drawto a named jit.world"
 								}
 
@@ -449,8 +449,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 30.0, 300.0, 55.0, 22.0 ],
-									"text" : "av.sync~"
+									"patching_rect" : [ 30.0, 300.0, 152.0, 22.0 ],
+									"text" : "av.sync~ @drawto help-ctx"
 								}
 
 							}
@@ -894,7 +894,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.sync~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
