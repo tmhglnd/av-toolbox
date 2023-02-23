@@ -64,3 +64,9 @@ This package contains small abstractions to assist you in creating realtime audi
 3. $ git clone https://github.com/tmhglnd/av-toolbox.git
 4. restart Max8, open Package manager, Launch av-toolbox
 ```
+
+## To Do / Ideas
+
+- **av.function** - A function timeline automation controlled by transport
+
+- **av.param~** - Control parameters of shaders with signals and include smoothing/easing
