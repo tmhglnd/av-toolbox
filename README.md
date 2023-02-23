@@ -36,13 +36,19 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ### Timeline control
 
-- **av.timepoint** - Combine with `[transport]`. Outputs a bang at a specified timepoint in `min:sec:ms`
+- **av.timepoint** - Combine with (named) `[transport]`. Outputs a bang at a specified timepoint in `min:sec:ms`
 
-- **av.when** -  Combine with `[transport]`. Displays the current time in `min:sec:ms`
+- **av.when** - Combine with (named) `[transport]`. Displays the current time in `min:sec:ms`
+
+- **av.timetoticks** - Combine with (named) `[transport]`. Convert `min:sec:ms` to relative ticks.
+
+- **av.phasor~** - Combine with (named) `[transport]`. A phasor locked to transport where the time-interval can be set in `min:sec:ms`
+
+- **av.function** - Initialize a `[function]` object with settings: `[function @pointsize 4 @gridstep_x 0.1 @linethickness 2 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1]`
 
 ### Jitter extensions
 
-- **av.world** - Initialize a jit.world with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1]`
+- **av.world** - Initialize a `[jit.world]` with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`
 
 - **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
 

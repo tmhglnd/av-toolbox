@@ -1,5 +1,11 @@
 max objectfile av.world av.world;
-max definesubstitution av.world jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1;
+max definesubstitution av.world jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080;
 
 max objectfile av.movie av.movie;
 max definesubstitution av.movie jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5;
+
+max objectfile av.function av.function;
+max definesubstitution av.function function @pointsize 4 @gridstep_x 0.1 @linethickness 2 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1;
+
+max objectfile av.automation~ av.automation~;
+max definesubstitution av.automation~ bpatcher @name _av.automation~.maxpat;
