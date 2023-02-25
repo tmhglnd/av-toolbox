@@ -25,7 +25,7 @@ function bang(){
 		// go over all objects and if selected and gl.slab generate params
 		p.apply(function(o) {
 			if (o.selected){
-				if (o.maxclass === 'jit.gl.slab'){
+				if (o.maxclass === 'jit.gl.slab' || o.maxclass === 'jit.gl.shader'){
 					generateParams(o.getattr('file'), o, p);
 				}
 			}
@@ -34,6 +34,9 @@ function bang(){
 }
 
 function generateParams(input, obj, patcher){
+	var s = new RegExp(/([^.]+).jxs/);
+	var name = input.match(s)[1];
+
 	var x = obj.rect[0]+w;
 	var y = obj.rect[1]+h;
 	// load the file
@@ -84,7 +87,7 @@ function generateParams(input, obj, patcher){
 				// generate floats with default values and connect
 				for (var j=0; j<def.length; j++){
 					var flonum = patcher.newdefault(j*w+50+x, c*2*h+y, 'flonum');
-					flonum.varname = param;
+					flonum.varname = name + '_' + param;
 					flonum.set(def[j]);
 					
 					patcher.connect(flonum, 0, pak, j+2);
