@@ -56,6 +56,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
 
+- **av.paramgenerator** - Generate flonum boxes combined with a pak object to control parameters in `jit.gl.slab` objects on shift+option+click
+
 ## Install
 
 ```
