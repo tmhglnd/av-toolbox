@@ -63,7 +63,8 @@ function generateParams(input, obj, patcher){
 	var p = new RegExp(/\<param[^\n\r]+\>/);
 	var n = new RegExp(/name="([^\s]+)"/);
 	var d = new RegExp(/default="(.+)"/);
-	var t = new RegExp(/tex/);
+	var tp = new RegExp(/type="([^\s]+)"/);
+	var t = new RegExp(/tex\d/);
 
 	// param counter
 	var c = 0;
@@ -77,16 +78,27 @@ function generateParams(input, obj, patcher){
 				// take the name and default parameters
 				var param = l[i].match(n)[1];
 				var def = [0];
+				var type = 'float';
 				if (l[i].match(d)){
 					def = l[i].match(d)[1].split(' ');
 				}
+				if (l[i].match(tp)){
+					type = l[i].match(tp)[1];
+					switch(type){
+						case 'int' : type = 'number'; break;
+						case 'bool' : type = 'toggle'; break;
+						default : type = 'flonum'; break; 
+					}
+				}
+				post('param', param, 'def', def, 'type', type, '\n');
+
 				// generate a [pak param <name> f f ...] and connect
 				var pak = patcher.newdefault(0+x, (c*2+1)*h+y, 'pak', 'param', param, def);
 				patcher.connect(pak, 0, obj, 0);
 				
 				// generate floats with default values and connect
 				for (var j=0; j<def.length; j++){
-					var flonum = patcher.newdefault(j*w+50+x, c*2*h+y, 'flonum');
+					var flonum = patcher.newdefault(j*w+50+x, c*2*h+y, type);
 					flonum.varname = name + '_' + param;
 					flonum.set(isNaN(def[j])? 0 : def[j]);
 					
@@ -98,3 +110,6 @@ function generateParams(input, obj, patcher){
 	}
 }
 generateParams.local = 1;
+
+// texture names: tex0 tex1
+// types: vec2 vec3 vec4 float int
