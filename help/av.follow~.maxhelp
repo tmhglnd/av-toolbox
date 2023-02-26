@@ -88,6 +88,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 30.0, 210.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
@@ -163,7 +175,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.666666666666657, 218.0, 54.0, 20.0 ],
+									"patching_rect" : [ 102.0, 218.0, 54.0, 20.0 ],
 									"text" : "play me!"
 								}
 
@@ -233,7 +245,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 225.0, 20.0, 20.0 ],
+									"patching_rect" : [ 14.0, 226.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -770,6 +782,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -867,21 +886,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.3cross~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.amp~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.follow~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

@@ -88,6 +88,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 30.0, 195.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -232,7 +244,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 195.0, 270.0, 52.0, 22.0 ],
+									"patching_rect" : [ 195.0, 285.0, 52.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -252,11 +264,11 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 195.0, 210.0, 101.0, 26.0 ],
+									"patching_rect" : [ 195.0, 225.0, 101.0, 26.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "mid", "side" ],
-											"parameter_initial" : [ 0.0 ],
+											"parameter_initial" : [ 1.0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "tab",
 											"parameter_mmax" : 1,
@@ -278,7 +290,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 30.0, 345.0, 128.0, 22.0 ],
+									"patching_rect" : [ 30.0, 360.0, 128.0, 22.0 ],
 									"text" : "matrix~ 3 2 @ramp 10"
 								}
 
@@ -290,7 +302,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
-									"patching_rect" : [ 30.0, 270.0, 72.0, 22.0 ],
+									"patching_rect" : [ 30.0, 285.0, 72.0, 22.0 ],
 									"text" : "av.midside~"
 								}
 
@@ -301,7 +313,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.666666666666657, 188.0, 54.0, 20.0 ],
+									"patching_rect" : [ 120.0, 203.0, 54.0, 20.0 ],
 									"text" : "play me!"
 								}
 
@@ -319,7 +331,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 195.0, 20.0, 20.0 ],
+									"patching_rect" : [ 15.0, 210.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -355,7 +367,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 210.0, 150.0, 30.0 ],
+									"patching_rect" : [ 30.0, 225.0, 150.0, 30.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -482,7 +494,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 74.666666666666657, 463.0, 20.0, 20.0 ],
+									"patching_rect" : [ 74.666666666666657, 478.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -541,7 +553,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 30.0, 393.0, 136.0, 47.0 ],
+									"patching_rect" : [ 30.0, 408.0, 136.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ -18.27240190017568 ],
@@ -566,12 +578,19 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 467.0, 45.0, 45.0 ]
+									"patching_rect" : [ 30.0, 482.0, 45.0, 45.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
 									"source" : [ "obj-15", 0 ]
@@ -767,7 +786,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.midside~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

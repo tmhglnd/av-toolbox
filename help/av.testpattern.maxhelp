@@ -88,6 +88,19 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontsize" : 10.0,
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 551.0, 462.0, 139.0, 40.0 ],
+									"text" : "Image in public domain by:\nhttps://openclipart.org/detail/19972/tv-test-screen"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-30",
 									"maxclass" : "newobj",
@@ -857,7 +870,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.testpattern.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

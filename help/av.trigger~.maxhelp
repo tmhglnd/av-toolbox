@@ -88,6 +88,41 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 501.0, 465.0, 119.0, 20.0 ],
+									"text" : "outputs a gate signal"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 30.0, 375.0, 29.5, 22.0 ],
+									"text" : "*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 30.0, 210.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -423,7 +458,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.666666666666657, 218.0, 54.0, 20.0 ],
+									"patching_rect" : [ 101.0, 218.0, 54.0, 20.0 ],
 									"text" : "play me!"
 								}
 
@@ -493,7 +528,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 225.0, 20.0, 20.0 ],
+									"patching_rect" : [ 14.0, 226.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -837,7 +872,23 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 1 ],
+									"order" : 1,
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"order" : 0,
 									"source" : [ "obj-2", 1 ]
 								}
 
@@ -872,16 +923,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-15", 0 ],
+									"order" : 1,
 									"source" : [ "obj-4", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -899,6 +950,13 @@
 									"destination" : [ "obj-47", 0 ],
 									"order" : 1,
 									"source" : [ "obj-46", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -1035,29 +1093,29 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "av.3cross~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"name" : "av.amp~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av.amp~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"name" : "av.cross3~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.follow~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.trigger~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

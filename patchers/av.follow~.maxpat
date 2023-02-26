@@ -180,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.0, 125.0, 248.0, 154.0 ],
+					"patching_rect" : [ 480.0, 125.0, 251.0, 154.0 ],
 					"text" : "A more sophisticated envelope follower using 2 amp in parallel. One quick envelope follower and one slow envelope follower subtracted from the fast one to filter out the low frequency changes. Also includes a low and high cutoff filter to focus the spectrum to follow the amplitude from.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)"
 				}
 
@@ -230,7 +230,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 45.0, 225.0, 119.0, 22.0 ],
-					"text" : "av.3cross~ 50 16000"
+					"text" : "av.cross3~ 50 16000"
 				}
 
 			}

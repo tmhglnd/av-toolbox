@@ -73,7 +73,7 @@ function generateParams(input, obj, patcher){
 		// if matches <param>
 		if (p.test(l[i])){
 			// if matches name and doesnt match tex
-			if (l[i].match(n) && !l[i].match(t)){
+			if (!l[i].match(t)){
 				// take the name and default parameters
 				var param = l[i].match(n)[1];
 				var def = [0];
@@ -88,7 +88,7 @@ function generateParams(input, obj, patcher){
 				for (var j=0; j<def.length; j++){
 					var flonum = patcher.newdefault(j*w+50+x, c*2*h+y, 'flonum');
 					flonum.varname = name + '_' + param;
-					flonum.set(def[j]);
+					flonum.set(isNaN(def[j])? 0 : def[j]);
 					
 					patcher.connect(flonum, 0, pak, j+2);
 				}

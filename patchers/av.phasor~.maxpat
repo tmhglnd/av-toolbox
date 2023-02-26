@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 165.0, 76.0, 22.0 ],
+					"patching_rect" : [ 45.0, 210.0, 76.0, 22.0 ],
 					"text" : "append ticks"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 120.0, 80.0, 22.0 ],
+					"patching_rect" : [ 45.0, 165.0, 80.0, 22.0 ],
 					"text" : "av.timetoticks"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 263.0, 75.0, 66.0, 22.0 ],
+					"patching_rect" : [ 263.0, 80.0, 66.0, 22.0 ],
 					"text" : "route done"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 195.0, 109.0, 22.0 ],
+					"patching_rect" : [ 45.0, 240.0, 109.0, 22.0 ],
 					"text" : "prepend frequency"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 45.0, 240.0, 116.0, 22.0 ],
+					"patching_rect" : [ 45.0, 285.0, 116.0, 22.0 ],
 					"text" : "phasor~ 4n @lock 1"
 				}
 
@@ -166,7 +166,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 180.0, 75.0, 55.0, 22.0 ],
+					"patching_rect" : [ 180.0, 80.0, 55.0, 22.0 ],
 					"text" : "zl.slice 3"
 				}
 
@@ -179,7 +179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 180.0, 45.0, 102.0, 22.0 ],
-					"text" : "patcherargs 0 0 0"
+					"text" : "patcherargs 0 1 0"
 				}
 
 			}
@@ -230,7 +230,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 286.0, 30.0, 30.0 ]
+					"patching_rect" : [ 45.0, 331.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -239,6 +239,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-16", 1 ]
 				}
 
 			}
@@ -302,7 +309,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-72", 0 ]
 				}
 

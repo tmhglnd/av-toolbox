@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "(signal/float) crossover frequency mid-high in Hz",
 					"id" : "obj-5",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -79,7 +79,7 @@
 				"box" : 				{
 					"comment" : "(signal/float) crossover frequency low-mid in Hz",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -92,7 +92,7 @@
 				"box" : 				{
 					"comment" : "(signal) high band",
 					"id" : "obj-3",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -104,7 +104,7 @@
 				"box" : 				{
 					"comment" : "(signal) low band",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -139,12 +139,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 135.0, 242.0, 47.0 ],
-					"text" : "2 crossover filters that output a low, mid and high band of the frequency spectrum as a signal"
+					"patching_rect" : [ 345.0, 135.0, 286.0, 60.0 ],
+					"text" : "2 crossover filters that output a low, mid and high band of the frequency spectrum as a signal. Set the cross-over cutoff frequencies in Hz via inlets or with arguments."
 				}
 
 			}
@@ -157,7 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.0, 45.0, 149.0, 33.0 ],
-					"text" : "av.3cross~"
+					"text" : "av.cross3~"
 				}
 
 			}
@@ -189,11 +189,11 @@
 				"box" : 				{
 					"comment" : "(signal) split in 3 bands",
 					"id" : "obj-242",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -202,7 +202,7 @@
 				"box" : 				{
 					"comment" : "(signal) mid band",
 					"id" : "obj-243",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -281,7 +281,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

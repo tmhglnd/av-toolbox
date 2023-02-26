@@ -1,10 +1,10 @@
 {
-	"name" : "av-toolkit",
+	"name" : "av-toolbox",
 	"displayname" : "",
 	"version" : "1.0.0",
 	"author" : "Timo Hoogland",
 	"authors" : [  ],
-	"description" : "This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport and more. Objects like: av.timepoint, av.follow~, av.spectrum~ and av.movie~",
+	"description" : "This package contains abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in a timeline with transport and extensions on objects in jitter. Objects like: av.timepoint, av.follow~, av.spectrum~ and av.movie~",
 	"tags" : [ "jitter", "max", "msp", "utility", "tool", "audiovisual", "av"],
 	"website" : "http://www.gumroad.com/tmhglnd",
 	"extends" : "",
@@ -23,7 +23,7 @@
 		}
 	}
 ,
-	"homepatcher" : "",
+	"homepatcher" : "av-toolbox.maxpat",
 	"package_extra" : 	{
 		"reverse_domain" : "com.cycling74",
 		"copyright" : "Copyright (c) 2023 Timo Hoogland"

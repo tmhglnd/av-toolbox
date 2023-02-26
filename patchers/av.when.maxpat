@@ -142,7 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 90.0, 53.0, 129.0, 22.0 ],
+					"patching_rect" : [ 90.0, 45.0, 129.0, 22.0 ],
 					"text" : "patcherargs @active 0"
 				}
 
@@ -270,7 +270,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -352,6 +352,13 @@
 					"destination" : [ "obj-22", 0 ],
 					"order" : 0,
 					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-8", 2 ]
 				}
 
 			}
