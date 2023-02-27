@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "(signal/float) crossover frequency mid-high in Hz",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -79,7 +79,7 @@
 				"box" : 				{
 					"comment" : "(signal/float) crossover frequency low-mid in Hz",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -92,7 +92,7 @@
 				"box" : 				{
 					"comment" : "(signal) high band",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -104,7 +104,7 @@
 				"box" : 				{
 					"comment" : "(signal) low band",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -132,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.0, 201.5, 241.0, 60.0 ],
-					"text" : "Arguments:\ncrossover low-mid (default = 90)\ncrossover mid-high (default = 350)\n"
+					"text" : "Arguments:\ncrossover low-mid (default = 150)\ncrossover mid-high (default = 2500)\n"
 				}
 
 			}
@@ -189,11 +189,11 @@
 				"box" : 				{
 					"comment" : "(signal) split in 3 bands",
 					"id" : "obj-242",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -202,7 +202,7 @@
 				"box" : 				{
 					"comment" : "(signal) mid band",
 					"id" : "obj-243",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -281,9 +281,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

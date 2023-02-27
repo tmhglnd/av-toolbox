@@ -70,7 +70,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 242.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -83,7 +83,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 129.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -96,7 +96,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 163.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -121,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 180.0, 90.0, 233.0, 22.0 ],
-					"text" : "patcherargs 2 100 500 @cutoffs 50 15000"
+					"text" : "patcherargs 2 100 500 @cutoffs 20 18000"
 				}
 
 			}
@@ -133,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 480.0, 298.0, 241.0, 114.0 ],
-					"text" : "Arguments:\nfast attack (default = 2)\nfast release (default = 100)\nslow attack & release (default = 500)\n\nAttributes:\n@cutoffs - set cutoff for high and lowpass filter (default = 50 16000)"
+					"text" : "Arguments:\nfast attack (default = 2)\nfast release (default = 100)\nslow attack & release (default = 500)\n\nAttributes:\n@cutoffs - set cutoff for high and lowpass filter (default = 20 18000)"
 				}
 
 			}
@@ -180,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.0, 125.0, 251.0, 154.0 ],
+					"patching_rect" : [ 480.0, 125.0, 252.0, 154.0 ],
 					"text" : "A more sophisticated envelope follower using 2 amp in parallel. One quick envelope follower and one slow envelope follower subtracted from the fast one to filter out the low frequency changes. Also includes a low and high cutoff filter to focus the spectrum to follow the amplitude from.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)"
 				}
 
@@ -230,7 +230,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 45.0, 225.0, 119.0, 22.0 ],
-					"text" : "av.cross3~ 50 16000"
+					"text" : "av.cross3~ 20 18000"
 				}
 
 			}
@@ -278,7 +278,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
 				}
 

@@ -15,3 +15,5 @@ max definesubstitution av.node jit.gl.node @capture 2 @adapt 0 @dim 1920 1080 @e
 
 max objectfile av.videoplane av.videoplane;
 max definesubstitution av.videoplane jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 9999;
+
+max objectfile av.loadmess patcherargs;
