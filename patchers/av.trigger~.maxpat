@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 115.0, 711.0, 631.0 ],
+		"rect" : [ 179.0, 215.0, 711.0, 631.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -118,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 225.0, 77.0, 180.0, 35.0 ],
+					"patching_rect" : [ 225.0, 77.0, 183.0, 35.0 ],
 					"text" : "patcherargs 0.2 0.4 @cutoffs 50 15000 @ramptimes 2 100 500"
 				}
 
@@ -130,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 465.0, 285.0, 241.0, 127.0 ],
+					"patching_rect" : [ 465.0, 285.0, 245.0, 127.0 ],
 					"text" : "Arguments:\nlower threshold (default = 0.2)\nupper threshold (default = 0.4)\n\nAttributes:\n@cutoffs - set cutoff for high and lowpass filter (default = 50 16000)\n@ramptimes - fast attack, fast release, slow attack & release (default = 2 100 500)"
 				}
 
@@ -154,7 +154,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 465.0, 120.0, 248.0, 141.0 ],
+					"patching_rect" : [ 465.0, 120.0, 251.0, 141.0 ],
 					"text" : "An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold. The gate opens when the upper bound is crossed, and the gate closes when the signal drops below the lower bounds.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)"
 				}
 
@@ -210,13 +210,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal/messages) signal to follow",
 					"id" : "obj-340",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 				}
 

@@ -100,7 +100,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(int/float) minutes (list) mm ss ms",
+					"comment" : "(int/float) minutes (list) min sec ms",
 					"id" : "obj-72",
 					"index" : 1,
 					"maxclass" : "inlet",

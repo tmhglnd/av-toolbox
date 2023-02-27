@@ -130,8 +130,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 64.666666666666657, 270.0, 40.0, 22.0 ],
-									"text" : "*~ 0.2"
+									"patching_rect" : [ 106.666666666666657, 315.0, 40.0, 22.0 ],
+									"text" : "*~ 0.5"
 								}
 
 							}
@@ -337,12 +337,35 @@
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
+									"clipheight" : 25.666666666666668,
 									"data" : 									{
 										"clips" : [ 											{
 												"absolutepath" : "jongly.aif",
 												"filename" : "jongly.aif",
 												"filekind" : "audiofile",
 												"id" : "u725010024",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "drumLoop.aif",
+												"filename" : "drumLoop.aif",
+												"filekind" : "audiofile",
+												"id" : "u746008955",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "prim.loop.aif",
+												"filename" : "prim.loop.aif",
+												"filekind" : "audiofile",
+												"id" : "u842009614",
 												"loop" : 1,
 												"content_state" : 												{
 													"loop" : 1
@@ -363,7 +386,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 195.0, 150.0, 30.0 ],
+									"patching_rect" : [ 30.0, 195.0, 150.0, 80.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -374,7 +397,7 @@
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 195.0, 315.0, 107.0, 22.0 ],
@@ -814,21 +837,34 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "_av.fftcatch.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.spectrum~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "drumLoop.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "jongly.aif",
 				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "prim.loop.aif",
+				"bootpath" : "~/Documents/Max 8/Sounds/loops",
+				"patcherrelativepath" : "../../../Sounds/loops",
 				"type" : "AIFF",
 				"implicit" : 1
 			}

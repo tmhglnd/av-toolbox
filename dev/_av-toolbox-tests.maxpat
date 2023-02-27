@@ -151,7 +151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3417.0, 630.0, 109.0, 22.0 ],
+					"patching_rect" : [ 3450.0, 630.0, 109.0, 22.0 ],
 					"text" : "av.paramgenerator"
 				}
 
@@ -364,7 +364,7 @@
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3390.0, 225.0, 80.0, 22.0 ],
@@ -550,7 +550,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 2985.0, 375.0, 55.0, 22.0 ],
+					"patching_rect" : [ 2992.0, 315.0, 55.0, 22.0 ],
 					"text" : "av.sync~"
 				}
 
@@ -563,7 +563,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2985.0, 330.0, 24.0, 24.0 ]
+					"patching_rect" : [ 2992.0, 270.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -573,7 +573,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2985.0, 585.0, 45.0, 45.0 ]
+					"patching_rect" : [ 2992.0, 525.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -586,7 +586,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2985.0, 420.0, 48.0, 136.0 ],
+					"patching_rect" : [ 2992.0, 360.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[2]",
@@ -610,7 +610,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 3135.0, 345.0, 83.0, 22.0 ],
+					"patching_rect" : [ 3384.5, 465.0, 83.0, 22.0 ],
 					"text" : "th.movieplay~"
 				}
 
@@ -1243,7 +1243,7 @@
 				"box" : 				{
 					"id" : "obj-434",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 258.0, 75.0, 80.0, 22.0 ],
@@ -1339,7 +1339,7 @@
 				"box" : 				{
 					"id" : "obj-394",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1590.0, 480.0, 80.0, 22.0 ],

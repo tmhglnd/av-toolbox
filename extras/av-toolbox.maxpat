@@ -352,7 +352,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "01:35:921"
+					"text" : "06:20:097"
 				}
 
 			}
@@ -1660,7 +1660,7 @@
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 6,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "signal" ],
 					"patching_rect" : [ 495.0, 470.25, 68.0, 22.0 ],
