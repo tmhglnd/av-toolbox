@@ -52,6 +52,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
 
+- **av.movieplay~** - The jit.movie object that can be controlled with an audio signal similar to the play~ object. Combine movieplay~ with play~ for audiorate playback of sound together with movie.
+
 - **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
 
 - **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
