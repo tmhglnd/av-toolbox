@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 115.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 115.0, 739.0, 600.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 203.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.0, 105.0, 209.0, 22.0 ],
+					"text" : "expr 0.5 + cos($f1*3.14159265) * -0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 135.0, 31.0, 22.0 ],
+					"patching_rect" : [ 45.0, 165.0, 31.0, 22.0 ],
 					"text" : "x $1"
 				}
 
@@ -54,12 +78,12 @@
 				"box" : 				{
 					"comment" : "(texture) processed texture to be xfaded",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 195.0, 30.0, 30.0 ]
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 120.0, 195.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -212,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 210.0, 135.0, 29.5, 22.0 ],
+					"patching_rect" : [ 210.0, 150.0, 29.5, 22.0 ],
 					"text" : "> 0."
 				}
 
@@ -232,12 +256,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 135.0, 245.0, 100.0 ],
-					"text" : "Similar to the av.enable, except it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object. Enable/disable the processing of a jit.gl.pix or jit.gl.slab and either process or bypass it by using the 2 separate outlets"
+					"patching_rect" : [ 285.0, 120.0, 247.0, 127.0 ],
+					"text" : "Similar to the av.enable, except it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object. Enable/disable the processing of a jit.gl.pix or jit.gl.slab and either process or bypass it by using the 2 separate outlets.\n\nUses a cosine function for easing."
 				}
 
 			}
@@ -273,7 +297,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 165.0, 61.0, 22.0 ],
+					"patching_rect" : [ 210.0, 203.0, 61.0, 22.0 ],
 					"text" : "enable $1"
 				}
 
@@ -294,11 +318,11 @@
 				"box" : 				{
 					"comment" : "(texture) texture to be routed for processing or bypass",
 					"id" : "obj-32",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 105.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -307,7 +331,7 @@
 				"box" : 				{
 					"comment" : "(int) enable/disable",
 					"id" : "obj-33",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -320,7 +344,7 @@
 				"box" : 				{
 					"comment" : "(texture) connect to next processing",
 					"id" : "obj-34",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -332,7 +356,7 @@
 				"box" : 				{
 					"comment" : "(texture) connect to pix/slab processing to be bypassed",
 					"id" : "obj-35",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -357,8 +381,39 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -366,14 +421,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"order" : 1,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -388,7 +435,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"order" : 1,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -423,9 +470,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
