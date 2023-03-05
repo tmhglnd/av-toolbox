@@ -88,13 +88,62 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 161.5, 465.0, 86.0, 22.0 ],
+									"text" : "it's time for: $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 30.0, 450.0, 19.0, 22.0 ],
+									"text" : "t l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 161.5, 495.0, 91.0, 22.0 ],
+									"text" : "print @popup 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"maxclass" : "jit.fpsgui",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 526.0, 375.0, 80.0, 35.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-35",
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 77.0, 395.5, 24.0, 24.0 ]
+									"patching_rect" : [ 75.0, 375.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -115,7 +164,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 115.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -190,15 +239,15 @@
 													"patching_rect" : [ 50.0, 100.0, 100.0, 40.0 ],
 													"preset_data" : [ 														{
 															"number" : 1,
-															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 1.0, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 1.0, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "cube", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.999995052814484, 1.0, 1.0, 1.0 ]
+															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 1.0, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 1.0, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "cube", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.059471700340509, 0.501942574977875, 0.998464584350586, 1.0 ]
 														}
 , 														{
 															"number" : 2,
-															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 0.12, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 5.970000000000002, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "torus", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.990448355674744, 0.502245008945465, 0.032880786806345, 1.0 ]
+															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 0.12, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 5.970000000000002, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "torus", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.986251831054688, 0.007236152887344, 0.027423052117229, 1.0 ]
 														}
 , 														{
 															"number" : 3,
-															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 0.393, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 18.400000000000002, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "opencube", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.127699956297874, 0.999774515628815, 0.999047458171844, 1.0 ]
+															"data" : [ 5, "obj-27", "attrui", "attr", "speed", 5, "obj-27", "attrui", "float", 0.393, 5, "obj-26", "attrui", "attr", "scale", 5, "obj-26", "attrui", "float", 18.400000000000002, 5, "obj-19", "attrui", "attr", "shape", 4, "obj-19", "attrui", "opencube", 5, "obj-18", "attrui", "attr", "mat_diffuse", 8, "obj-18", "attrui", "list", 0.800003409385681, 0.400086343288422, 0.999035179615021, 1.0 ]
 														}
  ]
 												}
@@ -287,7 +336,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "int" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 												}
 
@@ -410,7 +459,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 555.0, 390.0, 150.0, 33.0 ],
+									"patching_rect" : [ 555.0, 425.5, 150.0, 33.0 ],
 									"text" : "use av.when to show the time in min:sec:ms"
 								}
 
@@ -422,8 +471,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 495.0, 435.0, 106.0, 22.0 ],
-									"text" : "0 27 701.985666"
+									"patching_rect" : [ 495.0, 470.5, 106.0, 22.0 ],
+									"text" : "0 7 519.868442"
 								}
 
 							}
@@ -434,7 +483,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 495.0, 390.0, 52.0, 22.0 ],
+									"patching_rect" : [ 495.0, 425.5, 52.0, 22.0 ],
 									"text" : "av.when"
 								}
 
@@ -477,7 +526,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 341.5, 343.5, 124.0, 20.0 ],
+									"patching_rect" : [ 339.5, 323.0, 124.0, 20.0 ],
 									"text" : "redefine the timepoint"
 								}
 
@@ -490,7 +539,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 341.5, 365.5, 50.0, 22.0 ],
+									"patching_rect" : [ 339.5, 345.0, 50.0, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ 5 ],
@@ -515,7 +564,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 300.0, 425.5, 24.0, 24.0 ]
+									"patching_rect" : [ 298.0, 405.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -526,7 +575,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 300.0, 455.5, 22.0, 22.0 ],
+									"patching_rect" : [ 298.0, 435.0, 22.0, 22.0 ],
 									"text" : "t 3"
 								}
 
@@ -538,7 +587,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 300.0, 395.5, 102.0, 22.0 ],
+									"patching_rect" : [ 298.0, 375.0, 102.0, 22.0 ],
 									"text" : "av.timepoint 0 5 0"
 								}
 
@@ -549,7 +598,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 395.5, 138.0, 20.0 ],
+									"patching_rect" : [ 99.0, 375.0, 138.0, 20.0 ],
 									"text" : "trigger after 2,5 seconds"
 								}
 
@@ -561,7 +610,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 77.0, 435.0, 22.0, 22.0 ],
+									"patching_rect" : [ 75.0, 414.5, 22.0, 22.0 ],
 									"text" : "t 2"
 								}
 
@@ -573,7 +622,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 77.0, 365.5, 116.0, 22.0 ],
+									"patching_rect" : [ 75.0, 345.0, 116.0, 22.0 ],
 									"text" : "av.timepoint 0 2 500"
 								}
 
@@ -689,9 +738,10 @@
 , 							{
 								"box" : 								{
 									"enable" : 1,
-									"fps" : 30.0,
+									"fps" : 60.0,
 									"id" : "obj-1",
 									"maxclass" : "jit.pworld",
+									"name" : "u266008135",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -866,7 +916,16 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
+									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -880,6 +939,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 0,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"order" : 1,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
@@ -887,7 +969,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -908,7 +990,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -929,7 +1011,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-38", 0 ]
 								}
 
@@ -1096,14 +1178,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.timepoint.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "av.timetoticks.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.when.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
