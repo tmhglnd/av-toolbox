@@ -62,6 +62,10 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.paramgenerator** - Generate flonum boxes combined with a pak object to control parameters in `jit.gl.slab` objects on shift+option+click.
 
+- **av.enable** - Enable/disable the processing of a slab or pix object with a toggle and also output either processed or incoming texture.
+
+- **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and also cross-fade between the images.
+
 ## Install
 
 ```
@@ -79,6 +83,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ## To Do / Ideas
 
-- **av.function** - A function timeline automation controlled by transport
+[ ] - **av.param~** - Control parameters of shaders with signals and include smoothing/easing
 
-- **av.param~** - Control parameters of shaders with signals and include smoothing/easing
+[ ] - **av.line** - A ramp-generator with range and easing to control a parameter
+
+[ ] - Help-files for: av.follow~, av.timetrigger~, av.timetoticks, av.phasor~, av.automation~, av.paramgenerator
