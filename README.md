@@ -10,7 +10,7 @@ Suggestions, bug reports and feature requests are much appreciated. Please add t
 
 ## About
 
-This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport and more.
+This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport, objects that extend/wrap some jitter objects, some object mappings to initialize jitter objects with common used attributes and more.
 
 ## Contains
 
@@ -50,8 +50,6 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ### Jitter extensions
 
-- **av.world** - Initialize a `[jit.world]` with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
-
 - **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
 
 - **av.movieplay~** - The jit.movie object that can be controlled with an audio signal similar to the play~ object. Combine movieplay~ with play~ for audiorate playback of sound together with movie.
@@ -65,6 +63,18 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.enable** - Enable/disable the processing of a slab or pix object with a toggle and also output either processed or incoming texture.
 
 - **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and also cross-fade between the images.
+
+### Jitter Mappings
+
+- **av.world** - Initialize a `[jit.world]` with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
+
+- **av.node** - Initialize a `[jit.gl.node]` with settings: `[jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1]`
+
+- **av.videoplane** - Initialize a `[jit.gl.videoplane]` with settings: `[jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000]`
+
+- **av.camera** - Initialize a `[jit.gl.camera]` with settings: `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
+
+- **av.movie** - Initialize a `[jit.movie]` with settings: `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
 
 ## Install
 

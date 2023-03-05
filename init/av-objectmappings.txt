@@ -17,6 +17,6 @@ max objectfile av.videoplane av.videoplane;
 max definesubstitution av.videoplane jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000;
 
 max objectfile av.camera av.camera;
-max definesubstitution av.camera jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 50;
+max definesubstitution av.camera jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45;
 
 max objectfile av.loadmess patcherargs;
