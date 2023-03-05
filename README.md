@@ -83,8 +83,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ## To Do / Ideas
 
-[ ] - **av.param~** - Control parameters of shaders with signals and include smoothing/easing
+- [ ] **av.param~** - Control parameters of shaders with signals and include smoothing/easing
 
-[ ] - **av.line** - A ramp-generator with range and easing to control a parameter
+- [ ] **av.line** - A ramp-generator with range and easing to control a parameter
 
-[ ] - Help-files for: av.follow~, av.timetrigger~, av.timetoticks, av.phasor~, av.automation~, av.paramgenerator
+- [ ] Help-files for: av.follow~, av.timetrigger~, av.timetoticks, av.phasor~, av.automation~, av.paramgenerator
