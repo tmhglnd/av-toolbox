@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 195.0, 224.0, 74.0 ],
+					"patching_rect" : [ 360.0, 195.0, 230.0, 74.0 ],
 					"text" : "Arguments:\n\nAttributes:\n@enable - Enable/disable the generator functionality. (default = 1)"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 135.0, 45.0, 133.0, 22.0 ],
+					"patching_rect" : [ 135.0, 50.5, 133.0, 22.0 ],
 					"text" : "patcherargs @enable 1"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 66.0, 150.0, 113.0, 22.0 ],
+					"patching_rect" : [ 66.0, 165.0, 113.0, 22.0 ],
 					"text" : "zl.lookup nopoll poll"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
-					"patching_rect" : [ 45.0, 105.0, 71.5, 22.0 ],
+					"patching_rect" : [ 45.0, 120.0, 71.5, 22.0 ],
 					"text" : "typeroute~"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 135.0, 105.0, 75.0, 22.0 ],
+					"patching_rect" : [ 135.0, 120.0, 75.0, 22.0 ],
 					"text" : "route enable"
 				}
 
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 240.0, 121.0, 22.0 ],
+					"patching_rect" : [ 66.0, 255.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "param-generator.js",
 						"parameter_enable" : 0
@@ -122,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 66.0, 210.0, 34.0, 22.0 ],
+					"patching_rect" : [ 66.0, 225.0, 34.0, 22.0 ],
 					"text" : "sel 1"
 				}
 
@@ -134,7 +134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 66.0, 180.0, 71.0, 22.0 ],
+					"patching_rect" : [ 66.0, 195.0, 71.0, 22.0 ],
 					"text" : "mousestate"
 				}
 

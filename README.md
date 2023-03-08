@@ -62,7 +62,7 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.enable** - Enable/disable the processing of a slab or pix object with a toggle and also output either processed or incoming texture.
 
-- **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and also cross-fade between the images.
+- **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and cross-fade between the images.
 
 ### Jitter Mappings
 
