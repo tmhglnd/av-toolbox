@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 98.0, 100.0, 714.0, 726.0 ],
+		"rect" : [ 100.0, 100.0, 714.0, 646.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 98.0, 126.0, 714.0, 700.0 ],
+						"rect" : [ 100.0, 126.0, 714.0, 620.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,24 +88,249 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-28",
+									"id" : "obj-34",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 5,
+											"revision" : 3,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 59.0, 115.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "int" ],
+													"patching_rect" : [ 50.0, 105.0, 49.0, 22.0 ],
+													"text" : "urn-jb 3"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 165.0, 58.0, 22.0 ],
+													"text" : "shape $1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-18",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 50.0, 135.0, 155.0, 22.0 ],
+													"text" : "zl.lookup cube torus sphere"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-32",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-33",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 50.0, 212.0, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-18", 0 ],
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-20", 0 ],
+													"source" : [ "obj-18", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-33", 0 ],
+													"source" : [ "obj-20", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 0 ],
+													"source" : [ "obj-32", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 195.0, 480.0, 51.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p shape"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 501.0, 465.0, 119.0, 20.0 ],
-									"text" : "outputs a gate signal"
+									"patching_rect" : [ 63.0, 396.0, 133.0, 47.0 ],
+									"text" : "1 bang every ~3000 ms but in sync with the incoming bang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 54.0, 301.0, 139.0, 20.0 ],
+									"text" : "many bangs from trigger"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 195.0, 396.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 309.0, 316.0, 108.0, 20.0 ],
+									"text" : "speed limit interval"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 255.0, 315.0, 50.0, 22.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 3000 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "number",
+											"parameter_shortname" : "number",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"varname" : "number"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontsize" : 11.0,
+									"id" : "obj-10",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 307.0, 360.0, 149.0, 105.0 ],
+									"text" : "inlet 1: input bangs/messages\n\ninlet 2: set time speedlimit time in milliseconds\n\noutlet 1: outputs gated bangs"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 30.0, 375.0, 29.5, 22.0 ],
-									"text" : "*~"
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 195.0, 360.0, 110.0, 22.0 ],
+									"text" : "av.speedgate 3000"
 								}
 
 							}
@@ -116,7 +341,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 210.0, 70.0, 22.0 ],
+									"patching_rect" : [ 30.0, 180.0, 70.0, 22.0 ],
 									"text" : "loadmess 1"
 								}
 
@@ -324,7 +549,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 195.0, 511.0, 45.0, 22.0 ],
+									"patching_rect" : [ 255.0, 480.0, 45.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -343,7 +568,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 555.0, 151.0, 22.0 ],
+									"patching_rect" : [ 364.5, 480.0, 151.0, 22.0 ],
 									"text" : "loadmess turn 0.32 0.1 0.4"
 								}
 
@@ -355,7 +580,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 315.0, 585.0, 76.0, 22.0 ],
+									"patching_rect" : [ 364.5, 510.0, 76.0, 22.0 ],
 									"text" : "jit.anim.drive"
 								}
 
@@ -367,7 +592,7 @@
 									"numinlets" : 8,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 195.0, 585.0, 92.5, 22.0 ],
+									"patching_rect" : [ 255.0, 510.0, 92.5, 22.0 ],
 									"text" : "jit.gl.material"
 								}
 
@@ -379,7 +604,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 195.0, 630.0, 227.0, 22.0 ],
+									"patching_rect" : [ 195.0, 562.0, 227.0, 22.0 ],
 									"text" : "jit.gl.gridshape @shape cube @scale 0.5"
 								}
 
@@ -392,63 +617,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 195.0, 481.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "live.scope~",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 315.0, 465.0, 184.0, 68.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-8",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 319.5, 275.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "3",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"id" : "obj-17",
-									"linecount" : 8,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 209.0, 344.0, 223.0, 114.0 ],
-									"text" : "Arguments:\nlower threshold (default = 0.2)\nupper threshold (default = 0.4)\n\nAttributes:\n@cutoffs - cutoff hi & lopass filter\n@ramptimes - fast attack, fast release, slow attack & release"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 328.0, 240.0, 129.0, 33.0 ],
-									"text" : "set upper and lower threshold"
+									"patching_rect" : [ 195.0, 301.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -458,60 +627,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 218.0, 54.0, 20.0 ],
+									"patching_rect" : [ 101.0, 188.0, 54.0, 20.0 ],
 									"text" : "play me!"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-24",
-									"maxclass" : "live.dial",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "float" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 281.0, 240.0, 41.0, 48.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 0.456692913385828 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "live.dial[1]",
-											"parameter_mmax" : 1.0,
-											"parameter_shortname" : "up",
-											"parameter_type" : 0,
-											"parameter_unitstyle" : 1
-										}
-
-									}
-,
-									"varname" : "live.dial[1]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-23",
-									"maxclass" : "live.dial",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "float" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 225.5, 240.0, 41.0, 48.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 0.20472440944882 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "live.dial",
-											"parameter_mmax" : 1.0,
-											"parameter_shortname" : "down",
-											"parameter_type" : 0,
-											"parameter_unitstyle" : 1
-										}
-
-									}
-,
-									"varname" : "live.dial"
 								}
 
 							}
@@ -528,7 +645,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 14.0, 226.0, 20.0, 20.0 ],
+									"patching_rect" : [ 14.0, 196.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -544,7 +661,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 495.0, 210.0, 195.0, 165.0 ],
+									"patching_rect" : [ 463.0, 188.0, 227.0, 157.0 ],
 									"sync" : 1
 								}
 
@@ -554,10 +671,10 @@
 									"basictuning" : 440,
 									"data" : 									{
 										"clips" : [ 											{
-												"absolutepath" : "jongly.aif",
-												"filename" : "jongly.aif",
+												"absolutepath" : "prim.loop.aif",
+												"filename" : "prim.loop.aif",
 												"filekind" : "audiofile",
-												"id" : "u758004088",
+												"id" : "u957004865",
 												"loop" : 1,
 												"content_state" : 												{
 													"loop" : 1
@@ -578,7 +695,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 240.0, 150.0, 30.0 ],
+									"patching_rect" : [ 30.0, 210.0, 150.0, 30.0 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"timestretch" : [ 0 ]
@@ -592,8 +709,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "signal" ],
-									"patching_rect" : [ 195.0, 315.0, 105.0, 22.0 ],
-									"text" : "av.trigger~ 0.2 0.4"
+									"patching_rect" : [ 195.0, 270.0, 195.0, 22.0 ],
+									"text" : "av.trigger~ 0.1 0.3 @cutoffs 20 100"
 								}
 
 							}
@@ -720,7 +837,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 74.666666666666657, 603.0, 20.0, 20.0 ],
+									"patching_rect" : [ 74.666666666666657, 535.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -743,12 +860,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-88",
-									"linecount" : 7,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 90.0, 420.0, 100.0 ],
-									"text" : "An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold. The gate opens when the upper bound is crossed, and the gate closes when the signal drops below the lower bounds.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)",
+									"patching_rect" : [ 30.0, 90.0, 420.0, 74.0 ],
+									"text" : "Useful to limit bangs/messages for a specific amount of time. After the first bang is recieved, the gate closes. Until the gate is opened there will be no bangs passed through. In contrast with [speedlim] the output bangs will always occur at the same time as an incoming bang, or it is canceld. While with speedlim the output rate of the bangs is changed.",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -762,8 +879,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 15.0, 196.0, 51.0 ],
-									"text" : "av.trigger~",
+									"patching_rect" : [ 30.0, 15.0, 246.0, 51.0 ],
+									"text" : "av.speedgate",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -778,7 +895,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 30.0, 533.0, 136.0, 47.0 ],
+									"patching_rect" : [ 30.0, 465.0, 136.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ -18.27240190017568 ],
@@ -803,7 +920,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 607.0, 45.0, 45.0 ]
+									"patching_rect" : [ 30.0, 539.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -817,6 +934,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 1 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
@@ -824,24 +948,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
+									"destination" : [ "obj-26", 0 ],
+									"order" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 1 ],
+									"destination" : [ "obj-34", 0 ],
 									"order" : 1,
-									"source" : [ "obj-2", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"order" : 0,
-									"source" : [ "obj-2", 1 ]
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -849,20 +966,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 1 ],
-									"source" : [ "obj-23", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 2 ],
-									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -876,8 +979,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"order" : 1,
-									"source" : [ "obj-4", 0 ]
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-34", 0 ]
 								}
 
 							}
@@ -885,6 +994,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"order" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"order" : 1,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -914,7 +1031,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -1029,8 +1146,7 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-2::obj-23" : [ "live.dial", "down", 0 ],
-			"obj-2::obj-24" : [ "live.dial[1]", "up", 0 ],
+			"obj-2::obj-13" : [ "number", "number", 0 ],
 			"obj-2::obj-46" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1066,6 +1182,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "av.speedgate.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "av.trigger~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -1073,9 +1196,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jongly.aif",
-				"bootpath" : "C74:/media/msp",
+				"name" : "prim.loop.aif",
+				"bootpath" : "~/Documents/Max 8/Sounds/loops",
+				"patcherrelativepath" : "../../../Sounds/loops",
 				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "urn-jb.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
