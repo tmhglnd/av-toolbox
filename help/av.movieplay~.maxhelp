@@ -95,7 +95,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 30.5, 305.0, 51.0 ],
+									"patching_rect" : [ 30.0, 30.0, 305.0, 51.0 ],
 									"text" : "av.movieplay~",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -550,7 +550,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 83.5, 389.0, 60.0 ],
+									"patching_rect" : [ 30.0, 83.5, 392.0, 60.0 ],
 									"text" : "the object works nicely together with the play~ object to play a video file in sync with its audio. This can be helpful for building a video granulator for example that has a bit more functionality/freedom than when just trying to work with jit.movie~.",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}

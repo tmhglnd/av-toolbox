@@ -16,6 +16,10 @@ var w = 60;
 
 function bang(){
 	var p = max.frontpatcher;
+	// there is no patcher the front window
+	if (p === null){
+		return;
+	}
 	// break if the patcher is locked
 	if (p.locked){
 		return;

@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 245.0, 104.0, 66.0, 22.0 ],
+					"patching_rect" : [ 228.0, 104.0, 66.0, 22.0 ],
 					"text" : "route done"
 				}
 
@@ -93,8 +93,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 175.0, 74.0, 89.0, 22.0 ],
-					"text" : "patcherargs 50"
+					"patching_rect" : [ 175.0, 74.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
 				}
 
 			}
