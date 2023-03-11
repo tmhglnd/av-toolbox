@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.movie~">
+
+	<digest>
+		Movie playback made easier and seemless
+	</digest>
+
+	<description>
+		A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end of the movie in the RAM for seamless looping of the file. Defaults with a texture output instead of a matrix.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<!-- <objarg name="enable" optional="1" type="int">
+			<digest>
+				Enable/disable the processing on load (default = 1)
+			</digest>
+			<description>
+				Enable/disable the processing on load (default = 1)
+			</description>
+		</objarg> -->
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Start/stop movie playback with 1/0 or toggle
+			</digest>
+			<description>
+				Start/stop movie playback with 1/0 or toggle
+			</description>
+		</method>
+		<method name="read">
+			<arglist>
+				<arg name="read" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Read a movie from a disk
+			</digest>
+			<description>
+				Read a movie from a disk
+			</description>
+		</method>
+		<method name="asyncread">
+			<arglist>
+				<arg name="asyncread" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Read a movie from a disk asynchronously
+			</digest>
+			<description>
+				Read a movie from a disk asynchronously
+			</description>
+		</method>
+		<method name="info">
+			<arglist>
+				<arg name="info" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Report the info from the moviefile (framecount, length in milliseconds, dimension and fps)
+			</digest>
+			<description>
+				Report the info from the moviefile (framecount, length in milliseconds, dimension and fps)
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="file" get='0' set='1' type='symbol' size='2'>
+			<arglist>
+				<arg name="file" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Load a moviefile from disk on initialisation
+			</digest>
+			<description>
+				Load a moviefile from disk on initialisation
+			</description>
+		</attribute>
+		<attribute name="rate" get='0' set='1' type='float' size='2'>
+			<arglist>
+				<arg name="rate" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Set the playback speed for the movie. 1 = original speed, 0.5 = half speed, 2 = double speed, etc. (default = 1)
+			</digest>
+			<description>
+				Set the playback speed for the movie. 1 = original speed, 0.5 = half speed, 2 = double speed, etc. (default = 1)
+			</description>
+		</attribute>
+		<attribute name="progress" get='0' set='1' type='bool' size='2'>
+			<arglist>
+				<arg name="progress" optional="1" type="bool" />
+			</arglist>
+			<digest>
+				Enable the output of the progress as a value between 0 and 1 (default = off)
+			</digest>
+			<description>
+				Enable the output of the progress as a value between 0 and 1 (default = off)
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>

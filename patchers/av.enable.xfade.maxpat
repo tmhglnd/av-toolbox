@@ -113,6 +113,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "(texture) processed texture to be xfaded",
+					"cool" : 1,
 					"id" : "obj-6",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -366,6 +367,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "(int) enable/disable",
+					"cool" : 1,
 					"id" : "obj-33",
 					"index" : 1,
 					"maxclass" : "inlet",

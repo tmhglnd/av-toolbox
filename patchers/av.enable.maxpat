@@ -187,6 +187,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "(int) enable/disable",
+					"cool" : 1,
 					"id" : "obj-33",
 					"index" : 1,
 					"maxclass" : "inlet",

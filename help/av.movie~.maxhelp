@@ -663,7 +663,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 90.0, 420.0, 47.0 ],
-									"text" : "A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end of the movie in the RAM for seamless looping of the file.",
+									"text" : "A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end of the movie in the RAM for seamless looping of the file. Defaults with a texture output instead of matrix.",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 

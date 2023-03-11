@@ -125,6 +125,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "(int/float) percentage of chance",
+					"cool" : 1,
 					"id" : "obj-1",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -228,7 +229,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
 				}
 

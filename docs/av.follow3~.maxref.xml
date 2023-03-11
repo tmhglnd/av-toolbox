@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.follow3~">
+
+	<digest>
+		3 Band envelope follower
+	</digest>
+
+	<description>
+		Get average amplitude values from an audio signal over 3 different bands. Output as a list with the render bang from jit.world or qmetro. Or use the other 3 outlets to get envelope followed values for every band at signal rate.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="low-mid-crossover" optional="1" type="float">
+			<digest>
+				Crossover frequency between low and mid band (default = 150 Hz)
+			</digest>
+			<description>
+				Crossover frequency between low and mid band (default = 150 Hz)
+			</description>
+		</objarg>
+		<objarg name="mid-high-crossover" optional="1" type="float">
+			<digest>
+				Crossover frequency between mid and high band (default = 2500 Hz)
+			</digest>
+			<description>
+				Crossover frequency between mid and high band (default = 2500 Hz)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Report the sample value with the renderbang
+			</digest>
+			<description>
+				Report the sample value with the renderbang
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+				<arg name="float" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: none <br/>
+				Inlet 2: Set the crossover frequency for the low-mid band <br/>
+				Inlet 3: Set the crossover frequency for the mid-high band <br/>
+				Inlet 4: Set the attack time in milliseconds <br/>
+				Inlet 5: Set the release time in milliseconds <br/>
+				Inlet 6: Set the slow attack and release time in milliseconds <br/>
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: none <br/>
+				Inlet 2: Set the attack time in milliseconds <br/>
+				Inlet 3: Set the release time in milliseconds <br/>
+			</description>
+		</method>
+		<method name="signal">
+			<arglist>
+				<arg name="signal" optional="1" type="signal" />
+			</arglist>
+			<digest>
+				Signal to follow
+			</digest>
+			<description>
+				Signal to follow
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="up" get='0' set='1' type='float' size='2'>
+			<arglist>
+				<arg name="" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Attack time in milliseconds (default = 2)
+			</digest>
+			<description>
+				Attack time in milliseconds (default = 2)
+			</description>
+		</attribute>
+		<attribute name="down" get='0' set='1' type='float' size='2'>
+			<arglist>
+				<arg name="" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Release time in milliseconds (default = 100)
+			</digest>
+			<description>
+				Release time in milliseconds (default = 100)
+			</description>
+		</attribute>
+		<attribute name="slowupdown" get='0' set='1' type='float' size='2'>
+			<arglist>
+				<arg name="" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Attack and release time of slow follower in milliseconds (default = 500)
+			</digest>
+			<description>
+				Attack and release time of slow follower in milliseconds (default = 500)
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>
