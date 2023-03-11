@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.amp~">
+<c74object name="av.catch~">
 
 	<digest>
-		Simple envelope follower
+		Catch a signal to a matrix
 	</digest>
 
 	<description>
-		A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself. 
-		
-		Send a bang to get the floating value (control for example with the render bang from jit.world)
+		A wrapper around the jit.catch~ object initialized with 3 inlets for connecting to 3 signals and generate a 3-dimensional oscilloscope (X Y Z).
 	</description>
 
 	<!--METADATA-->
@@ -34,20 +32,20 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="attack" optional="1" type="float">
+		<objarg name="framesize" optional="1" type="int">
 			<digest>
-				Attack time in milliseconds (default = 2)
+				Set the framesize output (default = 128)
 			</digest>
 			<description>
-				Attack time in milliseconds (default = 2)
+				Set the framesize output (default = 128)
 			</description>
 		</objarg>
-		<objarg name="release" optional="1" type="float">
+		<objarg name="downsample" optional="1" type="int">
 			<digest>
-				Release time in milliseconds (default = 80)
+				Set the downsample factor (default = 2)
 			</digest>
 			<description>
-				Release time in milliseconds (default = 80)
+				Set the downsample factor (default = 2)
 			</description>
 		</objarg>
 	</objarglist>
@@ -59,40 +57,10 @@
 				<arg name="bang" optional="1" type="bang" />
 			</arglist>
 			<digest>
-				Report the sample value with the renderbang
+				Report the frame with the renderbang
 			</digest>
 			<description>
-				Report the sample value with the renderbang
-			</description>
-		</method>
-		<method name="float">
-			<arglist>
-				<arg name="float" optional="1" type="float" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
-			</description>
-		</method>
-		<method name="int">
-			<arglist>
-				<arg name="int" optional="1" type="int" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Report the frame with the renderbang
 			</description>
 		</method>
 		<method name="signal">
@@ -100,25 +68,38 @@
 				<arg name="signal" optional="1" type="signal" />
 			</arglist>
 			<digest>
-				Signal to follow
+				Signal to catch
 			</digest>
 			<description>
-				Signal to follow
+				Signal to catch
 			</description>
 		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="" get='0' set='1' type='int' size='2'>
+		<attribute name="framesize" get='0' set='1' type='int' size='2'>
 			<arglist>
-				<arg name="" optional="1" type="int" />
+				<arg name="framesize" optional="1" type="int" />
 			</arglist>
 			<digest>
+				Set the framesize output (default = 128)
 			</digest>
 			<description>
+				Set the framesize output (default = 128)
 			</description>
-		</attribute> -->
+		</attribute>
+		<attribute name="downsample" get='0' set='1' type='int' size='2'>
+			<arglist>
+				<arg name="downsample" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Set the downsample factor (default = 2)
+			</digest>
+			<description>
+				Set the downsample factor (default = 2)
+			</description>
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->

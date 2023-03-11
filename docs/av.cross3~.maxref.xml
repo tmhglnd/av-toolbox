@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.amp~">
+<c74object name="av.cross3~">
 
 	<digest>
-		Simple envelope follower
+		Split the signal into low, mid and high bands
 	</digest>
 
 	<description>
-		A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself. 
-		
-		Send a bang to get the floating value (control for example with the render bang from jit.world)
+		2 crossover filters that together output a low, mid and high band of the frequency spectrum as a signal. Set the cross-over cutoff frequencies in Hz via inlets or with arguments.
 	</description>
 
 	<!--METADATA-->
@@ -34,37 +32,26 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="attack" optional="1" type="float">
+		<objarg name="low-mid-crossover" optional="1" type="float">
 			<digest>
-				Attack time in milliseconds (default = 2)
+				Crossover frequency between low and mid band (default = 150 Hz)
 			</digest>
 			<description>
-				Attack time in milliseconds (default = 2)
+				Crossover frequency between low and mid band (default = 150 Hz)
 			</description>
 		</objarg>
-		<objarg name="release" optional="1" type="float">
+		<objarg name="mid-high-crossover" optional="1" type="float">
 			<digest>
-				Release time in milliseconds (default = 80)
+				Crossover frequency between mid and high band (default = 2500 Hz)
 			</digest>
 			<description>
-				Release time in milliseconds (default = 80)
+				Crossover frequency between mid and high band (default = 2500 Hz)
 			</description>
 		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
-		<method name="bang">
-			<arglist>
-				<arg name="bang" optional="1" type="bang" />
-			</arglist>
-			<digest>
-				Report the sample value with the renderbang
-			</digest>
-			<description>
-				Report the sample value with the renderbang
-			</description>
-		</method>
 		<method name="float">
 			<arglist>
 				<arg name="float" optional="1" type="float" />
@@ -76,8 +63,8 @@
 				Function depends on inlet. <br/>
 				<br/>
 				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Inlet 2: Set the crossover frequency for low-mid in Hz <br/>
+				Inlet 3: Set the crossover frequency for mid-high in Hz <br/>
 			</description>
 		</method>
 		<method name="int">
@@ -91,8 +78,8 @@
 				Function depends on inlet. <br/>
 				<br/>
 				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Inlet 2: Set the crossover frequency for low-mid in Hz <br/>
+				Inlet 3: Set the crossover frequency for mid-high in Hz <br/>
 			</description>
 		</method>
 		<method name="signal">
@@ -100,10 +87,10 @@
 				<arg name="signal" optional="1" type="signal" />
 			</arglist>
 			<digest>
-				Signal to follow
+				Signal to split into bands
 			</digest>
 			<description>
-				Signal to follow
+				Signal to split into bands
 			</description>
 		</method>
 	</methodlist>

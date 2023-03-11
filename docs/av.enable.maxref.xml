@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.amp~">
+<c74object name="av.enable">
 
 	<digest>
-		Simple envelope follower
+		Enable/disable processing of a pix/slab shader
 	</digest>
 
 	<description>
-		A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself. 
-		
-		Send a bang to get the floating value (control for example with the render bang from jit.world)
+		Enable/disable the processing of a jit.gl.pix or jit.gl.slab object. Either process by outputtting through right outlet or bypass it by using the left outlet. A toggle enables or disables it.
 	</description>
 
 	<!--METADATA-->
@@ -34,52 +32,18 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="attack" optional="1" type="float">
+		<objarg name="enable" optional="1" type="int">
 			<digest>
-				Attack time in milliseconds (default = 2)
+				Enable/disable the processing on load (default = 1)
 			</digest>
 			<description>
-				Attack time in milliseconds (default = 2)
-			</description>
-		</objarg>
-		<objarg name="release" optional="1" type="float">
-			<digest>
-				Release time in milliseconds (default = 80)
-			</digest>
-			<description>
-				Release time in milliseconds (default = 80)
+				Enable/disable the processing on load (default = 1)
 			</description>
 		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
-		<method name="bang">
-			<arglist>
-				<arg name="bang" optional="1" type="bang" />
-			</arglist>
-			<digest>
-				Report the sample value with the renderbang
-			</digest>
-			<description>
-				Report the sample value with the renderbang
-			</description>
-		</method>
-		<method name="float">
-			<arglist>
-				<arg name="float" optional="1" type="float" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
-			</description>
-		</method>
 		<method name="int">
 			<arglist>
 				<arg name="int" optional="1" type="int" />
@@ -90,33 +54,37 @@
 			<description>
 				Function depends on inlet. <br/>
 				<br/>
-				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Inlet 1: Enable/disable shader processing <br/>
+				Inlet 2: Nothing <br/>
 			</description>
 		</method>
-		<method name="signal">
+		<method name="texture">
 			<arglist>
-				<arg name="signal" optional="1" type="signal" />
+				<arg name="texture" optional="1" type="jit_gl_texture" />
 			</arglist>
 			<digest>
-				Signal to follow
+				Function depends on inlet
 			</digest>
 			<description>
-				Signal to follow
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: Nothing <br/>
+				Inlet 2: Texture to be processed or passed through
 			</description>
 		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="" get='0' set='1' type='int' size='2'>
+		<!-- <attribute name="seed" get='0' set='1' type='int' size='2'>
 			<arglist>
-				<arg name="" optional="1" type="int" />
+				<arg name="seed" optional="1" type="int" />
 			</arglist>
 			<digest>
+				Set the seed for the random number generator
 			</digest>
 			<description>
+				Set the seed for the random number generator
 			</description>
 		</attribute> -->
 	</attributelist>

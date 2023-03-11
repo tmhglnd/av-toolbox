@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.amp~">
+<c74object name="av.chance">
 
 	<digest>
-		Simple envelope follower
+		Pass a bang based on probability
 	</digest>
 
 	<description>
-		A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself. 
-		
-		Send a bang to get the floating value (control for example with the render bang from jit.world)
+		Throughput an incoming bang with a certain chance (probability) percentage. The default is 50-50. Works nicely together with the av.trigger~ object to let certain events happen sometimes.
 	</description>
 
 	<!--METADATA-->
@@ -34,20 +32,12 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="attack" optional="1" type="float">
+		<objarg name="percentage" optional="1" type="int">
 			<digest>
-				Attack time in milliseconds (default = 2)
+				Percantage of chance to pass bang (default = 50)
 			</digest>
 			<description>
-				Attack time in milliseconds (default = 2)
-			</description>
-		</objarg>
-		<objarg name="release" optional="1" type="float">
-			<digest>
-				Release time in milliseconds (default = 80)
-			</digest>
-			<description>
-				Release time in milliseconds (default = 80)
+				Percantage of chance to pass bang (default = 50)
 			</description>
 		</objarg>
 	</objarglist>
@@ -59,25 +49,10 @@
 				<arg name="bang" optional="1" type="bang" />
 			</arglist>
 			<digest>
-				Report the sample value with the renderbang
+				Try to pass a bang if you're lucky
 			</digest>
 			<description>
-				Report the sample value with the renderbang
-			</description>
-		</method>
-		<method name="float">
-			<arglist>
-				<arg name="float" optional="1" type="float" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Try to pass a bang if you're lucky
 			</description>
 		</method>
 		<method name="int">
@@ -91,34 +66,35 @@
 				Function depends on inlet. <br/>
 				<br/>
 				Inlet 1: none <br/>
-				Inlet 2: Set the attack time in milliseconds <br/>
-				Inlet 3: Set the release time in milliseconds <br/>
+				Inlet 2: Set the percentage of chance <br/>
 			</description>
 		</method>
-		<method name="signal">
+		<method name="seed">
 			<arglist>
-				<arg name="signal" optional="1" type="signal" />
+				<arg name="seed" optional="1" type="int" />
 			</arglist>
 			<digest>
-				Signal to follow
+				Set the seed for the random number generator
 			</digest>
 			<description>
-				Signal to follow
+				Set the seed for the random number generator
 			</description>
 		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="" get='0' set='1' type='int' size='2'>
+		<attribute name="seed" get='0' set='1' type='int' size='2'>
 			<arglist>
-				<arg name="" optional="1" type="int" />
+				<arg name="seed" optional="1" type="int" />
 			</arglist>
 			<digest>
+				Set the seed for the random number generator
 			</digest>
 			<description>
+				Set the seed for the random number generator
 			</description>
-		</attribute> -->
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->

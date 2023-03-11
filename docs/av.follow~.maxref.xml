@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.amp~">
+<c74object name="av.follow~">
 
 	<digest>
-		Simple envelope follower
+		Envelope follower with filtering
 	</digest>
 
 	<description>
-		A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself. 
-		
+		A more sophisticated envelope follower using 2 amp~'s in parallel. One quick envelope follower and one slow envelope follower subtracted from the fast one to filter out the low frequency changes. Also includes a low and high cutoff filter to focus the spectrum to follow the amplitude from.
+
 		Send a bang to get the floating value (control for example with the render bang from jit.world)
 	</description>
 
@@ -34,7 +34,7 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="attack" optional="1" type="float">
+		<objarg name="fast-attack" optional="1" type="float">
 			<digest>
 				Attack time in milliseconds (default = 2)
 			</digest>
@@ -42,12 +42,20 @@
 				Attack time in milliseconds (default = 2)
 			</description>
 		</objarg>
-		<objarg name="release" optional="1" type="float">
+		<objarg name="fast-release" optional="1" type="float">
 			<digest>
-				Release time in milliseconds (default = 80)
+				Release time in milliseconds (default = 100)
 			</digest>
 			<description>
-				Release time in milliseconds (default = 80)
+				Release time in milliseconds (default = 100)
+			</description>
+		</objarg>
+		<objarg name="slow-attack-release" optional="1" type="float">
+			<digest>
+				Attack and release time of slow follower in milliseconds (default = 500)
+			</digest>
+			<description>
+				Attack and release time of slow follower in milliseconds (default = 500)
 			</description>
 		</objarg>
 	</objarglist>
@@ -110,15 +118,17 @@
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="" get='0' set='1' type='int' size='2'>
+		<attribute name="cutoffs" get='0' set='1' type='float' size='2'>
 			<arglist>
-				<arg name="" optional="1" type="int" />
+				<arg name="cutoffs" optional="1" type="float" />
 			</arglist>
 			<digest>
+				Cutoffs frequencies for low and highcut filters in Hz (default = 20 18000)
 			</digest>
 			<description>
+				Cutoffs frequencies for low and highcut filters in Hz (default = 20 18000)
 			</description>
-		</attribute> -->
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->
