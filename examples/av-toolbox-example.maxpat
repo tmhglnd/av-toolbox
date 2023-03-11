@@ -40,6 +40,75 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 1590.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 113.0, 1377.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
+					"patching_rect" : [ 165.0, 1620.5, 100.0, 40.0 ],
+					"pattrstorage" : "avtoolboxpreset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autorestore" : "avtoolboxpreset.json",
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 1677.0, 161.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 100, 100, 571, 366 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 200, 200, 800, 500 ]
+					}
+,
+					"text" : "pattrstorage avtoolboxpreset",
+					"varname" : "avtoolboxpreset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 116.0, 604.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-16",
 					"maxclass" : "comment",
@@ -198,7 +267,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 1635.0, 24.0, 23.0 ],
+					"patching_rect" : [ 150.0, 1662.0, 24.0, 23.0 ],
 					"rounded" : 60.0,
 					"text" : "20",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -996,7 +1065,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1161.0, 613.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1161.0, 562.25, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -1512,62 +1581,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-157",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 225.0, 1620.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-156",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 1650.0, 56.0, 22.0 ],
-					"text" : "restore 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-155",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 1650.0, 56.0, 22.0 ],
-					"text" : "restore 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-153",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.0, 1692.0, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-152",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.0, 1650.0, 136.0, 33.0 ],
-					"text" : "automation works with snapshot for presets"
+					"patching_rect" : [ 27.0, 1677.0, 136.0, 33.0 ],
+					"text" : "automation works with pattrstorage for presets"
 				}
 
 			}
@@ -1867,7 +1887,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 195.0, 842.0, 118.0, 33.0 ],
-					"text" : "00:48:465"
+					"text" : "00:35:802"
 				}
 
 			}
@@ -2256,7 +2276,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 531.0, 562.25, 24.0, 24.0 ]
+					"patching_rect" : [ 582.5, 562.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -2364,8 +2384,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "signal" ],
-					"patching_rect" : [ 827.0, 770.0, 61.0, 22.0 ],
-					"text" : "av.follow~"
+					"patching_rect" : [ 827.0, 770.0, 95.0, 22.0 ],
+					"text" : "av.follow~ 3 150"
 				}
 
 			}
@@ -2570,21 +2590,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"parameter_enable" : 1,
+					"parameter_enable" : 0,
 					"patching_rect" : [ 195.0, 639.0, 24.0, 24.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_longname" : "toggle",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "toggle",
-							"parameter_type" : 2
-						}
-
-					}
-,
 					"varname" : "toggle"
 				}
 
@@ -2596,7 +2603,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-					"patching_rect" : [ 195.0, 699.0, 128.0, 22.0 ],
+					"patching_rect" : [ 195.0, 705.0, 128.0, 22.0 ],
 					"text" : "transport @tempo 120"
 				}
 
@@ -2993,27 +3000,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-153", 0 ],
-					"source" : [ "obj-155", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-153", 0 ],
-					"source" : [ "obj-156", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-156", 0 ],
-					"source" : [ "obj-157", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-164", 0 ],
 					"order" : 0,
 					"source" : [ "obj-163", 0 ]
@@ -3092,6 +3078,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-177", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -3369,6 +3362,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-158", 0 ],
 					"source" : [ "obj-49", 1 ]
 				}
@@ -3385,7 +3385,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -3393,7 +3393,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -3416,6 +3416,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 2 ],
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -3684,7 +3691,6 @@
  ],
 		"parameters" : 		{
 			"obj-12" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-17" : [ "toggle", "toggle", 0 ],
 			"obj-96::obj-1" : [ "1039_automation_function", "1039_automation_function", 0 ],
 			"obj-96::obj-5" : [ "rslider", "rslider", 0 ],
 			"parameterbanks" : 			{
@@ -3715,13 +3721,6 @@
 			}
 , 			{
 				"name" : "av-toolbox-example.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "av-toolbox-example[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
@@ -3847,6 +3846,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "avtoolboxpreset.json",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/examples",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "jit.gl.syphonserver.mxo",
 				"type" : "iLaX"
 			}
@@ -3882,8 +3888,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -70.0,
-						"toggle" : 0.0,
+						"live.gain~" : -11.088887084990674,
 						"blob" : 						{
 							"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.061162079510703, 1.0, 0, 0.0, 0.345565749235474, 1.0, 0, 0.0, 0.694189602446483, 0.0, 0, 0.0, 0.798165137614679, 0.0, 0, 0.0, 0.799559633027523, 1.0, 0, 0.0, 0.812477064220184, 1.0, 0, 0.0, 0.815412844036697, 0.0, 0, 0.0, 0.841834862385321, 0.0, 0, 0.0, 0.843009174311927, 1.0, 0, 0.0, 0.854165137614679, 1.0, 0, 0.0, 0.859327217125382, 0.0, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
 							"rslider" : [ 0.0, 1.0 ]
@@ -3905,12 +3910,11 @@
 						"origin" : "av-toolbox-example",
 						"type" : "patcher",
 						"subtype" : "Undefined",
-						"embed" : 0,
+						"embed" : 1,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -70.0,
-									"toggle" : 0.0,
+									"live.gain~" : -11.088887084990674,
 									"blob" : 									{
 										"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.061162079510703, 1.0, 0, 0.0, 0.345565749235474, 1.0, 0, 0.0, 0.694189602446483, 0.0, 0, 0.0, 0.798165137614679, 0.0, 0, 0.0, 0.799559633027523, 1.0, 0, 0.0, 0.812477064220184, 1.0, 0, 0.0, 0.815412844036697, 0.0, 0, 0.0, 0.841834862385321, 0.0, 0, 0.0, 0.843009174311927, 1.0, 0, 0.0, 0.854165137614679, 1.0, 0, 0.0, 0.859327217125382, 0.0, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
 										"rslider" : [ 0.0, 1.0 ]
@@ -3928,39 +3932,6 @@
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
 							"snapshotfileid" : "2aba9d7855eba2e221e603da6b4019aa"
-						}
-
-					}
-, 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "av-toolbox-example[1]",
-						"origin" : "av-toolbox-example",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~" : -12.355873041642987,
-									"blob" : 									{
-										"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 0.0, "curve" ],
-										"rslider" : [ 0.0, 1.0 ]
-									}
-
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "av-toolbox-example[1]",
-							"filename" : "av-toolbox-example[1].maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "473bcb711b1a794d4ee4ce2b9d1894d5"
 						}
 
 					}

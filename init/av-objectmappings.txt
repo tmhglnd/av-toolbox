@@ -14,7 +14,7 @@ max objectfile av.node av.node;
 max definesubstitution av.node jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1;
 
 max objectfile av.videoplane av.videoplane;
-max definesubstitution av.videoplane jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000;
+max definesubstitution av.videoplane jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0;
 
 max objectfile av.camera av.camera;
 max definesubstitution av.camera jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45;
