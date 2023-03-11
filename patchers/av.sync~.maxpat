@@ -234,13 +234,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 143.0, 318.0, 240.0, 35.0 ],
-					"text" : "jit.gl.videoplane @transform_reset 2 @enable 0 @depth_enable 0 @layer 1000"
+					"patching_rect" : [ 143.0, 318.0, 208.0, 49.0 ],
+					"text" : "jit.gl.videoplane @transform_reset 2 @depth_enable 0 @layer 999 @blend_enable 1 @blend add"
 				}
 
 			}
@@ -265,7 +265,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.0, 135.0, 30.0, 30.0 ]
 				}
 

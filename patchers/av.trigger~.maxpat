@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 225.0, 180.0, 51.0, 22.0 ],
+					"patching_rect" : [ 225.0, 165.0, 51.0, 22.0 ],
 					"text" : "unjoin 2"
 				}
 
@@ -223,7 +223,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(signal/float) low threshold",
+					"comment" : "(signal/float) under threshold",
 					"id" : "obj-341",
 					"index" : 2,
 					"maxclass" : "inlet",

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 173.0, 92.0, 963.0, 748.0 ],
+		"rect" : [ 301.0, 117.0, 963.0, 748.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"align" : 0,
+					"bgcolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
+					"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-116",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 375.0, 600.0, 150.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 201.0, 120.25, 57.0 ],
+					"text" : "FULL EXAMPLE",
+					"textjustification" : 0,
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
+					"truncate" : 0,
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-114",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.0, 600.0, 218.0, 22.0 ],
+					"text" : "loadunique av-toolbox-example.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-102",
 					"maxclass" : "newobj",
@@ -352,7 +389,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "06:20:097"
+					"text" : "20:36:202"
 				}
 
 			}
@@ -1718,7 +1755,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 315.0, 348.5, 80.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 149.5, 262.5, 80.0, 22.0 ],
@@ -1803,7 +1840,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 630.0, 51.0, 22.0 ],
+					"patching_rect" : [ 30.0, 645.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -2054,6 +2091,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-114", 0 ],
+					"source" : [ "obj-116", 0 ]
 				}
 
 			}
@@ -2614,8 +2665,8 @@
 			}
 , 			{
 				"name" : "av.timetoticks.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/misc-max-abstractions/patchers",
-				"patcherrelativepath" : "../../../Library/abstractions/misc-max-abstractions/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
