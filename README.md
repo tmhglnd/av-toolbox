@@ -12,6 +12,8 @@ Suggestions, bug reports and feature requests are much appreciated. Please add t
 
 This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport, objects that extend/wrap some jitter objects, some object mappings to initialize jitter objects with common used attributes and more.
 
+![](icon.png)
+
 ## Contains
 
 ### Signal analysis
