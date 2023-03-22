@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.spectrogram~">
+
+	<digest>
+		Grab the spectrum history of a signal
+	</digest>
+
+	<description>
+		Grab a history of successive FFT frames (spectrum) from an incoming signal and output as a 2-dimensional jitter matrix. Output the matrix using a bang from the jit.world renderer.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="history-size" optional="1" type="int">
+			<digest>
+				Number of frames to capture (default = 128)
+			</digest>
+			<description>
+				Number of frames to capture (default = 128)
+			</description>
+		</objarg>
+		<objarg name="attack" optional="1" type="int">
+			<digest>
+				Attack time in frames (default = 2)
+			</digest>
+			<description>
+				Attack time in frames (default = 2)
+			</description>
+		</objarg>
+		<objarg name="release" optional="1" type="int">
+			<digest>
+				Release time in frames (default = 5)
+			</digest>
+			<description>
+				Release time in frames (default = 5)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: none<br/>
+				Inlet 2: Set history amount in frames<br/>
+				Inlet 3: Set attack time in frames<br/>
+				Inlet 4: Set release time in frames<br/>
+			</description>
+		</method>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Report the spectrum with the renderbang
+			</digest>
+			<description>
+				Report the spectrum with the renderbang
+			</description>
+		</method>
+		<method name="signal">
+			<arglist>
+				<arg name="signal" optional="1" type="signal" />
+			</arglist>
+			<digest>
+				Signal to grab spectrum from
+			</digest>
+			<description>
+				Signal to grab spectrum from
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<!-- <attribute name="framesize" get='0' set='1' type='int' size='2'>
+			<arglist>
+				<arg name="framesize" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Set the framesize output (default = 128)
+			</digest>
+			<description>
+				Set the framesize output (default = 128)
+			</description>
+		</attribute> -->
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -275,7 +275,7 @@
 									"patching_rect" : [ 323.0, 225.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 30.0 ],
+											"parameter_initial" : [ 10.0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "live.dial[1]",
 											"parameter_mmax" : 255.0,
@@ -301,7 +301,7 @@
 									"patching_rect" : [ 267.5, 225.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 4.0 ],
+											"parameter_initial" : [ 2.0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "live.dial",
 											"parameter_mmax" : 50.0,
@@ -428,7 +428,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 195.0, 300.0, 141.0, 22.0 ],
-									"text" : "av.spectrogram~ 40 4 30"
+									"text" : "av.spectrogram~ 40 2 10"
 								}
 
 							}
@@ -816,7 +816,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -887,21 +887,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "_av.fftcatch.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.spectrogram~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "av.spectrum~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

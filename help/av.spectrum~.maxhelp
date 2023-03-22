@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -225,7 +225,7 @@
 									"patching_rect" : [ 283.0, 242.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 50.0 ],
+											"parameter_initial" : [ 10 ],
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "live.dial[1]",
 											"parameter_mmax" : 255.0,
@@ -399,9 +399,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 195.0, 315.0, 107.0, 22.0 ],
-									"text" : "av.spectrum~ 2 50"
+									"text" : "av.spectrum~ 2 10"
 								}
 
 							}
@@ -767,7 +767,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}

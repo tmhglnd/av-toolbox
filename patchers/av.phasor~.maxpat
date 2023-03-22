@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 210.0, 76.0, 22.0 ],
+					"patching_rect" : [ 45.0, 225.0, 76.0, 22.0 ],
 					"text" : "append ticks"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 165.0, 80.0, 22.0 ],
+					"patching_rect" : [ 45.0, 195.0, 80.0, 22.0 ],
 					"text" : "av.timetoticks"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 240.0, 109.0, 22.0 ],
+					"patching_rect" : [ 45.0, 255.0, 109.0, 22.0 ],
 					"text" : "prepend frequency"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 45.0, 285.0, 116.0, 22.0 ],
+					"patching_rect" : [ 180.0, 300.0, 116.0, 22.0 ],
 					"text" : "phasor~ 4n @lock 1"
 				}
 
@@ -129,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 217.0, 120.0, 112.0, 22.0 ],
+					"patching_rect" : [ 180.0, 135.0, 112.0, 22.0 ],
 					"text" : "routepass transport"
 				}
 
@@ -230,7 +230,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 331.0, 30.0, 30.0 ]
+					"patching_rect" : [ 180.0, 346.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -252,7 +252,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -260,7 +260,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.phasor~">
+
+	<digest>
+		Transport locked phasor
+	</digest>
+
+	<description>
+		A phasor~ locked to the global or named transport, but the frequency is set in a time interval in min:sec:ms instead of a frequency.
+
+		For a phasor controlled with frequency, bbu or ticks use regular [phasor~ @lock 1]
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="minutes" optional="1" type="int">
+			<digest>
+				Set phasor interval minutes (default = 0)
+			</digest>
+			<description>
+				Set phasor interval minutes (default = 0)
+			</description>
+		</objarg>
+		<objarg name="seconds" optional="1" type="int">
+			<digest>
+				Set phasor interval seconds (default = 1)
+			</digest>
+			<description>
+				Set phasor interval seconds (default = 1)
+			</description>
+		</objarg>
+		<objarg name="milliseconds" optional="1" type="float">
+			<digest>
+				Set phasor interval milliseconds (default = 0)
+			</digest>
+			<description>
+				Set phasor interval milliseconds (default = 0)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="float">
+			<arglist>
+				<arg name="float" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Set phasor interval
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: Set phasor interval minutes (default = 0)<br/>
+				Inlet 2: Set phasor interval seconds (default = 0) <br/>
+				Inlet 3: Set phasor interval milliseconds (default = 0)<br/>
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Set phasor interval
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: Set phasor interval minutes (default = 0)<br/>
+				Inlet 2: Set phasor interval seconds (default = 0) <br/>
+				Inlet 3: Set phasor interval milliseconds (default = 0)<br/>
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="list" optional="1" type="list" />
+			</arglist>
+			<digest>
+				Set phasor interval as a list of minutes seconds milliseconds
+			</digest>
+			<description>
+				Set phasor interval as a list of minutes seconds milliseconds
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="transport" get='0' set='1' type='symbol' size='2'>
+			<arglist>
+				<arg name="transport" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				A named transport
+			</digest>
+			<description>
+				Set a named transport to lock the phasor to.
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>
