@@ -1,0 +1,93 @@
+max objectfile jit.gl.pix.alphablend jit.gl.pix.alphablend;
+max definesubstitution jit.gl.pix.alphablend jit.gl.pix @gen alphablend.genjit;
+
+max objectfile jit.gl.pix.altern jit.gl.pix.altern;
+max definesubstitution jit.gl.pix.altern jit.gl.pix @gen altern.genjit;
+
+max objectfile jit.gl.pix.ameba jit.gl.pix.ameba;
+max definesubstitution jit.gl.pix.ameba jit.gl.pix @gen ameba.genjit;
+
+max objectfile jit.gl.pix.bleach.bypass jit.gl.pix.bleach.bypass;
+max definesubstitution jit.gl.pix.bleach.bypass jit.gl.pix @gen bleach.bypass.genjit;
+
+max objectfile jit.gl.pix.bleach.bypass.mod jit.gl.pix.bleach.bypass.mod;
+max definesubstitution jit.gl.pix.bleach.bypass.mod jit.gl.pix @gen bleach.bypass.mod.genjit;
+
+max objectfile jit.gl.pix.brcosa jit.gl.pix.brcosa;
+max definesubstitution jit.gl.pix.brcosa jit.gl.pix @gen brcosa.genjit;
+
+max objectfile jit.gen.dir2euler jit.gen.dir2euler;
+max definesubstitution jit.gen.dir2euler jit.gen @gen dir2euler.genjit;
+
+max objectfile jit.gl.pix.dstdimcrop jit.gl.pix.dstdimcrop;
+max definesubstitution jit.gl.pix.dstdimcrop jit.gl.pix @gen dstdimcrop.genjit;
+
+max objectfile jit.gl.pix.eclipse jit.gl.pix.eclipse;
+max definesubstitution jit.gl.pix.eclipse jit.gl.pix @gen eclipse.genjit;
+
+max objectfile jit.gl.pix.infinite.mirror jit.gl.pix.infinite.mirror;
+max definesubstitution jit.gl.pix.infinite.mirror jit.gl.pix @gen infinite.mirror.genjit;
+
+max objectfile jit.gl.pix.kaleido jit.gl.pix.kaleido;
+max definesubstitution jit.gl.pix.kaleido jit.gl.pix @gen kaleido.genjit;
+
+max objectfile jit.gl.pix.lighten jit.gl.pix.lighten;
+max definesubstitution jit.gl.pix.lighten jit.gl.pix @gen lighten.genjit;
+
+max objectfile jit.gl.pix.lumadisplace jit.gl.pix.lumadisplace;
+max definesubstitution jit.gl.pix.lumadisplace jit.gl.pix @gen lumadisplace.genjit;
+
+max objectfile jit.gen.particle.blackhole jit.gen.particle.blackhole;
+max definesubstitution jit.gen.particle.blackhole jit.gen @gen particle.blackhole.genjit;
+
+max objectfile jit.gen.particle.update jit.gen.particle.update;
+max definesubstitution jit.gen.particle.update jit.gen @gen particle.update.genjit;
+
+max objectfile jit.gl.pix.pinch jit.gl.pix.pinch;
+max definesubstitution jit.gl.pix.pinch jit.gl.pix @gen pinch.genjit;
+
+max objectfile jit.gl.pix.repos jit.gl.pix.repos;
+max definesubstitution jit.gl.pix.repos jit.gl.pix @gen repos.genjit;
+
+max objectfile jit.gl.pix.rgb2luma jit.gl.pix.rgb2luma;
+max definesubstitution jit.gl.pix.rgb2luma jit.gl.pix @gen rgb2luma.genjit;
+
+max objectfile jit.gl.pix.rubix jit.gl.pix.rubix;
+max definesubstitution jit.gl.pix.rubix jit.gl.pix @gen rubix.genjit;
+
+max objectfile jit.gl.pix.shade jit.gl.pix.shade;
+max definesubstitution jit.gl.pix.shade jit.gl.pix @gen shade.genjit;
+
+max objectfile jit.gen.spherical.inversion jit.gen.spherical.inversion;
+max definesubstitution jit.gen.spherical.inversion jit.gen @gen spherical.inversion.genjit;
+
+max objectfile jit.gl.pix.sprinkle jit.gl.pix.sprinkle;
+max definesubstitution jit.gl.pix.sprinkle jit.gl.pix @gen sprinkle.genjit;
+
+max objectfile jit.gl.pix.srcdimcrop jit.gl.pix.srcdimcrop;
+max definesubstitution jit.gl.pix.srcdimcrop jit.gl.pix @gen srcdimcrop.genjit;
+
+max objectfile jit.gen.superf3D jit.gen.superf3D;
+max definesubstitution jit.gen.superf3D jit.gen @gen superf3D.genjit;
+
+max objectfile jit.gen.superformula jit.gen.superformula;
+max definesubstitution jit.gen.superformula jit.gen @gen superformula.genjit;
+
+max objectfile jit.gl.pix.technicolor1 jit.gl.pix.technicolor1;
+max definesubstitution jit.gl.pix.technicolor1 jit.gl.pix @gen technicolor1.genjit;
+
+max objectfile jit.gl.pix.technicolor2 jit.gl.pix.technicolor2;
+max definesubstitution jit.gl.pix.technicolor2 jit.gl.pix @gen technicolor2.genjit;
+
+max objectfile jit.gl.pix.technicolor3 jit.gl.pix.technicolor3;
+max definesubstitution jit.gl.pix.technicolor3 jit.gl.pix @gen technicolor3.genjit;
+
+max objectfile jit.gl.pix.twirl jit.gl.pix.twirl;
+max definesubstitution jit.gl.pix.twirl jit.gl.pix @gen twirl.genjit;
+
+max objectfile jit.gl.pix.wake jit.gl.pix.wake;
+max definesubstitution jit.gl.pix.wake jit.gl.pix @gen wake.genjit;
+
+max objectfile jit.gl.pix.xfade jit.gl.pix.xfade;
+max definesubstitution jit.gl.pix.xfade jit.gl.pix @gen xfade.genjit;
+
