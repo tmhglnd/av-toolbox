@@ -78,13 +78,13 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.movie** - Initialize a `[jit.movie]` with settings: `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
 
-### Shader Mappings
+### Slab/Shader/Pix Mappings
 
-This package includes the shader mappings for `jit.gl.slab` and `jit.gl.shader` object based on the project [gl.shadermappings](https://github.com/tmhglnd/gl.shadermappings). 
+This package includes mappings for the `jit.gl.slab`, `jit.gl.shader` and `jit.gl.pix` object based on the project [gl.shadermappings](https://github.com/tmhglnd/gl.shadermappings). 
 
-Max has quite a few shaders build into the application. But if you want to patch with them you have to type `jit.gl.slab @file <shaderfile>` which is usually quite a hassle. Also you have to remember what the shader file name is. This simple objectmappings file will do all this work for you. How it works:
+Max has quite a few shaders build into the application and examples. But if you want to patch with them you have to type `jit.gl.slab @file <shaderfile>`, which is usually quite a hassle. Also you have to remember what the shader file name is. These simple objectmappings file will do all this work for you and allow you to browse the various files through the autocomplete field. How it works:
 
-1. See all the shaderfiles in the autocomplete field when typing `jit.gl.slab.*` or `jit.gl.shader.*`
+1. See all the shaderfiles in the autocomplete field when typing `jit.gl.slab.*`, `jit.gl.shader.*` or `jit.gl.pix.*`
 2. Select the shaderfile and it will translate to `jit.gl.slab @file <shaderfile>`
 
 ## Install
