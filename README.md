@@ -50,6 +50,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.speedgate** - Cancel the throughput of bangs/messages for a specified amount of time.
 
+- **av.loadmess** - A loadmess that fires the message after all loadmess/loadbang objects and patcherargs in abstractions.
+
 ### Jitter extensions
 
 - **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
@@ -66,6 +68,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and cross-fade between the images.
 
+- **av.screenshot** - Use a bang to take a screenshot of the incoming jitter texture.
+
 ### Jitter Mappings
 
 - **av.world** - Initialize a `[jit.world]` with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
@@ -77,6 +81,10 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.camera** - Initialize a `[jit.gl.camera]` with settings: `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
 
 - **av.movie** - Initialize a `[jit.movie]` with settings: `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
+
+### Utilities
+
+- **av.hidecursor** - Hides the cursor when inactive for a specified amount of time.
 
 ### Slab/Shader/Pix Mappings
 
