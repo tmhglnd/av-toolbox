@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 347.0, 263.0, 519.0, 563.0 ],
+		"rect" : [ 100.0, 100.0, 519.0, 563.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,13 +51,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 347.0, 289.0, 519.0, 537.0 ],
+						"rect" : [ 100.0, 126.0, 519.0, 537.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -103,7 +103,7 @@
 											"parameter_longname" : "live.dial[1]",
 											"parameter_mmax" : 3000.0,
 											"parameter_mmin" : 200.0,
-											"parameter_shortname" : "low",
+											"parameter_shortname" : "hi",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 3
 										}
@@ -164,7 +164,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -799,7 +799,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -855,7 +855,7 @@
 			"obj-2::obj-15" : [ "tab", "tab", 0 ],
 			"obj-2::obj-3" : [ "live.dial", "low", 0 ],
 			"obj-2::obj-46" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-2::obj-5" : [ "live.dial[1]", "low", 0 ],
+			"obj-2::obj-5" : [ "live.dial[1]", "hi", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,

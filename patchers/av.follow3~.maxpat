@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -81,8 +81,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 189.0, 139.0, 154.0, 22.0 ],
-					"text" : "route up down slowupdown"
+					"patching_rect" : [ 189.0, 139.0, 112.0, 22.0 ],
+					"text" : "route up down slow"
 				}
 
 			}
@@ -94,7 +94,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 242.0, 241.0, 154.0 ],
-					"presentation_linecount" : 11,
 					"text" : "Arguments:\ncrossover low-mid (default = 150)\ncrossover mid-high (default = 2500)\n\nAttributes:\n@up (default = 2)\n@down (default = 100)\n@slowupdown (default = 500)\n\n@cutoffs - set cutoff for high and lowpass filter (default = 50 16000)"
 				}
 
@@ -107,7 +106,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 120.0, 252.0, 74.0 ],
-					"presentation_linecount" : 5,
 					"text" : "Get average amplitude values from an audio signal over 3 different bands. Output as a list with the render bang from jit.world or qmetro. Or use the other 3 outlets to get envelope followed signal value for every band."
 				}
 
@@ -120,7 +118,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 80.0, 256.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "written by Timo Hoogland, (c) 2023, www.timohoogland.com, GNU GPL v3 License"
 				}
 
