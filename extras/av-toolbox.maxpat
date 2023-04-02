@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 557.0, 237.0, 856.0, 499.0 ],
+						"rect" : [ 438.0, 226.0, 856.0, 499.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -132,7 +132,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-52",
@@ -142,18 +141,6 @@
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 855.0, 45.0, 133.0, 22.0 ],
 									"text" : "qmetro 1000 @active 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-49",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 855.0, 106.0, 29.5, 22.0 ],
-									"text" : "+ 1"
 								}
 
 							}
@@ -176,7 +163,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 855.0, 181.0, 41.0, 22.0 ],
+									"patching_rect" : [ 855.0, 150.0, 41.0, 22.0 ],
 									"text" : "pic $1"
 								}
 
@@ -190,7 +177,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 855.0, 136.0, 100.0, 22.0 ]
+									"patching_rect" : [ 855.0, 105.0, 100.0, 22.0 ]
 								}
 
 							}
@@ -707,8 +694,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 855.0, 211.0, 135.0, 135.0 ],
-									"pic" : "av-extras05.jpg",
+									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
+									"pic" : "av-extras08.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -808,15 +795,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-49", 0 ],
-									"source" : [ "obj-48", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
-									"source" : [ "obj-49", 0 ]
+									"source" : [ "obj-48", 0 ]
 								}
 
 							}
@@ -1215,7 +1195,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "08:59:865"
+					"text" : "04:43:341"
 				}
 
 			}
@@ -3408,7 +3388,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras05.jpg",
+				"name" : "av-extras08.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

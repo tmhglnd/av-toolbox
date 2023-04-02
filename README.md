@@ -116,4 +116,4 @@ Max has quite a few shaders build into the application and examples. But if you 
 
 - [ ] **av.line** - A ramp-generator with range and easing to control a parameter
 
-- [ ] Help-files for: av.follow~, av.timetrigger~, av.timetoticks, av.phasor~, av.automation~, av.paramgenerator
+- [ ] Help-files for: av.automation~
