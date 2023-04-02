@@ -72,15 +72,23 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ### Jitter Mappings
 
-- **av.world** - Initialize a `[jit.world]` with settings: `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
+- **av.world** - The rendering context. Initialize a `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
 
-- **av.node** - Initialize a `[jit.gl.node]` with settings: `[jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1]`
+- **av.node** - A rendering node. Initialize a `[jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1]`
 
-- **av.videoplane** - Initialize a `[jit.gl.videoplane]` with settings: `[jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000]`
+- **av.videoplane** - Display a video/texture. Initialize `[jit.gl.videoplane @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000]`
 
-- **av.camera** - Initialize a `[jit.gl.camera]` with settings: `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
+- **av.cornerpin** - Map a video/texture. Initialize `[jit.gl.cornerpin @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1]`
 
-- **av.movie** - Initialize a `[jit.movie]` with settings: `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
+- **av.camera** - Position a camera. Initialize a `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
+
+- **av.movie** - Load and play a moviefile or image. Initialize a `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
+
+- **av.gridshape** - Show a shape (sphere, cube, plane, etc). Initialize a `[jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0]`
+
+- **av.mesh.points** - Display points from a matrix. Initialize a `[jit.gl.mesh @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1 @lighting_enable 1]`
+
+- **av.mesh.grid** - Draw connected points as a grid. Initialize a `[jit.gl.mesh @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1]`
 
 ### Utilities
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.cornerpin">
+
+	<digest>
+		Initialize a jit.gl.cornerpin with attributes: @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1
+	</digest>
+
+	<description>
+		Initialize a jit.gl.cornerpin with attributes: @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="no-arguments" optional="1" type="none">
+			<digest>
+				Arguments will be replaced on initalization by presets
+			</digest>
+			<description>
+				Arguments will be replaced on initalization by presets
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="no-attributes"  get='0' set='1' size="1">
+			<arglist>
+				<arg name="no-attributes" optional="1" type="none"/>
+			</arglist>
+			<digest>
+				Attributes will be replaced on initalization by presets
+			</digest>
+			<description>
+				Attributes will be replaced on initalization by presets
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>
