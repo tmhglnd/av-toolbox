@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 78.0, 139.0, 963.0, 748.0 ],
+		"rect" : [ 127.0, 118.0, 963.0, 748.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 438.0, 226.0, 856.0, 499.0 ],
+						"rect" : [ 309.0, 190.0, 856.0, 499.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -695,7 +695,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras08.jpg",
+									"pic" : "av-extras00.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -857,7 +857,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 375.0, 600.0, 150.0, 23.0 ],
+					"patching_rect" : [ 427.0, 600.0, 150.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 201.0, 120.25, 57.0 ],
 					"text" : "FULL EXAMPLE",
@@ -876,7 +876,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 600.0, 218.0, 22.0 ],
+					"patching_rect" : [ 427.0, 631.0, 218.0, 22.0 ],
 					"text" : "loadunique av-toolbox-example.maxpat"
 				}
 
@@ -1195,7 +1195,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "04:43:341"
+					"text" : "00:52:790"
 				}
 
 			}
@@ -1558,7 +1558,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1109.0, 525.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.0, 446.5, 367.5, 142.5 ]
+					"presentation_rect" : [ 473.0, 446.5, 222.5, 142.5 ]
 				}
 
 			}
@@ -1596,7 +1596,7 @@
 					"patching_rect" : [ 1233.0, 525.0, 329.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 840.0, 454.0, 118.5, 100.0 ],
+					"presentation_rect" : [ 697.5, 454.0, 118.5, 100.0 ],
 					"text" : "[av.automation~]\n\nA signal shaped by function, output at timed interval in min:sec:ms synced with transport",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1728,7 +1728,7 @@
 					"outlettype" : [ "float", "signal" ],
 					"patching_rect" : [ 1109.0, 403.0, 348.0, 121.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 484.0, 454.0, 344.0, 121.0 ],
+					"presentation_rect" : [ 484.0, 454.0, 201.0, 121.0 ],
 					"varname" : "_av.automation~",
 					"viewvisibility" : 1
 				}
@@ -1818,7 +1818,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 855.0, 259.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 476.75, 375.0, 120.0, 37.0 ]
+					"presentation_rect" : [ 635.25, 375.0, 101.0, 37.0 ]
 				}
 
 			}
@@ -1846,7 +1846,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1185.0, 259.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 635.25, 375.0, 103.0, 37.0 ]
+					"presentation_rect" : [ 476.75, 375.0, 103.0, 37.0 ]
 				}
 
 			}
@@ -2827,7 +2827,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 859.5, 9.0, 182.0, 170.672199170124486 ],
+					"patching_rect" : [ 1433.0, 213.0, 77.0, 72.207468879668056 ],
 					"pic" : "jitthecat.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 615.0, 120.25, 112.765560165975103 ]
@@ -3388,7 +3388,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras08.jpg",
+				"name" : "av-extras00.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

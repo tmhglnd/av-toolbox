@@ -359,8 +359,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 100.333333333333371, 540.0, 117.0, 33.0 ],
-									"text" : "outputs sound if the movie has sound"
+									"patching_rect" : [ 77.0, 539.0, 123.0, 33.0 ],
+									"text" : "Also outputs sound if the movie has sound"
 								}
 
 							}
