@@ -13,8 +13,8 @@
 	}
 ,
 	"mousemap" : 	{
-		"mouse_down_horizontal" : "turn 0 -1 0",
-		"mouse_down_vertical" : "turn -1 0 0"
+		"mouse_down_horizontal" : "turn 0 -10 0",
+		"mouse_down_vertical" : "turn -10 0 0"
 	}
 
 }
