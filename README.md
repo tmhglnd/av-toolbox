@@ -70,6 +70,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.screenshot** - Use a bang to take a screenshot of the incoming jitter texture.
 
+- **av.camera.control** - Control a camera position and panning with the keyboard and mouse. Use `asdw` for position and `jkli` or `mouse` for panning/lookat. Position and rotation are exposed to pattrstorage preset system to easily store positions.
+
 ### Jitter Mappings
 
 - **av.world** - The rendering context. Initialize a `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080]`.
