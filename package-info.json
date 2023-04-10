@@ -1,7 +1,7 @@
 {
 	"name" : "av-toolbox",
-	"displayname" : "",
-	"version" : "1.0.1",
+	"displayname" : "AV Toolbox",
+	"version" : "1.0.2",
 	"author" : "Timo Hoogland",
 	"authors" : [  ],
 	"description" : "This package contains abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in a timeline with transport and extensions on objects in jitter. Objects like: av.timepoint, av.follow~, av.spectrum~ and av.movie~",

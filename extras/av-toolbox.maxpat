@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 116.0, 105.0, 948.0, 809.0 ],
+		"rect" : [ 125.0, 86.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 507.0, 224.0, 631.0, 528.0 ],
+						"rect" : [ 507.0, 224.0, 636.0, 546.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -132,7 +132,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"handoff" : "",
@@ -218,7 +217,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 120.0, 360.0, 228.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "https://docs.cycling74.com/max8/vignettes/video_and_graphics_tutorials_topic"
 								}
 
@@ -674,8 +672,8 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 98.0, 474.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 83.0, 392.0, 27.0 ],
-									"text" : "Useful resources if you want to learn using Jitter",
+									"presentation_rect" : [ 30.0, 83.0, 458.0, 27.0 ],
+									"text" : "Useful resources in your process of learning to use Jitter",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -2014,7 +2012,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras01.jpg",
+									"pic" : "av-extras06.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -2514,7 +2512,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "25:22:161"
+					"text" : "03:08:512"
 				}
 
 			}
@@ -4096,7 +4094,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 341.0, 859.0, 269.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 652.0, 46.5, 269.0, 18.0 ],
+					"presentation_rect" : [ 652.0, 36.5, 269.0, 18.0 ],
 					"text" : "written by Timo Hoogland © 2023, www.timohoogland.com"
 				}
 
@@ -4869,7 +4867,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras01.jpg",
+				"name" : "av-extras06.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
