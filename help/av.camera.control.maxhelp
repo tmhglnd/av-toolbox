@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 714.0, 526.0 ],
+		"rect" : [ 100.0, 100.0, 716.0, 521.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 714.0, 500.0 ],
+						"rect" : [ 100.0, 126.0, 716.0, 495.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -110,7 +110,7 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "live.dial",
-											"parameter_mmax" : 4.0,
+											"parameter_mmax" : 5.0,
 											"parameter_mmin" : 1.0,
 											"parameter_shortname" : "preset",
 											"parameter_type" : 0,
