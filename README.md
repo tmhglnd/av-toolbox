@@ -22,6 +22,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.follow~** - A more sophisticated envelope follower with low and highpass cutoff and a fast and slow follower to detect transients better and filter out low frequency information.
 
+- **av.follow3~** - Split a signal into low, mid and high frequency bands and apply an envelope follower.
+
 - **av.trigger~** - An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold.
 
 - **av.catch~** - Catch amplitudes of 3 different signals in time and output as 3-plane matrix. Generates a 3-dimensional oscilloscope (X Y Z).
@@ -32,15 +34,15 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.cross3~** - Split a signal into low, mid and high frequency bands, with adjustable cross-over frequencies.
 
-- **av.follow3~** - Split a signal into low, mid and high frequency bands and apply an envelope follower.
-
 - **av.midside~** - Split a stereo signal into mid (R+L) and side (R-L, L-R) information.
 
 ### Timeline control
 
+- **av.when** - Combine with (named) `[transport]`. Displays the current time in `min:sec:ms`.
+
 - **av.timepoint** - Combine with (named) `[transport]`. Outputs a bang at a specified timepoint in `min:sec:ms`.
 
-- **av.when** - Combine with (named) `[transport]`. Displays the current time in `min:sec:ms`.
+- **av.timetrigger~** - Combine with (named) `[transport]`. Outputs a regular stream of bangs at a specified interval in `min:sec:ms`.
 
 - **av.timetoticks** - Combine with (named) `[transport]`. Convert `min:sec:ms` to relative ticks.
 
@@ -49,6 +51,8 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.function** - Initialize a `[function]` object with settings: `[function @pointsize 4 @gridstep_x 0.1 @linethickness 2 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1]`.
 
 - **av.speedgate** - Cancel the throughput of bangs/messages for a specified amount of time.
+
+- **av.chance** - Pass a bang from the inlet to the outlet with a specified probability in percentage (0-100).
 
 - **av.loadmess** - A loadmess that fires the message after all loadmess/loadbang objects and patcherargs in abstractions.
 
