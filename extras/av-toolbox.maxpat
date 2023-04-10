@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 418.0, 327.0, 856.0, 499.0 ],
+						"rect" : [ 507.0, 224.0, 631.0, 528.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -135,6 +135,130 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"handoff" : "",
+									"hltcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"id" : "obj-16",
+									"maxclass" : "ubutton",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 750.0, 570.0, 126.0, 34.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 476.5, 330.0, 34.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 750.0, 615.0, 377.0, 22.0 ],
+									"text" : "https://docs.cycling74.com/max8?contentp=Jitter&contentg=vignettes"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"id" : "obj-32",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 945.0, 540.0, 190.0, 33.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 375.0, 483.5, 225.0, 20.0 ],
+									"text" : "Written guides about various jitter topics",
+									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 18.0,
+									"id" : "obj-33",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 750.0, 540.0, 195.0, 27.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 480.0, 171.0, 27.0 ],
+									"text" : "Max8's Jitter Guides",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"handoff" : "",
+									"hltcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"id" : "obj-12",
+									"maxclass" : "ubutton",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 120.0, 315.0, 126.0, 34.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 165.0, 328.0, 34.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 120.0, 360.0, 228.0, 35.0 ],
+									"presentation_linecount" : 2,
+									"text" : "https://docs.cycling74.com/max8/vignettes/video_and_graphics_tutorials_topic"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"id" : "obj-14",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 290.0, 285.0, 156.0, 33.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 375.0, 165.0, 225.0, 33.0 ],
+									"text" : "Written tutorials from the Max8 online documentation",
+									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 18.0,
+									"id" : "obj-15",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 120.0, 285.0, 150.0, 67.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 168.5, 328.0, 27.0 ],
+									"text" : "Max8's Graphics Programming Tutorials",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 3,
 									"fontsize" : 14.0,
 									"id" : "obj-39",
@@ -159,7 +283,9 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "bang", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 300.0, 570.0, 126.0, 34.0 ]
+									"patching_rect" : [ 300.0, 570.0, 126.0, 34.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 435.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -170,8 +296,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 300.0, 615.0, 228.0, 22.0 ],
-									"text" : "https://github.com/tmhglnd/gl-pix-shaders"
+									"patching_rect" : [ 300.0, 615.0, 422.0, 22.0 ],
+									"text" : "https://youtube.com/playlist?list=PL_hFKogLfpND8UzeKjaBhyb4_QURNLg0B"
 								}
 
 							}
@@ -179,12 +305,13 @@
 								"box" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"id" : "obj-36",
-									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 450.0, 540.0, 176.0, 100.0 ],
-									"text" : "A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders.",
+									"patching_rect" : [ 450.0, 540.0, 192.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 375.0, 442.0, 225.0, 20.0 ],
+									"text" : "Tutorial series by John A. Jannone",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -197,8 +324,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 300.0, 540.0, 148.0, 27.0 ],
-									"text" : "pix.shaders",
+									"patching_rect" : [ 300.0, 540.0, 195.0, 27.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 30.0, 438.5, 195.0, 27.0 ],
+									"text" : "John Jannone Tutorials",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -215,7 +344,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 525.0, 435.0, 126.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 255.0, 210.0, 34.0 ]
+									"presentation_rect" : [ 30.0, 300.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -226,7 +355,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 525.0, 480.0, 245.0, 22.0 ]
+									"patching_rect" : [ 525.0, 480.0, 313.0, 22.0 ],
+									"text" : "https://cycling74.com/articles/jitter-resources-an-overview"
 								}
 
 							}
@@ -234,15 +364,15 @@
 								"box" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"id" : "obj-29",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 675.0, 405.0, 176.0, 33.0 ],
+									"patching_rect" : [ 675.0, 405.0, 177.0, 47.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 255.0, 255.0, 225.0, 33.0 ],
-									"text" : "An article bundeling more Jitter Resources by Cory Metcalf",
+									"presentation_rect" : [ 375.0, 300.0, 225.0, 33.0 ],
+									"text" : "An article of many Jitter Resources compiled by Cory Metcalf",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -257,7 +387,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 525.0, 405.0, 148.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 258.5, 148.0, 27.0 ],
+									"presentation_rect" : [ 30.0, 303.5, 148.0, 27.0 ],
 									"text" : "Jitter Resources",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -275,7 +405,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 180.0, 435.0, 126.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 210.0, 210.0, 34.0 ]
+									"presentation_rect" : [ 30.0, 255.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -286,7 +416,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 180.0, 480.0, 228.0, 22.0 ]
+									"patching_rect" : [ 180.0, 480.0, 319.0, 22.0 ],
+									"text" : "https://cycling74.com/tutorials/best-practices-in-jitter-part-1"
 								}
 
 							}
@@ -301,7 +432,7 @@
 									"patching_rect" : [ 350.0, 405.0, 156.0, 47.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 255.0, 210.0, 225.0, 33.0 ],
+									"presentation_rect" : [ 375.0, 255.0, 225.0, 33.0 ],
 									"text" : "Article on best practices of using GPU vs CPU by Rob Ramirez",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
@@ -317,7 +448,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 180.0, 405.0, 168.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 213.5, 168.0, 27.0 ],
+									"presentation_rect" : [ 30.0, 258.5, 168.0, 27.0 ],
 									"text" : "Best Practices GPU",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -335,7 +466,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 480.0, 315.0, 126.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 165.0, 210.0, 34.0 ]
+									"presentation_rect" : [ 30.0, 210.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -346,7 +477,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 480.0, 360.0, 250.0, 22.0 ]
+									"patching_rect" : [ 480.0, 360.0, 384.0, 22.0 ],
+									"text" : "https://cycling74.com/tutorials/best-practices-in-jitter-part-2-recording-1"
 								}
 
 							}
@@ -361,7 +493,7 @@
 									"patching_rect" : [ 697.0, 285.0, 176.0, 47.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 255.0, 165.0, 225.0, 33.0 ],
+									"presentation_rect" : [ 375.0, 210.0, 225.0, 33.0 ],
 									"text" : "Article on best practices to record your realtime visuals by Rob Ramirez",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
@@ -377,66 +509,8 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 480.0, 285.0, 211.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 168.5, 211.0, 27.0 ],
+									"presentation_rect" : [ 30.0, 213.5, 211.0, 27.0 ],
 									"text" : "Best Practices Recording",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"handoff" : "",
-									"hltcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"id" : "obj-12",
-									"maxclass" : "ubutton",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "bang", "bang", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 139.0, 315.0, 126.0, 34.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 390.0, 210.0, 34.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-13",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.0, 360.0, 229.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"id" : "obj-14",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 274.0, 285.0, 176.0, 20.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 255.0, 397.0, 225.0, 20.0 ],
-									"text" : "Tutorials by Matteo Marson",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 18.0,
-									"id" : "obj-15",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 139.0, 285.0, 129.0, 27.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 393.5, 123.0, 27.0 ],
-									"text" : "MMMT",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -453,7 +527,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 405.0, 195.0, 126.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 345.0, 210.0, 34.0 ]
+									"presentation_rect" : [ 30.0, 390.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -464,7 +538,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 405.0, 240.0, 227.0, 22.0 ]
+									"patching_rect" : [ 405.0, 240.0, 339.0, 22.0 ],
+									"text" : "https://www.youtube.com/playlist?list=PLD45EDA6F67827497"
 								}
 
 							}
@@ -475,9 +550,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 540.0, 165.0, 152.0, 20.0 ],
+									"patching_rect" : [ 605.5, 165.0, 152.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 255.0, 352.0, 225.0, 20.0 ],
+									"presentation_rect" : [ 375.0, 397.0, 225.0, 20.0 ],
 									"text" : "Tutorials by Sam Tarakijan",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
@@ -491,10 +566,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 405.0, 165.0, 126.0, 27.0 ],
+									"patching_rect" : [ 405.0, 165.0, 194.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 348.5, 121.0, 27.0 ],
-									"text" : "Dude837",
+									"presentation_rect" : [ 30.0, 393.5, 194.0, 27.0 ],
+									"text" : "Delicious Max Tutorials",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -511,7 +586,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 90.0, 195.0, 126.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 300.0, 210.0, 34.0 ]
+									"presentation_rect" : [ 30.0, 345.0, 328.0, 34.0 ]
 								}
 
 							}
@@ -522,7 +597,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 90.0, 240.0, 224.0, 22.0 ]
+									"patching_rect" : [ 90.0, 240.0, 297.0, 22.0 ],
+									"text" : "https://www.federicofoderaro.com/videoTutorials.html#"
 								}
 
 							}
@@ -549,7 +625,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 252.0, 165.0, 116.0, 33.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 255.0, 307.0, 225.0, 20.0 ],
+									"presentation_rect" : [ 375.0, 352.0, 225.0, 20.0 ],
 									"text" : "Tutorials by Federico Foderaro",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
@@ -565,7 +641,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 165.0, 159.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 303.5, 159.0, 27.0 ],
+									"presentation_rect" : [ 30.0, 348.5, 159.0, 27.0 ],
 									"text" : "Amazing Max Stuff",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -634,6 +710,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-17", 0 ]
 								}
@@ -683,6 +766,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-34", 0 ]
 								}
@@ -720,7 +810,6 @@
 					}
 ,
 					"patching_rect" : [ 1560.0, 179.0, 80.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -769,7 +858,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1425.0, 914.25, 80.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "av.hidecursor"
 				}
 
@@ -908,7 +996,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1316.0, 1088.75, 103.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "av.camera.control"
 				}
 
@@ -952,7 +1039,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1031.0, 1088.75, 92.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "av.enable.xfade"
 				}
 
@@ -1111,7 +1197,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 720.0, 1088.75, 85.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "av.movieplay~"
 				}
 
@@ -1170,7 +1255,7 @@
 					"patching_rect" : [ 1069.0, 366.0, 201.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 764.75, 406.5, 116.5, 33.0 ],
+					"presentation_rect" : [ 764.75, 406.5, 117.0, 33.0 ],
 					"text" : "allow a bang to pass with probability",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1208,7 +1293,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 735.0, 441.5, 80.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "av.speedgate"
 				}
 
@@ -1930,7 +2014,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras05.jpg",
+									"pic" : "av-extras01.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -2430,7 +2514,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "45:19:770"
+					"text" : "25:22:161"
 				}
 
 			}
@@ -4785,7 +4869,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras05.jpg",
+				"name" : "av-extras01.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
