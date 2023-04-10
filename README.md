@@ -84,6 +84,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.camera** - Position a camera. Initialize a `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
 
+- **av.camera.drive** - Connec to a camera to control with keyboard and mouse. Initialize a `[jit.anim.drive @ui_listen 1 @ease 0.5 @speed 5]`
+
 - **av.movie** - Load and play a moviefile or image. Initialize a `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
 
 - **av.gridshape** - Show a shape (sphere, cube, plane, etc). Initialize a `[jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0]`

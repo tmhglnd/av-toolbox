@@ -19,6 +19,9 @@ max definesubstitution av.videoplane jit.gl.videoplane @transform_reset 2 @blend
 max objectfile av.camera av.camera;
 max definesubstitution av.camera jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45;
 
+max objectfile av.camera.drive av.camera.drive;
+max definesubstitution av.camera.drive jit.anim.drive @speed 5 @ease 0.5 @ui_listen 1;
+
 max objectfile av.loadmess patcherargs;
 
 max objectfile av.gridshape av.gridshape;
