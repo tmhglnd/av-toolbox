@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 167.0, 125.0, 948.0, 809.0 ],
+		"rect" : [ 116.0, 105.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 372.0, 228.0, 856.0, 499.0 ],
+						"rect" : [ 418.0, 327.0, 856.0, 499.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -132,6 +132,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 3,
@@ -1154,7 +1155,7 @@
 					"patching_rect" : [ 817.0, 366.0, 177.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 764.75, 406.5, 120.0, 33.0 ],
+					"presentation_rect" : [ 608.5, 406.5, 120.0, 33.0 ],
 					"text" : "limited the throughput of a bang",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1169,7 +1170,7 @@
 					"patching_rect" : [ 1069.0, 366.0, 201.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 458.5, 406.5, 116.5, 33.0 ],
+					"presentation_rect" : [ 764.75, 406.5, 116.5, 33.0 ],
 					"text" : "allow a bang to pass with probability",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1224,7 +1225,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1003.0, 390.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 375.0, 87.25, 37.0 ]
+					"presentation_rect" : [ 756.25, 375.0, 87.25, 37.0 ]
 				}
 
 			}
@@ -1240,7 +1241,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 735.0, 390.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 756.25, 375.0, 101.5, 37.0 ]
+					"presentation_rect" : [ 600.0, 375.0, 101.5, 37.0 ]
 				}
 
 			}
@@ -1253,7 +1254,7 @@
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 1003.0, 366.0, 62.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 458.5, 382.5, 62.0, 22.0 ],
+					"presentation_rect" : [ 764.75, 382.5, 62.0, 22.0 ],
 					"text" : "av.chance"
 				}
 
@@ -1267,7 +1268,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 735.0, 366.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 764.75, 382.5, 80.0, 22.0 ],
+					"presentation_rect" : [ 608.5, 382.5, 80.0, 22.0 ],
 					"text" : "av.speedgate"
 				}
 
@@ -1929,7 +1930,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras01.jpg",
+									"pic" : "av-extras05.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -2429,7 +2430,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "34:43:940"
+					"text" : "45:19:770"
 				}
 
 			}
@@ -2737,7 +2738,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 974.0, 624.75, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 446.5, 125.0, 78.5 ]
+					"presentation_rect" : [ 447.125, 446.5, 125.0, 78.5 ]
 				}
 
 			}
@@ -2761,7 +2762,7 @@
 					"patching_rect" : [ 981.0, 578.75, 66.0, 44.0 ],
 					"pointsize" : 4.0,
 					"presentation" : 1,
-					"presentation_rect" : [ 458.0, 454.0, 106.0, 59.0 ]
+					"presentation_rect" : [ 455.125, 454.0, 106.0, 59.0 ]
 				}
 
 			}
@@ -2871,7 +2872,7 @@
 					"patching_rect" : [ 989.0, 634.25, 150.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 458.0, 515.0, 138.25, 60.0 ],
+					"presentation_rect" : [ 455.125, 515.0, 138.25, 60.0 ],
 					"text" : "[av.function]\n\nfunction object but with preset attributes",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -3053,7 +3054,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 855.0, 259.0, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 600.0, 375.0, 101.0, 37.0 ]
+					"presentation_rect" : [ 447.125, 375.0, 101.0, 37.0 ]
 				}
 
 			}
@@ -3135,7 +3136,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 870.0, 213.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 608.25, 382.5, 80.0, 22.0 ],
+					"presentation_rect" : [ 455.375, 382.5, 80.0, 22.0 ],
 					"text" : "av.timetoticks"
 				}
 
@@ -3161,7 +3162,7 @@
 					"patching_rect" : [ 870.0, 237.0, 153.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 608.25, 406.5, 111.0, 33.0 ],
+					"presentation_rect" : [ 455.375, 406.5, 111.0, 33.0 ],
 					"text" : "convert min:sec:ms to ticks",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -3502,7 +3503,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 135.0, 517.5, 90.0, 39.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 253.75, 87.25, 39.5 ]
+					"presentation_rect" : [ 447.125, 253.75, 87.25, 39.5 ]
 				}
 
 			}
@@ -3573,7 +3574,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 550.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 458.5, 286.25, 116.0, 20.0 ],
+					"presentation_rect" : [ 455.625, 286.25, 116.0, 20.0 ],
 					"text" : "rotate channel order",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -3774,7 +3775,7 @@
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 150.0, 493.5, 72.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 458.5, 262.25, 72.0, 22.0 ],
+					"presentation_rect" : [ 455.625, 262.25, 72.0, 22.0 ],
 					"text" : "av.midside~"
 				}
 
@@ -4784,7 +4785,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras04.jpg",
+				"name" : "av-extras05.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

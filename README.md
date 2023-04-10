@@ -32,9 +32,9 @@ This package contains small abstractions to assist you in creating realtime audi
 
 - **av.spectrogram~** - Grab a history of successive FFT frames (spectrum) from an incoming signal and output as a 2-dimensional jitter matrix.
 
-- **av.cross3~** - Split a signal into low, mid and high frequency bands, with adjustable cross-over frequencies.
-
 - **av.midside~** - Split a stereo signal into mid (R+L) and side (R-L, L-R) information.
+
+- **av.cross3~** - Split a signal into low, mid and high frequency bands, with adjustable cross-over frequencies.
 
 ### Timeline control
 
@@ -49,6 +49,8 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.phasor~** - Combine with (named) `[transport]`. A phasor locked to transport where the time-interval can be set in `min:sec:ms`.
 
 - **av.function** - Initialize a `[function]` object with settings: `[function @pointsize 4 @gridstep_x 0.1 @linethickness 2 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1]`.
+
+- **av.automation~** - A `[function]` wrapped in a bpatcher with zoom functionality and controlled by an av.phasor~ synced to global transport.
 
 - **av.speedgate** - Cancel the throughput of bangs/messages for a specified amount of time.
 
@@ -132,6 +134,6 @@ Max has quite a few shaders build into the application and examples. But if you 
 
 - [ ] **av.line** - A ramp-generator with range and easing to control a parameter
 
-- [ ] Help-files for: av.automation~, av.timetrigger~
+- [ ] Help-files for: av.automation~
 
 - [ ] Documentation for: av.when, av.trigger~, av.timetrigger~, av.timetoticks, av.timepoint, av.testpattern, av.sync~, av.speedgate, av.screenshot, av.hidecursor, av.automation~
