@@ -28,10 +28,13 @@ max objectfile av.gridshape av.gridshape;
 max definesubstitution av.gridshape jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 
 max objectfile av.mesh.points av.mesh.points;
-max definesubstitution av.mesh.points jit.gl.mesh @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1 @lighting_enable 1;
+max definesubstitution av.mesh.points jit.gl.mesh @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1;
+
+max objectfile av.mesh.lines av.mesh.lines;
+max definesubstitution av.mesh.lines jit.gl.mesh @draw_mode line_strip @color 1 1 1 1 @line_width 1;
 
 max objectfile av.mesh.grid av.mesh.grid;
-max definesubstitution av.mesh.grid jit.gl.mesh @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1;
+max definesubstitution av.mesh.grid jit.gl.mesh @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1 @auto_normals 1;
 
 max objectfile av.cornerpin av.cornerpin;
 max definesubstitution av.cornerpin jit.gl.cornerpin @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1;

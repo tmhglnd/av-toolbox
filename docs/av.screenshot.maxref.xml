@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.screenshot">
+
+	<digest>
+		Take a picture of a texture
+	</digest>
+
+	<description>
+		Use av.screenshot to store a picture of a frame from your visuals at the resolution of the rendered visuals. With the alpha attribute you can enable the export of the alpha channel for png's (disabled by default)
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<!-- <objarg name="" optional="1" type="int">
+			<digest>
+			</digest>
+			<description>
+			</description>
+		</objarg> -->
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Take the picture!
+			</digest>
+			<description>
+				Take the picture!
+			</description>
+		</method>
+		<method name="texture">
+			<arglist>
+				<arg name="texture" optional="1" type="jit_gl_texture" />
+			</arglist>
+			<digest>
+				Input a texture to screenshot
+			</digest>
+			<description>
+				Input a texture to screenshot
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<!-- <attribute name="seed" get='0' set='1' type='int' size='2'>
+			<arglist>
+				<arg name="seed" optional="1" type="int" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+			</description>
+		</attribute> -->
+		<attribute name="alpha" get="1" set="1" type="bool" size="2">
+			<arglist>
+				<arg name="alpha" optional="1" type="bool" />
+			</arglist>
+			<digest>
+				Enable the alpha channel (png only). (default = 0)
+			</digest>
+			<description>
+				Enable the alpha channel (png only). (default = 0)
+			</description>
+		</attribute>
+		<attribute name="type" get="1" set="1" type="symbol" size="2">
+			<arglist>
+				<arg name="type" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Set the image filetype to png, jpeg, raw. (default = png)
+			</digest>
+			<description>
+				Set the image filetype to png, jpeg, raw. (default = png)
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>

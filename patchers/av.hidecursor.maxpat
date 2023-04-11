@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 90.0, 83.0, 55.0, 22.0 ],
+					"text" : "zl.slice 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 135.0, 105.0, 75.0, 22.0 ],
+					"patching_rect" : [ 135.0, 135.0, 75.0, 22.0 ],
 					"text" : "route enable"
 				}
 
@@ -70,7 +82,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 435.0, 180.0, 241.0, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "Arguments:\nmilliseconds mouse dissapears after (default = 5000)\n\nAttributes:\n@enable = enable/disable the hidecursor"
 				}
 
@@ -167,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 108.0, 60.0, 102.0, 22.0 ],
+					"patching_rect" : [ 90.0, 53.0, 102.0, 22.0 ],
 					"text" : "patcherargs 5000"
 				}
 
@@ -377,6 +388,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-181", 1 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-181", 0 ],
 					"order" : 0,
 					"source" : [ "obj-172", 0 ]
@@ -482,6 +500,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

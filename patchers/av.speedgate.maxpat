@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 150.0, 120.0, 55.0, 22.0 ],
+					"patching_rect" : [ 156.0, 120.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 150.0, 90.0, 72.0, 22.0 ],
+					"patching_rect" : [ 156.0, 90.0, 72.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -93,8 +93,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 78.0, 213.0, 61.0, 22.0 ],
-					"text" : "delay 100"
+					"patching_rect" : [ 78.0, 213.0, 67.0, 22.0 ],
+					"text" : "delay 1000"
 				}
 
 			}
@@ -119,7 +119,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 33.0, 30.0, 30.0 ]
+					"patching_rect" : [ 126.0, 33.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -131,7 +131,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.5, 33.0, 30.0, 30.0 ]
 				}
 

@@ -136,4 +136,4 @@ Max has quite a few shaders build into the application and examples. But if you 
 
 - [ ] Help-files for: av.automation~
 
-- [ ] Documentation for: av.when, av.trigger~, av.timetrigger~, av.timetoticks, av.timepoint, av.testpattern, av.sync~, av.speedgate, av.screenshot, av.hidecursor, av.automation~
+- [ ] Documentation for: av.when, av.trigger~, av.timetrigger~, av.timetoticks, av.timepoint, av.testpattern, av.sync~, av.automation~

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.hidecursor">
+
+	<digest>
+		Hide the cursor when idle
+	</digest>
+
+	<description>
+		Hide the cursor automatically when the mouse is idle for a specified amount of time. Useful to make sure you can't accidentally leave your mouse on the jitter window during a performance and have it be visible.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="idle-time" optional="1" type="int">
+			<digest>
+				Hide cursor of this time in milliseconds (default = 5000)
+			</digest>
+			<description>
+				Hide cursor of this time in milliseconds (default = 5000)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Enable/disable the object
+			</digest>
+			<description>
+				Enable/disable the object
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.grid"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>
