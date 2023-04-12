@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 86.0, 948.0, 809.0 ],
+		"rect" : [ 42.0, 88.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 507.0, 224.0, 636.0, 546.0 ],
+						"rect" : [ 818.0, 293.0, 636.0, 546.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -667,13 +667,14 @@
 									"fontface" : 0,
 									"fontsize" : 18.0,
 									"id" : "obj-88",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 98.0, 474.0, 27.0 ],
+									"patching_rect" : [ 90.0, 98.0, 474.0, 47.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 83.0, 458.0, 27.0 ],
-									"text" : "Useful resources in your process of learning to use Jitter",
+									"presentation_rect" : [ 30.0, 83.0, 490.0, 27.0 ],
+									"text" : "Useful resources during your journey of learning to use Jitter",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -1421,7 +1422,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 351.0, 199.0, 856.0, 499.0 ],
+						"rect" : [ 375.0, 147.0, 856.0, 499.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1449,6 +1450,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-52",
@@ -1508,8 +1510,8 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 666.0, 408.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 30.0, 132.0, 308.0, 22.0 ],
-									"text" : "(click on objects to open the download page)",
+									"presentation_rect" : [ 30.0, 132.0, 328.0, 22.0 ],
+									"text" : "(click on the names to open the download page)",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -2512,7 +2514,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "03:08:512"
+					"text" : "56:48:446"
 				}
 
 			}

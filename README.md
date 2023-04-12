@@ -16,6 +16,8 @@ This package contains small abstractions to assist you in creating realtime audi
 
 ## Contains
 
+![](/media/av-screenshot.png)
+
 ### Signal analysis
 
 - **av.amp~** - A simple envelope follower for audioreactive visuals.
