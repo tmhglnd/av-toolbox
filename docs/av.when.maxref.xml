@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.mesh.points">
+<c74object name="av.when">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Report current Transport time in min:sec:ms
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		An update to the when object allowing the user to get the current time in mm:ss:ms format instead of b.b.u or ticks
+		
+		For bbu or ticks use regular [when]
+		
+		Also allows to set @active to get the output directly from a metro of using a bang. Set @defer if you like a qmetro low priority output.
 	</description>
 
 	<!--METADATA-->
@@ -32,31 +36,56 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="no-arguments" optional="1" type="none">
-			<digest>
-				Arguments will be replaced on initalization by presets
-			</digest>
-			<description>
-				Arguments will be replaced on initalization by presets
-			</description>
-		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Report the current Transport time in min:sec:ms
+			</digest>
+			<description>
+				Report the current Transport time in min:sec:ms
+			</description>
+		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<attribute name="no-attributes"  get='0' set='1' size="1">
+		<attribute name="active" get='0' set='1' type='bool' size='2'>
 			<arglist>
-				<arg name="no-attributes" optional="1" type="none"/>
+				<arg name="active" optional="1" type="bool" />
 			</arglist>
 			<digest>
-				Attributes will be replaced on initalization by presets
+				Output time automatically every 5ms
 			</digest>
 			<description>
-				Attributes will be replaced on initalization by presets
+				Output time automatically every 5ms
+			</description>
+		</attribute>
+		<attribute name="defer" get='0' set='1' type='bool' size='2'>
+			<arglist>
+				<arg name="defer" optional="1" type="bool" />
+			</arglist>
+			<digest>
+				Defer the output to low-priority queue.
+			</digest>
+			<description>
+				Defer the output to low-priority queue.
+			</description>
+		</attribute>
+		<attribute name="transport" get='0' set='1' type='symbol' size='2'>
+			<arglist>
+				<arg name="transport" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				A named transport
+			</digest>
+			<description>
+				Set a named transport to lock the phasor to.
 			</description>
 		</attribute>
 	</attributelist>

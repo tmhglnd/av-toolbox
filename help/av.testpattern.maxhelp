@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -87,6 +87,43 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 231.5, 218.0, 71.0, 20.0 ],
+									"text" : "zoom in/out"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-8",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 180.0, 217.0, 50.0, 22.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 1.0 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "number",
+											"parameter_shortname" : "number",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"varname" : "number"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontsize" : 10.0,
 									"id" : "obj-2",
@@ -184,7 +221,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -775,6 +812,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -801,7 +845,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -856,6 +900,7 @@
 		"parameters" : 		{
 			"obj-2::obj-27" : [ "toggle[1]", "toggle", 0 ],
 			"obj-2::obj-4" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-8" : [ "number", "number", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -870,7 +915,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "av.testpattern.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

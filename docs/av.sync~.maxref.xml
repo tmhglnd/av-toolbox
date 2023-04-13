@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.mesh.points">
+<c74object name="av.sync~">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Synchronize sound and visual recording in post production
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Inspired after the clapper board, used in film recording at the beginning of a take to afterwards synchronize image with sound.
+
+		A short burst of noise at -18 dBFS combined with a white flash on the jitter window from a videoplane. Useful when recording visuals and sound separately and you like to manually align them afterwards in a video editting tool.
+
+		Use the render bang to control. Needs audio to be on.
 	</description>
 
 	<!--METADATA-->
@@ -32,31 +36,45 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="no-arguments" optional="1" type="none">
+		<objarg name="burst-length" optional="1" type='int'>
+			<arglist>
+				<arg name="burst-length" optional="1" type="int" />
+			</arglist>
 			<digest>
-				Arguments will be replaced on initalization by presets
+				The burst length in milliseconds (default = 100)
 			</digest>
 			<description>
-				Arguments will be replaced on initalization by presets
+				The burst length in milliseconds (default = 100)
 			</description>
 		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Click for short noise burst and white screen flash
+			</digest>
+			<description>
+				Click for short noise burst and white screen flash
+			</description>
+		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<attribute name="no-attributes"  get='0' set='1' size="1">
+		<attribute name="drawto" get='0' set='1' type='symbol' size='2'>
 			<arglist>
-				<arg name="no-attributes" optional="1" type="none"/>
+				<arg name="drawto" optional="1" type="symbol" />
 			</arglist>
 			<digest>
-				Attributes will be replaced on initalization by presets
+				Draw to a named rendering context
 			</digest>
 			<description>
-				Attributes will be replaced on initalization by presets
+				Draw to a named rendering context
 			</description>
 		</attribute>
 	</attributelist>

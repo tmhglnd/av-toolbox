@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.enable.xfade">
+<c74object name="av.trigger~">
 
 	<digest>
-		Bypass processing of a pix/slab shader with crossfade
+		Output a bang when envelope crosses threshold
 	</digest>
 
 	<description>
-		Similar to the av.enable, but it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object to work properly. Enable/disable the processing of a jit.gl.pix or jit.gl.slab. Uses a cosine function for easing in the crossfade.
+		An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold. The gate opens when the upper bound is crossed, and the gate closes when the signal drops below the lower bounds.
+		
+		Send a bang to get the floating value (control for example with the render bang from jit.world)
 	</description>
 
 	<!--METADATA-->
@@ -32,32 +34,26 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="enable" optional="1" type="int">
+		<objarg name="reset-threshold" optional="1" type="float">
 			<digest>
-				Enable/disable the processing on load (default = 1)
+				Reset threshold. The signal has to drop below this value before a new trigger can be detected. (default = 0.2)
 			</digest>
 			<description>
-				Enable/disable the processing on load (default = 1)
+				Reset threshold. The signal has to drop below this value before a new trigger can be detected. (default = 0.2)
+			</description>
+		</objarg>
+		<objarg name="trigger-threshold" optional="1" type="float">
+			<digest>
+				Trigger threshold. The signal has to cross this threshold to trigger a bang. (default = 0.4)
+			</digest>
+			<description>
+				Trigger threshold. The signal has to cross this threshold to trigger a bang. (default = 0.4)
 			</description>
 		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
-		<method name="int">
-			<arglist>
-				<arg name="int" optional="1" type="int" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: Enable/disable shader processing <br/>
-				Inlet 2: Nothing <br/>
-			</description>
-		</method>
 		<method name="float">
 			<arglist>
 				<arg name="float" optional="1" type="float" />
@@ -68,13 +64,14 @@
 			<description>
 				Function depends on inlet. <br/>
 				<br/>
-				Inlet 1: Crossfade enable shader processing<br/>
-				Inlet 2: Nothing <br/>
+				Inlet 1: none <br/>
+				Inlet 2: Set the lower threshold<br/>
+				Inlet 3: Set the upper threshold<br/>
 			</description>
 		</method>
-		<method name="texture">
+		<method name="int">
 			<arglist>
-				<arg name="texture" optional="1" type="jit_gl_texture" />
+				<arg name="int" optional="1" type="int" />
 			</arglist>
 			<digest>
 				Function depends on inlet
@@ -82,25 +79,48 @@
 			<description>
 				Function depends on inlet. <br/>
 				<br/>
-				Inlet 1: Nothing <br/>
-				Inlet 2: Texture to be processed or passed through
+				Inlet 1: none <br/>
+				Inlet 2: Set the lower threshold<br/>
+				Inlet 3: Set the upper threshold<br/>
+			</description>
+		</method>
+		<method name="signal">
+			<arglist>
+				<arg name="signal" optional="1" type="signal" />
+			</arglist>
+			<digest>
+				Signal to follow
+			</digest>
+			<description>
+				Signal to follow
 			</description>
 		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="seed" get='0' set='1' type='int' size='2'>
+		<attribute name="cutoffs" get='0' set='1' type='float' size='2'>
 			<arglist>
-				<arg name="seed" optional="1" type="int" />
+				<arg name="cutoffs" optional="1" type="float" />
 			</arglist>
 			<digest>
-				Set the seed for the random number generator
+				Cutoffs frequencies for low and highcut filters in Hz (default = 20 16000)
 			</digest>
 			<description>
-				Set the seed for the random number generator
+				Cutoffs frequencies for low and highcut filters in Hz (default = 20 16000)
 			</description>
-		</attribute> -->
+		</attribute>
+		<attribute name="ramptimes" get='0' set='1' type='float' size='4'>
+			<arglist>
+				<arg name="ramptimes" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Ramptimes for the envelope follower. In order: fast attack, fast release, slow attackrelease. (default = 2 100 500)
+			</digest>
+			<description>
+				Ramptimes for the envelope follower. In order: fast attack, fast release, slow attackrelease. (default = 2 100 500)
+			</description>
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->

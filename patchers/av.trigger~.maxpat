@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -118,8 +118,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 225.0, 77.0, 183.0, 35.0 ],
-					"text" : "patcherargs 0.2 0.4 @cutoffs 50 15000 @ramptimes 2 100 500"
+					"patching_rect" : [ 225.0, 77.0, 192.0, 35.0 ],
+					"text" : "patcherargs 0.2 0.4 @cutoffs 50 16000 @ramptimes 2 100 500"
 				}
 
 			}

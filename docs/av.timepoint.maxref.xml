@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.enable.xfade">
+<c74object name="av.timepoint">
 
 	<digest>
-		Bypass processing of a pix/slab shader with crossfade
+		Bang at a specific time in min:sec:ms
 	</digest>
 
 	<description>
-		Similar to the av.enable, but it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object to work properly. Enable/disable the processing of a jit.gl.pix or jit.gl.slab. Uses a cosine function for easing in the crossfade.
+		Outputs a bang at a specific time set in minutes seconds milliseconds synchronized to global or a named transport.
 	</description>
 
 	<!--METADATA-->
@@ -32,75 +32,90 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="enable" optional="1" type="int">
+		<objarg name="minutes" optional="1" type="int">
 			<digest>
-				Enable/disable the processing on load (default = 1)
+				Set time in minutes (default = 0)
 			</digest>
 			<description>
-				Enable/disable the processing on load (default = 1)
+				Set time in minutes (default = 0)
+			</description>
+		</objarg>
+		<objarg name="seconds" optional="1" type="int">
+			<digest>
+				Set time in seconds (default = 0)
+			</digest>
+			<description>
+				Set time in seconds (default = 0)
+			</description>
+		</objarg>
+		<objarg name="milliseconds" optional="1" type="float">
+			<digest>
+				Set time in milliseconds (default = 0)
+			</digest>
+			<description>
+				Set time in milliseconds (default = 0)
 			</description>
 		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
 	<methodlist>
-		<method name="int">
-			<arglist>
-				<arg name="int" optional="1" type="int" />
-			</arglist>
-			<digest>
-				Function depends on inlet
-			</digest>
-			<description>
-				Function depends on inlet. <br/>
-				<br/>
-				Inlet 1: Enable/disable shader processing <br/>
-				Inlet 2: Nothing <br/>
-			</description>
-		</method>
 		<method name="float">
 			<arglist>
 				<arg name="float" optional="1" type="float" />
 			</arglist>
 			<digest>
-				Function depends on inlet
+				Set trigger time
 			</digest>
 			<description>
 				Function depends on inlet. <br/>
 				<br/>
-				Inlet 1: Crossfade enable shader processing<br/>
-				Inlet 2: Nothing <br/>
+				Inlet 1: Set time in minutes (default = 0)<br/>
+				Inlet 2: Set time in seconds (default = 0) <br/>
+				Inlet 3: Set time in milliseconds (default = 0)<br/>
 			</description>
 		</method>
-		<method name="texture">
+		<method name="int">
 			<arglist>
-				<arg name="texture" optional="1" type="jit_gl_texture" />
+				<arg name="int" optional="1" type="int" />
 			</arglist>
 			<digest>
-				Function depends on inlet
+				Set trigger time
 			</digest>
 			<description>
 				Function depends on inlet. <br/>
 				<br/>
-				Inlet 1: Nothing <br/>
-				Inlet 2: Texture to be processed or passed through
+				Inlet 1: Set time in minutes (default = 0)<br/>
+				Inlet 2: Set time in seconds (default = 0) <br/>
+				Inlet 3: Set time in milliseconds (default = 0)<br/>
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="list" optional="1" type="list" />
+			</arglist>
+			<digest>
+				Set time as a list of minutes seconds milliseconds
+			</digest>
+			<description>
+				Set time as a list of minutes seconds milliseconds
 			</description>
 		</method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="seed" get='0' set='1' type='int' size='2'>
+		<attribute name="transport" get='0' set='1' type='symbol' size='2'>
 			<arglist>
-				<arg name="seed" optional="1" type="int" />
+				<arg name="transport" optional="1" type="symbol" />
 			</arglist>
 			<digest>
-				Set the seed for the random number generator
+				A named transport
 			</digest>
 			<description>
-				Set the seed for the random number generator
+				Set a named transport to sync to.
 			</description>
-		</attribute> -->
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->

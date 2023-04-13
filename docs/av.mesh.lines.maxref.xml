@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.mesh.points">
+<c74object name="av.mesh.lines">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Initialize a jit.gl.mesh with attributes: @draw_mode line_strip @color 1 1 1 1 @line_width 1
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Initialize a jit.gl.mesh with attributes: @draw_mode line_strip @color 1 1 1 1 @line_width 1
 	</description>
 
 	<!--METADATA-->
