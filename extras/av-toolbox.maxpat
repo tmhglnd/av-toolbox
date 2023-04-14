@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 88.0, 948.0, 809.0 ],
+		"rect" : [ 60.0, 96.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1450,7 +1450,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-52",
@@ -2514,7 +2513,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "56:48:446"
+					"text" : "15:42:044"
 				}
 
 			}
@@ -3046,7 +3045,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float", "signal" ],
-					"patching_rect" : [ 1139.0, 578.5, 348.0, 121.0 ],
+					"patching_rect" : [ 1139.0, 578.5, 203.0, 121.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 606.75, 454.0, 201.0, 121.0 ],
 					"varname" : "_av.automation~",

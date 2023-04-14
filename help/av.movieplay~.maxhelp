@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 96.0, 760.0, 744.0 ],
+		"rect" : [ 1015.0, 156.0, 760.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 760.0, 718.0 ],
+						"rect" : [ 1015.0, 182.0, 760.0, 718.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -757,8 +757,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_gl_texture", "" ],
-									"patching_rect" : [ 40.5, 480.0, 135.0, 22.0 ],
-									"text" : "th.movieplay~ help-ctx2"
+									"patching_rect" : [ 40.5, 480.0, 137.0, 22.0 ],
+									"text" : "av.movieplay~ help-ctx2"
 								}
 
 							}
@@ -972,7 +972,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 122.0, 760.0, 718.0 ],
+						"rect" : [ 0.0, 26.0, 760.0, 718.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1679,8 +1679,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_gl_texture", "" ],
-									"patching_rect" : [ 30.0, 435.0, 128.0, 22.0 ],
-									"text" : "th.movieplay~ help-ctx"
+									"patching_rect" : [ 30.0, 435.0, 130.0, 22.0 ],
+									"text" : "av.movieplay~ help-ctx"
 								}
 
 							}
@@ -2009,9 +2009,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "th.movieplay~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/th.gl.movie/patchers",
-				"patcherrelativepath" : "../../../Library/abstractions/th.gl.movie/patchers",
+				"name" : "av.movieplay~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
