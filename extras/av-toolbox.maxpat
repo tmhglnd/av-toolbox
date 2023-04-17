@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 818.0, 293.0, 636.0, 546.0 ],
+						"rect" : [ 590.0, 231.0, 636.0, 546.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1065,8 +1065,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1166.0, 1088.75, 78.0, 22.0 ],
-					"text" : "av.sceenshot"
+					"patching_rect" : [ 1166.0, 1088.75, 82.0, 22.0 ],
+					"text" : "av.screenshot"
 				}
 
 			}
@@ -2013,7 +2013,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras06.jpg",
+									"pic" : "av-extras07.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
 								}
@@ -2513,7 +2513,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "15:42:044"
+					"text" : "04:50:866"
 				}
 
 			}
@@ -4868,7 +4868,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras06.jpg",
+				"name" : "av-extras07.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

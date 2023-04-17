@@ -88,19 +88,21 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-38",
-									"linecount" : 3,
-									"maxclass" : "comment",
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "jit.fpsgui",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 357.0, 135.0, 47.0 ],
-									"text" : "or interpolate camera presets and move through the scene"
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 330.0, 415.0, 80.0, 35.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-36",
+									"id" : "obj-4",
 									"maxclass" : "live.dial",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -109,7 +111,7 @@
 									"patching_rect" : [ 30.0, 357.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_longname" : "live.dial",
+											"parameter_longname" : "live.dial[1]",
 											"parameter_mmax" : 5.0,
 											"parameter_mmin" : 1.0,
 											"parameter_shortname" : "preset",
@@ -119,7 +121,19 @@
 
 									}
 ,
-									"varname" : "live.dial"
+									"varname" : "live.dial[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 90.0, 357.0, 135.0, 47.0 ],
+									"text" : "or interpolate camera presets and move through the scene"
 								}
 
 							}
@@ -153,7 +167,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 405.0, 420.0, 121.0, 20.0 ],
+									"patching_rect" : [ 510.0, 415.0, 121.0, 20.0 ],
 									"text" : "the 3D scene objects"
 								}
 
@@ -167,7 +181,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 30.0, 445.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"live.dial" : [ 1.0 ]
+										"live.dial[1]" : [ 1.0 ]
 									}
 ,
 									"text" : "autopattr",
@@ -413,7 +427,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 330.0, 420.0, 66.0, 22.0 ],
+									"patching_rect" : [ 435.0, 415.0, 66.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -493,7 +507,7 @@
 , 							{
 								"box" : 								{
 									"enable" : 1,
-									"fps" : 30.0,
+									"fps" : 60.0,
 									"id" : "obj-1",
 									"maxclass" : "jit.pworld",
 									"numinlets" : 1,
@@ -675,8 +689,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
-									"source" : [ "obj-36", 0 ]
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -784,7 +805,7 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-2::obj-36" : [ "live.dial", "preset", 0 ],
+			"obj-2::obj-4" : [ "live.dial[1]", "preset", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
