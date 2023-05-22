@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 98.0, 100.0, 724.0, 573.0 ],
+		"rect" : [ 98.0, 100.0, 724.0, 609.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 98.0, 126.0, 724.0, 547.0 ],
+						"rect" : [ 98.0, 126.0, 724.0, 583.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,6 +88,56 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 371.5, 264.5, 113.0, 60.0 ],
+									"text" : "a float can adjust the spectral balance (amount of low/high energy)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "live.dial",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "float" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 328.5, 264.5, 41.0, 48.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 0.8 ],
+											"parameter_initial_enable" : 1,
+											"parameter_longname" : "live.dial[2]",
+											"parameter_mmax" : 1.0,
+											"parameter_shortname" : "scale",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 1
+										}
+
+									}
+,
+									"varname" : "live.dial[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 303.0, 379.0, 150.0, 47.0 ],
+									"text" : "advanced:\nfft-size (default = 1024)\noverlap (default = 4)"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -105,7 +155,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 254.0, 454.0, 69.0, 22.0 ],
+									"patching_rect" : [ 254.0, 504.0, 69.0, 22.0 ],
 									"text" : "jit.gl.handle"
 								}
 
@@ -118,7 +168,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 304.0, 315.0, 107.0, 47.0 ],
+									"patching_rect" : [ 303.0, 330.0, 107.0, 47.0 ],
+									"presentation_linecount" : 3,
 									"text" : "Arguments:\nattack in frames\nrelease in frames"
 								}
 
@@ -130,7 +181,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 106.666666666666657, 315.0, 40.0, 22.0 ],
+									"patching_rect" : [ 139.999999999999972, 290.5, 40.0, 22.0 ],
 									"text" : "*~ 0.5"
 								}
 
@@ -142,7 +193,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 225.0, 375.0, 193.0, 22.0 ],
+									"patching_rect" : [ 224.0, 435.0, 193.0, 22.0 ],
 									"sync" : 1
 								}
 
@@ -154,7 +205,7 @@
 									"numinlets" : 8,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 225.0, 418.0, 193.0, 22.0 ],
+									"patching_rect" : [ 225.0, 468.0, 193.0, 22.0 ],
 									"text" : "jit.gl.material @mat_diffuse 1 1 1 1"
 								}
 
@@ -166,7 +217,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 195.0, 490.0, 250.0, 22.0 ],
+									"patching_rect" : [ 195.0, 540.0, 250.0, 22.0 ],
 									"text" : "jit.gl.graph @scale 0.5 0.1 0.1 @circpoints 32"
 								}
 
@@ -184,7 +235,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 316.5, 270.0, 20.0, 20.0 ],
+									"patching_rect" : [ 299.0, 255.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -198,7 +249,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 330.0, 242.0, 129.0, 33.0 ],
+									"patching_rect" : [ 312.5, 227.0, 129.0, 33.0 ],
 									"text" : "set attack and release slide times in frames"
 								}
 
@@ -222,7 +273,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 283.0, 242.0, 41.0, 48.0 ],
+									"patching_rect" : [ 265.5, 227.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ 10 ],
@@ -248,7 +299,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 227.5, 242.0, 41.0, 48.0 ],
+									"patching_rect" : [ 210.0, 227.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ 2.0 ],
@@ -315,7 +366,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 474.0, 405.0, 71.0, 22.0 ],
+									"patching_rect" : [ 486.5, 405.0, 71.0, 22.0 ],
 									"text" : "s help-bang"
 								}
 
@@ -329,7 +380,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 474.0, 195.0, 216.0, 187.0 ],
+									"patching_rect" : [ 486.5, 195.0, 216.0, 187.0 ],
 									"sync" : 1
 								}
 
@@ -400,7 +451,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 195.0, 315.0, 107.0, 22.0 ],
+									"patching_rect" : [ 194.0, 330.0, 107.0, 22.0 ],
 									"text" : "av.spectrum~ 2 10"
 								}
 
@@ -636,6 +687,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"order" : 0,
 									"source" : [ "obj-2", 0 ]
@@ -820,6 +878,7 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-2::obj-16" : [ "live.dial[2]", "scale", 0 ],
 			"obj-2::obj-23" : [ "live.dial", "attack", 0 ],
 			"obj-2::obj-24" : [ "live.dial[1]", "release", 0 ],
 			"obj-2::obj-46" : [ "live.gain~[2]", "live.gain~", 0 ],

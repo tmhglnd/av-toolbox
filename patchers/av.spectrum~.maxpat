@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 706.0, 177.0, 756.0, 527.0 ],
+		"rect" : [ 306.0, 175.0, 793.0, 448.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,87 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 242.0, 128.0, 37.0, 22.0 ],
+					"text" : "join 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.5, 360.0, 85.0, 22.0 ],
+					"text" : "prepend script"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 242.0, 158.0, 29.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.5, 225.0, 208.0, 35.0 ],
+					"text" : "delete #0_fft, newdefault #0_fft 60 180 pfft~ _av.fftcatch $1 $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 242.0, 270.0, 195.0, 62.0 ],
+					"text" : "connect #0_in 0 #0_fft 0, connect #0_in 1 #0_fft 0, connect #0_in 3 #0_fft 0, connect #0_fft 0 #0_out 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 252.5, 390.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 255.0, 85.0, 22.0 ],
+					"patching_rect" : [ 160.0, 240.0, 85.0, 22.0 ],
 					"text" : "slide_down $1"
 				}
 
@@ -57,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 225.0, 70.0, 22.0 ],
+					"patching_rect" : [ 115.0, 210.0, 70.0, 22.0 ],
 					"text" : "slide_up $1"
 				}
 
@@ -70,19 +145,20 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 60.5, 300.0, 45.0, 22.0 ],
-					"text" : "jit.slide"
+					"text" : "jit.slide",
+					"varname" : "#0_out"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 7,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 195.0, 241.0, 114.0 ],
-					"text" : "Arguments:\nattack in frames (default = 2)\nrelease in frames (default = 5)\n\n(amplitude tilt (default = 0.8))\n\nAttributes:\n"
+					"patching_rect" : [ 480.0, 195.0, 241.0, 154.0 ],
+					"text" : "Arguments:\nattack in frames (default = 2)\nrelease in frames (default = 5)\n\n(amplitude tilt (default = 0.8))\n\nfftsize (default = 1024)\nfftoverlap (default = 4)\n\nAttributes:\n"
 				}
 
 			}
@@ -93,7 +169,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 75.0, 256.0, 33.0 ],
+					"patching_rect" : [ 480.0, 75.0, 256.0, 33.0 ],
 					"text" : "written by Timo Hoogland, (c) 2023, www.timohoogland.com, GNU GPL v3 License"
 				}
 
@@ -105,7 +181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 120.0, 256.0, 60.0 ],
+					"patching_rect" : [ 480.0, 120.0, 256.0, 60.0 ],
 					"text" : "Grab a FFT frame (spectrum) from an incoming signal and output as a one-dimensional jitter matrix. Output the matrix using a bang from the jit.world renderer."
 				}
 
@@ -118,7 +194,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 40.0, 163.0, 33.0 ],
+					"patching_rect" : [ 480.0, 40.0, 163.0, 33.0 ],
 					"text" : "av.spectrum~"
 				}
 
@@ -128,10 +204,10 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 210.0, 90.0, 51.0, 22.0 ],
-					"text" : "unjoin 3"
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 210.0, 90.0, 71.5, 22.0 ],
+					"text" : "unjoin 5"
 				}
 
 			}
@@ -142,8 +218,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 210.0, 60.0, 112.0, 22.0 ],
-					"text" : "patcherargs 2 5 0.8"
+					"patching_rect" : [ 210.0, 60.0, 152.0, 22.0 ],
+					"text" : "patcherargs 2 5 1024 4 0.8"
 				}
 
 			}
@@ -181,19 +257,8 @@
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
 					"patching_rect" : [ 50.0, 90.0, 71.5, 22.0 ],
-					"text" : "typeroute~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-364",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.5, 195.0, 136.0, 22.0 ],
-					"text" : "pfft~ _av.fftcatch 1024 4"
+					"text" : "typeroute~",
+					"varname" : "#0_in"
 				}
 
 			}
@@ -205,7 +270,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 				}
 
@@ -222,18 +287,66 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 60.0, 180.0, 136.0, 22.0 ],
+					"text" : "pfft~ _av.fftcatch 1024 4",
+					"varname" : "1449_fft"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-364", 0 ],
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-1", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-364", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -260,15 +373,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-3", 0 ]
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-364", 0 ]
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -281,8 +394,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-6", 4 ]
 				}
 
 			}
@@ -302,8 +429,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-364", 0 ],
+					"destination" : [ "obj-20", 1 ],
+					"source" : [ "obj-6", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-6", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
