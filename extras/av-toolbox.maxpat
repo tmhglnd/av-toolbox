@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 590.0, 231.0, 636.0, 546.0 ],
+						"rect" : [ 167.0, 201.0, 636.0, 546.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -132,6 +132,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"handoff" : "",
@@ -545,13 +546,14 @@
 								"box" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"id" : "obj-10",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 605.5, 165.0, 152.0, 20.0 ],
+									"patching_rect" : [ 605.5, 165.0, 152.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 375.0, 397.0, 225.0, 20.0 ],
-									"text" : "Tutorials by Sam Tarakijan",
+									"text" : "Tutorials by Sam Tarakajian",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -1422,7 +1424,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 375.0, 147.0, 856.0, 499.0 ],
+						"rect" : [ 375.0, 147.0, 754.0, 488.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1545,7 +1547,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-36",
 									"linecount" : 7,
 									"maxclass" : "comment",
@@ -1556,7 +1558,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 435.0, 471.0, 33.0 ],
 									"text" : "A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1606,7 +1608,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-29",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1617,7 +1619,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 210.0, 279.0, 33.0 ],
 									"text" : "This abstraction allows you to load an entire folder of images into named jit.gl.texture objects.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1667,7 +1669,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-25",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1678,7 +1680,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 346.0, 321.0, 33.0 ],
 									"text" : "A basic texteditor in the Max Jitter OpenGL window for interaction with your patch in a Livecoding-like style.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1728,7 +1730,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-20",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1739,7 +1741,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 390.0, 336.0, 33.0 ],
 									"text" : "A commandline text-editor in the Max Jitter OpenGL window for interaction with your patch in a Livecoding-like style.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1789,7 +1791,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-14",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1800,7 +1802,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 300.0, 324.0, 33.0 ],
 									"text" : "jit.gl.cornerpin wrapped in an abstraction that automatically exposes corner coordinates to pattrstorage",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1850,7 +1852,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-10",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1861,7 +1863,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 255.0, 456.0, 33.0 ],
 									"text" : "The th.gl.videogrid allows you to display a texture on a certain position in the screen. The entire screen is divided in a grid based on the x and y division values.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1924,7 +1926,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-9",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1935,7 +1937,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 212.0, 165.0, 272.0, 33.0 ],
 									"text" : "Gateway to non-realtime HiRes rendering of jitter visuals. The rendering process has three steps.",
-									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -2013,9 +2015,9 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras07.jpg",
+									"pic" : "av-extras05.jpg",
 									"presentation" : 1,
-									"presentation_rect" : [ 390.0, 30.0, 450.0, 450.0 ]
+									"presentation_rect" : [ 525.0, 30.0, 208.0, 208.0 ]
 								}
 
 							}
@@ -2513,7 +2515,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "04:50:866"
+					"text" : "05:48:832"
 				}
 
 			}
@@ -4868,7 +4870,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras07.jpg",
+				"name" : "av-extras05.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
