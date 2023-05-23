@@ -48,6 +48,22 @@
 				Release time in frames (default = 5)
 			</description>
 		</objarg>
+		<objarg name="fft-size" optional="1" type="int">
+			<digest>
+				FFT-size in samples (default = 1024)
+			</digest>
+			<description>
+				FFT-size in samples (default = 1024)
+			</description>
+		</objarg>
+		<objarg name="overlap-factor" optional="1" type="int">
+			<digest>
+				Overlap factor in powers of 2 (default = 4)
+			</digest>
+			<description>
+				Overlap factor in powers of 2 (default = 4)
+			</description>
+		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -88,6 +88,117 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-95",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 662.5, 98.0, 300.0, 35.0 ],
+									"text" : ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-66",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 662.5, 53.0, 317.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://www.patreon.com/timohoogland"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-77",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 510.0, 68.0, 135.0, 23.0 ],
+									"text" : "support me on patreon",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-68",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 662.5, 143.0, 275.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://www.timohoogland.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-69",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 510.0, 128.0, 135.0, 23.0 ],
+									"text" : "go to my website",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-78",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 510.0, 98.0, 135.0, 23.0 ],
+									"text" : "visit my gumroad",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-37",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -109,7 +220,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -290,7 +401,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 210.0, 480.0, 135.0, 33.0 ],
-									"text" : "00:00:566"
+									"text" : "86:28:951"
 								}
 
 							}
@@ -301,7 +412,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 210.0, 388.0, 149.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "create a nice clock display"
 								}
 
@@ -337,7 +447,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 30.0, 450.0, 106.0, 22.0 ],
-									"text" : "0 0 566.42104"
+									"text" : "86 28 951.083912"
 								}
 
 							}
@@ -419,7 +529,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 210.0, 345.0, 106.0, 22.0 ],
-									"text" : "0 2 899.588584"
+									"text" : "86 28 951.083912"
 								}
 
 							}
@@ -528,116 +638,6 @@
 							}
 , 							{
 								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-95",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 690.0, 98.0, 300.0, 35.0 ],
-									"text" : ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-66",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 690.0, 53.0, 317.0, 35.0 ],
-									"text" : ";\rmax launchbrowser http://www.patreon.com/timohoogland"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-77",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 510.0, 68.0, 150.0, 23.0 ],
-									"text" : "support me on patreon",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usetextovercolor" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-68",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 690.0, 143.0, 275.0, 35.0 ],
-									"text" : ";\rmax launchbrowser http://www.timohoogland.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-69",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 510.0, 128.0, 150.0, 23.0 ],
-									"text" : "go to my website",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usebgoncolor" : 1,
-									"usetextovercolor" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-78",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 510.0, 98.0, 150.0, 23.0 ],
-									"text" : "visit my gumroad",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usebgoncolor" : 1,
-									"usetextovercolor" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontface" : 1,
 									"fontsize" : 12.0,
 									"id" : "obj-76",
@@ -657,7 +657,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 103.5, 450.0, 100.0 ],
+									"patching_rect" : [ 30.0, 103.5, 451.0, 100.0 ],
 									"text" : "An update to the when object allowing the user to get the current time in mm:ss:ms format instead of b.b.u or ticks\n\nfor bbu or ticks use regular [when]\n\nAlso allows to set @active to get the output directly from a metro of using a bang. Set @defer if you like a qmetro low priority output.",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
@@ -794,7 +794,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -848,7 +848,7 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "av.when.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/av-toolkit/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

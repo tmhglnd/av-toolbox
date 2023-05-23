@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 60.0, 96.0, 948.0, 809.0 ],
+		"rect" : [ 512.0, 109.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -132,7 +132,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"handoff" : "",
@@ -1547,7 +1546,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-36",
 									"linecount" : 7,
 									"maxclass" : "comment",
@@ -1608,7 +1606,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-29",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1669,7 +1666,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-25",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1730,7 +1726,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-20",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1791,7 +1786,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-14",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1852,7 +1846,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-10",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -1926,7 +1919,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"id" : "obj-9",
 									"linecount" : 4,
 									"maxclass" : "comment",
@@ -2015,7 +2007,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras05.jpg",
+									"pic" : "av-extras01.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 525.0, 30.0, 208.0, 208.0 ]
 								}
@@ -2515,7 +2507,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "05:48:832"
+					"text" : "06:16:304"
 				}
 
 			}
@@ -4129,8 +4121,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 83.0, 474.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 83.0, 441.0, 27.0 ],
-					"text" : "Objects for your realtime audiovisual creations in Jitter",
+					"presentation_rect" : [ 150.0, 83.0, 401.0, 27.0 ],
+					"text" : "Objects for realtime audiovisual creations in Jitter",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
 
@@ -4870,7 +4862,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras05.jpg",
+				"name" : "av-extras08.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

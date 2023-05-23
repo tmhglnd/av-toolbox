@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 103.0, 231.0, 712.0, 524.0 ],
+		"rect" : [ 100.0, 100.0, 712.0, 524.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 103.0, 257.0, 712.0, 498.0 ],
+						"rect" : [ 100.0, 126.0, 712.0, 498.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -87,6 +87,117 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-95",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 722.5, 98.0, 300.0, 35.0 ],
+									"text" : ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-66",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 722.5, 53.0, 317.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://www.patreon.com/timohoogland"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-77",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 570.0, 68.0, 120.0, 23.0 ],
+									"text" : "support me on patreon",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-68",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 722.5, 143.0, 275.0, 35.0 ],
+									"text" : ";\rmax launchbrowser http://www.timohoogland.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-69",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 570.0, 128.0, 120.0, 23.0 ],
+									"text" : "go to my website",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"align" : 0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"bgoncolor" : [ 1.0, 1.0, 1.0, 0.470588235294118 ],
+									"fontface" : 1,
+									"fontsize" : 10.0,
+									"id" : "obj-78",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 570.0, 98.0, 120.0, 23.0 ],
+									"text" : "visit my gumroad",
+									"textjustification" : 0,
+									"textoncolor" : [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+									"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"usebgoncolor" : 1,
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-14",
 									"linecount" : 2,
@@ -608,7 +719,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 315.0, 441.5, 106.0, 22.0 ],
-									"text" : "0 2 267.517984"
+									"text" : "86 28 951.083912"
 								}
 
 							}
@@ -752,116 +863,6 @@
 									"outlettype" : [ "jit_matrix", "" ],
 									"patching_rect" : [ 495.0, 190.0, 195.0, 165.0 ],
 									"sync" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-95",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 720.0, 98.0, 300.0, 35.0 ],
-									"text" : ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-66",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 720.0, 56.0, 323.0, 35.0 ],
-									"text" : ";\rmax launchbrowser https://www.patreon.com/timohoogland"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-77",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 540.0, 68.0, 150.0, 23.0 ],
-									"text" : "support me on patreon",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usetextovercolor" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"hidden" : 1,
-									"id" : "obj-68",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 720.0, 143.0, 279.0, 35.0 ],
-									"text" : ";\rmax launchbrowser https://www.timohoogland.com"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-69",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 540.0, 128.0, 150.0, 23.0 ],
-									"text" : "go to my website",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usebgoncolor" : 1,
-									"usetextovercolor" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"align" : 0,
-									"bgcolor" : [ 0.098038777709007, 0.098041713237762, 0.09804005920887, 1.0 ],
-									"bgoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : 1,
-									"fontsize" : 11.0,
-									"id" : "obj-78",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 540.0, 98.0, 150.0, 23.0 ],
-									"text" : "visit my gumroad",
-									"textjustification" : 0,
-									"textoncolor" : [ 0.799996614456177, 0.800020575523376, 0.800006866455078, 1.0 ],
-									"textovercolor" : [ 0.999995052814484, 1.0, 1.0, 1.0 ],
-									"usebgoncolor" : 1,
-									"usetextovercolor" : 1
 								}
 
 							}
