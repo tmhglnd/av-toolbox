@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 512.0, 109.0, 948.0, 809.0 ],
+		"rect" : [ 73.0, 101.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2507,7 +2507,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "06:16:304"
+					"text" : "41:22:154"
 				}
 
 			}
@@ -2828,7 +2828,7 @@
 					"gridstep_x" : 0.1,
 					"id" : "obj-99",
 					"legend" : 0,
-					"linethickness" : 2.0,
+					"linethickness" : 1.5,
 					"maxclass" : "function",
 					"mode" : 1,
 					"numinlets" : 1,
@@ -2837,7 +2837,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 981.0, 578.75, 66.0, 44.0 ],
-					"pointsize" : 4.0,
+					"pointsize" : 3.0,
 					"presentation" : 1,
 					"presentation_rect" : [ 455.125, 454.0, 106.0, 59.0 ]
 				}
@@ -2962,7 +2962,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 974.0, 677.5, 66.0, 22.0 ],
+					"patching_rect" : [ 974.0, 696.25, 66.0, 22.0 ],
 					"text" : "av.function"
 				}
 
@@ -4862,7 +4862,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras08.jpg",
+				"name" : "av-extras02.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
