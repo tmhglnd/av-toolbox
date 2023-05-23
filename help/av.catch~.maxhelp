@@ -626,7 +626,7 @@
 									"patching_rect" : [ 30.0, 411.0, 136.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ -17.63415110301294 ],
+											"parameter_initial" : [ -60.425196850393682 ],
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "live.gain~[2]",
 											"parameter_mmax" : 6.0,
@@ -645,6 +645,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-47",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,

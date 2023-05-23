@@ -41,11 +41,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-150",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 418.0, 789.0, 260.0, 20.0 ],
-					"text" : "av.loadmess fires last, can not be in a subpatch"
+					"patching_rect" : [ 404.5, 759.0, 191.0, 33.0 ],
+					"text" : "av.loadmess needs to fire last, it can not be inside a subpatch"
 				}
 
 			}
@@ -57,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 418.0, 765.0, 112.0, 22.0 ],
+					"patching_rect" : [ 404.5, 735.0, 112.0, 22.0 ],
 					"text" : "av.loadmess 0 20 0"
 				}
 
@@ -75,7 +76,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 273.0, 585.0, 20.0, 20.0 ],
+					"patching_rect" : [ 350.5, 234.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "9",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -95,7 +96,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 358.5, 265.0, 20.0, 20.0 ],
+					"patching_rect" : [ 195.0, 570.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "8",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -115,7 +116,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 335.0, 570.0, 20.0, 20.0 ],
+					"patching_rect" : [ 335.0, 555.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "7",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -129,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 660.0, 413.0, 20.0 ],
+					"patching_rect" : [ 31.5, 630.0, 413.0, 20.0 ],
 					"text" : "OPEN THE PATCHERS WITH DOUBLE-CLICK TO SEE HOW IT WORKS!"
 				}
 
@@ -147,7 +148,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 583.0, 727.0, 20.0, 20.0 ],
+					"patching_rect" : [ 569.5, 697.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "6",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -167,7 +168,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 292.5, 725.0, 20.0, 20.0 ],
+					"patching_rect" : [ 279.0, 695.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -187,7 +188,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 141.5, 725.0, 20.0, 20.0 ],
+					"patching_rect" : [ 128.0, 695.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "4",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1196,7 +1197,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 418.0, 735.0, 167.0, 22.0 ],
+					"patching_rect" : [ 404.5, 705.0, 167.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1256,13 +1257,21 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-7",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
 									"numinlets" : 1,
-									"numoutlets" : 6,
-									"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
-									"patching_rect" : [ 50.0, 105.0, 71.5, 22.0 ],
-									"text" : "typeroute~"
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 435.0, 180.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
 								}
 
 							}
@@ -1271,7 +1280,7 @@
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
-									"id" : "obj-9",
+									"id" : "obj-6",
 									"ignoreclick" : 1,
 									"legacytextcolor" : 1,
 									"maxclass" : "textbutton",
@@ -1279,10 +1288,244 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 75.0, 150.0, 24.0, 23.0 ],
+									"patching_rect" : [ 75.75, 156.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"text" : "23",
+									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 375.0, 300.0, 196.0, 47.0 ],
+									"text" : "other objects to record visuals with (but I recommend offloading the recording to another applications)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "jit_matrix", "" ],
+									"patching_rect" : [ 315.0, 330.0, 40.0, 22.0 ],
+									"text" : "jit.vcr"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "jit_matrix", "" ],
+									"patching_rect" : [ 315.0, 300.0, 55.0, 22.0 ],
+									"text" : "jit.record"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-49",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 471.5, 240.0, 126.0, 33.0 ],
+									"text" : "record visuals\n(open for instructions)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 5,
+											"revision" : 4,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 84.0, 140.0, 382.0, 316.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontface" : 1,
+													"id" : "obj-3",
+													"linecount" : 15,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 90.0, 45.0, 240.0, 208.0 ],
+													"text" : "This is a placeholder subpatch for the jit.gl.syphonserver and jit.gl.spoutsender objects\n\n1. Install the Syphon or Spout package via the Max Package Manager\n\n2. Remove the \"p\" from the object to create the jit.gl.syphonserver or jit.gl.spoutsender objects\n\n3. Open an application that can receive textures for recording/sending such as Syphonrecorder, OBS, NDISyphon and probably more"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-1",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [  ]
+									}
+,
+									"patching_rect" : [ 315.0, 240.0, 153.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p jit.gl.spoutsender for WIN"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 5,
+											"revision" : 4,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 805.0, 303.0, 399.0, 307.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontface" : 1,
+													"id" : "obj-3",
+													"linecount" : 15,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 90.0, 45.0, 240.0, 208.0 ],
+													"text" : "This is a placeholder subpatch for the jit.gl.syphonserver and jit.gl.spoutsender objects\n\n1. Install the Syphon or Spout package via the Max Package Manager\n\n2. Remove the \"p\" from the object to create the jit.gl.syphonserver or jit.gl.spoutsender objects\n\n3. Open an application that can receive textures for recording/sending such as Syphonrecorder, OBS, NDISyphon and probably more"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-1",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [  ]
+									}
+,
+									"patching_rect" : [ 345.0, 210.0, 163.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p jit.gl.syphonserver for MAC"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 6,
+									"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
+									"patching_rect" : [ 50.0, 105.0, 71.5, 22.0 ],
+									"text" : "typeroute~"
 								}
 
 							}
@@ -1348,28 +1591,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-101",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 415.0, 243.0, 32.0, 20.0 ],
-									"text" : "WIN"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-100",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 450.0, 213.0, 35.0, 20.0 ],
-									"text" : "MAC"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-82",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1382,36 +1603,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-89",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 315.0, 243.0, 99.0, 22.0 ],
-									"text" : "jit.gl.spoutsender"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-91",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 345.0, 213.0, 105.0, 22.0 ],
-									"text" : "jit.gl.syphonserver"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-64",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 339.0, 164.0, 167.0, 47.0 ],
-									"text" : "us output to record via syphon or spout\n(install via package manager)"
+									"patching_rect" : [ 345.0, 143.0, 167.0, 47.0 ],
+									"text" : "use texture output to record via syphon or spout (open for instructions)"
 								}
 
 							}
@@ -1482,16 +1680,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-89", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-42", 0 ],
+									"order" : 0,
 									"source" : [ "obj-82", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-91", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-44", 0 ],
+									"order" : 1,
 									"source" : [ "obj-82", 0 ]
 								}
 
@@ -1499,7 +1697,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 208.0, 600.0, 69.0, 22.0 ],
+					"patching_rect" : [ 208.0, 585.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1985,7 +2183,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 198.0, 734.0, 99.0, 22.0 ],
+					"patching_rect" : [ 184.5, 704.0, 99.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3002,7 +3200,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 45.0, 734.0, 101.0, 22.0 ],
+					"patching_rect" : [ 31.5, 704.0, 101.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3020,7 +3218,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 351.0, 561.0, 171.0, 20.0 ],
+					"patching_rect" : [ 351.0, 546.0, 171.0, 20.0 ],
 					"text" : "take a screenshot of the visual"
 				}
 
@@ -3033,7 +3231,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 317.0, 557.0, 24.0, 24.0 ]
+					"patching_rect" : [ 317.0, 542.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -3045,7 +3243,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 317.0, 600.0, 82.0, 22.0 ],
+					"patching_rect" : [ 317.0, 585.0, 82.0, 22.0 ],
 					"text" : "av.screenshot"
 				}
 
@@ -3057,7 +3255,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 596.0, 154.0, 70.0, 22.0 ],
+					"patching_rect" : [ 614.0, 139.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -3069,7 +3267,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 301.5, 204.0, 36.0, 20.0 ],
+					"patching_rect" : [ 301.5, 189.0, 36.0, 20.0 ],
 					"text" : "sync"
 				}
 
@@ -3081,7 +3279,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 540.5, 227.0, 47.0 ],
+					"patching_rect" : [ 690.0, 531.0, 227.0, 47.0 ],
 					"text" : "some of the jit.gl. objects can be created quickly with shortcuts: [av.world], [av.camera], [av.node], [av.videoplane]"
 				}
 
@@ -3099,7 +3297,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 660.0, 320.0, 20.0, 20.0 ],
+					"patching_rect" : [ 678.0, 305.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "4",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -3113,7 +3311,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.0, 210.0, 118.0, 74.0 ],
+					"patching_rect" : [ 573.0, 195.0, 118.0, 74.0 ],
 					"text" : "Watch the visuals for about 30 seconds to see most of the different outputs"
 				}
 
@@ -3131,7 +3329,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 660.0, 210.0, 20.0, 20.0 ],
+					"patching_rect" : [ 678.0, 195.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -3144,7 +3342,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 362.0, 421.0, 81.0, 20.0 ],
+					"patching_rect" : [ 362.0, 406.0, 81.0, 20.0 ],
 					"text" : "enable world"
 				}
 
@@ -3155,7 +3353,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 555.0, 81.0, 20.0 ],
+					"patching_rect" : [ 79.0, 540.0, 81.0, 20.0 ],
 					"text" : "enable sound"
 				}
 
@@ -3173,7 +3371,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 350.5, 428.0, 20.0, 20.0 ],
+					"patching_rect" : [ 350.5, 413.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -3193,7 +3391,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 65.5, 543.0, 20.0, 20.0 ],
+					"patching_rect" : [ 65.5, 528.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -3208,7 +3406,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 418.0, 696.5, 210.0, 33.0 ],
+					"patching_rect" : [ 404.5, 666.5, 210.0, 33.0 ],
 					"text" : "Node: Post processing effects for both visuals with automation"
 				}
 
@@ -3220,7 +3418,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 129.0, 445.0, 20.0 ],
+					"patching_rect" : [ 31.5, 114.0, 445.0, 20.0 ],
 					"text" : "written by Timo Hoogland, © 2023, www.timohoogland.com, GNU GPL-v3 License"
 				}
 
@@ -3232,8 +3430,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 80.0, 480.0, 47.0 ],
-					"text" : "This patcher demonstrates the usage of most of the av-toolbox objects. All av-objects are highlighted in blue. To help navigate over this patcher follow the numbers and read the comments. For more information open the helpfiles of the objects with Alt+Click"
+					"patching_rect" : [ 31.5, 65.0, 628.0, 47.0 ],
+					"text" : "This patcher demonstrates the usage of most of the av-toolbox objects. All av-objects are highlighted in blue (some are inside subpatcher!). To help navigate over this patcher follow the numbers, read the comments and open the subpatcher. For more information you can also open the helpfiles of the objects with Alt+Click"
 				}
 
 			}
@@ -3245,7 +3443,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 45.0, 377.0, 33.0 ],
+					"patching_rect" : [ 31.5, 30.0, 377.0, 33.0 ],
 					"text" : "av-toolbox: full example patcher"
 				}
 
@@ -3258,7 +3456,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 198.0, 696.5, 193.0, 33.0 ],
+					"patching_rect" : [ 184.5, 666.5, 193.0, 33.0 ],
 					"text" : "Visual 2: two lines reacting two low and high frequency bands"
 				}
 
@@ -3271,7 +3469,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 696.5, 123.0, 33.0 ],
+					"patching_rect" : [ 31.5, 666.5, 123.0, 33.0 ],
 					"text" : "Visual 1: mesh with spectrum offset"
 				}
 
@@ -3283,7 +3481,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 301.5, 278.0, 150.0, 100.0 ],
+					"patching_rect" : [ 301.5, 263.0, 150.0, 100.0 ],
 					"text" : "a synchronisation click \n(burst of noise and white frame flash) for recording visual and sound separately and aligning afterwards in editting software"
 				}
 
@@ -3294,7 +3492,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 758.0, 134.0, 20.0 ],
+					"patching_rect" : [ 690.0, 748.5, 134.0, 20.0 ],
 					"text" : "post processing passes"
 				}
 
@@ -3306,7 +3504,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 337.5, 225.0, 47.0, 22.0 ],
+					"patching_rect" : [ 337.5, 210.0, 47.0, 22.0 ],
 					"text" : "r rbang"
 				}
 
@@ -3319,7 +3517,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 301.5, 225.0, 24.0, 24.0 ]
+					"patching_rect" : [ 301.5, 210.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -3331,7 +3529,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 301.5, 255.0, 55.0, 22.0 ],
+					"patching_rect" : [ 301.5, 240.0, 55.0, 22.0 ],
 					"text" : "av.sync~"
 				}
 
@@ -3342,7 +3540,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 330.0, 51.0, 22.0 ],
+					"patching_rect" : [ 31.5, 315.0, 51.0, 22.0 ],
 					"text" : "s~ track"
 				}
 
@@ -3354,7 +3552,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 566.0, 191.0, 107.0, 20.0 ],
+					"patching_rect" : [ 584.0, 176.0, 107.0, 20.0 ],
 					"text" : "START TIMELINE"
 				}
 
@@ -3366,7 +3564,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 302.0, 135.0, 33.0 ],
+					"patching_rect" : [ 693.0, 287.0, 135.0, 33.0 ],
 					"text" : "report the current time in min sec ms"
 				}
 
@@ -3378,7 +3576,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 675.0, 734.0, 205.0, 22.0 ],
+					"patching_rect" : [ 690.0, 724.5, 205.0, 22.0 ],
 					"text" : "jit.gl.pass av-example @fxname fxaa"
 				}
 
@@ -3391,7 +3589,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 675.0, 676.0, 235.5, 35.0 ],
+					"patching_rect" : [ 690.0, 666.5, 235.5, 35.0 ],
 					"text" : "jit.gl.pass av-example @fxname bloom-hq @threshold 0.95 @bloom_amt 0.3"
 				}
 
@@ -3403,7 +3601,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 842.0, 122.5, 97.0, 60.0 ],
+					"patching_rect" : [ 860.0, 107.5, 97.0, 60.0 ],
 					"text" : "timepoints are based on time, not on relative tempo"
 				}
 
@@ -3580,7 +3778,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 675.0, 367.0, 83.0, 22.0 ],
+					"patching_rect" : [ 693.0, 352.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3600,8 +3798,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 397.0, 118.0, 33.0 ],
-					"text" : "02:51:851"
+					"patching_rect" : [ 693.0, 382.0, 118.0, 33.0 ],
+					"text" : "02:25:163"
 				}
 
 			}
@@ -3613,7 +3811,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.0, 335.0, 162.0, 22.0 ],
+					"patching_rect" : [ 693.0, 320.0, 162.0, 22.0 ],
 					"text" : "av.when @active 1 @defer 1"
 				}
 
@@ -3625,7 +3823,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 129.0, 152.0, 47.0 ],
+					"patching_rect" : [ 693.0, 114.0, 152.0, 47.0 ],
 					"text" : "all time objects (timepoint, automation, timetrigger) are synced to transport"
 				}
 
@@ -3639,7 +3837,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 208.0, 396.0, 150.0, 22.0 ]
+					"patching_rect" : [ 208.0, 381.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -3651,7 +3849,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 842.0, 189.0, 50.0, 22.0 ]
+					"patching_rect" : [ 860.0, 174.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -3662,7 +3860,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 842.0, 219.0, 59.0, 22.0 ],
+					"patching_rect" : [ 860.0, 204.0, 59.0, 22.0 ],
 					"text" : "tempo $1"
 				}
 
@@ -3673,7 +3871,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 631.5, 178.0, 20.0 ],
+					"patching_rect" : [ 690.0, 622.0, 178.0, 20.0 ],
 					"text" : "created quickly with [av.camera]"
 				}
 
@@ -3686,7 +3884,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 675.0, 594.5, 251.0, 35.0 ],
+					"patching_rect" : [ 690.0, 585.0, 251.0, 35.0 ],
 					"text" : "jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45"
 				}
 
@@ -3697,7 +3895,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 500.5, 508.0, 49.0, 22.0 ],
+					"patching_rect" : [ 500.5, 493.0, 49.0, 22.0 ],
 					"text" : "s rbang"
 				}
 
@@ -3709,7 +3907,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 784.0, 219.0, 29.5, 22.0 ],
+					"patching_rect" : [ 802.0, 204.0, 29.5, 22.0 ],
 					"text" : "0."
 				}
 
@@ -3721,7 +3919,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 784.0, 189.0, 34.0, 22.0 ],
+					"patching_rect" : [ 802.0, 174.0, 34.0, 22.0 ],
 					"text" : "sel 1"
 				}
 
@@ -3734,7 +3932,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 675.0, 189.0, 24.0, 24.0 ],
+					"patching_rect" : [ 693.0, 174.0, 24.0, 24.0 ],
 					"varname" : "toggle"
 				}
 
@@ -3746,7 +3944,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-					"patching_rect" : [ 675.0, 255.0, 128.0, 22.0 ],
+					"patching_rect" : [ 693.0, 240.0, 128.0, 22.0 ],
 					"text" : "transport @tempo 120"
 				}
 
@@ -3757,7 +3955,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 507.5, 45.0, 45.0 ]
+					"patching_rect" : [ 79.0, 492.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -3768,7 +3966,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 105.0, 218.0, 41.0, 22.0 ],
+					"patching_rect" : [ 105.0, 203.0, 41.0, 22.0 ],
 					"text" : "sig~ 1"
 				}
 
@@ -3782,7 +3980,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 105.0, 330.0, 48.0, 136.0 ],
+					"patching_rect" : [ 105.0, 315.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -3807,7 +4005,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 105.0, 255.0, 170.0, 49.0 ],
+					"patching_rect" : [ 105.0, 240.0, 170.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"lock" : 1
 					}
@@ -3823,7 +4021,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 105.0, 180.0, 116.0, 22.0 ],
+					"patching_rect" : [ 105.0, 165.0, 116.0, 22.0 ],
 					"text" : "buffer~ jungle jongly"
 				}
 
@@ -3838,7 +4036,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 408.5, 508.0, 80.0, 35.0 ]
+					"patching_rect" : [ 408.5, 493.0, 80.0, 35.0 ]
 				}
 
 			}
@@ -3848,7 +4046,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 232.0, 487.0, 167.0, 20.0 ],
+					"patching_rect" : [ 232.0, 472.0, 167.0, 20.0 ],
 					"text" : "created quickly with [av.world]"
 				}
 
@@ -3861,7 +4059,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "bang", "" ],
-					"patching_rect" : [ 208.0, 450.0, 420.0, 35.0 ],
+					"patching_rect" : [ 208.0, 435.0, 420.0, 35.0 ],
 					"text" : "jit.world av-example @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080"
 				}
 
@@ -3875,7 +4073,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 208.0, 420.0, 150.0, 22.0 ]
+					"patching_rect" : [ 208.0, 405.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -3999,7 +4197,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 427.5, 797.0, 405.5, 797.0, 405.5, 724.0, 427.5, 724.0 ],
+					"midpoints" : [ 414.0, 767.0, 392.0, 767.0, 392.0, 694.0, 414.0, 694.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -4253,10 +4451,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "jit.mo.time.mxo",
 				"type" : "iLaX"
 			}
@@ -4310,7 +4504,7 @@
 						"origin" : "av-toolbox-example",
 						"type" : "patcher",
 						"subtype" : "Undefined",
-						"embed" : 1,
+						"embed" : 0,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{

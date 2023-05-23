@@ -444,7 +444,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 724.0, 583.0 ],
+						"rect" : [ 98.0, 126.0, 724.0, 583.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -482,18 +482,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 303.0, 379.0, 150.0, 47.0 ],
 									"text" : "advanced:\nfft-size (default = 1024)\noverlap (default = 4)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 149.5, 70.0, 22.0 ],
-									"text" : "loadmess 1"
 								}
 
 							}
@@ -1008,6 +996,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-47",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
@@ -1103,13 +1092,6 @@
 									"destination" : [ "obj-47", 0 ],
 									"order" : 1,
 									"source" : [ "obj-46", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-5", 0 ]
 								}
 
 							}

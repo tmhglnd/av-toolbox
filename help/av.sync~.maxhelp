@@ -492,7 +492,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 90.0, 45.0, 240.0, 208.0 ],
-													"presentation_linecount" : 15,
 													"text" : "This is a placeholder subpatch for the jit.gl.syphonserver and jit.gl.spoutsender objects\n\n1. Install the Syphon or Spout package via the Max Package Manager\n\n2. Remove the \"p\" from the object to create the jit.gl.syphonserver or jit.gl.spoutsender objects\n\n3. Open an application that can receive textures for recording/sending such as Syphonrecorder, OBS, NDISyphon and probably more"
 												}
 
@@ -810,6 +809,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-47",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,

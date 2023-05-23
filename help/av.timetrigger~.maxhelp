@@ -222,6 +222,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-21",
+									"local" : 1,
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
@@ -639,7 +640,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 495.0, 470.5, 106.0, 22.0 ],
-									"text" : "86 28 951.083912"
+									"text" : "12 38 314.221795"
 								}
 
 							}
@@ -764,20 +765,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 300.0, 247.0, 106.0, 20.0 ],
-									"text" : "start transport at 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 409.0, 247.0, 29.5, 22.0 ],
-									"text" : "0."
+									"patching_rect" : [ 300.0, 247.0, 160.0, 20.0 ],
+									"text" : "start transport at 0 on restart"
 								}
 
 							}
@@ -788,7 +777,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 409.0, 217.0, 34.0, 22.0 ],
+									"patching_rect" : [ 394.0, 217.0, 34.0, 22.0 ],
 									"text" : "sel 1"
 								}
 
@@ -932,13 +921,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 1 ],
-									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
@@ -1035,8 +1017,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"source" : [ "obj-6", 0 ]
+									"destination" : [ "obj-3", 1 ],
+									"source" : [ "obj-6", 1 ]
 								}
 
 							}

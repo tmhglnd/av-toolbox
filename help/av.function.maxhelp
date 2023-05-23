@@ -203,11 +203,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"maxclass" : "newobj",
+									"local" : 1,
+									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 270.0, 225.0, 35.0, 22.0 ],
-									"text" : "dac~"
+									"patching_rect" : [ 260.0, 225.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -734,7 +734,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 498.0, 445.5, 106.0, 22.0 ],
-									"text" : "4 2 255.608613"
+									"text" : "12 49 883.63378"
 								}
 
 							}
