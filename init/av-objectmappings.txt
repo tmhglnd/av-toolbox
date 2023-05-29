@@ -10,6 +10,9 @@ max definesubstitution av.movie jit.movie @output_texture 1 @vol 0 @autostart 0 
 max objectfile av.function av.function;
 max definesubstitution av.function function @pointsize 3 @gridstep_x 0.1 @linethickness 1.5 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1;
 
+max objectfile av.function.multi av.function.multi;
+max definesubstitution av.function.multi mc.function @chans 8 @pointsize 3 @linethickness 1.5 @clicksustain 0 @mode 1 @legend 0 @candycane 8  @domain 1 @grid 3 @gridstep_x 0.05 @outputmode 1 @clickinactive 1;
+
 max objectfile av.node av.node;
 max definesubstitution av.node jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1;
 

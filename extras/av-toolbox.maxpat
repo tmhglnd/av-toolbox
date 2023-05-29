@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 157.0, 91.0, 948.0, 809.0 ],
+		"rect" : [ 328.0, 87.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2007,7 +2007,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras04.jpg",
+									"pic" : "av-extras08.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 525.0, 30.0, 208.0, 208.0 ]
 								}
@@ -2507,7 +2507,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "09:38:293"
+					"text" : "00:22:902"
 				}
 
 			}
@@ -2871,7 +2871,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1139.0, 700.5, 120.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 595.75, 446.5, 222.5, 142.5 ]
+					"presentation_rect" : [ 595.75, 446.5, 223.5, 128.5 ]
 				}
 
 			}
@@ -3039,9 +3039,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float", "signal" ],
-					"patching_rect" : [ 1139.0, 578.5, 203.0, 121.0 ],
+					"patching_rect" : [ 1139.0, 578.75, 203.25, 111.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 606.75, 454.0, 201.0, 121.0 ],
+					"presentation_rect" : [ 606.75, 454.0, 203.25, 111.25 ],
 					"varname" : "_av.automation~",
 					"viewvisibility" : 1
 				}
@@ -4862,7 +4862,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras04.jpg",
+				"name" : "av-extras08.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
@@ -5066,6 +5066,13 @@
 			}
 , 			{
 				"name" : "param-generator.js",
+				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui-resize.js",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",

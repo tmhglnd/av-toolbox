@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 212.0, 196.0, 753.0, 684.0 ],
+		"rect" : [ 268.0, 187.0, 753.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 244.0, 75.0, 117.0, 22.0 ],
+					"text" : "route function rslider"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 244.0, 45.0, 78.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "ui-resize.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js ui-resize.js"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
@@ -147,6 +176,7 @@
 , 			{
 				"box" : 				{
 					"floatoutput" : 1,
+					"hint" : "click-drag to zoom a portion of the function",
 					"id" : "obj-5",
 					"listmode" : 1,
 					"maxclass" : "rslider",
@@ -337,9 +367,10 @@
 					"domain" : 1.0,
 					"grid" : 3,
 					"gridstep_x" : 0.05,
+					"hint" : "Click to add points, shift+click to remove points, alt+drag to adjust curves",
 					"id" : "obj-1",
 					"legend" : 0,
-					"linethickness" : 2.0,
+					"linethickness" : 1.5,
 					"maxclass" : "function",
 					"mode" : 1,
 					"numinlets" : 1,
@@ -348,7 +379,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 1,
 					"patching_rect" : [ 148.0, 255.0, 200.0, 100.0 ],
-					"pointsize" : 4.0,
+					"pointsize" : 3.0,
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 200.0, 100.0 ],
 					"saved_attribute_attributes" : 					{
@@ -446,6 +477,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-21", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-23", 1 ]
 				}
 
@@ -491,6 +536,13 @@
 					"destination" : [ "obj-9", 0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
