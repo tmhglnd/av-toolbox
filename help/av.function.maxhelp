@@ -88,6 +88,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-24",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 316.0, 394.0, 149.0, 47.0 ],
+									"text" : "Also see av.automation~ for more functionalities in one object"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
@@ -734,7 +746,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 498.0, 445.5, 106.0, 22.0 ],
-									"text" : "12 49 883.63378"
+									"text" : "1 22 81.681301"
 								}
 
 							}
@@ -876,7 +888,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 90.0, 435.0, 47.0 ],
-									"text" : "A regular [function] object, but with some preset attributes like curve mode enabled and no sustion. Useful in combination with for example av.phasor~ and shape~ to generate automation ramps syncronized to global transport.",
+									"text" : "A regular [function] object, but with some preset attributes like curve mode enabled and no sustain. Useful in combination with for example av.phasor~ and shape~ to generate automation ramps syncronized to global transport.",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
