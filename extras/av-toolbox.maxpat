@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 73.0, 101.0, 948.0, 809.0 ],
+		"rect" : [ 157.0, 91.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2007,7 +2007,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras01.jpg",
+									"pic" : "av-extras04.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 525.0, 30.0, 208.0, 208.0 ]
 								}
@@ -2507,7 +2507,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "41:22:154"
+					"text" : "09:38:293"
 				}
 
 			}
@@ -3439,7 +3439,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 456.75, 226.5, 158.0, 33.0 ],
-					"text" : "split signal into low, mid, high envelope followers",
+					"text" : "envelope followers for low, mid, high frequency bands",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
 
@@ -4862,7 +4862,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras02.jpg",
+				"name" : "av-extras04.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",

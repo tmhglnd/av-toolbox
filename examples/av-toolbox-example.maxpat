@@ -212,7 +212,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 84.0, 140.0, 1222.0, 604.0 ],
+						"rect" : [ 152.0, 151.0, 1222.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -313,11 +313,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-238",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 60.0, 363.0, 118.0, 20.0 ],
-									"text" : "zoom the function ->"
+									"patching_rect" : [ 60.0, 350.0, 118.0, 33.0 ],
+									"text" : "click and drag to zoom the function ->"
 								}
 
 							}
@@ -439,8 +440,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 99.0, 226.0, 20.0 ],
-									"text" : "when transport starts the slab is disabled"
+									"patching_rect" : [ 240.0, 99.0, 229.0, 20.0 ],
+									"text" : "when transport starts, the slab is disabled"
 								}
 
 							}
@@ -487,12 +488,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-223",
-									"linecount" : 7,
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 799.5, 45.0, 285.0, 100.0 ],
-									"text" : "A jit.gl.node is used to capture the 2 visual parts and apply post processing efffects. The effects are enabled/disabled over time. One is a simple on/off, the other disable is done with a crossfade.\n\nWhen working with slabs parameters can be generated quickly with av.paramgenerator"
+									"patching_rect" : [ 799.5, 45.0, 285.0, 114.0 ],
+									"text" : "A jit.gl.node is used to capture the 2 visual parts and apply post-processing effects. The effects are enabled/disabled over time - one part is a simple on/off, and the other disable is done with a crossfade.\n\nWhen working with slabs, parameters can be generated quickly with av.paramgenerator"
 								}
 
 							}
@@ -1532,12 +1533,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-126",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 163.0, 168.0, 122.0, 100.0 ],
-									"text" : "first start audio recording (and video recording via for example syphonrecorder)\n\nThen click sync"
+									"patching_rect" : [ 163.0, 168.0, 114.0, 87.0 ],
+									"text" : "First, start audio recording (and video recording via syphonrecorder, for example), then click sync."
 								}
 
 							}
@@ -1726,7 +1727,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 60.0, 105.0, 666.0, 501.0 ],
+						"rect" : [ 85.0, 192.0, 666.0, 501.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1822,7 +1823,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 255.0, 60.0, 255.0, 60.0 ],
-									"text" : "This visual consists of 2 graphs, drawn by the amplitude of the signal. The signal is split into 3 bands (low, mid, high) and only the low and high bands are used for the display"
+									"text" : "This visual consists of 2 graphs drawn by the amplitude of the signal. The signal is split into 3 bands (low, mid, and high) and only the low and high bands are used for the display."
 								}
 
 							}
@@ -1830,12 +1831,12 @@
 								"box" : 								{
 									"fontface" : 2,
 									"id" : "obj-169",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 465.0, 320.0, 150.0, 100.0 ],
-									"text" : "(for more effecient visual patches I recommend wrapping scenes in abstractions/subpatchers and using mute~ or pcontrol to disable sound processing if not in use)"
+									"patching_rect" : [ 465.0, 320.0, 167.0, 87.0 ],
+									"text" : "(for more effecient visuals, wrap scenes in abstractions / subpatchers and use mute~ or pcontrol objects to disable sound processing if they are not in use)"
 								}
 
 							}
@@ -1847,7 +1848,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 465.0, 220.5, 150.0, 74.0 ],
-									"text" : "You can use the timetrigger to for example switch between different scenes/visuals in your patcher"
+									"text" : "For example, you can use the av.timetrigger to switch between different scenes/visuals in your patcher."
 								}
 
 							}
@@ -1871,7 +1872,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 255.0, 183.25, 111.0, 47.0 ],
-									"text" : "catch the signal as amplitude values to a 1d matrix"
+									"text" : "catch the signal as a 1d matrix of amplitude values"
 								}
 
 							}
@@ -1883,7 +1884,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 69.0, 95.0, 135.0, 33.0 ],
-									"text" : "split the signal in low, mid and  high bands"
+									"text" : "split the signal in low, mid, and high bands"
 								}
 
 							}
@@ -2212,7 +2213,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 84.0, 122.0, 925.0, 707.0 ],
+						"rect" : [ 105.0, 158.0, 925.0, 707.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2368,7 +2369,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 315.0, 30.0, 300.0, 100.0 ],
-									"text" : "This mesh has a heightmap displacement by the spectrum (FFT-frame) of the sound. It also uses the transient to trigger a different shape with a chance of 10%. Besides that the envelope is also followed resulting in different rotation speeds. The timepoint and speedgate change the filling of the mesh and the colors from black/white to auto."
+									"text" : "This mesh has a heightmap displacement based on the spectrum (FFT-frame) of the sound. It also uses the transient to trigger a different shape 10% of the time. In addition the envelope is followed, resulting in different rotation speeds. The av.timepoint and av.speedgate objects change the generated mesh and its colors from black/white to auto."
 								}
 
 							}
@@ -2534,7 +2535,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 139.0, 208.0, 171.0, 20.0 ],
-									"text" : "10% of the time pass the bang"
+									"text" : "pass the bang 10% of the time"
 								}
 
 							}
@@ -3431,7 +3432,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.5, 65.0, 628.0, 47.0 ],
-					"text" : "This patcher demonstrates the usage of most of the av-toolbox objects. All av-objects are highlighted in blue (some are inside subpatcher!). To help navigate over this patcher follow the numbers, read the comments and open the subpatcher. For more information you can also open the helpfiles of the objects with Alt+Click"
+					"text" : "This patcher demonstrates the usage of most of the av-toolbox objects. All av-objects are highlighted in blue (some are inside subpatchers!). To help navigate over this patcher, follow the numbers, read the comments and open the subpatchers. For more information, open the helpfiles of the objects with Alt+Click."
 				}
 
 			}
@@ -3597,12 +3598,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-162",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 860.0, 107.5, 97.0, 60.0 ],
-					"text" : "timepoints are based on time, not on relative tempo"
+					"patching_rect" : [ 860.0, 114.0, 128.0, 47.0 ],
+					"text" : "timepoints are based on time, rather than relative tempo"
 				}
 
 			}
@@ -3799,7 +3800,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 382.0, 118.0, 33.0 ],
-					"text" : "02:25:163"
+					"text" : "00:00:000"
 				}
 
 			}
@@ -3823,8 +3824,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.0, 114.0, 152.0, 47.0 ],
-					"text" : "all time objects (timepoint, automation, timetrigger) are synced to transport"
+					"patching_rect" : [ 693.0, 114.0, 165.0, 47.0 ],
+					"text" : "all time objects (timepoint, automation, and timetrigger) are synced to the transport"
 				}
 
 			}

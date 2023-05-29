@@ -88,6 +88,19 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 385.0, 289.0, 108.0, 47.0 ],
+									"presentation_linecount" : 2,
+									"text" : "adjust the slow attack-release follower"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-95",
 									"linecount" : 2,
@@ -210,7 +223,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 372.0, 282.5, 20.0, 20.0 ],
+									"patching_rect" : [ 320.0, 268.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -245,7 +258,7 @@
 											"parameter_initial_enable" : 1,
 											"parameter_longname" : "live.dial[2]",
 											"parameter_mmax" : 500.0,
-											"parameter_shortname" : "release",
+											"parameter_shortname" : "slow-release",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 2
 										}
@@ -854,7 +867,7 @@
 			"obj-2::obj-23" : [ "live.dial", "attack", 0 ],
 			"obj-2::obj-24" : [ "live.dial[1]", "release", 0 ],
 			"obj-2::obj-46" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-2::obj-7" : [ "live.dial[2]", "release", 0 ],
+			"obj-2::obj-7" : [ "live.dial[2]", "slow-release", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,

@@ -653,8 +653,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 90.0, 420.0, 87.0 ],
-									"text" : "A combination of the av.cross3~ (outputting low, mid and high bands) and three av.follow~ envelope followers for every band. Outputs a list of different bands and a separate outlet for every bands envelope followed signal.\n\nSend a bang to get the list of floating values (control for example with the render bang from jit.world)",
+									"patching_rect" : [ 30.0, 90.0, 474.0, 87.0 ],
+									"text" : "A combination of the av.cross3~ (outputting low, mid and high frequency bands) and three av.follow~ envelope followers for every band. Outputs a list of different bands and a separate outlet for every band's envelope followed signal.\n\nSend a bang to get the list of floating values (control for example with the render bang from jit.world)",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
