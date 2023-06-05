@@ -40,12 +40,48 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 90.0, 103.0, 22.0 ],
+					"text" : "prepend transport"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 244.0, 62.0, 55.0, 22.0 ],
+					"text" : "zl.slice 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 244.0, 30.0, 102.0, 22.0 ],
+					"text" : "patcherargs 0 1 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 244.0, 75.0, 117.0, 22.0 ],
+					"patching_rect" : [ 240.5, 150.0, 117.0, 22.0 ],
 					"text" : "route function rslider"
 				}
 
@@ -57,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 45.0, 78.0, 22.0 ],
+					"patching_rect" : [ 240.5, 120.0, 78.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "ui-resize.js",
 						"parameter_enable" : 0
@@ -74,7 +110,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 360.0, 333.0, 230.0, 22.0 ],
+					"patching_rect" : [ 360.0, 393.0, 230.0, 22.0 ],
 					"restore" : [ 1.0, 0.0, 1.0, "curve" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -93,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 345.0, 179.0, 58.0, 22.0 ],
+					"patching_rect" : [ 345.0, 239.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -105,7 +141,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 211.0, 35.0, 22.0 ],
+					"patching_rect" : [ 345.0, 271.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -117,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 240.5, 139.0, 91.0, 22.0 ],
+					"patching_rect" : [ 240.5, 199.0, 91.0, 22.0 ],
 					"text" : "routepass clear"
 				}
 
@@ -168,7 +204,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 210.0, 84.0, 22.0 ],
+					"patching_rect" : [ 244.0, 270.0, 84.0, 22.0 ],
 					"text" : "zoom_x $1 $2"
 				}
 
@@ -184,15 +220,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 244.0, 181.0, 94.0, 18.0 ],
+					"patching_rect" : [ 244.0, 241.0, 94.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 100.0, 200.0, 18.0 ],
+					"presentation_rect" : [ 0.0, 82.0, 200.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0, 1.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_longname" : "rslider",
+							"parameter_longname" : "rslider[1]",
 							"parameter_shortname" : "rslider",
 							"parameter_type" : 3
 						}
@@ -211,7 +247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.0, 210.0, 59.0, 22.0 ],
+					"patching_rect" : [ 148.0, 270.0, 59.0, 22.0 ],
 					"text" : "cursor $1"
 				}
 
@@ -223,7 +259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 148.0, 181.0, 81.0, 22.0 ],
+					"patching_rect" : [ 148.0, 241.0, 81.0, 22.0 ],
 					"text" : "snapshot~ 25"
 				}
 
@@ -235,7 +271,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 65.0, 256.0, 33.0 ],
+					"patching_rect" : [ 420.0, 125.0, 256.0, 33.0 ],
 					"text" : "written by Timo Hoogland, (c) 2023, www.timohoogland.com, GNU GPL v3 License"
 				}
 
@@ -243,12 +279,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 8,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 196.0, 241.0, 114.0 ],
-					"text" : "Arguments:\nminutes (default = 0)\nseconds (default = 0)\nmilliseconds (default = 0)\n\nAttributes:\n@transport - bind to a named transport (default = none)"
+					"patching_rect" : [ 420.0, 256.0, 241.0, 87.0 ],
+					"text" : "Arguments:\nminutes (default = 0)\nseconds (default = 0)\nmilliseconds (default = 0)\ntransport - bind to a named transport (default = global)"
 				}
 
 			}
@@ -259,7 +295,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 120.0, 244.0, 60.0 ],
+					"patching_rect" : [ 420.0, 180.0, 244.0, 60.0 ],
 					"text" : "A combination of a function, shape and the av.phasor~. Set the time-interval for the phasor to go over the slope of the function. Use the rslider to zoom the function."
 				}
 
@@ -272,20 +308,20 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 30.0, 184.0, 33.0 ],
+					"patching_rect" : [ 420.0, 90.0, 184.0, 33.0 ],
 					"text" : "av.automation~"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(float) automation value",
 					"id" : "obj-13",
 					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.5, 480.0, 30.0, 30.0 ]
+					"patching_rect" : [ 40.5, 540.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -296,7 +332,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
-					"patching_rect" : [ 30.0, 75.0, 71.5, 22.0 ],
+					"patching_rect" : [ 30.0, 135.0, 71.5, 22.0 ],
 					"text" : "typeroute~"
 				}
 
@@ -308,20 +344,20 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 40.5, 435.0, 64.0, 22.0 ],
+					"patching_rect" : [ 40.5, 495.0, 64.0, 22.0 ],
 					"text" : "snapshot~"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) automation value",
 					"id" : "obj-10",
 					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.0, 480.0, 30.0, 30.0 ]
+					"patching_rect" : [ 118.0, 540.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -332,7 +368,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 118.0, 390.0, 48.0, 22.0 ],
+					"patching_rect" : [ 118.0, 450.0, 48.0, 22.0 ],
 					"text" : "shape~"
 				}
 
@@ -344,7 +380,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 118.0, 139.0, 97.0, 22.0 ],
+					"patching_rect" : [ 118.0, 199.0, 97.0, 22.0 ],
 					"text" : "av.phasor~ 0 1 0"
 				}
 
@@ -356,7 +392,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 329.0, 375.0, 22.0, 22.0 ],
+					"patching_rect" : [ 329.0, 435.0, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -378,14 +414,14 @@
 					"outlettype" : [ "float", "", "", "bang" ],
 					"outputmode" : 1,
 					"parameter_enable" : 1,
-					"patching_rect" : [ 148.0, 255.0, 200.0, 100.0 ],
+					"patching_rect" : [ 148.0, 315.0, 200.0, 100.0 ],
 					"pointsize" : 3.0,
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 200.0, 100.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 200.0, 82.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "1039_automation_function",
+							"parameter_longname" : "1039_automation_function[1]",
 							"parameter_shortname" : "1039_automation_function",
 							"parameter_type" : 3
 						}
@@ -490,6 +526,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-23", 1 ]
 				}
@@ -499,6 +542,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-24", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 328.0, 87.0, 948.0, 809.0 ],
+		"rect" : [ 188.0, 96.0, 948.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2007,7 +2007,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 855.0, 180.0, 135.0, 135.0 ],
-									"pic" : "av-extras08.jpg",
+									"pic" : "av-extras01.jpg",
 									"presentation" : 1,
 									"presentation_rect" : [ 525.0, 30.0, 208.0, 208.0 ]
 								}
@@ -2507,31 +2507,7 @@
 					"patching_rect" : [ 750.0, 237.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 383.5, 73.0, 20.0 ],
-					"text" : "00:22:902"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-103",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1155.5, 546.5, 35.0, 22.0 ],
-					"text" : "0 2 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-93",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1139.0, 516.5, 68.0, 22.0 ],
-					"text" : "r av-launch"
+					"text" : "03:08:451"
 				}
 
 			}
@@ -2882,8 +2858,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1139.0, 741.75, 83.0, 22.0 ],
-					"text" : "av.automation"
+					"patching_rect" : [ 1139.0, 741.75, 97.0, 22.0 ],
+					"text" : "_av.automation~"
 				}
 
 			}
@@ -3025,6 +3001,7 @@
 			}
 , 			{
 				"box" : 				{
+					"args" : [ 0, 2, 0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -4150,13 +4127,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-81", 0 ],
-					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-104", 0 ]
 				}
@@ -4803,22 +4773,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"order" : 0,
-					"source" : [ "obj-93", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-81", 0 ],
-					"order" : 1,
-					"source" : [ "obj-93", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
 					"source" : [ "obj-96", 0 ]
 				}
@@ -4862,7 +4816,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-extras08.jpg",
+				"name" : "av-extras01.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "JPEG",
@@ -5086,7 +5040,7 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0,
+		"autosave" : 1,
 		"snapshot" : 		{
 			"filetype" : "C74Snapshot",
 			"version" : 2,
