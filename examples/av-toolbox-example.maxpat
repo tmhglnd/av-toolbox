@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, 96.0, 1007.0, 818.0 ],
+		"rect" : [ 42.0, 96.0, 1007.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -242,6 +242,42 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 180.0, 555.0, 54.0, 22.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 180.0, 615.0, 22.0, 22.0 ],
+									"text" : "t 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 180.0, 585.0, 63.0, 22.0 ],
+									"text" : "route read"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
 									"index" : 1,
@@ -250,18 +286,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 180.0, 67.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-53",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 180.0, 436.0, 70.0, 22.0 ],
-									"text" : "loadmess 1"
 								}
 
 							}
@@ -1065,6 +1089,28 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"midpoints" : [ 189.5, 649.0, 163.5, 649.0, 163.5, 455.5, 189.5, 455.5 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-87", 0 ],
 									"source" : [ "obj-45", 0 ]
 								}
@@ -1079,15 +1125,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-45", 2 ],
-									"source" : [ "obj-52", 0 ]
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-53", 0 ]
+									"destination" : [ "obj-45", 2 ],
+									"source" : [ "obj-52", 0 ]
 								}
 
 							}
@@ -1848,7 +1894,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 465.0, 220.5, 150.0, 74.0 ],
+									"patching_rect" : [ 465.0, 220.5, 154.0, 74.0 ],
 									"text" : "For example, you can use the av.timetrigger to switch between different scenes/visuals in your patcher."
 								}
 
@@ -3801,7 +3847,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 382.0, 118.0, 33.0 ],
-					"text" : "00:34:772"
+					"text" : "00:00:000"
 				}
 
 			}
@@ -4313,13 +4359,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "av-toolbox-example.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "av.amp~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/av-toolbox/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -4478,71 +4517,7 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 1,
-		"snapshot" : 		{
-			"filetype" : "C74Snapshot",
-			"version" : 2,
-			"minorversion" : 0,
-			"name" : "snapshotlist",
-			"origin" : "jpatcher",
-			"type" : "list",
-			"subtype" : "Undefined",
-			"embed" : 1,
-			"snapshot" : 			{
-				"valuedictionary" : 				{
-					"parameter_values" : 					{
-						"live.gain~" : -11.088887084990674,
-						"blob" : 						{
-							"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.061162079510703, 1.0, 0, 0.0, 0.345565749235474, 1.0, 0, 0.0, 0.694189602446483, 0.0, 0, 0.0, 0.798165137614679, 0.0, 0, 0.0, 0.799559633027523, 1.0, 0, 0.0, 0.812477064220184, 1.0, 0, 0.0, 0.815412844036697, 0.0, 0, 0.0, 0.841834862385321, 0.0, 0, 0.0, 0.843009174311927, 1.0, 0, 0.0, 0.854165137614679, 1.0, 0, 0.0, 0.859327217125382, 0.0, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
-							"rslider" : [ 0.0, 1.0 ]
-						}
-
-					}
-
-				}
-
-			}
-,
-			"snapshotlist" : 			{
-				"current_snapshot" : 0,
-				"entries" : [ 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "av-toolbox-example",
-						"origin" : "av-toolbox-example",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~" : -11.088887084990674,
-									"blob" : 									{
-										"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.061162079510703, 1.0, 0, 0.0, 0.345565749235474, 1.0, 0, 0.0, 0.694189602446483, 0.0, 0, 0.0, 0.798165137614679, 0.0, 0, 0.0, 0.799559633027523, 1.0, 0, 0.0, 0.812477064220184, 1.0, 0, 0.0, 0.815412844036697, 0.0, 0, 0.0, 0.841834862385321, 0.0, 0, 0.0, 0.843009174311927, 1.0, 0, 0.0, 0.854165137614679, 1.0, 0, 0.0, 0.859327217125382, 0.0, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
-										"rslider" : [ 0.0, 1.0 ]
-									}
-
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "av-toolbox-example",
-							"filename" : "av-toolbox-example.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "2aba9d7855eba2e221e603da6b4019aa"
-						}
-
-					}
- ]
-			}
-
-		}
-
+		"autosave" : 0
 	}
 
 }

@@ -88,11 +88,32 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-39",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 300.0, 299.5, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "4",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-10",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 254.5, 256.0, 103.0, 20.0 ],
+									"patching_rect" : [ 241.5, 262.5, 60.0, 33.0 ],
 									"text" : "Or select a preset"
 								}
 
@@ -130,7 +151,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 300.0, 400.5, 20.0, 20.0 ],
+									"patching_rect" : [ 300.0, 365.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "5",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -143,28 +164,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 315.0, 390.0, 107.0, 20.0 ],
+									"patching_rect" : [ 315.0, 354.5, 107.0, 20.0 ],
 									"text" : "interpolate presets"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-39",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 300.0, 335.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "4",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
 								}
 
 							}
@@ -195,7 +196,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 315.0, 285.5, 158.0, 60.0 ],
+									"patching_rect" : [ 315.0, 250.0, 158.0, 60.0 ],
 									"text" : "function is automatically exposed to pattrstorage for preset storage (or can be stored with snapshots)"
 								}
 
@@ -207,7 +208,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 315.0, 435.0, 29.5, 22.0 ],
+									"patching_rect" : [ 315.0, 399.5, 29.5, 22.0 ],
 									"text" : "+ 1."
 								}
 
@@ -221,7 +222,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 315.0, 410.5, 111.0, 15.0 ],
+									"patching_rect" : [ 315.0, 375.0, 111.0, 15.0 ],
 									"size" : 4.0
 								}
 
@@ -233,7 +234,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "preset", "int", "preset", "int", "" ],
-									"patching_rect" : [ 315.0, 347.5, 105.0, 28.0 ],
+									"patching_rect" : [ 315.0, 312.0, 105.0, 28.0 ],
 									"pattrstorage" : "avhelp"
 								}
 
@@ -246,7 +247,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 465.0, 111.0, 22.0 ],
+									"patching_rect" : [ 315.0, 429.5, 111.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 100, 100, 500, 600 ],
 										"parameter_enable" : 0,
@@ -780,7 +781,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 498.0, 445.5, 106.0, 22.0 ],
-									"text" : "3 34 64.441867"
+									"text" : "0 0 0."
 								}
 
 							}
