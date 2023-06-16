@@ -3334,26 +3334,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"fontname" : "Arial Bold",
-					"hint" : "",
-					"id" : "obj-193",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 678.0, 305.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "4",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-185",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -3612,7 +3592,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.0, 287.0, 135.0, 33.0 ],
+					"patching_rect" : [ 693.0, 271.0, 135.0, 33.0 ],
 					"text" : "report the current time in min sec ms"
 				}
 
@@ -3826,7 +3806,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 693.0, 352.0, 83.0, 22.0 ],
+					"patching_rect" : [ 693.0, 336.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3846,8 +3826,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.0, 382.0, 118.0, 33.0 ],
-					"text" : "00:00:000"
+					"patching_rect" : [ 693.0, 366.0, 118.0, 33.0 ],
+					"text" : "00:00:619"
 				}
 
 			}
@@ -3859,7 +3839,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 693.0, 320.0, 162.0, 22.0 ],
+					"patching_rect" : [ 693.0, 304.0, 162.0, 22.0 ],
 					"text" : "av.when @active 1 @defer 1"
 				}
 

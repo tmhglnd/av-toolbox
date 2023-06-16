@@ -2,9 +2,8 @@
 GNU GENERAL PUBLIC LICENSE
 Copyright (C) 2023 Timo Hoogland
 
-av-toolkit
-abstractions for various multichannel functions based on the
-ZL list objects in max and a few matrix read and write functions.
+av-toolbox
+abstractions for creating realtime audiovisual works.
 Copyright (C) 2023 Timo Hoogland
 
 This program is free software: you can redistribute it and/or modify
