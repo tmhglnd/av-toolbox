@@ -27,10 +27,10 @@ max objectfile av.loadmess patcherargs;
 max objectfile av.gridshape.sphere av.gridshape.sphere;
 max definesubstitution av.gridshape.sphere jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 
-max definesubstitution av.gridshape.plane av.gridshape.plane;
+max objectfile av.gridshape.plane av.gridshape.plane;
 max definesubstitution av.gridshape.plane jit.gl.gridshape @shape plane @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 0 @dim 50 50 @matrixoutput 0;
 
-max definesubstitution av.gridshape.torus av.gridshape.torus;
+max objectfile av.gridshape.torus av.gridshape.torus;
 max definesubstitution av.gridshape.torus jit.gl.gridshape @shape torus @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 
 max objectfile av.mesh.points av.mesh.points;
@@ -48,5 +48,5 @@ max definesubstitution av.cornerpin jit.gl.cornerpin @corner_radius 50 @line_wid
 max objectfile av.texture av.texture;
 max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0;
 
-max.objectfile av.bfg av.bfg;
-max definesubstitution av.bfg jit.gl.bfg @zoom 1 @colorize 0 @basis noise.simplex;
+max objectfile av.bfg av.bfg;
+max definesubstitution av.bfg jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3;
