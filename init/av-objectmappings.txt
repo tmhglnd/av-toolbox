@@ -1,5 +1,5 @@
 max objectfile av.world av.world;
-max definesubstitution av.world jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080;
+max definesubstitution av.world jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 480 270 @windowposition 800 200 @output_texture 1 @dim 1920 1080;
 
 max objectfile av.movie av.movie;
 max definesubstitution av.movie jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5;
@@ -24,8 +24,14 @@ max definesubstitution av.camera.drive jit.anim.drive @speed 5 @ease 0.5 @ui_lis
 
 max objectfile av.loadmess patcherargs;
 
-max objectfile av.gridshape av.gridshape;
-max definesubstitution av.gridshape jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
+max objectfile av.gridshape.sphere av.gridshape.sphere;
+max definesubstitution av.gridshape.sphere jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
+
+max definesubstitution av.gridshape.plane av.gridshape.plane;
+max definesubstitution av.gridshape.plane jit.gl.gridshape @shape plane @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 0 @dim 50 50 @matrixoutput 0;
+
+max definesubstitution av.gridshape.torus av.gridshape.torus;
+max definesubstitution av.gridshape.torus jit.gl.gridshape @shape torus @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 
 max objectfile av.mesh.points av.mesh.points;
 max definesubstitution av.mesh.points jit.gl.mesh @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1;
@@ -38,3 +44,9 @@ max definesubstitution av.mesh.grid jit.gl.mesh @draw_mode quad_grid @poly_mode 
 
 max objectfile av.cornerpin av.cornerpin;
 max definesubstitution av.cornerpin jit.gl.cornerpin @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1;
+
+max objectfile av.texture av.texture;
+max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0;
+
+max.objectfile av.bfg av.bfg;
+max definesubstitution av.bfg jit.gl.bfg @zoom 1 @colorize 0 @basis noise.simplex;
