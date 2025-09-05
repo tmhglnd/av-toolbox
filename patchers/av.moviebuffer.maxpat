@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,8 +45,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 418.5, 385.0, 33.0 ],
-					"text" : "written by Timo Hoogland, 2025, www.timohoogland.com\nThanks to Rob Ramirez and Matteo Marson for showing the [grab] trick"
+					"patching_rect" : [ 45.0, 418.5, 432.0, 33.0 ],
+					"text" : "written by Timo Hoogland, 2025, www.timohoogland.com, GNU GPL v3 License\nThanks to Rob Ramirez and Matteo Marson for showing the [grab] trick"
 				}
 
 			}
@@ -81,20 +81,20 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 330.0, 153.0, 195.0, 114.0 ],
-					"text" : "arguments:\nbuffername - (symbol, required) - the buffer name used by other objects to refer to.\n\nmessages:\n(read) - read a moviefile from disk into the buffer"
+					"patching_rect" : [ 330.0, 169.0, 195.0, 114.0 ],
+					"text" : "arguments:\nmoviebuffername - (symbol, required) - the buffer name used by other objects to refer to.\n\nmessages:\n(read) - read a moviefile from disk into the buffer"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 5,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 330.0, 77.0, 390.0, 74.0 ],
-					"text" : "This object allows you to load a movie, similar to a \"buffer~\". When the movie is loaded you can read from it using the [av.moviebuffer.play] object. With this technique you only have to load a movie once and you can read from it in multiple places in the patch for greater efficiency. The video engine must be set to VIDDLL."
+					"patching_rect" : [ 330.0, 77.0, 390.0, 87.0 ],
+					"text" : "This object allows you to load a movie, similar to a \"buffer~\". When the movie is loaded you can read from it using the [av.moviebuffer.play] object. With this technique you only have to load a movie once and you can read from it in multiple places in the patch for greater efficiency. The video engine must be set to VIDDLL. Also this technique works best with uncompressed video files, for example using the HAP codec."
 				}
 
 			}
@@ -219,8 +219,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -256,6 +256,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 243.0, 52.0, 22.0 ],
+									"text" : "loadram"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -273,8 +285,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 270.0, 69.0, 22.0 ],
-									"text" : "loadram $1"
+									"patching_rect" : [ 95.5, 210.0, 69.0, 22.0 ],
+									"text" : "loadram -1."
 								}
 
 							}
@@ -287,30 +299,6 @@
 									"outlettype" : [ "done" ],
 									"patching_rect" : [ 131.5, 270.0, 42.0, 22.0 ],
 									"text" : "t done"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-519",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.5, 210.0, 29.5, 22.0 ],
-									"text" : "-1."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-513",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 210.0, 29.5, 22.0 ],
-									"text" : "1."
 								}
 
 							}
@@ -404,7 +392,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-519", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -448,22 +436,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-513", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-511", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-513", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-519", 0 ]
 								}
 
 							}
@@ -471,6 +445,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-520", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -496,7 +477,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 562.0, 375.0, 68.0, 22.0 ],
+					"patching_rect" : [ 562.0, 375.0, 88.0, 22.0 ],
 					"text" : "s #1_info"
 				}
 
@@ -520,7 +501,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 285.0, 130.0, 22.0 ],
+					"patching_rect" : [ 165.0, 285.0, 150.0, 22.0 ],
 					"text" : "receive #1_moviebuf"
 				}
 
