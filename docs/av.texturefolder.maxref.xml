@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="th.gl.texturefolder">
+
+	<digest>
+		Load a folder of images into named textures
+	</digest>
+
+	<description>
+		
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">thModules</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">jitter</metadata>
+		<metadata name="tag">opengl</metadata>
+		<metadata name="tag">video</metadata>
+		<metadata name="tag">texture</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<!-- <inletlist>
+		<inlet id="0" type="float">
+			<digest></digest>
+		</inlet>
+		<inlet id="1" type="float">
+			<digest></digest>
+		</inlet>
+	</inletlist> -->
+
+	<!--OUTLETS-->
+	<!-- <outletlist>
+		<outlet id="0" type="int/float">
+			<digest></digest>
+			<description></description>
+		</outlet>
+	</outletlist> -->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="rendering-context" optional="0" type="string">
+			<digest>
+				The named drawing context in which to draw (default = none).
+			</digest>
+			<description>
+				Set the name of the rendering context. This is the name given to the jit.world, jit.gl.render or jit.gl.node object.
+			</description>
+		</objarg>
+		<objarg name="texture-name" optional="1" type="string">
+			<digest>
+				The base-name of the textures (default = tex)
+			</digest>
+			<description>
+				Set the base-name for all the textures. The textures will be appended with their index. Eg. tex0, tex1, tex2... (default = tex)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="read">
+			<arglist>
+				<arg name="read" optional="0" type="message" />
+			</arglist>
+			<digest>
+				Read a folder of images into the texturefolder.
+			</digest>
+			<description>
+				Read a folder of images into the texturefolder. This replaces the previous loaded textures. Read without argument opens a dialog. Optional argument is the absolute path to the folder.
+			</description>
+		</method>
+		<method name="add">
+			<arglist>
+				<arg name="add" optional="0" type="message" />
+			</arglist>
+			<digest>
+				Add an image to the loaded textures.
+			</digest>
+			<description>
+				Add an image to the loaded textures. Add without argument opens a dialog. Optional argument is the absolute path to the folder.
+			</description>
+		</method>
+		<method name="outputtexture">
+			<arglist>
+				<arg name="outputtexture" optional="0" type="message" />
+			</arglist>
+			<digest>
+				Output the texture loaded at a specific index.
+			</digest>
+			<description>
+				Output the texture loaded at a specific index.
+			</description>
+		</method>
+		<method name="getnames">
+			<arglist>
+				<arg name="getnames" optional="0" type="message" />
+			</arglist>
+			<digest>
+				Output a list of all the texturenames.
+			</digest>
+			<description>
+				Output a list of all the texturenames out the second outlet.
+			</description>
+		</method>
+		<method name="getcount">
+			<arglist>
+				<arg name="getcount" optional="0" type="message" />
+			</arglist>
+			<digest>
+				Output the total texturecount.
+			</digest>
+			<description>
+				Output the total texturecount out the second outlet.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		
+	</attributelist>
+
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="th.gl.videogrid"/>
+		<seealso name="th.gl.texteditor"/>
+		<seealso name="th.gl.commandline"/>
+		<seealso name="jit.world"/>
+		<seealso name="jit.gl.videoplane"/>
+		<seealso name="jit.gl.cornerpin"/>
+		<seealso name="jit.gl.texture"/>
+		<seealso name="jit.gl.multiple"/>
+	</seealsolist>
+
+</c74object>

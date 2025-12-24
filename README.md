@@ -10,7 +10,9 @@ Suggestions, bug reports and feature requests are much appreciated. Please add t
 
 ## About
 
-This package contains small abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport, objects that extend/wrap some jitter objects, some object mappings to initialize jitter objects with common used attributes and more.
+This package contains small abstractions to assist you in creating realtime audiovisual works. The objects are designed to work together with the already wide range of jitter objecst in Max. All the objects are created with vanilla Max, and therefore can be opened and inspected from the inside, and also have zero dependencies on other externals or packages.
+
+Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport, objects that extend/wrap some jitter objects, some object mappings to initialize jitter objects with common used attributes and more. Almost all of the objects have help-files with small examples and suggestions on how to use the objects.
 
 ![](icon.png)
 
@@ -25,6 +27,8 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.follow~** - A more sophisticated envelope follower with low and highpass cutoff and a fast and slow follower to detect transients better and filter out low frequency information.
 
 - **av.follow3~** - Split a signal into low, mid and high frequency bands and apply an envelope follower.
+
+- **av.ampgate~** - An envelope follower (using av.follow~) that ouputs a gating signal when the amplitude crosses the threshold. It has a hold time and attack release for the gate.
 
 - **av.trigger~** - An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold.
 
@@ -65,6 +69,8 @@ This package contains small abstractions to assist you in creating realtime audi
 - **av.movie~** - The jit.movie~ object with extras. Loads begin and end of the movie in the RAM for seamless looping.
 
 - **av.movieplay~** - The jit.movie object that can be controlled with an audio signal similar to the play~ object. Combine movieplay~ with play~ for audiorate playback of sound together with movie.
+
+- **av.texturefolder** - Load a folder with image-files into individual named textures that can be used throughout the patch.
 
 - **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
 
