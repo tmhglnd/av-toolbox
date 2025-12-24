@@ -1,24 +1,20 @@
 {
-	"filetype" : "C74Snapshot",
-	"version" : 2,
-	"minorversion" : 0,
-	"name" : "av-toolbox",
-	"origin" : "av-toolbox",
-	"type" : "patcher",
-	"subtype" : "Undefined",
-	"embed" : 0,
-	"snapshot" : 	{
-		"valuedictionary" : 		{
-			"parameter_values" : 			{
-				"blob" : 				{
-					"1039_automation_function" : [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
-					"rslider" : [ 0.0, 1.0 ]
-				}
-
-			}
-
-		}
-
-	}
-
+    "filetype": "C74Snapshot",
+    "version": 2,
+    "minorversion": 0,
+    "name": "av-toolbox",
+    "origin": "av-toolbox",
+    "type": "patcher",
+    "subtype": "Undefined",
+    "embed": 0,
+    "snapshot": {
+        "valuedictionary": {
+            "parameter_values": {
+                "blob": {
+                    "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
+                    "rslider": [ 0.0, 1.0 ]
+                }
+            }
+        }
+    }
 }
