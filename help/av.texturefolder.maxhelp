@@ -889,7 +889,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 324.0, 285.0, 80.0, 35.0 ]
+                                    "patching_rect": [ 315.0, 285.0, 80.0, 35.0 ]
                                 }
                             },
                             {
@@ -900,7 +900,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 177.0, 609.0, 52.0, 22.0 ],
-                                    "text": "480 640"
+                                    "text": "640 480"
                                 }
                             },
                             {
@@ -1126,7 +1126,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 83.0, 415.0, 87.0 ],
+                                    "patching_rect": [ 30.0, 83.0, 419.0, 87.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1293,8 +1293,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 30.0, 240.0, 415.0, 22.0 ],
-                                    "text": "jit.world texfold @enable 1 @erase_color 0 0 0 1 @floating 1 @size 480 270"
+                                    "patching_rect": [ 30.0, 240.0, 474.0, 22.0 ],
+                                    "text": "jit.world texfold @enable 0 @erase_color 0 0 0 1 @floating 1 @size 480 270 @visible 0"
                                 }
                             },
                             {
@@ -1304,7 +1304,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 82.0, 390.0, 112.0, 74.0 ],
+                                    "patching_rect": [ 82.0, 390.0, 113.0, 74.0 ],
                                     "text": "Open a dialog and select a folder with images. Or provide absolute path to the folder location."
                                 }
                             },
@@ -1500,6 +1500,14 @@
         "parameters": {
             "obj-1::obj-43": [ "number", "number", 0 ],
             "obj-49::obj-27": [ "toggle[1]", "toggle[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
