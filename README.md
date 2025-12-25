@@ -72,6 +72,8 @@ Objects range from signal analysis that can be used to control visual parameters
 
 - **av.texturefolder** - Load a folder with image-files into individual named textures that can be used throughout the patch.
 
+- **av.videogrid** - Display a texture in a grid with other textures.
+
 - **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
 
 - **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
@@ -123,6 +125,10 @@ Max has quite a few shaders build into the application and examples. But if you 
 
 ## Install
 
+**This package can be installed through the Max Package Manager in Max8/9**
+
+In case you want to try out the newest features before it is released in the Package Manager, you can manually install it by following these steps:
+
 ```
 1. download zip
 2. unzip and place in Max Packages (on MacOS ~/Documents/Max 8/Packages)
@@ -136,12 +142,16 @@ Max has quite a few shaders build into the application and examples. But if you 
 4. restart Max8, open Package manager, Launch av-toolbox
 ```
 
-## To Do / Ideas
+## Ideas
 
 - [ ] **av.param~** - Control parameters of shaders with signals and include smoothing/easing
 
 - [ ] **av.line** - A ramp-generator with range and easing to control a parameter
 
-- [ ] Help-files for: av.automation~
+- [ ] **av.random** - A random number generator that never repeats (similar to urn)
 
-- [ ] Documentation for: av.when, av.trigger~, av.timetrigger~, av.timetoticks, av.timepoint, av.testpattern, av.sync~, av.automation~
+- [ ] **av.preview** - A preview window for jitter visuals, useful when VJ-ing
+
+- [ ] **av.screen2world** - Convert pixel/mouse coordinates to jitter world coordinates
+
+- [ ] **av.world2screen** - Convert jitter world coordinates to pixel/mouse coordinates
