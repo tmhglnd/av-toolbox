@@ -34,6 +34,39 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-33",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 343.5, 418.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-32",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 311.0, 418.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "bang" ],
+                                    "patching_rect": [ 311.0, 383.0, 42.0, 22.0 ],
+                                    "text": "edge~"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-26",
                                     "maxclass": "comment",
                                     "numinlets": 1,
@@ -765,6 +798,14 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-25", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-2", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-2", 1 ]
                                 }
                             },
@@ -843,6 +884,18 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-32", 0 ],
+                                    "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-33", 0 ],
+                                    "source": [ "obj-7", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-66", 0 ],
                                     "hidden": 1,
                                     "source": [ "obj-77", 0 ]
@@ -894,6 +947,14 @@
             "obj-2::obj-23": [ "live.dial", "threshold", 0 ],
             "obj-2::obj-24": [ "live.dial[1]", "hold", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
