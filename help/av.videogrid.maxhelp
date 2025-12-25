@@ -29,7 +29,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 631.0, 628.0 ],
+                        "rect": [ 100.0, 126.0, 631.0, 628.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -180,7 +180,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 195.0, 280.0, 66.0, 22.0 ],
+                                    "patching_rect": [ 136.0, 288.0, 66.0, 22.0 ],
                                     "text": "random 25"
                                 }
                             },
@@ -191,7 +191,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 195.0, 252.0, 80.0, 22.0 ],
+                                    "patching_rect": [ 136.0, 260.0, 80.0, 22.0 ],
                                     "text": "speedlim 500"
                                 }
                             },
@@ -202,7 +202,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 195.0, 312.0, 54.0, 22.0 ],
+                                    "patching_rect": [ 136.0, 320.0, 54.0, 22.0 ],
                                     "text": "index $1"
                                 }
                             },
@@ -340,7 +340,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 100.0, 252.0, 80.0, 35.0 ]
+                                    "patching_rect": [ 41.0, 260.0, 80.0, 35.0 ]
                                 }
                             },
                             {
@@ -416,12 +416,13 @@
                             {
                                 "box": {
                                     "id": "obj-1",
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 30.0, 210.0, 349.0, 22.0 ],
-                                    "text": "jit.world mlt-ctx @size 480 270 @visible 0 @erase_color 1 1 1 1"
+                                    "patching_rect": [ 30.0, 210.0, 231.0, 35.0 ],
+                                    "text": "jit.world mlt-ctx @size 480 270 @visible 0 @erase_color 1 1 1 1 @floating 1"
                                 }
                             }
                         ],
@@ -649,7 +650,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 631.0, 628.0 ],
+                        "rect": [ 0.0, 26.0, 631.0, 628.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -662,7 +663,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 633.0, 98.0, 300.0, 35.0 ],
-                                    "presentation_linecount": 2,
                                     "text": ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
                                 }
                             },
@@ -676,7 +676,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 633.0, 53.0, 317.0, 35.0 ],
-                                    "presentation_linecount": 2,
                                     "text": ";\rmax launchbrowser http://www.patreon.com/timohoogland"
                                 }
                             },
@@ -720,7 +719,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 633.0, 143.0, 275.0, 35.0 ],
-                                    "presentation_linecount": 2,
                                     "text": ";\rmax launchbrowser http://www.timohoogland.com"
                                 }
                             },
@@ -1063,8 +1061,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "by Timo Hoogland (c) 2019-2025, www.timohoogland.com, formerly th.gl.videogrid",
-                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                                    "text": "by Timo Hoogland (c) 2019-2025, www.timohoogland.com, formerly th.gl.videogrid"
                                 }
                             },
                             {
@@ -1074,14 +1071,13 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 435.0, 74.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 441.0, 74.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "The th.gl.videogrid allows you to display a texture on a certain position in the screen. The entire screen is divided in a grid based on the x and y division values. The width of the video determines how many segments of the grid the video uses. The index determines the position of the video left>right top>bottom.  The position can also be set with x,y coordinates.",
-                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                                    "text": "The th.gl.videogrid allows you to display a texture on a certain position in the screen. The entire screen is divided in a grid based on the x and y division values. The width of the video determines how many segments of the grid the video uses. The index determines the position of the video left>right top>bottom.  The position can also be set with x,y coordinates."
                                 }
                             },
                             {
@@ -1099,8 +1095,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "av.videogrid",
-                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                                    "text": "av.videogrid"
                                 }
                             }
                         ],
