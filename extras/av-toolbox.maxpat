@@ -9,10 +9,212 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 213.0, 75.0, 945.0, 864.0 ],
+        "rect": [ 72.0, 73.0, 945.0, 864.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-183",
+                    "linecount": 2,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 251.0, 995.0, 300.0, 35.0 ],
+                    "text": ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-184",
+                    "linecount": 2,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 251.0, 953.0, 317.0, 35.0 ],
+                    "text": ";\rmax launchbrowser http://www.patreon.com/timohoogland"
+                }
+            },
+            {
+                "box": {
+                    "align": 0,
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "fontface": 1,
+                    "fontsize": 10.0,
+                    "id": "obj-185",
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 98.0, 968.0, 120.0, 23.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 756.0, 77.0, 165.0, 23.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_bubble_bgcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "textovercolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "support me on patreon",
+                    "textjustification": 0,
+                    "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "usebgoncolor": 1,
+                    "usetextovercolor": 1
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-186",
+                    "linecount": 2,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 251.0, 911.0, 275.0, 35.0 ],
+                    "text": ";\rmax launchbrowser http://www.timohoogland.com"
+                }
+            },
+            {
+                "box": {
+                    "align": 0,
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "fontface": 1,
+                    "fontsize": 10.0,
+                    "id": "obj-187",
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 98.0, 935.0, 120.0, 23.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 756.0, 52.0, 165.0, 23.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_bubble_bgcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "textovercolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "view my portfolio",
+                    "textjustification": 0,
+                    "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "usebgoncolor": 1,
+                    "usetextovercolor": 1
+                }
+            },
+            {
+                "box": {
+                    "align": 0,
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "fontface": 1,
+                    "fontsize": 10.0,
+                    "id": "obj-188",
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 98.0, 995.0, 120.0, 23.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 756.0, 102.0, 165.0, 23.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_bubble_bgcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "textovercolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "more patches on gumroad",
+                    "textjustification": 0,
+                    "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "usebgoncolor": 1,
+                    "usetextovercolor": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-182",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1440.0, 557.0, 72.0, 22.0 ],
+                    "text": "av.videogrid"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-181",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1541.0, 484.0, 99.0, 33.0 ],
+                    "presentation": 1,
+                    "presentation_linecount": 2,
+                    "presentation_rect": [ 608.0, 660.0, 94.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "create a grid of videoplanes",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                }
+            },
+            {
+                "box": {
+                    "handoff": "",
+                    "hltcolor": [ 1.0, 1.0, 1.0, 0.5 ],
+                    "id": "obj-180",
+                    "maxclass": "ubutton",
+                    "numinlets": 1,
+                    "numoutlets": 4,
+                    "outlettype": [ "bang", "bang", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1440.0, 506.0, 120.0, 37.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 604.0, 629.0, 88.0, 37.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-178",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1439.0, 480.0, 100.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 610.0, 637.0, 72.0, 22.0 ],
+                    "text": "av.videogrid"
+                }
+            },
             {
                 "box": {
                     "id": "obj-179",
@@ -49,9 +251,14 @@
                     "patching_rect": [ 1395.0, 433.0, 150.0, 33.0 ],
                     "presentation": 1,
                     "presentation_linecount": 2,
-                    "presentation_rect": [ 460.0, 661.0, 133.375, 33.0 ],
+                    "presentation_rect": [ 457.4375, 661.0, 133.375, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "load a folder of images into individual textures",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -87,8 +294,13 @@
                     "patching_rect": [ 1259.5, 391.0, 150.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 610.0, 208.0, 87.00000259280205, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "envelope gate",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -309,9 +521,14 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 666.0, 408.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 132.0, 262.0, 22.0 ],
+                                    "presentation_rect": [ 30.0, 120.0, 262.0, 22.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "(click on headers to open the website)",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -676,8 +893,13 @@
                                     "patching_rect": [ 90.0, 45.0, 474.0, 51.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 30.0, 340.0, 51.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "learn jitter",
-                                    "textcolor": [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -692,8 +914,13 @@
                                     "patching_rect": [ 90.0, 98.0, 474.0, 47.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 83.0, 490.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Useful resources during your journey of learning to use Jitter",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -806,7 +1033,8 @@
                                     "source": [ "obj-8", 0 ]
                                 }
                             }
-                        ]
+                        ],
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                     },
                     "patching_rect": [ 1560.0, 179.0, 80.0, 22.0 ],
                     "text": "p resources",
@@ -861,8 +1089,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 765.0, 732.0, 150.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "hide the cursor when idle for 5 seconds",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -891,40 +1124,6 @@
             },
             {
                 "box": {
-                    "align": 0,
-                    "bgcolor": [ 1.0, 1.0, 1.0, 0.25 ],
-                    "bgoncolor": [ 0.239216, 0.254902, 0.278431, 0.5 ],
-                    "fontface": 1,
-                    "id": "obj-166",
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 135.0, 795.0, 150.0, 23.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 756.0, 80.0, 164.75, 23.0 ],
-                    "text": "support on patreon",
-                    "textjustification": 0,
-                    "textoncolor": [ 0.239216, 0.254902, 0.278431, 1.0 ],
-                    "usebgoncolor": 1
-                }
-            },
-            {
-                "box": {
-                    "hidden": 1,
-                    "id": "obj-165",
-                    "linecount": 2,
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 135.0, 975.0, 317.0, 35.0 ],
-                    "text": ";\rmax launchbrowser http://www.patreon.com/timohoogland"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-163",
                     "linecount": 2,
                     "maxclass": "comment",
@@ -934,8 +1133,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 610.0, 732.0, 114.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "disable processing with crossfade",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -990,8 +1194,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 309.0, 732.0, 150.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "control a camera in with keyboard and mouse",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1056,8 +1265,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 765.0, 661.0, 150.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "take a screenshot of a texture as png or jpeg",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1123,8 +1337,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 460.0, 732.0, 150.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "disable processing of a gl.pix or gl.slab",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1176,9 +1395,14 @@
                     "patching_rect": [ 720.0, 1014.0, 150.0, 33.0 ],
                     "presentation": 1,
                     "presentation_linecount": 2,
-                    "presentation_rect": [ 309.0, 661.0, 150.0, 33.0 ],
+                    "presentation_rect": [ 308.0, 661.0, 150.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "control a movie with a signal",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1204,8 +1428,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 609.0, 391.0, 120.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "limited the throughput of a bang",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1218,8 +1447,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 765.0, 391.0, 117.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "allow a bang to pass with probability",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -1373,9 +1607,31 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 375.0, 147.0, 754.0, 488.0 ],
+                        "rect": [ 519.0, 148.0, 770.0, 489.0 ],
                         "openinpresentation": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 422.0, 480.0, 79.0, 22.0 ],
+                                    "text": "prepend help"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 422.0, 511.0, 51.0, 22.0 ],
+                                    "text": "pcontrol"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-52",
@@ -1432,8 +1688,13 @@
                                     "patching_rect": [ 90.0, 666.0, 408.0, 22.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 132.0, 328.0, 22.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "(click on the names to open the download page)",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1448,7 +1709,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 300.0, 570.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 435.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 346.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1472,9 +1733,14 @@
                                     "patching_rect": [ 450.0, 540.0, 176.0, 100.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 435.0, 471.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 349.0, 471.0, 33.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1487,7 +1753,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 300.0, 540.0, 148.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 438.5, 101.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 349.0, 101.0, 27.0 ],
                                     "text": "pix.shaders",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1504,7 +1770,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 525.0, 435.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 210.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 431.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1514,23 +1780,27 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 525.0, 480.0, 245.0, 22.0 ],
-                                    "text": "https://github.com/tmhglnd/th.gl.texturefolder"
+                                    "patching_rect": [ 525.0, 480.0, 90.0, 22.0 ],
+                                    "text": "av.texturefolder"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-29",
-                                    "linecount": 4,
+                                    "linecount": 3,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 675.0, 405.0, 176.0, 60.0 ],
+                                    "patching_rect": [ 675.0, 405.0, 176.0, 47.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 210.0, 279.0, 33.0 ],
-                                    "text": "This abstraction allows you to load an entire folder of images into named jit.gl.texture objects.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "presentation_rect": [ 212.0, 438.0, 343.0, 20.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Deprecated, now included as [av.texturefolder] in the package!",
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1543,7 +1813,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 525.0, 405.0, 148.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 213.5, 148.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 435.0, 148.0, 27.0 ],
                                     "text": "th.gl.texturefolder",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1560,7 +1830,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 180.0, 435.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 346.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 257.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1584,9 +1854,14 @@
                                     "patching_rect": [ 315.0, 405.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 346.0, 321.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 260.0, 321.0, 33.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "A basic texteditor in the Max Jitter OpenGL window for interaction with your patch in a Livecoding-like style.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1599,7 +1874,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 180.0, 405.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 349.5, 122.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 260.0, 122.0, 27.0 ],
                                     "text": "th.gl.texteditor",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1616,7 +1891,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 480.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 390.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 301.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1640,9 +1915,14 @@
                                     "patching_rect": [ 645.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 390.0, 336.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 304.0, 336.0, 33.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "A commandline text-editor in the Max Jitter OpenGL window for interaction with your patch in a Livecoding-like style.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1655,7 +1935,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 480.0, 285.0, 155.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 393.5, 155.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 304.0, 155.0, 27.0 ],
                                     "text": "th.gl.commandline",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1672,7 +1952,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 139.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 300.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 211.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1696,9 +1976,14 @@
                                     "patching_rect": [ 274.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 300.0, 324.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 214.0, 315.0, 33.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "jit.gl.cornerpin wrapped in an abstraction that automatically exposes corner coordinates to pattrstorage",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1711,7 +1996,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 139.0, 285.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 303.5, 123.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 214.0, 123.0, 27.0 ],
                                     "text": "th.gl.cornerpin",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1728,7 +2013,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 405.0, 195.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 255.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 389.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1738,23 +2023,27 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 405.0, 240.0, 227.0, 22.0 ],
-                                    "text": "https://github.com/tmhglnd/th.gl.videogrid"
+                                    "patching_rect": [ 405.0, 240.0, 72.0, 22.0 ],
+                                    "text": "av.videogrid"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-10",
-                                    "linecount": 4,
+                                    "linecount": 2,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 540.0, 165.0, 241.0, 60.0 ],
+                                    "patching_rect": [ 540.0, 165.0, 241.0, 33.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 255.0, 456.0, 33.0 ],
-                                    "text": "The th.gl.videogrid allows you to display a texture on a certain position in the screen. The entire screen is divided in a grid based on the x and y division values.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "presentation_rect": [ 212.0, 396.0, 325.0, 20.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Deprecated, now included as [av.videogrid] in the package!",
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1767,7 +2056,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 405.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 258.5, 121.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 393.0, 121.0, 27.0 ],
                                     "text": "th.gl.videogrid",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1820,9 +2109,14 @@
                                     "patching_rect": [ 225.0, 165.0, 150.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 165.0, 272.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 168.5, 272.0, 33.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Gateway to non-realtime HiRes rendering of jitter visuals. The rendering process has three steps.",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1851,9 +2145,14 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 45.0, 474.0, 51.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 30.0, 340.0, 51.0 ],
-                                    "text": "av-toolbox (extras)",
-                                    "textcolor": [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
+                                    "presentation_rect": [ 30.0, 30.0, 332.0, 51.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "AV Toolbox Extras",
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1868,9 +2167,14 @@
                                     "patching_rect": [ 90.0, 98.0, 474.0, 47.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 30.0, 83.0, 340.0, 47.0 ],
-                                    "text": "Other useful extensions not part of this toolbox but downloadable on github",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "presentation_rect": [ 30.0, 83.0, 383.0, 47.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Other useful extensions that are not (yet) part of this toolbox but downloadable on github",
+                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                                 }
                             },
                             {
@@ -1894,10 +2198,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 397.74660779994923, 397.74660779994923 ],
-                                    "pic": "av-extras05.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 448.4849742638101, 448.4849742638101 ],
+                                    "pic": "av-extras07.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 525.0, 30.0, 612.824403128809, 612.824403128809 ]
+                                    "presentation_rect": [ 526.0, 30.0, 217.7016489718423, 217.7016489718423 ]
                                 }
                             }
                         ],
@@ -1958,7 +2262,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-5", 0 ],
                                     "source": [ "obj-28", 0 ]
                                 }
                             },
@@ -1988,6 +2292,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-48", 0 ],
                                     "source": [ "obj-52", 0 ]
                                 }
@@ -2006,11 +2316,12 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-5", 0 ],
                                     "source": [ "obj-8", 0 ]
                                 }
                             }
-                        ]
+                        ],
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                     },
                     "patching_rect": [ 1433.0, 179.0, 83.0, 22.0 ],
                     "text": "p \"other tools\"",
@@ -2308,7 +2619,13 @@
                     "patching_rect": [ 750.0, 237.0, 73.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 217.0, 368.0, 73.0, 20.0 ],
-                    "text": "10:19:201"
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "17:59:315",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2381,8 +2698,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 151.0, 661.0, 149.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "movie with seemless loop and progress report",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2435,8 +2757,13 @@
                     "presentation": 1,
                     "presentation_linecount": 3,
                     "presentation_rect": [ 153.0, 732.0, 132.5, 47.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "generate parameters for gl.slab and gl.shader objects",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2451,7 +2778,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 917.0, 861.5, 120.0, 37.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 603.0, 630.0, 96.0, 37.0 ]
+                    "presentation_rect": [ 303.5, 784.0, 96.0, 37.0 ]
                 }
             },
             {
@@ -2474,9 +2801,14 @@
                     "patching_rect": [ 917.0, 839.5, 150.0, 20.0 ],
                     "presentation": 1,
                     "presentation_linecount": 2,
-                    "presentation_rect": [ 609.0, 660.0, 107.75, 33.0 ],
+                    "presentation_rect": [ 309.5, 814.0, 107.75, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "display a testpattern visual",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2526,8 +2858,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 153.0, 815.0, 120.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "sync audio and video in post",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2540,9 +2877,14 @@
                     "numoutlets": 0,
                     "patching_rect": [ 878.0, 789.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 308.0, 605.0, 232.0, 22.0 ],
-                    "text": "extend jitter visuals and jitter utilities",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "presentation_rect": [ 301.0, 602.5, 303.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "improve your visuals with various jitter utilities",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2556,8 +2898,13 @@
                     "patching_rect": [ 735.0, 786.5, 141.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 600.0, 141.0, 27.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Jitter Extensions",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2609,9 +2956,14 @@
                     "numoutlets": 0,
                     "patching_rect": [ 937.0, 167.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 308.0, 334.0, 320.0, 22.0 ],
+                    "presentation_rect": [ 300.0, 332.5, 320.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "triggers, signals, automation synced with transport",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2662,8 +3014,13 @@
                     "presentation": 1,
                     "presentation_linecount": 7,
                     "presentation_rect": [ 820.0, 439.0, 118.5, 100.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "[av.automation~]\n\nA signal shaped by function, output at timed interval in min:sec:ms synced with transport",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2699,8 +3056,13 @@
                     "presentation": 1,
                     "presentation_linecount": 4,
                     "presentation_rect": [ 455.0, 500.0, 138.25, 60.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "[av.function]\n\nfunction object but with preset attributes",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2762,8 +3124,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 153.0, 465.0, 141.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "synced transport phasor with min:sec:ms interval",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2824,7 +3191,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 917.0, 815.5, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 610.0, 637.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 310.5, 791.0, 80.0, 22.0 ],
                     "text": "av.testpattern"
                 }
             },
@@ -2852,9 +3219,14 @@
                     "numoutlets": 0,
                     "patching_rect": [ 299.0, 167.0, 372.0, 38.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 308.0, 155.0, 416.0, 22.0 ],
+                    "presentation_rect": [ 296.0, 152.5, 416.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "analysis of incoming signals output as floats, signals and matrices",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2932,8 +3304,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 309.0, 463.0, 120.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "continous bang every min:sec:ms",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -2970,8 +3347,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 455.0, 391.0, 111.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "convert min:sec:ms to ticks",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3023,8 +3405,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 308.0, 391.0, 117.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "output a bang at min:sec:ms",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3077,8 +3464,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 153.0, 391.0, 137.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "get transport time in min:sec:ms",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3092,8 +3484,13 @@
                     "patching_rect": [ 799.0, 167.0, 136.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 330.0, 136.0, 27.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Timeline Events",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3118,8 +3515,13 @@
                     "patching_rect": [ 150.0, 180.0, 126.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 150.0, 126.0, 27.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Audio Analysis",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3155,8 +3557,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 457.0, 211.0, 158.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "envelope followers for low, mid, high frequency bands",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3300,8 +3707,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 764.0, 276.0, 123.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "split signal into low, mid and high bands",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3326,8 +3738,13 @@
                     "patching_rect": [ 495.0, 237.0, 150.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 764.0, 208.0, 145.0, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "envelope schmitt trigger",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3340,8 +3757,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 457.0, 277.0, 144.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Spectrum matrix history output",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3353,8 +3775,13 @@
                     "patching_rect": [ 150.0, 550.0, 150.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 609.0, 276.0, 116.0, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "rotate channel order",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3419,8 +3846,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 308.0, 277.0, 140.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Spectrum matrix frame output",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3432,8 +3864,13 @@
                     "patching_rect": [ 150.0, 422.0, 93.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 154.0, 275.0, 93.0, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "3 channel catch",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3487,8 +3924,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 308.0, 210.0, 128.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "extended envelope follower",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3606,8 +4048,13 @@
                     "patching_rect": [ 150.0, 139.0, 408.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 97.0, 271.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "(click the objects to open the help-files)",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3672,72 +4119,6 @@
             },
             {
                 "box": {
-                    "id": "obj-10",
-                    "linecount": 2,
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 135.0, 930.0, 275.0, 35.0 ],
-                    "text": ";\rmax launchbrowser http://www.timohoogland.com"
-                }
-            },
-            {
-                "box": {
-                    "align": 0,
-                    "bgcolor": [ 1.0, 1.0, 1.0, 0.25 ],
-                    "bgoncolor": [ 0.239216, 0.254902, 0.278431, 0.5 ],
-                    "fontface": 1,
-                    "id": "obj-11",
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 135.0, 854.0, 150.0, 23.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 756.0, 55.0, 164.75, 23.0 ],
-                    "text": "view my portfolio",
-                    "textjustification": 0,
-                    "textoncolor": [ 0.239216, 0.254902, 0.278431, 1.0 ],
-                    "usebgoncolor": 1
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-46",
-                    "linecount": 2,
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 135.0, 885.0, 296.0, 35.0 ],
-                    "text": ";\rmax launchbrowser http://www.gumroad.com/tmhglnd"
-                }
-            },
-            {
-                "box": {
-                    "align": 0,
-                    "bgcolor": [ 1.0, 1.0, 1.0, 0.25 ],
-                    "bgoncolor": [ 0.239216, 0.254902, 0.278431, 0.5 ],
-                    "fontface": 1,
-                    "id": "obj-45",
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 135.0, 825.0, 150.0, 23.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 756.0, 105.0, 164.75, 23.0 ],
-                    "text": "more patches on gumroad",
-                    "textjustification": 0,
-                    "textoncolor": [ 0.239216, 0.254902, 0.278431, 1.0 ],
-                    "usebgoncolor": 1
-                }
-            },
-            {
-                "box": {
                     "id": "obj-9",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -3746,8 +4127,13 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 154.0, 209.0, 113.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "simple envelope follower",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3763,23 +4149,34 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 756.0, 21.0, 171.0, 29.0 ],
-                    "text": "written by Timo Hoogland © 2023-2025, www.timohoogland.com"
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "written by Timo Hoogland © 2023-2025, www.timohoogland.com",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
                 "box": {
-                    "fontface": 0,
+                    "fontface": 1,
                     "fontname": "Arial",
                     "fontsize": 40.0,
                     "id": "obj-22",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 150.0, 30.0, 474.0, 51.0 ],
+                    "patching_rect": [ 150.0, 30.0, 519.0, 51.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 15.0, 262.0, 51.0 ],
-                    "text": "av-toolbox",
-                    "textcolor": [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
+                    "presentation_rect": [ 150.0, 15.0, 225.0, 51.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "AV Toolbox",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3793,8 +4190,13 @@
                     "patching_rect": [ 150.0, 83.0, 474.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 68.0, 419.0, 27.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
                     "text": "Objects for realtime audiovisual creations with Jitter",
-                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -3862,12 +4264,6 @@
                     "destination": [ "obj-77", 0 ],
                     "order": 1,
                     "source": [ "obj-108", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-10", 0 ],
-                    "source": [ "obj-11", 0 ]
                 }
             },
             {
@@ -4076,12 +4472,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-165", 0 ],
-                    "source": [ "obj-166", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-129", 0 ],
                     "source": [ "obj-167", 0 ]
                 }
@@ -4138,6 +4528,39 @@
                 "patchline": {
                     "destination": [ "obj-124", 0 ],
                     "source": [ "obj-179", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-182", 0 ],
+                    "source": [ "obj-180", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-124", 0 ],
+                    "source": [ "obj-182", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-184", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-185", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-186", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-187", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-183", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-188", 0 ]
                 }
             },
             {
@@ -4225,12 +4648,6 @@
                 "patchline": {
                     "destination": [ "obj-59", 0 ],
                     "source": [ "obj-42", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-46", 0 ],
-                    "source": [ "obj-45", 0 ]
                 }
             },
             {
@@ -4413,14 +4830,6 @@
         "parameters": {
             "obj-81::obj-1": [ "1039_automation_function", "1039_automation_function", 0 ],
             "obj-81::obj-5": [ "rslider", "rslider", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 1,
@@ -4510,6 +4919,11 @@
             }
         ],
         "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ],
-        "bgcolor": [ 0.873261630535126, 0.873261690139771, 0.873261690139771, 1.0 ]
+        "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+        "saved_attribute_attributes": {
+            "locked_bgcolor": {
+                "expression": "themecolor.theme_locked_bgcolor"
+            }
+        }
     }
 }
