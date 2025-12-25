@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="th.gl.videogrid">
+
+	<digest>
+		Place a videoplane on a segment of a grid
+	</digest>
+
+	<description>
+		
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">thModules</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">jitter</metadata>
+		<metadata name="tag">opengl</metadata>
+		<metadata name="tag">video</metadata>
+		<metadata name="tag">texture</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<!-- <inletlist>
+		<inlet id="0" type="float">
+			<digest></digest>
+		</inlet>
+		<inlet id="1" type="float">
+			<digest></digest>
+		</inlet>
+	</inletlist> -->
+
+	<!--OUTLETS-->
+	<!-- <outletlist>
+		<outlet id="0" type="int/float">
+			<digest></digest>
+			<description></description>
+		</outlet>
+	</outletlist> -->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="rendering-context" optional="1" type="string">
+			<digest>
+				The named drawing context in which to draw (default = none).
+			</digest>
+			<description>
+				Set the name of the rendering context. This is the name given to the jit.world, jit.gl.render or jit.gl.node object.
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="jit_gl_texture">
+			<arglist>
+				<arg name="jit_gl_texture" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Input a texture.
+			</digest>
+			<description>
+				Input a texture to display on the video segment.
+			</description>
+		</method>
+		<method name="jit_matrix">
+			<arglist>
+				<arg name="jit_matrix" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Input a matrix.
+			</digest>
+			<description>
+				Input a matrix to display on the video segment.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="div" get='0' set='1' type='float' size='2' >
+			<digest>
+				Divide the screen (default = 3 3).
+			</digest>
+			<description>
+				Divide the screen in x and y amount of segments. If one value is provided the x and y will be equal. (default = 3 3).
+			</description>
+		</attribute>
+		<attribute name="position" get='0' set='1' type='int' size='2' >
+			<digest>
+				Position coordinate (default = 0 0).
+			</digest>
+			<description>
+				The position coordinate the texture will be displayed at. This is 0 to div-1. (default = 0 0).
+			</description>
+		</attribute>
+		<attribute name="width" get='0' set='1' type='int' size='2' >
+			<digest>
+				Segments wide (default = 1).
+			</digest>
+			<description>
+				The amount of segments wide the texture will be displayed at (default = 1).
+			</description>
+		</attribute>
+		<attribute name="index" get='0' set='1' type='int' size='2' >
+			<digest>
+				Position index (default = 0).
+			</digest>
+			<description>
+				The index position the texture will be displayed at. This replaces the position attribute. Counting from left-right, top-bottom (default = 0).
+			</description>
+		</attribute>
+		<attribute name="spacing" get='0' set='1' type='float' size='2' >
+			<digest>
+				Spacing between planes (default = 0).
+			</digest>
+			<description>
+				Add a gap between video planes (default = 0).
+			</description>
+		</attribute>
+		<attribute name="layer" get='0' set='1' type='int' size='2' >
+			<digest>
+				Object layer number (default = 0).
+			</digest>
+			<description>
+				Object layer number (default = ). When in automatic mode, the layer number determines the rendering order (low to high). Objects in the same layer have no guarantee which will be rendered first.
+			</description>
+		</attribute>
+		<attribute name="preserve_aspect" get='0' set='1' type='int' size='2' >
+			<digest>
+				Preserve aspect ratio flag (default = 0).
+			</digest>
+			<description>
+				Preserve aspect ratio flag of input image (default = 0).
+			</description>
+		</attribute>
+		<attribute name="disable" get='0' set='1' type='int' size='2' >
+			<digest>
+				Disable the videoplane (default = 0).
+			</digest>
+			<description>
+				Disable the videoplane (default = 0).
+			</description>
+		</attribute>
+	</attributelist>
+
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="th.gl.commandline"/>
+		<seealso name="jit.world"/>
+		<seealso name="jit.gl.videoplane"/>
+		<seealso name="jit.gl.cornerpin"/>
+		<seealso name="jit.gl.texture"/>
+		<seealso name="jit.gl.movie"/>
+		<seealso name="send"/>
+		<seealso name="receive"/>
+		<seealso name="routepass"/>
+		<seealso name="js"/>
+	</seealsolist>
+
+</c74object>

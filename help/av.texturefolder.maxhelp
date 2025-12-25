@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 100.0, 100.0, 633.0, 721.0 ],
+        "rect": [ 743.0, 138.0, 633.0, 721.0 ],
         "showrootpatcherontab": 0,
         "showontab": 0,
         "boxes": [
@@ -747,7 +747,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 633.0, 695.0 ],
+                        "rect": [ 743.0, 164.0, 633.0, 695.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -759,7 +759,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 633.0, 113.0, 300.0, 35.0 ],
+                                    "patching_rect": [ 633.0, 98.0, 300.0, 35.0 ],
                                     "text": ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
                                 }
                             },
@@ -772,7 +772,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 633.0, 68.0, 317.0, 35.0 ],
+                                    "patching_rect": [ 633.0, 53.0, 317.0, 35.0 ],
                                     "text": ";\rmax launchbrowser http://www.patreon.com/timohoogland"
                                 }
                             },
@@ -789,7 +789,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 480.0, 83.0, 135.0, 23.0 ],
+                                    "patching_rect": [ 480.0, 68.0, 135.0, 23.0 ],
                                     "saved_attribute_attributes": {
                                         "textoncolor": {
                                             "expression": "themecolor.theme_accentcolor"
@@ -815,7 +815,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 633.0, 158.0, 275.0, 35.0 ],
+                                    "patching_rect": [ 633.0, 143.0, 275.0, 35.0 ],
                                     "text": ";\rmax launchbrowser http://www.timohoogland.com"
                                 }
                             },
@@ -832,7 +832,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 480.0, 143.0, 135.0, 23.0 ],
+                                    "patching_rect": [ 480.0, 128.0, 135.0, 23.0 ],
                                     "saved_attribute_attributes": {
                                         "textoncolor": {
                                             "expression": "themecolor.theme_accentcolor"
@@ -862,7 +862,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 480.0, 113.0, 135.0, 23.0 ],
+                                    "patching_rect": [ 480.0, 98.0, 135.0, 23.0 ],
                                     "saved_attribute_attributes": {
                                         "textoncolor": {
                                             "expression": "themecolor.theme_accentcolor"
@@ -889,7 +889,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 315.0, 285.0, 80.0, 35.0 ]
+                                    "patching_rect": [ 315.0, 270.0, 80.0, 35.0 ]
                                 }
                             },
                             {
@@ -899,7 +899,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 177.0, 609.0, 52.0, 22.0 ],
+                                    "patching_rect": [ 177.0, 594.0, 52.0, 22.0 ],
                                     "text": "640 480"
                                 }
                             },
@@ -910,7 +910,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 178.0, 579.0, 59.0, 22.0 ],
+                                    "patching_rect": [ 178.0, 564.0, 59.0, 22.0 ],
                                     "text": "route dim"
                                 }
                             },
@@ -927,7 +927,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 15.0, 195.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 180.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "1",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -940,7 +940,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 30.0, 210.0, 118.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 195.0, 118.0, 22.0 ],
                                     "text": "visible $1, enable $1"
                                 }
                             },
@@ -952,7 +952,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 30.0, 180.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 30.0, 165.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -963,7 +963,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 143.0, 458.0, 51.0, 22.0 ],
+                                    "patching_rect": [ 143.0, 443.0, 51.0, 22.0 ],
                                     "text": "r texfold"
                                 }
                             },
@@ -980,7 +980,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 394.0, 628.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 394.0, 613.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "7",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -992,7 +992,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 349.0, 615.0, 54.0, 22.0 ],
+                                    "patching_rect": [ 349.0, 600.0, 54.0, 22.0 ],
                                     "text": "s names"
                                 }
                             },
@@ -1003,7 +1003,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 409.0, 615.0, 123.0, 33.0 ],
+                                    "patching_rect": [ 409.0, 600.0, 123.0, 33.0 ],
                                     "text": "see tab \"multiple\" for example with names"
                                 }
                             },
@@ -1013,7 +1013,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 365.0, 585.0, 71.0, 22.0 ],
+                                    "patching_rect": [ 365.0, 570.0, 71.0, 22.0 ],
                                     "text": "print names"
                                 }
                             },
@@ -1024,7 +1024,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 349.0, 555.0, 75.0, 22.0 ],
+                                    "patching_rect": [ 349.0, 540.0, 75.0, 22.0 ],
                                     "text": "route names"
                                 }
                             },
@@ -1035,7 +1035,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 48.0, 425.5, 29.5, 22.0 ],
+                                    "patching_rect": [ 48.0, 410.0, 29.5, 22.0 ],
                                     "text": "add"
                                 }
                             },
@@ -1052,7 +1052,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 260.0, 405.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 260.0, 390.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "4",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1071,7 +1071,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 15.0, 300.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 285.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "3",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1090,7 +1090,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 15.0, 375.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 360.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "2",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1103,7 +1103,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 57.0, 315.0, 76.0, 47.0 ],
+                                    "patching_rect": [ 57.0, 300.0, 76.0, 47.0 ],
                                     "text": "manually change the output"
                                 }
                             },
@@ -1115,7 +1115,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 660.0, 497.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 645.0, 497.0, 20.0 ],
                                     "text": "written by Timo Hoogland © 2020-2025, www.timohoogland.com, formerly th.gl.texturefolder"
                                 }
                             },
@@ -1126,7 +1126,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 83.0, 419.0, 87.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 419.0, 87.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1144,7 +1144,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 30.0, 367.0, 51.0 ],
+                                    "patching_rect": [ 30.0, 15.0, 367.0, 51.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1161,7 +1161,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 30.0, 315.0, 24.0, 24.0 ],
+                                    "patching_rect": [ 30.0, 300.0, 24.0, 24.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_enum": [ "off", "on" ],
@@ -1184,7 +1184,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 215.0, 315.0, 32.0, 22.0 ],
+                                    "patching_rect": [ 215.0, 300.0, 32.0, 22.0 ],
                                     "text": "gate"
                                 }
                             },
@@ -1194,7 +1194,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 306.0, 361.0, 116.0, 20.0 ],
+                                    "patching_rect": [ 306.0, 346.0, 116.0, 20.0 ],
                                     "text": "use the total count"
                                 }
                             },
@@ -1205,7 +1205,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 215.0, 390.0, 39.0, 22.0 ],
+                                    "patching_rect": [ 215.0, 375.0, 39.0, 22.0 ],
                                     "text": "urn-jb"
                                 }
                             },
@@ -1216,7 +1216,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 235.0, 360.0, 69.0, 22.0 ],
+                                    "patching_rect": [ 235.0, 345.0, 69.0, 22.0 ],
                                     "text": "route count"
                                 }
                             },
@@ -1227,7 +1227,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 228.0, 285.0, 80.0, 22.0 ],
+                                    "patching_rect": [ 228.0, 270.0, 80.0, 22.0 ],
                                     "text": "speedlim 250"
                                 }
                             },
@@ -1238,7 +1238,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 205.0, 511.0, 209.0, 20.0 ],
+                                    "patching_rect": [ 205.0, 496.0, 209.0, 20.0 ],
                                     "text": "arguments: context texture-name"
                                 }
                             },
@@ -1249,7 +1249,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 275.0, 420.0, 120.0, 33.0 ],
+                                    "patching_rect": [ 275.0, 405.0, 120.0, 33.0 ],
                                     "text": "output the selected texture from index"
                                 }
                             },
@@ -1261,7 +1261,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 215.0, 420.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 215.0, 405.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -1271,7 +1271,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 215.0, 458.0, 95.0, 22.0 ],
+                                    "patching_rect": [ 215.0, 443.0, 95.0, 22.0 ],
                                     "text": "outputtexture $1"
                                 }
                             },
@@ -1282,7 +1282,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 30.0, 579.0, 98.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 564.0, 98.0, 22.0 ],
                                     "text": "jit.gl.layer texfold"
                                 }
                             },
@@ -1293,7 +1293,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 30.0, 240.0, 474.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 225.0, 474.0, 22.0 ],
                                     "text": "jit.world texfold @enable 0 @erase_color 0 0 0 1 @floating 1 @size 480 270 @visible 0"
                                 }
                             },
@@ -1304,7 +1304,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 82.0, 390.0, 113.0, 74.0 ],
+                                    "patching_rect": [ 82.0, 375.0, 113.0, 74.0 ],
                                     "text": "Open a dialog and select a folder with images. Or provide absolute path to the folder location."
                                 }
                             },
@@ -1315,7 +1315,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 30.0, 390.0, 33.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 375.0, 33.0, 22.0 ],
                                     "text": "read"
                                 }
                             },
@@ -1326,7 +1326,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 30.0, 510.0, 167.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 495.0, 167.0, 22.0 ],
                                     "text": "av.texturefolder texfold myTex"
                                 }
                             }
@@ -1341,7 +1341,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-12", 0 ],
-                                    "midpoints": [ 187.5, 542.0, 429.0, 542.0, 429.0, 349.0, 244.5, 349.0 ],
+                                    "midpoints": [ 187.5, 527.0, 429.0, 527.0, 429.0, 334.0, 244.5, 334.0 ],
                                     "order": 1,
                                     "source": [ "obj-1", 1 ]
                                 }
@@ -1500,14 +1500,6 @@
         "parameters": {
             "obj-1::obj-43": [ "number", "number", 0 ],
             "obj-49::obj-27": [ "toggle[1]", "toggle[1]", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,
