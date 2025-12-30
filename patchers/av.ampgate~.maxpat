@@ -284,13 +284,13 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 225.0, 75.0, 195.0, 35.0 ],
+                    "patching_rect": [ 225.0, 75.0, 197.0, 35.0 ],
                     "text": "patcherargs -12 50 1 250 @cutoffs 20 18000 @follow 0.5 80 300"
                 }
             },
             {
                 "box": {
-                    "comment": "(signal) followed envelope",
+                    "comment": "(signal) gating signal",
                     "id": "obj-231",
                     "index": 2,
                     "maxclass": "outlet",
@@ -301,7 +301,7 @@
             },
             {
                 "box": {
-                    "comment": "(float) followed envelope",
+                    "comment": "(float) gating signal as float",
                     "id": "obj-232",
                     "index": 1,
                     "maxclass": "outlet",
@@ -374,7 +374,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "bang" ],
+                    "outlettype": [ "signal" ],
                     "patching_rect": [ 45.0, 45.0, 30.0, 30.0 ]
                 }
             }
