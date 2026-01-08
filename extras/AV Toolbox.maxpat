@@ -9,10 +9,38 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 86.0, 108.0, 939.0, 662.0 ],
+        "rect": [ 92.0, 100.0, 939.0, 662.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
+            {
+                "box": {
+                    "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
+                    "fontsize": 18.0,
+                    "id": "obj-5",
+                    "linecount": 4,
+                    "maxclass": "textedit",
+                    "nosymquotes": 1,
+                    "numinlets": 1,
+                    "numoutlets": 4,
+                    "outlettype": [ "", "int", "", "" ],
+                    "outputmode": 1,
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
+                    "presentation": 1,
+                    "presentation_linecount": 3,
+                    "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
+                    "readonly": 1,
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "Generate parameters for the gl.slab and gl.shader objects",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-223",
@@ -54,7 +82,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1174.0, 464.0, 90.0, 20.0 ],
+                    "patching_rect": [ 1279.0, 443.0, 90.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 195.0, 68.0, 20.0 ],
                     "saved_attribute_attributes": {
@@ -72,7 +100,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1095.0, 409.0, 72.0, 22.0 ],
+                    "patching_rect": [ 1067.0, 409.0, 72.0, 22.0 ],
                     "text": "prepend set"
                 }
             },
@@ -84,10 +112,15 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1095.0, 443.0, 209.0, 27.0 ],
+                    "patching_rect": [ 1067.0, 443.0, 209.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 219.0, 207.0, 27.0 ],
-                    "text": "_av.automation~"
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "av.paramgenerator"
                 }
             },
             {
@@ -110,7 +143,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1174.0, 394.0, 89.0, 33.0 ],
+                    "patching_rect": [ 1305.0, 488.0, 89.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 255.0, 97.0, 20.0 ],
                     "saved_attribute_attributes": {
@@ -273,22 +306,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 1095.0, 338.0, 72.0, 22.0 ],
                     "text": "prepend set"
-                }
-            },
-            {
-                "box": {
-                    "fontface": 0,
-                    "fontsize": 18.0,
-                    "id": "obj-45",
-                    "linecount": 13,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 1095.0, 372.0, 92.0, 268.0 ],
-                    "presentation": 1,
-                    "presentation_linecount": 6,
-                    "presentation_rect": [ 720.0, 281.0, 194.0, 127.0 ],
-                    "text": "Shape a signal by a function for automation, output at specified interval in min:sec:ms synced to transport"
                 }
             },
             {
@@ -613,10 +630,10 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "" ],
-                    "patching_rect": [ 281.0, 492.0, 100.0, 22.0 ],
+                    "patching_rect": [ 281.0, 492.0, 109.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 330.0, 90.0, 22.0 ],
-                    "text": "av.texturefolder",
+                    "presentation_rect": [ 255.0, 330.0, 109.0, 22.0 ],
+                    "text": "av.texturefolder ctx",
                     "varname": "av.texturefolder"
                 }
             },
@@ -2107,10 +2124,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 778.3302053023723, 778.3302053023723 ],
-                                    "pic": "av-extras07.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 835.6303800815706, 835.6303800815706 ],
+                                    "pic": "av-extras03.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 30.0, 208.03944765844142, 208.03944765844142 ]
+                                    "presentation_rect": [ 555.0, 30.0, 223.35517950411182, 223.35517950411182 ]
                                 }
                             }
                         ],
@@ -2533,7 +2550,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "17:49:932"
+                    "text": "00:39:150"
                 }
             },
             {
@@ -3192,7 +3209,7 @@
         "lines": [
             {
                 "patchline": {
-                    "destination": [ "obj-45", 0 ],
+                    "destination": [ "obj-5", 0 ],
                     "source": [ "obj-10", 0 ]
                 }
             },
@@ -3415,14 +3432,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-10", 0 ],
-                    "order": 1,
+                    "order": 0,
                     "source": [ "obj-201", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-217", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-201", 0 ]
                 }
             },
