@@ -13,6 +13,262 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-72",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 195.0, 525.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-68",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 630.0, 39.0, 22.0 ],
+                    "text": "$1 16"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-69",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "bang" ],
+                    "patching_rect": [ 270.0, 660.0, 34.0, 22.0 ],
+                    "text": "line~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-66",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 240.0, 720.0, 29.5, 22.0 ],
+                    "text": "*~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-60",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 45.0, 578.0, 32.0, 22.0 ],
+                    "text": "mtof"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-58",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 45.0, 548.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-56",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 137.0, 602.0, 60.0, 22.0 ],
+                    "text": "zl.median"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-54",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 137.0, 570.0, 55.0, 22.0 ],
+                    "text": "zl.slice 3"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-52",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 137.0, 540.0, 39.0, 22.0 ],
+                    "text": "zl.join"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-50",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 195.0, 315.0, 32.0, 22.0 ],
+                    "text": "print"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-49",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 45.0, 615.0, 32.0, 22.0 ],
+                    "text": "$1 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-44",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "bang" ],
+                    "patching_rect": [ 45.0, 645.0, 34.0, 22.0 ],
+                    "text": "line~"
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-43",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 360.0, 270.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-40",
+                    "lastchannelcount": 0,
+                    "maxclass": "live.gain~",
+                    "numinlets": 2,
+                    "numoutlets": 5,
+                    "outlettype": [ "signal", "signal", "", "float", "list" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 43.0, 720.0, 48.0, 136.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.gain~[1]",
+                            "parameter_mmax": 6.0,
+                            "parameter_mmin": -70.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "live.gain~",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.gain~[1]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-41",
+                    "maxclass": "ezdac~",
+                    "numinlets": 2,
+                    "numoutlets": 0,
+                    "patching_rect": [ 43.0, 889.0, 45.0, 45.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-35",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 45.0, 675.0, 43.0, 22.0 ],
+                    "text": "cycle~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 301.0, 315.0, 50.0, 22.0 ],
+                    "text": "bang"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-23",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 240.0, 45.0, 39.0, 22.0 ],
+                    "text": "dump"
+                }
+            },
+            {
+                "box": {
+                    "format": 4,
+                    "id": "obj-21",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 737.0, 244.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-20",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 741.0, 210.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-15",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 729.0, 318.0, 82.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 728.0, 280.0, 32.0, 22.0 ],
+                    "text": "mtof"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-13",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -31,7 +287,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 578.0, 307.0, 50.0, 22.0 ]
+                    "patching_rect": [ 497.25, 315.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -41,7 +297,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 516.5, 390.0, 184.0, 68.0 ]
+                    "patching_rect": [ 528.0, 378.0, 184.0, 68.0 ]
                 }
             },
             {
@@ -77,7 +333,7 @@
                     "preset_data": [
                         {
                             "number": 1,
-                            "data": [ 5, "obj-100", "attrui", "attr", "speed", 5, "obj-100", "attrui", "int", 1, 5, "obj-6", "playlist~", "preset_count", 7, 7, "obj-6", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 1, "absolutepath", "FemVoice.aif", 7, "obj-6", "playlist~", "preset_clipstate", 1, "filename", "FemVoice.aif", 7, "obj-6", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 1, "id", "u648009248", 7, "obj-6", "playlist~", "preset_content", 1, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 2, "absolutepath", "cherokee.aif", 7, "obj-6", "playlist~", "preset_clipstate", 2, "filename", "cherokee.aif", 7, "obj-6", "playlist~", "preset_clipstate", 2, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 2, "id", "u123002475", 7, "obj-6", "playlist~", "preset_content", 2, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 3, "absolutepath", "brushes.aif", 7, "obj-6", "playlist~", "preset_clipstate", 3, "filename", "brushes.aif", 7, "obj-6", "playlist~", "preset_clipstate", 3, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 3, "id", "u546002581", 7, "obj-6", "playlist~", "preset_content", 3, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 4, "absolutepath", "RadioNoise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 4, "filename", "RadioNoise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 4, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 4, "id", "u173010700", 7, "obj-6", "playlist~", "preset_content", 4, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 5, "absolutepath", "accordion_noise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 5, "filename", "accordion_noise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 5, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 5, "id", "u357000949", 7, "obj-6", "playlist~", "preset_content", 5, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 6, "absolutepath", "Bledsoe-FluteArticulated.wav", 7, "obj-6", "playlist~", "preset_clipstate", 6, "filename", "Bledsoe-FluteArticulated.wav", 7, "obj-6", "playlist~", "preset_clipstate", 6, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 6, "id", "u450001316", 7, "obj-6", "playlist~", "preset_content", 6, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 7, "absolutepath", "duduk.aif", 7, "obj-6", "playlist~", "preset_clipstate", 7, "filename", "duduk.aif", 7, "obj-6", "playlist~", "preset_clipstate", 7, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 7, "id", "u798007712", 7, "obj-6", "playlist~", "preset_content", 7, "loop", 1, 4, "obj-6", "playlist~", "preset_execute", 5, "obj-10", "live.gain~", "float", -70.0, 5, "obj-32", "number", "float", 22050.0, 5, "obj-46", "kslider", "int", 83, 5, "obj-55", "number", "int", 500, 5, "obj-59", "number", "int", 111, 5, "obj-61", "number", "int", 1, 6, "obj-65", "number~", "list", 0.0, 0.0, 5, "obj-67", "number", "float", 0.5, 5, "obj-80", "number", "int", 1000, 5, "obj-79", "number", "int", 64, 6, "obj-85", "number~", "list", 0.0, 0.0, 5, "obj-93", "number", "float", 22050.0, 5, "obj-95", "number", "float", 136.7655792236328, 5, "obj-117", "number", "float", -35.599998474121094, 5, "obj-119", "number", "float", 48.0, 5, "obj-126", "number", "float", 319.5555725097656, 5, "obj-131", "number", "float", 63.0, 5, "obj-135", "number", "int", 3, 5, "obj-137", "umenu", "int", 21 ]
+                            "data": [ 5, "obj-34", "attrui", "attr", "period", 5, "obj-34", "attrui", "int", 64, 5, "obj-33", "attrui", "attr", "size", 5, "obj-33", "attrui", "int", 2048, 5, "obj-100", "attrui", "attr", "speed", 5, "obj-100", "attrui", "int", 1, 5, "obj-6", "playlist~", "preset_count", 9, 7, "obj-6", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 1, "absolutepath", "FemVoice.aif", 7, "obj-6", "playlist~", "preset_clipstate", 1, "filename", "FemVoice.aif", 7, "obj-6", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 1, "id", "u648009248", 7, "obj-6", "playlist~", "preset_content", 1, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 2, "absolutepath", "cherokee.aif", 7, "obj-6", "playlist~", "preset_clipstate", 2, "filename", "cherokee.aif", 7, "obj-6", "playlist~", "preset_clipstate", 2, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 2, "id", "u123002475", 7, "obj-6", "playlist~", "preset_content", 2, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 3, "absolutepath", "brushes.aif", 7, "obj-6", "playlist~", "preset_clipstate", 3, "filename", "brushes.aif", 7, "obj-6", "playlist~", "preset_clipstate", 3, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 3, "id", "u546002581", 7, "obj-6", "playlist~", "preset_content", 3, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 4, "absolutepath", "RadioNoise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 4, "filename", "RadioNoise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 4, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 4, "id", "u173010700", 7, "obj-6", "playlist~", "preset_content", 4, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 5, "absolutepath", "accordion_noise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 5, "filename", "accordion_noise.wav", 7, "obj-6", "playlist~", "preset_clipstate", 5, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 5, "id", "u357000949", 7, "obj-6", "playlist~", "preset_content", 5, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 6, "absolutepath", "Bledsoe-FluteArticulated.wav", 7, "obj-6", "playlist~", "preset_clipstate", 6, "filename", "Bledsoe-FluteArticulated.wav", 7, "obj-6", "playlist~", "preset_clipstate", 6, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 6, "id", "u450001316", 7, "obj-6", "playlist~", "preset_content", 6, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 7, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 7, "absolutepath", "duduk.aif", 7, "obj-6", "playlist~", "preset_clipstate", 7, "filename", "duduk.aif", 7, "obj-6", "playlist~", "preset_clipstate", 7, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 7, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 7, "id", "u798007712", 7, "obj-6", "playlist~", "preset_content", 7, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 8, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 8, "absolutepath", "Tremblay-AaS-AcBassGuit-Melo-M.wav", 7, "obj-6", "playlist~", "preset_clipstate", 8, "filename", "Tremblay-AaS-AcBassGuit-Melo-M.wav", 7, "obj-6", "playlist~", "preset_clipstate", 8, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 8, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 8, "id", "u188001974", 7, "obj-6", "playlist~", "preset_content", 8, "loop", 1, 7, "obj-6", "playlist~", "preset_clipstate", 9, "filekind", "audiofile", 7, "obj-6", "playlist~", "preset_clipstate", 9, "absolutepath", "Brew-AcousticGuitar.wav", 7, "obj-6", "playlist~", "preset_clipstate", 9, "filename", "Brew-AcousticGuitar.wav", 7, "obj-6", "playlist~", "preset_clipstate", 9, "loop", 1, 8, "obj-6", "playlist~", "preset_clipstate", 9, "selection", -1.0, -1.0, 7, "obj-6", "playlist~", "preset_clipstate", 9, "id", "u667001951", 7, "obj-6", "playlist~", "preset_content", 9, "loop", 1, 4, "obj-6", "playlist~", "preset_execute", 5, "obj-10", "live.gain~", "float", -70.0, 5, "obj-32", "number", "float", 4978.03173828125, 5, "obj-46", "kslider", "int", 111, 5, "obj-55", "number", "int", 500, 5, "obj-59", "number", "int", 111, 5, "obj-61", "number", "int", 1, 6, "obj-65", "number~", "list", 0.0, 0.0, 5, "obj-67", "number", "float", 0.5, 5, "obj-80", "number", "int", 1000, 5, "obj-79", "number", "int", 64, 6, "obj-85", "number~", "list", 0.0, 0.0, 5, "obj-93", "number", "float", 22050.0, 5, "obj-95", "number", "float", 136.7655792236328, 5, "obj-98", "number", "float", 0.0, 5, "obj-117", "number", "float", -35.599998474121094, 5, "obj-119", "number", "float", 48.0, 5, "obj-131", "number", "float", 63.0, 5, "obj-135", "number", "int", 6, 5, "obj-137", "umenu", "int", 0, 5, "obj-12", "number", "float", 0.0, 5, "obj-15", "number", "float", 103.826171875, 5, "obj-20", "number", "float", 44.0, 5, "obj-21", "number", "int", 44, 5, "obj-40", "live.gain~", "float", -70.0, 5, "obj-43", "number", "float", 0.20800000429153442, 5, "obj-58", "number", "int", 54, 5, "obj-72", "number", "int", 7 ]
                         }
                     ]
                 }
@@ -112,7 +368,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-137",
-                    "items": [ "flute", ",", "oboe", ",", "english", "horn", ",", "Bb", "clarinet", ",", "bass", "clarinet", ",", "bassoon", ",", "contrabassoon", ",", "<separator>", ",", "soprano", "saxophone", ",", "alto", "saxophone", ",", "tenor", "saxophone", ",", "baritone", "saxophone", ",", "<separator>", ",", "trumpet", ",", "horn", ",", "trombone", ",", "bass", "trombone", ",", "tuba", ",", "<separator>", ",", "guitar", "(standard", "tuning)", ",", "bass", "guitar", ",", "piano", ",", "<separator>", ",", "violin", ",", "viola", ",", "cello", ",", "contrabass", ",", "<separator>", ",", "soprano", "(voice)", ",", "alto", "(voice)", ",", "tenor", "(voice)", ",", "baritone", "(voice)", ",", "bass", "(voice)" ],
+                    "items": [ "full range", ",", "<separator>", ",", "flute", ",", "oboe", ",", "english", "horn", ",", "Bb", "clarinet", ",", "bass", "clarinet", ",", "bassoon", ",", "contrabassoon", ",", "<separator>", ",", "soprano", "saxophone", ",", "alto", "saxophone", ",", "tenor", "saxophone", ",", "baritone", "saxophone", ",", "<separator>", ",", "trumpet", ",", "horn", ",", "trombone", ",", "bass", "trombone", ",", "tuba", ",", "<separator>", ",", "guitar", "(standard", "tuning)", ",", "bass", "guitar", ",", "piano", ",", "<separator>", ",", "violin", ",", "viola", ",", "cello", ",", "contrabass", ",", "<separator>", ",", "soprano", "(voice)", ",", "alto", "(voice)", ",", "tenor", "(voice)", ",", "baritone", "(voice)", ",", "bass", "(voice)" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -124,43 +380,47 @@
             {
                 "box": {
                     "coll_data": {
-                        "count": 28,
+                        "count": 29,
                         "data": [
                             {
+                                "key": "full range",
+                                "value": [ 32, 4186 ]
+                            },
+                            {
                                 "key": "flute",
-                                "value": [ 246.899994, 2093 ]
+                                "value": [ 246, 2093 ]
                             },
                             {
                                 "key": "oboe",
-                                "value": [ 233, 1396.900024 ]
+                                "value": [ 233, 1397 ]
                             },
                             {
                                 "key": "english horn",
-                                "value": [ 155.600006, 932.299988 ]
+                                "value": [ 155, 933 ]
                             },
                             {
                                 "key": "Bb clarinet",
-                                "value": [ 146.800003, 1567 ]
+                                "value": [ 146, 1567 ]
                             },
                             {
                                 "key": "bass clarinet",
-                                "value": [ 73.400002, 698.5 ]
+                                "value": [ 73, 699 ]
                             },
                             {
                                 "key": "bassoon",
-                                "value": [ 58.299999, 932.299988 ]
+                                "value": [ 58, 933 ]
                             },
                             {
                                 "key": "contrabassoon",
-                                "value": [ 29.1, 155.600006 ]
+                                "value": [ 29, 156 ]
                             },
                             {
                                 "key": "tuba",
-                                "value": [ 43.650002, 349.230011 ]
+                                "value": [ 43, 350 ]
                             },
                             {
                                 "key": "guitar (standard tuning)",
-                                "value": [ 82.410004, 880 ]
+                                "value": [ 82, 880 ]
                             },
                             {
                                 "key": "bass guitar",
@@ -168,7 +428,7 @@
                             },
                             {
                                 "key": "piano",
-                                "value": [ 27.5, 4186 ]
+                                "value": [ 27, 4186 ]
                             },
                             {
                                 "key": "violin",
@@ -176,35 +436,35 @@
                             },
                             {
                                 "key": "contrabass",
-                                "value": [ 41.200001, 246.940002 ]
+                                "value": [ 41, 247 ]
                             },
                             {
                                 "key": "cello",
-                                "value": [ 65.410004, 987.77002 ]
+                                "value": [ 65, 988 ]
                             },
                             {
                                 "key": "viola",
-                                "value": [ 130.809998, 1174 ]
+                                "value": [ 130, 1174 ]
                             },
                             {
                                 "key": "horn",
-                                "value": [ 130, 698.5 ]
+                                "value": [ 130, 699 ]
                             },
                             {
                                 "key": "trombone",
-                                "value": [ 82.410004, 493.880005 ]
+                                "value": [ 82, 494 ]
                             },
                             {
                                 "key": "bass trombone",
-                                "value": [ 61.700001, 466.200012 ]
+                                "value": [ 61, 467 ]
                             },
                             {
                                 "key": "trumpet",
-                                "value": [ 164.809998, 987.77002 ]
+                                "value": [ 164, 988 ]
                             },
                             {
                                 "key": "bass (voice)",
-                                "value": [ 87.309998, 349.230011 ]
+                                "value": [ 87, 350 ]
                             },
                             {
                                 "key": "baritone (voice)",
@@ -212,31 +472,31 @@
                             },
                             {
                                 "key": "tenor (voice)",
-                                "value": [ 130.809998, 493.880005 ]
+                                "value": [ 130, 494 ]
                             },
                             {
                                 "key": "alto (voice)",
-                                "value": [ 130.809998, 698.460022 ]
+                                "value": [ 130, 699 ]
                             },
                             {
                                 "key": "soprano (voice)",
-                                "value": [ 246.940002, 1174.699951 ]
+                                "value": [ 246, 1175 ]
                             },
                             {
                                 "key": "soprano saxophone",
-                                "value": [ 207.649994, 1244.51001 ]
+                                "value": [ 207, 1245 ]
                             },
                             {
                                 "key": "alto saxophone",
-                                "value": [ 138.589996, 830.609985 ]
+                                "value": [ 138, 831 ]
                             },
                             {
                                 "key": "tenor saxophone",
-                                "value": [ 103.830002, 622.25 ]
+                                "value": [ 103, 623 ]
                             },
                             {
                                 "key": "baritone saxophone",
-                                "value": [ 65.410004, 415.299988 ]
+                                "value": [ 65, 416 ]
                             }
                         ]
                     },
@@ -263,7 +523,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 180.0, 531.0, 50.0, 22.0 ]
+                    "patching_rect": [ 247.0, 555.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -273,7 +533,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 180.0, 492.0, 36.0, 22.0 ],
+                    "patching_rect": [ 247.0, 516.0, 36.0, 22.0 ],
                     "text": "% 12"
                 }
             },
@@ -284,7 +544,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 137.0, 390.0, 39.0, 22.0 ],
+                    "patching_rect": [ 137.0, 480.0, 39.0, 22.0 ],
                     "text": "round"
                 }
             },
@@ -297,7 +557,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 105.0, 531.0, 50.0, 22.0 ]
+                    "patching_rect": [ 207.0, 419.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -329,20 +589,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 280.0, 270.0, 36.0, 22.0 ],
+                    "patching_rect": [ 268.0, 270.0, 36.0, 22.0 ],
                     "text": "> 0.1"
-                }
-            },
-            {
-                "box": {
-                    "format": 6,
-                    "id": "obj-126",
-                    "maxclass": "flonum",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 30.0, 345.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -352,7 +600,7 @@
                     "numinlets": 3,
                     "numoutlets": 3,
                     "outlettype": [ "signal", "signal", "signal" ],
-                    "patching_rect": [ 127.0, 180.0, 66.0, 22.0 ],
+                    "patching_rect": [ 126.5, 180.0, 66.0, 22.0 ],
                     "text": "av.cross3~"
                 }
             },
@@ -363,8 +611,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "float", "float", "" ],
-                    "patching_rect": [ 150.0, 240.0, 278.0, 22.0 ],
-                    "text": "fzero~ @freqmin 50 @freqmax 2000 @threshold 0"
+                    "patching_rect": [ 150.0, 240.0, 330.0, 22.0 ],
+                    "text": "fzero~ @threshold 0 @freqmin 50 @freqmax 2500 @quiet 1"
                 }
             },
             {
@@ -374,7 +622,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 795.0, 135.0, 184.0, 68.0 ]
+                    "patching_rect": [ 799.0, 134.0, 184.0, 68.0 ]
                 }
             },
             {
@@ -386,7 +634,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 697.0, 135.0, 50.0, 22.0 ]
+                    "patching_rect": [ 697.0, 180.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -398,7 +646,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 645.0, 180.0, 50.0, 22.0 ]
+                    "patching_rect": [ 640.0, 180.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -419,7 +667,7 @@
                     "numinlets": 5,
                     "numoutlets": 2,
                     "outlettype": [ "float", "signal" ],
-                    "patching_rect": [ 618.0, 240.0, 77.0, 22.0 ],
+                    "patching_rect": [ 625.5, 227.0, 77.0, 22.0 ],
                     "text": "av.ampgate~"
                 }
             },
@@ -1099,7 +1347,7 @@
             },
             {
                 "box": {
-                    "clipheight": 20.428571428571427,
+                    "clipheight": 20.0,
                     "data": {
                         "clips": [
                             {
@@ -1178,6 +1426,28 @@
                                     "loop": 1,
                                     "speed": 1
                                 }
+                            },
+                            {
+                                "absolutepath": "Tremblay-AaS-AcBassGuit-Melo-M.wav",
+                                "filename": "Tremblay-AaS-AcBassGuit-Melo-M.wav",
+                                "filekind": "audiofile",
+                                "id": "u188001974",
+                                "loop": 1,
+                                "content_state": {
+                                    "loop": 1,
+                                    "speed": 1
+                                }
+                            },
+                            {
+                                "absolutepath": "Brew-AcousticGuitar.wav",
+                                "filename": "Brew-AcousticGuitar.wav",
+                                "filekind": "audiofile",
+                                "id": "u667001951",
+                                "loop": 1,
+                                "content_state": {
+                                    "loop": 1,
+                                    "speed": 1
+                                }
                             }
                         ]
                     },
@@ -1248,6 +1518,30 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 480.0, 30.0, 150.0, 22.0 ]
                 }
+            },
+            {
+                "box": {
+                    "attr": "size",
+                    "id": "obj-33",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 150.0, 210.0, 150.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "attr": "period",
+                    "id": "obj-34",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 303.0, 210.0, 150.0, 22.0 ]
+                }
             }
         ],
         "lines": [
@@ -1260,14 +1554,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-9", 1 ],
-                    "order": 0,
-                    "source": [ "obj-10", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-9", 0 ],
-                    "order": 1,
                     "source": [ "obj-10", 0 ]
                 }
             },
@@ -1281,6 +1567,12 @@
                 "patchline": {
                     "destination": [ "obj-105", 0 ],
                     "source": [ "obj-107", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-11", 0 ]
                 }
             },
             {
@@ -1318,6 +1610,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-127", 0 ],
+                    "order": 1,
                     "source": [ "obj-121", 1 ]
                 }
             },
@@ -1325,6 +1618,19 @@
                 "patchline": {
                     "destination": [ "obj-128", 1 ],
                     "source": [ "obj-121", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-30", 1 ],
+                    "source": [ "obj-121", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-68", 0 ],
+                    "order": 0,
+                    "source": [ "obj-121", 1 ]
                 }
             },
             {
@@ -1341,15 +1647,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-126", 0 ],
-                    "order": 1,
-                    "source": [ "obj-128", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-129", 0 ],
-                    "order": 0,
                     "source": [ "obj-128", 0 ]
                 }
             },
@@ -1361,15 +1659,22 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-131", 0 ],
+                    "destination": [ "obj-133", 0 ],
+                    "order": 0,
+                    "source": [ "obj-132", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-52", 0 ],
                     "order": 1,
                     "source": [ "obj-132", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-133", 0 ],
-                    "order": 0,
+                    "destination": [ "obj-58", 0 ],
+                    "order": 2,
                     "source": [ "obj-132", 0 ]
                 }
             },
@@ -1443,6 +1748,24 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "source": [ "obj-21", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-137", 0 ],
+                    "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-38", 1 ],
                     "source": [ "obj-27", 0 ]
                 }
@@ -1463,6 +1786,24 @@
                 "patchline": {
                     "destination": [ "obj-26", 0 ],
                     "source": [ "obj-32", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-121", 0 ],
+                    "source": [ "obj-33", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-121", 0 ],
+                    "source": [ "obj-34", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-66", 0 ],
+                    "source": [ "obj-35", 0 ]
                 }
             },
             {
@@ -1493,6 +1834,24 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-41", 0 ],
+                    "source": [ "obj-40", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-127", 1 ],
+                    "source": [ "obj-43", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-35", 0 ],
+                    "source": [ "obj-44", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-47", 0 ],
                     "source": [ "obj-46", 0 ]
                 }
@@ -1505,14 +1864,46 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-44", 0 ],
+                    "source": [ "obj-49", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-54", 0 ],
+                    "source": [ "obj-52", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-51", 0 ],
                     "source": [ "obj-53", 0 ]
                 }
             },
             {
                 "patchline": {
+                    "destination": [ "obj-52", 1 ],
+                    "order": 0,
+                    "source": [ "obj-54", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-56", 0 ],
+                    "order": 1,
+                    "source": [ "obj-54", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-53", 2 ],
                     "source": [ "obj-55", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-60", 0 ],
+                    "source": [ "obj-58", 0 ]
                 }
             },
             {
@@ -1565,6 +1956,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-49", 0 ],
+                    "source": [ "obj-60", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-53", 1 ],
                     "source": [ "obj-61", 0 ]
                 }
@@ -1583,8 +1980,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-40", 0 ],
+                    "source": [ "obj-66", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-39", 0 ],
                     "source": [ "obj-67", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-69", 0 ],
+                    "source": [ "obj-68", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-66", 1 ],
+                    "source": [ "obj-69", 0 ]
                 }
             },
             {
@@ -1612,6 +2027,12 @@
                 "patchline": {
                     "destination": [ "obj-28", 0 ],
                     "source": [ "obj-70", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-54", 1 ],
+                    "source": [ "obj-72", 0 ]
                 }
             },
             {
@@ -1673,6 +2094,7 @@
         ],
         "parameters": {
             "obj-10": [ "live.gain~", "live.gain~", 0 ],
+            "obj-40": [ "live.gain~[1]", "live.gain~", 0 ],
             "parameterbanks": {
                 "0": {
                     "index": 0,
