@@ -34,6 +34,18 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontface": 2,
+                                    "id": "obj-30",
+                                    "linecount": 5,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 538.0, 606.0, 155.0, 74.0 ],
+                                    "text": "Suggestion:\nAlso have a look at the Fluid Corpus Manipulation Package for more advanced audio descriptors"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-33",
                                     "maxclass": "button",
                                     "numinlets": 1,
@@ -669,11 +681,11 @@
                             {
                                 "box": {
                                     "id": "obj-88",
-                                    "linecount": 8,
+                                    "linecount": 6,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 420.0, 114.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 506.0, 87.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -947,14 +959,6 @@
             "obj-2::obj-23": [ "live.dial", "threshold", 0 ],
             "obj-2::obj-24": [ "live.dial[1]", "hold", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,

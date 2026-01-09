@@ -34,6 +34,36 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-8",
+                                    "linecount": 12,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 274.0, 186.0, 196.0, 167.0 ],
+                                    "text": "notice that, when this sample plays and the threshold is -60dB, it measures quite some noisiness in the pauses, because it detects the noisefloor. When the sound plays the noisiness is close to 0 because it is a flute.\n\nBy setting the threshold to -16dB or so we reduce the measurement of noisiness in the gaps because the signal drops to 0."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
+                                    "fontname": "Arial Bold",
+                                    "hint": "",
+                                    "id": "obj-1",
+                                    "ignoreclick": 1,
+                                    "legacytextcolor": 1,
+                                    "maxclass": "textbutton",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 230.0, 225.0, 20.0, 20.0 ],
+                                    "rounded": 60.0,
+                                    "text": "3",
+                                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-10",
                                     "maxclass": "live.scope~",
                                     "numinlets": 2,
@@ -58,7 +88,7 @@
                                             "parameter_initial_enable": 1,
                                             "parameter_longname": "live.dial[1]",
                                             "parameter_mmax": 0.0,
-                                            "parameter_mmin": -40.0,
+                                            "parameter_mmin": -60.0,
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "threshold",
                                             "parameter_type": 0,
@@ -136,10 +166,10 @@
                                     "data": {
                                         "clips": [
                                             {
-                                                "absolutepath": "cherokee.aif",
-                                                "filename": "cherokee.aif",
+                                                "absolutepath": "duduk.aif",
+                                                "filename": "duduk.aif",
                                                 "filekind": "audiofile",
-                                                "id": "u656008878",
+                                                "id": "u901051687",
                                                 "loop": 1,
                                                 "content_state": {
                                                     "loop": 1
@@ -213,13 +243,13 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 2,
-                                    "fontsize": 12.0,
+                                    "fontface": 0,
+                                    "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 540.0, 446.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 540.0, 373.0, 18.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -390,6 +420,36 @@
                         "rect": [ 0.0, 26.0, 709.0, 589.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
+                                    "fontname": "Arial Bold",
+                                    "hint": "",
+                                    "id": "obj-12",
+                                    "ignoreclick": 1,
+                                    "legacytextcolor": 1,
+                                    "maxclass": "textbutton",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 306.0, 466.0, 20.0, 20.0 ],
+                                    "rounded": 60.0,
+                                    "text": "4",
+                                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "linecount": 2,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 495.0, 176.0, 197.0, 33.0 ],
+                                    "text": "a visual of 2 textures, mixed based on the noisness"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-3",
@@ -1110,13 +1170,13 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 2,
-                                    "fontsize": 12.0,
+                                    "fontface": 0,
+                                    "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 31.0, 548.0, 446.0, 20.0 ],
+                                    "patching_rect": [ 31.0, 548.0, 373.0, 18.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1128,17 +1188,17 @@
                             {
                                 "box": {
                                     "id": "obj-88",
-                                    "linecount": 8,
+                                    "linecount": 6,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 423.0, 114.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 465.0, 87.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Analyse the \"noisiness\" of a signal as a value between 0 and 1, where 0 means the signal is not noisy, and 1 means the signal is very noisy (white noise). \n\nThe measurement is done per signalvector, measuring zero-crossings, on the assumption that very noisy signals usually contain quite some zero-crossings (or alternatively they have very high pitches as a fundamental, which is usually less likely)."
+                                    "text": "Analyse the \"noisiness\" of a signal as a value between 0 and 1, where 0 means the signal is not noisy, and 1 means the signal is very noisy (white noise). \n\nThe measurement is done per signalvector, measuring zero-crossings, on the assumption that very noisy signals usually contain quite some zero-crossings (or alternatively they have very high pitches as a fundamental, which is often less likely)."
                                 }
                             },
                             {
