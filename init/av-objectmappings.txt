@@ -50,3 +50,13 @@ max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0;
 
 max objectfile av.bfg av.bfg;
 max definesubstitution av.bfg jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3;
+
+max objectfile av.pbr av.pbr;
+max definesubstitution av.pbr jit.gl.pbr @roughness 0.3 @metalness 0.1 @shadow_eps 0.05 @gamma_correction 0 @mat_diffuse 0.5 0.5 0.5;
+
+max objectfile av.light.shadows av.light.shadows;
+max definesubstitution av.light.shadows jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1;
+
+max objectfile av.light av.light;
+max definesubstitution av.light jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1;
+
