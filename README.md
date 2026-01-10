@@ -140,14 +140,14 @@ A set of objectmappings. When typing these names they will be substituted for a 
 
 - **av.hidecursor** - Hides the cursor when inactive for a specified amount of time.
 
-### Slab/Shader/Pix Mappings
+### Slab/Shader/Pix/Pass Mappings
 
-This package includes mappings for the `jit.gl.slab`, `jit.gl.shader` and `jit.gl.pix` object based on the project [gl.shadermappings](https://github.com/tmhglnd/gl.shadermappings). 
+This package includes mappings for the `jit.gl.slab`, `jit.gl.shader`, `jit.gl.pix` and `jit.gl.pass` objects (formerly based on the project [gl.shadermappings](https://github.com/tmhglnd/gl.shadermappings)). 
 
-Max has quite a few shaders build into the application and examples. But if you want to patch with them you have to type `jit.gl.slab @file <shaderfile>`, which is usually quite a hassle. Also you have to remember what the shader file name is. These simple objectmappings file will do all this work for you and allow you to browse the various files through the autocomplete field. How it works:
+Max has quite a few shaders shipped with the application, but if you want to patch with them you have to type `jit.gl.slab @file <shaderfile>`, or `jit.gl.pass @fxname <name>`. It can be hard to remember what the name of the file is that you're looking for. Also you might not know all the possibilities out there, so it would be nice to have a list of options in the autocomplete field. These simple objectmappings will do all this work for you and allow you to browse the various files through from the autocomplete list. How it works:
 
-1. See all the shaderfiles in the autocomplete field when typing `jit.gl.slab.*`, `jit.gl.shader.*` or `jit.gl.pix.*`
-2. Select the shaderfile and it will translate to `jit.gl.slab @file <shaderfile>`
+1. See all the files in the autocomplete list when typing `jit.gl.slab.`, `jit.gl.shader.`, `jit.gl.pix.` or `jit.gl.pass.`
+2. Select the effect, press `enter` and the object will automatically be substituted for `jit.gl.slab @file <your-selected-file>`
 
 ## Install
 
