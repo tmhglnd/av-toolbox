@@ -1,9 +1,6 @@
 max objectfile av.world av.world;
 max definesubstitution av.world jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 480 270 @windowposition 800 200 @output_texture 1 @dim 1920 1080;
 
-max objectfile av.movie av.movie;
-max definesubstitution av.movie jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5;
-
 max objectfile av.function av.function;
 max definesubstitution av.function function @pointsize 3 @gridstep_x 0.1 @linethickness 1.5 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1;
 
@@ -33,6 +30,12 @@ max definesubstitution av.gridshape.plane jit.gl.gridshape @shape plane @scale 0
 max objectfile av.gridshape.torus av.gridshape.torus;
 max definesubstitution av.gridshape.torus jit.gl.gridshape @shape torus @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 
+max objectfile av.gridshape.cube av.gridshape.cube;
+max definesubstitution av.gridshape.cube jit.gl.gridshape @shape cube @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
+
+max objectfile av.gridshape.dodeca av.gridshape.dodeca;
+max definesubstitution av.gridshape.torus jit.gl.gridshape @shape torus @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
+
 max objectfile av.mesh.points av.mesh.points;
 max definesubstitution av.mesh.points jit.gl.mesh @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1;
 
@@ -46,7 +49,7 @@ max objectfile av.cornerpin av.cornerpin;
 max definesubstitution av.cornerpin jit.gl.cornerpin @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1;
 
 max objectfile av.texture av.texture;
-max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0;
+max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0 @type auto;
 
 max objectfile av.bfg av.bfg;
 max definesubstitution av.bfg jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3;
@@ -57,6 +60,8 @@ max definesubstitution av.pbr jit.gl.pbr @roughness 0.3 @metalness 0.1 @shadow_e
 max objectfile av.light.shadows av.light.shadows;
 max definesubstitution av.light.shadows jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1;
 
-max objectfile av.light av.light;
+max objectfile av.light.point av.light;
 max definesubstitution av.light jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1;
 
+max objectfile av.light.directional av.light;
+max definesubstitution av.light jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1;
