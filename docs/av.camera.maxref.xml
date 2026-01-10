@@ -4,11 +4,11 @@
 <c74object name="av.camera">
 
 	<digest>
-		Initialize a jit.gl.camera with attributes: @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45
+		Initialize a jit.gl.camera with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.camera with attributes: @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45
+		Initialize a jit.gl.camera with preset attributes
 	</description>
 
 	<!--METADATA-->

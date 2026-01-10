@@ -4,11 +4,11 @@
 <c74object name="av.videoplane">
 
 	<digest>
-		Initialize a jit.gl.videoplane with attributes: @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000
+		Initialize a jit.gl.videoplane with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.videoplane with attributes: @transform_reset 2 @blend add @blend_enable 1 @depth_enable 0 @layer 1000
+		Initialize a jit.gl.videoplane with preset attributes
 	</description>
 
 	<!--METADATA-->

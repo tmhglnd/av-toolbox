@@ -61,7 +61,7 @@ max objectfile av.light.shadows av.light.shadows;
 max definesubstitution av.light.shadows jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1 @shadowrange 10 @shadowblur 0.1;
 
 max objectfile av.light.point av.light.point;
-max definesubstitution av.light jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1;
+max definesubstitution av.light.point jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1;
 
-max objectfile av.light.directional av.light.directional;
+max objectfile av.light av.light;
 max definesubstitution av.light jit.gl.light @type directional @position 2 2 0 @diffuse 1 1 1;

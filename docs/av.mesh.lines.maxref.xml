@@ -4,11 +4,11 @@
 <c74object name="av.mesh.lines">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode line_strip @color 1 1 1 1 @line_width 1
+		Initialize a jit.gl.mesh for lines with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode line_strip @color 1 1 1 1 @line_width 1
+		Initialize a jit.gl.mesh for lines with preset attributes
 	</description>
 
 	<!--METADATA-->

@@ -1,0 +1,78 @@
+max objectfile jit.gl.pass.atmospheric jit.gl.pass.atmospheric;
+max definesubstitution jit.gl.pass.atmospheric jit.gl.pass @fxname atmospheric;
+
+max objectfile jit.gl.pass.bloom jit.gl.pass.bloom;
+max definesubstitution jit.gl.pass.bloom jit.gl.pass @fxname bloom;
+
+max objectfile jit.gl.pass.bloom-tonemap jit.gl.pass.bloom-tonemap;
+max definesubstitution jit.gl.pass.bloom-tonemap jit.gl.pass @fxname bloom-tonemap;
+
+max objectfile jit.gl.pass.bloom-hq jit.gl.pass.bloom-hq;
+max definesubstitution jit.gl.pass.bloom-hq jit.gl.pass @fxname bloom-hq;
+
+max objectfile jit.gl.pass.depth jit.gl.pass.depth;
+max definesubstitution jit.gl.pass.depth jit.gl.pass @fxname depth;
+
+max objectfile jit.gl.pass.depth2pass jit.gl.pass.depth2pass;
+max definesubstitution jit.gl.pass.depth2pass jit.gl.pass @fxname depth2pass;
+
+max objectfile jit.gl.pass.dof jit.gl.pass.dof;
+max definesubstitution jit.gl.pass.dof jit.gl.pass @fxname dof;
+
+max objectfile jit.gl.pass.dof-hq jit.gl.pass.dof-hq;
+max definesubstitution jit.gl.pass.dof-hq jit.gl.pass @fxname dof-hq;
+
+max objectfile jit.gl.pass.fxaa jit.gl.pass.fxaa;
+max definesubstitution jit.gl.pass.fxaa jit.gl.pass @fxname fxaa;
+
+max objectfile jit.gl.pass.gamma jit.gl.pass.gamma;
+max definesubstitution jit.gl.pass.gamma jit.gl.pass @fxname gamma;
+
+max objectfile jit.gl.pass.grain jit.gl.pass.grain;
+max definesubstitution jit.gl.pass.grain jit.gl.pass @fxname grain;
+
+max objectfile jit.gl.pass.motionblur-hq jit.gl.pass.motionblur-hq;
+max definesubstitution jit.gl.pass.motionblur-hq jit.gl.pass @fxname motionblur-hq;
+
+max objectfile jit.gl.pass.motionblur jit.gl.pass.motionblur;
+max definesubstitution jit.gl.pass.motionblur jit.gl.pass @fxname motionblur;
+
+max objectfile jit.gl.pass.motion-gauss-blur jit.gl.pass.motion-gauss-blur;
+max definesubstitution jit.gl.pass.motion-gauss-blur jit.gl.pass @fxname motion-gauss-blur;
+
+max objectfile jit.gl.pass.motionglitch jit.gl.pass.motionglitch;
+max definesubstitution jit.gl.pass.motionglitch jit.gl.pass @fxname motionglitch;
+
+max objectfile jit.gl.pass.motionglitch-ext jit.gl.pass.motionglitch-ext;
+max definesubstitution jit.gl.pass.motionglitch-ext jit.gl.pass @fxname motionglitch-ext;
+
+max objectfile jit.gl.pass.gi jit.gl.pass.gi;
+max definesubstitution jit.gl.pass.gi jit.gl.pass @fxname gi;
+
+max objectfile jit.gl.pass.smear jit.gl.pass.smear;
+max definesubstitution jit.gl.pass.smear jit.gl.pass @fxname smear;
+
+max objectfile jit.gl.pass.ssao jit.gl.pass.ssao;
+max definesubstitution jit.gl.pass.ssao jit.gl.pass @fxname ssao;
+
+max objectfile jit.gl.pass.ssao-gl2 jit.gl.pass.ssao-gl2;
+max definesubstitution jit.gl.pass.ssao-gl2 jit.gl.pass @fxname ssao-gl2;
+
+max objectfile jit.gl.pass.ssr jit.gl.pass.ssr;
+max definesubstitution jit.gl.pass.ssr jit.gl.pass @fxname ssr;
+
+max objectfile jit.gl.pass.taa jit.gl.pass.taa;
+max definesubstitution jit.gl.pass.taa jit.gl.pass @fxname taa;
+
+max objectfile jit.gl.pass.tonemap jit.gl.pass.tonemap;
+max definesubstitution jit.gl.pass.tonemap jit.gl.pass @fxname tonemap;
+
+max objectfile jit.gl.pass.tssao-gi-ssr jit.gl.pass.tssao-gi-ssr;
+max definesubstitution jit.gl.pass.tssao-gi-ssr jit.gl.pass @fxname tssao-gi-ssr;
+
+max objectfile jit.gl.pass.tssao-gi jit.gl.pass.tssao-gi;
+max definesubstitution jit.gl.pass.tssao-gi jit.gl.pass @fxname tssao-gi;
+
+max objectfile jit.gl.pass.vignette jit.gl.pass.vignette;
+max definesubstitution jit.gl.pass.vignette jit.gl.pass @fxname vignette;
+

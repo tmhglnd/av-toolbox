@@ -4,11 +4,11 @@
 <c74object name="av.cornerpin">
 
 	<digest>
-		Initialize a jit.gl.cornerpin with attributes: @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1
+		Initialize a jit.gl.cornerpin with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.cornerpin with attributes: @corner_radius 50 @line_width 4 @corner_color 1 0 0 1 @drawcorners 1
+		Initialize a jit.gl.cornerpin with preset attributes
 	</description>
 
 	<!--METADATA-->

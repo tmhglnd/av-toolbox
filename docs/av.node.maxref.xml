@@ -4,11 +4,11 @@
 <c74object name="av.node">
 
 	<digest>
-		Initialize a jit.gl.node with attributes: @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1
+		Initialize a jit.gl.node with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.node with attributes: @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1
+		Initialize a jit.gl.node with preset attributes
 	</description>
 
 	<!--METADATA-->

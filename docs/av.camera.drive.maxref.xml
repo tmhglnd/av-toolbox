@@ -4,11 +4,11 @@
 <c74object name="av.camera.drive">
 
 	<digest>
-		Initialize a `[jit.anim.drive @ui_listen 1 @ease 0.5 @speed 5]`
+		Initialize a jit.anim.drive for jit.gl.camera with preset attributes
 	</digest>
 
 	<description>
-		Initialize a `[jit.anim.drive @ui_listen 1 @ease 0.5 @speed 5]`
+		Initialize a jit.anim.drive for jit.gl.camera with preset attributes
 	</description>
 
 	<!--METADATA-->

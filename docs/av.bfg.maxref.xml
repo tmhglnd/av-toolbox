@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.function">
+<c74object name="av.bfg">
 
 	<digest>
-		Initialize a function with preset attributes
+		Initialize a jit.gl.bfg with preset attributes
 	</digest>
 
 	<description>
-		Initialize a function with preset attributes
+		Initialize a jit.gl.bfg with preset attributes
 	</description>
 
 	<!--METADATA-->

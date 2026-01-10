@@ -4,11 +4,11 @@
 <c74object name="av.mesh.grid">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1
+		Initialize a jit.gl.mesh for a grid with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1
+		Initialize a jit.gl.mesh for a grid with preset attributes
 	</description>
 
 	<!--METADATA-->

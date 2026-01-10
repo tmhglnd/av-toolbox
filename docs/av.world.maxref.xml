@@ -4,11 +4,11 @@
 <c74object name="av.world">
 
 	<digest>
-		Initialize a jit.world with attributes: @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080
+		Initialize a jit.world with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.world with attributes: @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 640 360 @windowposition 800 200 @fps 60 @output_texture 1 @dim 1920 1080
+		Initialize a jit.world with preset attributes
 	</description>
 
 	<!--METADATA-->

@@ -4,11 +4,11 @@
 <c74object name="av.mesh.points">
 
 	<digest>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Initialize a jit.gl.mesh for points with preset attributes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.mesh with attributes: @draw_mode points @point_mode circle_depth @point_size 10 @color 1 1 1 1
+		Initialize a jit.gl.mesh for points with preset attributes
 	</description>
 
 	<!--METADATA-->

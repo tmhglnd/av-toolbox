@@ -14,7 +14,7 @@ const path = require('path');
 const fg = require('fast-glob');
 
 let appPath = '/Applications/Max.app';
-let shaderPath = '/**/shaders/**/*.jxs';
+let shaderPath = '/**/jxs/**/*.jxs';
 let pixPath = '/**/jitter-examples/**/*.genjit';
 let passPath = '/**/passes/**/*.jxp';
 
@@ -22,8 +22,8 @@ if (process.argv.length > 2){
 	appPath = process.argv[2];
 }
 
-// shaderMappings(appPath + shaderPath);
-// pixMappings(appPath + pixPath);
+shaderMappings(appPath + shaderPath);
+pixMappings(appPath + pixPath);
 passMappings(appPath + passPath);
 
 function shaderMappings(p){
@@ -36,7 +36,9 @@ function shaderMappings(p){
 		let t = n.split('.')[0];
 		let o;
 
-		if (t.match(/cc|co|cf|gn|hdr|mrt|ssao|op|tp|td|tr/)){
+		if (n.match(/\.fx\./)){
+			return;
+		} else if (t.match(/cc|co|cf|hdr|mrt|ssao|op|tp|td|tr/)){
 			n = 'jit.gl.slab.' + n.replace(/^[^.]+\./g, '');
 			o = 'jit.gl.slab';
 		} else {
@@ -46,6 +48,7 @@ function shaderMappings(p){
 		mappings += `max objectfile ${n} ${n};\n`;
 		mappings += `max definesubstitution ${n} ${o} @file ${b};\n\n`;
 	});
+	// console.log(mappings);
 	fs.writeFileSync('../init/slab-objectmappings.txt', mappings);
 }
 
@@ -76,14 +79,19 @@ function passMappings(p){
 	let mappings = '';
 
 	fg.sync(p).forEach((f) => {
-		let file = path.parse(f);
-		let b = file.base;
-		let n = file.name;
-		let t = n.split('.')[0];
-		let o = 'jit.gl.pass.' + n;
+		let content = fs.readFileSync(f, 'utf-8');
+		let names = content.match(/<pass name=".+">/g);
+		// console.log(names);
 
-		mappings += `max objectfile ${o} ${o};\n`;
-		mappings += `max definesubstitution ${o} jit.gl.pass @fxname ${n};\n\n`;
+		names.forEach(n => {
+			let name = n.match(/name="([^"]+)"/);
+			// console.log(name[1]);
+			let o = 'jit.gl.pass.' + name[1];
+	
+			mappings += `max objectfile ${o} ${o};\n`;
+			mappings += `max definesubstitution ${o} jit.gl.pass @fxname ${name[1]};\n\n`;
+		});
 	});
+	// console.log(mappings);
 	fs.writeFileSync('../init/pass-objectmappings.txt', mappings);
 }

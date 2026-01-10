@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.gridshape">
+<c74object name="av.pbr.shadows">
 
 	<digest>
-		Initialize a jit.gl.gridshape with attributes: @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0
+		Initialize a jit.gl.pbr material ideal for shadows on gridshapes
 	</digest>
 
 	<description>
-		Initialize a jit.gl.gridshape with attributes: @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0
+		Initialize a jit.gl.pbr material ideal for shadows on gridshapes
 	</description>
 
 	<!--METADATA-->
