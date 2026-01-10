@@ -4,11 +4,11 @@
 <c74object name="av.movie~">
 
 	<digest>
-		Movie playback made easier and seemless
+		Movie playback made easier and seemless with audio output
 	</digest>
 
 	<description>
-		A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end of the movie in the RAM for seamless looping of the file. Defaults with a texture output instead of a matrix.
+		A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end of the movie in the RAM for seamless looping of the file. Defaults with a texture output instead of a matrix. Outputs stereo sound left and right signals.
 	</description>
 
 	<!--METADATA-->
@@ -141,6 +141,7 @@
 		<seealso name="av.follow3~"/> 
 		<seealso name="av.hidecursor"/> 
 		<seealso name="av.midside~"/>
+		<seealso name="av.movie"/>
 		<seealso name="av.movie~"/>
 		<seealso name="av.movieplay~"/>
 		<seealso name="av.paramgenerator"/> 
