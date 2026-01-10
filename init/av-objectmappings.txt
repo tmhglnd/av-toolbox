@@ -52,7 +52,10 @@ max objectfile av.bfg av.bfg;
 max definesubstitution av.bfg jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3;
 
 max objectfile av.pbr av.pbr;
-max definesubstitution av.pbr jit.gl.pbr @roughness 0.3 @metalness 0.1 @shadow_eps 0.05 @gamma_correction 0 @mat_diffuse 0.5 0.5 0.5;
+max definesubstitution av.pbr jit.gl.pbr @roughness 0.3 @metalness 0.1 @mat_diffuse 1 1 1;
+
+max objectfile av.pbr.shadows av.pbr.shadows;
+max definesubstitution av.pbr.shadows jit.gl.pbr @roughness 0.3 @metalness 0.1 @gamma_correction 0 @mat_diffuse 0.5 0.5 0.5 @shadow_hard 0.9 @shadow_eps 0.05 @shadow_soft 0.1;
 
 max objectfile av.light.shadows av.light.shadows;
 max definesubstitution av.light.shadows jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1;

@@ -92,6 +92,8 @@ Objects range from signal analysis that can be used to control visual parameters
 
 ### Jitter Mappings
 
+A set of objectmappings. When typing these names they will be substituted for a jitter object with a list of attributes preset as default values. They are meant to give a starting point for working with jitter without having to set many attributes yourself.
+
 - **av.world** - The rendering context. Substitute for a `[jit.world @erase_color 0 0 0 1 @fsaa 1 @floating 1 @size 480 270 @windowposition 800 200 @output_texture 1 @dim 1920 1080]`.
 
 - **av.node** - A rendering node. Substitute for `[jit.gl.node @capture 1 @adapt 0 @dim 1920 1080 @erase_color 0 0 0 0 @fsaa 1]`
@@ -124,9 +126,11 @@ Objects range from signal analysis that can be used to control visual parameters
 
 - **av.bfg** - Generate a noise texture. Substitute for `[jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3]`
 
-- **av.pbr** - Create a PBR material for gridshape, model or mesh. Substitute for `[jit.gl.pbr @roughness 0.3 @metalness 0.1 @shadow_eps 0.05 @gamma_correction 0 @mat_diffuse 0.5 0.5 0.5]`
+- **av.pbr** - Create a basic PBR material for gridshape, model or mesh. Substitute for `[jit.gl.pbr @roughness 0.3 @metalness 0.1 @mat_diffuse 1 1 1]`
 
-- **av.light.shadows** - Create a directional light with shadows enabled. Useful in combination with `av.pbr`. Substitute for `[jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1]`
+- **av.pbr.shadows** - Create a PBR material, ideal when working with shadows. Substitute for `[jit.gl.pbr @roughness 0.3 @metalness 0.1 @shadow_eps 0.05 @shadow_hard 0.9 @shadow_soft 0.1 @gamma_correction 0 @mat_diffuse 0.5 0.5 0.5]`
+
+- **av.light.shadows** - Create a directional light with shadows enabled. Useful in combination with `av.pbr.shadows`. Substitute for `[jit.gl.light @type directional @diffuse 5 5 5 @shadows 1 @direction 1 -1 1 @shadowrange 10 @shadowblur 0.1]`
 
 - **av.light.point** - Create a point light. Substitute for `[jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1]`
 
