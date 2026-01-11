@@ -65,3 +65,6 @@ max definesubstitution av.light.point jit.gl.light @type point @position 2 2 0 @
 
 max objectfile av.light av.light;
 max definesubstitution av.light jit.gl.light @type directional @position 2 2 0 @diffuse 1 1 1;
+
+max objectfile av.environment av.environment;
+max definesubstitution av.environment jit.gl.environment @gamma_correction 0 @reflect_edge 512;
