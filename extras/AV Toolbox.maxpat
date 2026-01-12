@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 406.0, 144.0, 938.0, 684.0 ],
+        "rect": [ 545.0, 175.0, 938.0, 684.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
@@ -28,7 +28,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.922234290352602, 0.71007200526417, 0.329758341965716, 1.0 ],
+                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 12.0,
@@ -43,15 +43,15 @@
                     "presentation_rect": [ 545.0, 431.0, 147.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
-                            "expression": "themecolor.theme_selectioncolor"
+                            "expression": "themecolor.theme_syntax_objectcolor"
                         },
                         "textoncolor": {
-                            "expression": "themecolor.theme_textcolor"
+                            "expression": "themecolor.theme_elementcolor"
                         }
                     },
                     "text": "Jitter Object Shortcuts",
                     "textjustification": 0,
-                    "textoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -727,7 +727,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 5,
+                    "linecount": 2,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -737,7 +737,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 3,
+                    "presentation_linecount": 2,
                     "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
                     "readonly": 1,
                     "saved_attribute_attributes": {
@@ -745,8 +745,8 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Load a movie with seemless loop, progress report and sound output",
-                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                    "text": "Extended envelope follower",
+                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                 }
             },
             {
@@ -828,7 +828,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.movie~"
+                    "text": "av.follow~"
                 }
             },
             {
@@ -1222,8 +1222,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
-                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
+                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-185",
@@ -1249,7 +1249,7 @@
                     "text": "support me on patreon",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1270,8 +1270,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
-                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
+                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-187",
@@ -1297,7 +1297,7 @@
                     "text": "view my portfolio",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1305,8 +1305,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
-                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
+                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-188",
@@ -1332,7 +1332,7 @@
                     "text": "more patches on gumroad",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1381,7 +1381,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.427450980392157, 0.843137254901961, 1.0, 1.0 ],
+                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -1394,9 +1394,17 @@
                     "patching_rect": [ 900.0, 300.0, 95.0, 49.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 259.0, 120.25, 49.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_syntax_objectcolor"
+                        },
+                        "textoncolor": {
+                            "expression": "themecolor.theme_elementcolor"
+                        }
+                    },
                     "text": "LEARN JITTER",
                     "textjustification": 0,
-                    "textoncolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -1530,8 +1538,13 @@
                                     "patching_rect": [ 750.0, 540.0, 195.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 465.0, 171.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Max8's Jitter Guides",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1589,8 +1602,13 @@
                                     "patching_rect": [ 120.0, 285.0, 150.0, 67.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 154.0, 328.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Max8's Graphics Programming Tutorials",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1663,8 +1681,13 @@
                                     "patching_rect": [ 300.0, 540.0, 195.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 424.0, 195.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "John Jannone Tutorials",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1720,8 +1743,13 @@
                                     "patching_rect": [ 525.0, 405.0, 148.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 289.0, 148.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Jitter Resources",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1777,8 +1805,13 @@
                                     "patching_rect": [ 180.0, 405.0, 168.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 244.0, 168.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Best Practices GPU",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1834,8 +1867,13 @@
                                     "patching_rect": [ 480.0, 285.0, 211.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 199.0, 211.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Best Practices Recording",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1890,8 +1928,13 @@
                                     "patching_rect": [ 405.0, 165.0, 194.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 379.0, 194.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Delicious Max Tutorials",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -1958,8 +2001,13 @@
                                     "patching_rect": [ 90.0, 165.0, 159.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 334.0, 159.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Amazing Max Stuff",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2258,7 +2306,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.427450980392157, 0.843137254901961, 1.0, 1.0 ],
+                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -2271,9 +2319,17 @@
                     "patching_rect": [ 773.0, 324.0, 95.0, 25.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 218.0, 120.25, 31.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_syntax_objectcolor"
+                        },
+                        "textoncolor": {
+                            "expression": "themecolor.theme_elementcolor"
+                        }
+                    },
                     "text": "EXTRAS",
                     "textjustification": 0,
-                    "textoncolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -2497,8 +2553,13 @@
                                     "patching_rect": [ 300.0, 540.0, 148.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 425.0, 101.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "pix.shaders",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2556,8 +2617,13 @@
                                     "patching_rect": [ 525.0, 405.0, 148.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 196.0, 148.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "th.gl.texturefolder",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2616,8 +2682,13 @@
                                     "patching_rect": [ 180.0, 405.0, 126.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 336.0, 122.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "th.gl.texteditor",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2676,8 +2747,13 @@
                                     "patching_rect": [ 480.0, 285.0, 155.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 380.0, 155.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "th.gl.commandline",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2736,8 +2812,13 @@
                                     "patching_rect": [ 139.0, 285.0, 126.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 290.0, 123.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "th.gl.cornerpin",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2795,8 +2876,13 @@
                                     "patching_rect": [ 405.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 154.0, 121.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "th.gl.videogrid",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2867,8 +2953,13 @@
                                     "patching_rect": [ 90.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 30.0, 245.0, 116.0, 27.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "jit.underworld",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -2933,10 +3024,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 1862.336485590733, 1860.474149105142 ],
-                                    "pic": "av-extras06.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 2537.010647573687, 2537.010647573687 ],
+                                    "pic": "av-extras02.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 15.0, 497.7828833790976, 497.28510049571844 ]
+                                    "presentation_rect": [ 555.0, 15.0, 678.1161648734587, 678.1161648734587 ]
                                 }
                             }
                         ],
@@ -3078,7 +3169,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.427450980392157, 0.843137254901961, 1.0, 1.0 ],
+                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -3091,9 +3182,17 @@
                     "patching_rect": [ 1439.0, 310.0, 150.0, 23.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 149.0, 120.25, 57.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_syntax_objectcolor"
+                        },
+                        "textoncolor": {
+                            "expression": "themecolor.theme_elementcolor"
+                        }
+                    },
                     "text": "FULL EXAMPLE",
                     "textjustification": 0,
-                    "textoncolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -3360,7 +3459,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "01:33:341"
+                    "text": "48:03:225"
                 }
             },
             {
@@ -3450,7 +3549,7 @@
             },
             {
                 "box": {
-                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 0.145161290322581, 1.0, 0, 0.0, 0.290322580645161, 0.509433962264151, 0, 0.0, 0.620967741935484, 0.924528301886792, 0, 0.0, 1.0, 0.056603773584906, 0, 0.0 ],
+                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 0.145161290322581, 1.0, 0, 0.0, 0.290322580645161, 0.509433962264151, 0, 0.0, 0.45652173913043476, 0.6444444444444445, 0, 0.0, 0.620967741935484, 0.924528301886792, 0, 0.0, 1.0, 0.056603773584906, 0, 0.0 ],
                     "classic_curve": 1,
                     "clicksustain": 0,
                     "domain": 1.0,
@@ -4405,7 +4504,7 @@
                 "valuedictionary": {
                     "parameter_values": {
                         "blob": {
-                            "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
+                            "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.5336856010568032, 0.8738170347003155, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
                             "rslider": [ 0.0, 1.0 ]
                         }
                     }
@@ -4427,7 +4526,7 @@
                             "valuedictionary": {
                                 "parameter_values": {
                                     "blob": {
-                                        "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
+                                        "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.5336856010568032, 0.8738170347003155, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
                                         "rslider": [ 0.0, 1.0 ]
                                     }
                                 }
