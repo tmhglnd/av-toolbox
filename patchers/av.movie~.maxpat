@@ -9,8 +9,30 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 566.0, 376.0, 876.0, 520.0 ],
+        "rect": [ 235.0, 185.0, 876.0, 520.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-14",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 493.0, 442.0, 22.0, 22.0 ],
+                    "text": "t 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 480.0, 469.0, 32.0, 22.0 ],
+                    "text": "gate"
+                }
+            },
             {
                 "box": {
                     "id": "obj-1",
@@ -18,7 +40,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 315.0, 150.0, 66.0, 22.0 ],
+                    "patching_rect": [ 315.0, 165.0, 66.0, 22.0 ],
                     "text": "route done"
                 }
             },
@@ -29,7 +51,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 272.0, 427.0, 73.0, 22.0 ],
+                    "patching_rect": [ 272.0, 442.0, 73.0, 22.0 ],
                     "text": "t getposition"
                 }
             },
@@ -40,7 +62,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 272.0, 400.0, 32.0, 22.0 ],
+                    "patching_rect": [ 272.0, 415.0, 32.0, 22.0 ],
                     "text": "gate"
                 }
             },
@@ -51,7 +73,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 307.0, 355.0, 22.0, 22.0 ],
+                    "patching_rect": [ 307.0, 370.0, 22.0, 22.0 ],
                     "text": "t b"
                 }
             },
@@ -62,7 +84,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 178.66666666666669, 269.5, 256.0, 22.0 ],
+                    "patching_rect": [ 179.0, 284.0, 256.0, 22.0 ],
                     "text": "getframecount, getmilliseconds, getdim, getfps"
                 }
             },
@@ -284,9 +306,9 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                     },
-                    "patching_rect": [ 372.66666666666674, 375.0, 62.0, 22.0 ],
+                    "patching_rect": [ 373.0, 390.0, 62.0, 22.0 ],
                     "text": "p loadram"
                 }
             },
@@ -297,7 +319,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 45.0, 115.0, 109.0, 22.0 ],
+                    "patching_rect": [ 45.0, 130.0, 109.0, 22.0 ],
                     "text": "zl.lookup stop start"
                 }
             },
@@ -308,7 +330,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 45.0, 85.5, 52.0, 22.0 ],
+                    "patching_rect": [ 45.0, 100.0, 52.0, 22.0 ],
                     "text": "route int"
                 }
             },
@@ -320,7 +342,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 176.0, 427.0, 30.0, 30.0 ]
+                    "patching_rect": [ 176.0, 442.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -331,7 +353,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 120.0, 427.0, 30.0, 30.0 ]
+                    "patching_rect": [ 120.0, 442.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -341,7 +363,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 229.0, 225.0, 80.0, 22.0 ],
+                    "patching_rect": [ 229.0, 240.0, 80.0, 22.0 ],
                     "text": "prepend read"
                 }
             },
@@ -349,11 +371,11 @@
                 "box": {
                     "id": "obj-4",
                     "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 229.0, 195.0, 105.0, 22.0 ],
-                    "text": "route file progress"
+                    "numinlets": 4,
+                    "numoutlets": 4,
+                    "outlettype": [ "", "", "", "" ],
+                    "patching_rect": [ 229.0, 210.0, 155.0, 22.0 ],
+                    "text": "route file progress autostart"
                 }
             },
             {
@@ -363,8 +385,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 262.0, 115.0, 72.0, 22.0 ],
-                    "text": "patcherargs"
+                    "patching_rect": [ 190.0, 130.0, 144.0, 22.0 ],
+                    "text": "patcherargs @autostart 1"
                 }
             },
             {
@@ -374,7 +396,7 @@
                     "numinlets": 4,
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
-                    "patching_rect": [ 78.0, 150.0, 170.0, 22.0 ],
+                    "patching_rect": [ 78.0, 165.0, 170.0, 22.0 ],
                     "text": "routepass read asyncread info"
                 }
             },
@@ -385,19 +407,19 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 525.0, 79.0, 256.0, 33.0 ],
+                    "patching_rect": [ 555.0, 78.5, 256.0, 33.0 ],
                     "text": "written by Timo Hoogland, (c) 2023, www.timohoogland.com, GNU GPL v3 License"
                 }
             },
             {
                 "box": {
                     "id": "obj-17",
-                    "linecount": 15,
+                    "linecount": 17,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 525.0, 209.0, 294.0, 221.0 ],
-                    "text": "Arguments:\n\nAttributes:\n@file - moviefile from disk\n@progress - report the normalized position during playback\n\nsee jit.movie helpfile for all other possible attributes\n\nMessages:\n(int) - start/stop with 0/1 or toggle object\n(info) - get info from the movie such as framecount, length in milliseconds, resolution and fps\n\nsee jit.movie helpfile for all other possible messages\n"
+                    "patching_rect": [ 555.0, 208.5, 294.0, 248.0 ],
+                    "text": "Arguments:\n\nAttributes:\n@file - moviefile from disk\n@progress - report the normalized position during playback\n@autostart - automatically start the playback after loading is done\n\nsee jit.movie helpfile for all other possible attributes\n\nMessages:\n(int) - start/stop with 0/1 or toggle object\n(info) - get info from the movie such as framecount, length in milliseconds, resolution and fps\n\nsee jit.movie helpfile for all other possible messages\n"
                 }
             },
             {
@@ -407,7 +429,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 525.0, 130.0, 242.0, 60.0 ],
+                    "patching_rect": [ 555.0, 129.5, 242.0, 60.0 ],
                     "text": "A wrapper around the jit.movie~ object for easy patching with movie files. Uses the viddll engine and loads begin and end in the ram for seamless looping of the file."
                 }
             },
@@ -419,7 +441,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 525.0, 44.0, 149.0, 33.0 ],
+                    "patching_rect": [ 555.0, 43.5, 149.0, 33.0 ],
                     "text": "av.movie~"
                 }
             },
@@ -430,7 +452,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "unloadram" ],
-                    "patching_rect": [ 78.0, 225.0, 78.0, 22.0 ],
+                    "patching_rect": [ 78.0, 240.0, 78.0, 22.0 ],
                     "text": "t l unloadram"
                 }
             },
@@ -441,7 +463,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "signal", "signal", "jit_gl_texture", "" ],
-                    "patching_rect": [ 45.0, 315.0, 412.0, 22.0 ],
+                    "patching_rect": [ 45.0, 330.0, 412.0, 22.0 ],
                     "text": "jit.movie~ @output_texture 1 @cache_size 0.5 @autostart 0 @engine viddll"
                 }
             },
@@ -453,7 +475,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "" ],
+                    "outlettype": [ "int" ],
                     "patching_rect": [ 45.0, 45.0, 30.0, 30.0 ]
                 }
             },
@@ -465,7 +487,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 45.0, 427.0, 30.0, 30.0 ]
+                    "patching_rect": [ 45.0, 442.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -476,7 +498,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 438.0, 423.0, 30.0, 30.0 ]
+                    "patching_rect": [ 438.0, 465.0, 30.0, 30.0 ]
                 }
             }
         ],
@@ -495,6 +517,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "midpoints": [ 489.5, 501.0, 519.23046875, 501.0, 519.23046875, 90.5, 54.5, 90.5 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 1 ],
+                    "source": [ "obj-14", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "order": 0,
+                    "source": [ "obj-16", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-490", 0 ],
                     "source": [ "obj-16", 0 ]
                 }
@@ -502,6 +544,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-526", 0 ],
+                    "order": 1,
                     "source": [ "obj-16", 1 ]
                 }
             },
@@ -561,6 +604,13 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "midpoints": [ 329.1666666666667, 248.7890625, 489.5, 248.7890625 ],
+                    "source": [ "obj-4", 2 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-28", 0 ],
                     "source": [ "obj-4", 1 ]
                 }
@@ -568,7 +618,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-490", 0 ],
-                    "source": [ "obj-4", 2 ]
+                    "source": [ "obj-4", 3 ]
                 }
             },
             {

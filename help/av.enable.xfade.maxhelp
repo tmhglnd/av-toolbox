@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 100.0, 100.0, 718.0, 631.0 ],
+        "rect": [ 100.0, 100.0, 721.0, 571.0 ],
         "showrootpatcherontab": 0,
         "showontab": 0,
         "boxes": [
@@ -29,7 +29,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 718.0, 605.0 ],
+                        "rect": [ 100.0, 126.0, 721.0, 545.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -143,7 +143,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 118.5, 480.0, 213.0, 20.0 ],
+                                    "patching_rect": [ 117.0, 450.0, 213.0, 20.0 ],
                                     "text": "initialise with enabled or disabled state"
                                 }
                             },
@@ -156,7 +156,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 31.5, 390.0, 90.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 360.0, 90.0, 22.0 ],
                                     "size": 1.0,
                                     "varname": "slider[1]"
                                 }
@@ -170,7 +170,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 31.5, 283.0, 90.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 253.0, 90.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 1.0 ],
@@ -188,102 +188,11 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-19",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "patcher": {
-                                        "fileversion": 1,
-                                        "appversion": {
-                                            "major": 9,
-                                            "minor": 1,
-                                            "revision": 1,
-                                            "architecture": "x64",
-                                            "modernui": 1
-                                        },
-                                        "classnamespace": "box",
-                                        "rect": [ 84.0, 140.0, 640.0, 480.0 ],
-                                        "boxes": [
-                                            {
-                                                "box": {
-                                                    "id": "obj-9",
-                                                    "maxclass": "newobj",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "int" ],
-                                                    "patching_rect": [ 50.0, 130.0, 22.0, 22.0 ],
-                                                    "text": "t 1"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "id": "obj-7",
-                                                    "maxclass": "newobj",
-                                                    "numinlets": 2,
-                                                    "numoutlets": 2,
-                                                    "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 50.0, 100.0, 66.0, 22.0 ],
-                                                    "text": "route done"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "comment": "",
-                                                    "id": "obj-15",
-                                                    "index": 1,
-                                                    "maxclass": "inlet",
-                                                    "numinlets": 0,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "done" ],
-                                                    "patching_rect": [ 50.0, 40.0, 30.0, 30.0 ]
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "comment": "",
-                                                    "id": "obj-17",
-                                                    "index": 1,
-                                                    "maxclass": "outlet",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 0,
-                                                    "patching_rect": [ 50.0, 212.0, 30.0, 30.0 ]
-                                                }
-                                            }
-                                        ],
-                                        "lines": [
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-7", 0 ],
-                                                    "source": [ "obj-15", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-9", 0 ],
-                                                    "source": [ "obj-7", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-17", 0 ],
-                                                    "source": [ "obj-9", 0 ]
-                                                }
-                                            }
-                                        ],
-                                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
-                                    },
-                                    "patching_rect": [ 219.5, 225.0, 83.0, 22.0 ],
-                                    "text": "p playOnLoad"
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-26",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 151.5, 278.0, 171.0, 20.0 ],
+                                    "patching_rect": [ 150.0, 248.0, 171.0, 20.0 ],
                                     "text": "see it is disabled automatically"
                                 }
                             },
@@ -294,7 +203,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 196.5, 375.0, 135.0, 33.0 ],
+                                    "patching_rect": [ 195.0, 345.0, 135.0, 33.0 ],
                                     "text": "see the shader is not outputting the texture"
                                 }
                             },
@@ -304,7 +213,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 31.5, 261.0, 84.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 231.0, 84.0, 20.0 ],
                                     "text": "slide the fader"
                                 }
                             },
@@ -316,7 +225,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 166.5, 375.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 165.0, 345.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -326,7 +235,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
-                                    "patching_rect": [ 31.5, 450.0, 102.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 420.0, 102.0, 22.0 ],
                                     "text": "av.enable.xfade 0"
                                 }
                             },
@@ -338,7 +247,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 166.5, 450.0, 162.0, 22.0 ],
+                                    "patching_rect": [ 165.0, 420.0, 162.0, 22.0 ],
                                     "text": "jit.gl.slab @file cc.hsl2rgb.jxs",
                                     "textfile": {
                                         "filename": "cc.hsl2rgb.jxs",
@@ -356,7 +265,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 151.5, 330.0, 237.0, 22.0 ],
+                                    "patching_rect": [ 150.0, 300.0, 237.0, 22.0 ],
                                     "text": "jit.gl.slab @file td.kaleido.jxs @param div 4",
                                     "textfile": {
                                         "filename": "td.kaleido.jxs",
@@ -371,10 +280,10 @@
                                     "id": "obj-4",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
-                                    "numoutlets": 4,
-                                    "outlettype": [ "jit_gl_texture", "signal", "signal", "done" ],
-                                    "patching_rect": [ 68.5, 195.0, 170.0, 22.0 ],
-                                    "text": "av.movie~ @file chickens.mp4"
+                                    "numoutlets": 2,
+                                    "outlettype": [ "jit_gl_texture", "done" ],
+                                    "patching_rect": [ 67.0, 165.0, 163.0, 22.0 ],
+                                    "text": "av.movie @file chickens.mp4"
                                 }
                             },
                             {
@@ -384,7 +293,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
-                                    "patching_rect": [ 31.5, 330.0, 92.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 300.0, 92.0, 22.0 ],
                                     "text": "av.enable.xfade"
                                 }
                             },
@@ -401,7 +310,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 14.5, 405.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 13.0, 375.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "3",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -420,22 +329,10 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 14.5, 300.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 141.0, 238.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "2",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-14",
-                                    "maxclass": "toggle",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 68.5, 165.0, 24.0, 24.0 ],
-                                    "varname": "toggle[2]"
                                 }
                             },
                             {
@@ -445,7 +342,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 31.5, 525.0, 59.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 495.0, 59.0, 22.0 ],
                                     "text": "jit.gl.layer"
                                 }
                             },
@@ -478,7 +375,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 51.5, 152.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 13.0, 271.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "1",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -492,7 +389,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 317.0, 562.0, 373.0, 18.0 ],
+                                    "patching_rect": [ 317.0, 497.0, 373.0, 18.0 ],
                                     "text": "written by Timo Hoogland (c) 2023, www.timohoogland.com, GNU GPL v3 License"
                                 }
                             },
@@ -509,8 +406,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Similar to the av.enable, but it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object to work properly. Enable/disable the processing of a jit.gl.pix or jit.gl.slab. Uses a cosine function for easing in the crossfade.",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Similar to the av.enable, but it includes a crossfade between the incoming texture and the processed texture. Requires you to feedback the processing through this object to work properly. Enable/disable the processing of a jit.gl.pix or jit.gl.slab. Uses a cosine function for easing in the crossfade."
                                 }
                             },
                             {
@@ -528,8 +424,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "av.enable.xfade",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "av.enable.xfade"
                                 }
                             },
                             {
@@ -541,7 +436,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 151.5, 300.0, 150.0, 22.0 ]
+                                    "patching_rect": [ 150.0, 270.0, 150.0, 22.0 ]
                                 }
                             }
                         ],
@@ -566,18 +461,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
-                                    "source": [ "obj-14", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-14", 0 ],
-                                    "source": [ "obj-19", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-13", 1 ],
                                     "source": [ "obj-2", 0 ]
                                 }
@@ -592,12 +475,6 @@
                                 "patchline": {
                                     "destination": [ "obj-8", 0 ],
                                     "source": [ "obj-24", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-19", 0 ],
-                                    "source": [ "obj-4", 3 ]
                                 }
                             },
                             {

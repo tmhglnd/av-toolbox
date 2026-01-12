@@ -253,37 +253,34 @@
                             {
                                 "box": {
                                     "id": "obj-14",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 30.0, 540.0, 171.5, 35.0 ],
-                                    "text": "jit.movie @moviefile dust.mp4 @output_texture 1"
+                                    "outlettype": [ "jit_gl_texture", "done" ],
+                                    "patching_rect": [ 30.0, 540.0, 139.0, 22.0 ],
+                                    "text": "av.movie @file dust.mp4"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-36",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 30.0, 435.0, 195.0, 35.0 ],
-                                    "text": "jit.movie @moviefile sunflower.mp4 @output_texture 1"
+                                    "outlettype": [ "jit_gl_texture", "done" ],
+                                    "patching_rect": [ 30.0, 435.0, 167.0, 22.0 ],
+                                    "text": "av.movie @file sunflower.mp4"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 30.0, 360.0, 185.5, 35.0 ],
-                                    "text": "jit.movie @moviefile chickens.mp4 @output_texture 1"
+                                    "outlettype": [ "jit_gl_texture", "done" ],
+                                    "patching_rect": [ 30.0, 360.0, 163.0, 22.0 ],
+                                    "text": "av.movie @file chickens.mp4"
                                 }
                             },
                             {
@@ -704,7 +701,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -747,7 +744,7 @@
                                     "text": "go to my website",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -777,7 +774,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1031,9 +1028,9 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 30.0, 255.0, 294.0, 22.0 ],
-                                    "text": "jit.movie @output_texture 1 @moviefile chickens.mp4"
+                                    "outlettype": [ "jit_gl_texture", "done" ],
+                                    "patching_rect": [ 30.0, 270.0, 163.0, 22.0 ],
+                                    "text": "av.movie @file chickens.mp4"
                                 }
                             },
                             {

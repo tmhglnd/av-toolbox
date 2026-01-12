@@ -125,6 +125,17 @@
 				Enable the output of the progress as a value between 0 and 1 (default = off)
 			</description>
 		</attribute>
+		<attribute name="autostart" get='0' set='1' type='bool' size='2'>
+			<arglist>
+				<arg name="autostart" optional="1" type="bool" />
+			</arglist>
+			<digest>
+				Automatically start playback when the movie is loaded (default = 1)
+			</digest>
+			<description>
+				Automatically start playback when the movie is loaded (default = 1)
+			</description>
+		</attribute>
 	</attributelist>
 
 	<!--SEEALSO-->

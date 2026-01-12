@@ -9,10 +9,24 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 545.0, 175.0, 938.0, 684.0 ],
+        "rect": [ 350.0, 116.0, 938.0, 684.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_gl_texture", "done" ],
+                    "patching_rect": [ 150.0, 355.0, 63.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 150.0, 360.0, 56.0, 22.0 ],
+                    "text": "av.movie",
+                    "varname": "av.movie"
+                }
+            },
             {
                 "box": {
                     "id": "obj-36",
@@ -28,7 +42,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 12.0,
@@ -51,7 +65,7 @@
                     },
                     "text": "Jitter Object Shortcuts",
                     "textjustification": 0,
-                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -727,7 +741,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 2,
+                    "linecount": 3,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -745,8 +759,8 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Extended envelope follower",
-                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                    "text": "Get the transport time in min:sec:ms",
+                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
             {
@@ -828,7 +842,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.follow~"
+                    "text": "av.when"
                 }
             },
             {
@@ -1022,7 +1036,7 @@
             {
                 "box": {
                     "coll_data": {
-                        "count": 35,
+                        "count": 36,
                         "data": [
                             {
                                 "key": "av.amp~",
@@ -1109,8 +1123,12 @@
                                 "value": [ "Shape a signal by a function for automation, output at specified interval in min:sec:ms synced to transport" ]
                             },
                             {
+                                "key": "av.movie",
+                                "value": [ "Load a movie into ram for seemless loop and progress report" ]
+                            },
+                            {
                                 "key": "av.movie~",
-                                "value": [ "Load a movie with seemless loop, progress report and sound output" ]
+                                "value": [ "Load a movie into ram for seemless loop, with signal outputs" ]
                             },
                             {
                                 "key": "av.movieplay~",
@@ -1222,8 +1240,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
-                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-185",
@@ -1249,7 +1267,7 @@
                     "text": "support me on patreon",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1270,8 +1288,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
-                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-187",
@@ -1297,7 +1315,7 @@
                     "text": "view my portfolio",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1305,8 +1323,8 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.35, 0.35, 0.35, 1.0 ],
-                    "bgoncolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "bgcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgoncolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "fontface": 1,
                     "fontsize": 10.0,
                     "id": "obj-188",
@@ -1332,7 +1350,7 @@
                     "text": "more patches on gumroad",
                     "textjustification": 0,
                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
-                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                     "usebgoncolor": 1,
                     "usetextovercolor": 1
                 }
@@ -1381,7 +1399,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -1404,7 +1422,7 @@
                     },
                     "text": "LEARN JITTER",
                     "textjustification": 0,
-                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -1543,8 +1561,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Max8's Jitter Guides",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Max8's Jitter Guides"
                                 }
                             },
                             {
@@ -1607,8 +1624,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Max8's Graphics Programming Tutorials",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Max8's Graphics Programming Tutorials"
                                 }
                             },
                             {
@@ -1686,8 +1702,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "John Jannone Tutorials",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "John Jannone Tutorials"
                                 }
                             },
                             {
@@ -1748,8 +1763,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Jitter Resources",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Jitter Resources"
                                 }
                             },
                             {
@@ -1810,8 +1824,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Best Practices GPU",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Best Practices GPU"
                                 }
                             },
                             {
@@ -1872,8 +1885,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Best Practices Recording",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Best Practices Recording"
                                 }
                             },
                             {
@@ -1933,8 +1945,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Delicious Max Tutorials",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Delicious Max Tutorials"
                                 }
                             },
                             {
@@ -2006,8 +2017,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Amazing Max Stuff",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "Amazing Max Stuff"
                                 }
                             },
                             {
@@ -2200,7 +2210,7 @@
                     "outlettype": [ "int" ],
                     "patching_rect": [ 645.0, 450.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 420.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 420.0, 80.0, 22.0 ],
                     "text": "av.hidecursor",
                     "varname": "av.hidecursor"
                 }
@@ -2270,7 +2280,7 @@
                     "outlettype": [ "jit_gl_texture", "" ],
                     "patching_rect": [ 149.0, 450.0, 85.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 390.0, 85.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 420.0, 85.0, 22.0 ],
                     "text": "av.movieplay~",
                     "varname": "av.movieplay~"
                 }
@@ -2306,7 +2316,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -2329,7 +2339,7 @@
                     },
                     "text": "EXTRAS",
                     "textjustification": 0,
-                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -2558,8 +2568,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "pix.shaders",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "pix.shaders"
                                 }
                             },
                             {
@@ -2622,8 +2631,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "th.gl.texturefolder",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "th.gl.texturefolder"
                                 }
                             },
                             {
@@ -2687,8 +2695,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "th.gl.texteditor",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "th.gl.texteditor"
                                 }
                             },
                             {
@@ -2752,8 +2759,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "th.gl.commandline",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "th.gl.commandline"
                                 }
                             },
                             {
@@ -2817,8 +2823,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "th.gl.cornerpin",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "th.gl.cornerpin"
                                 }
                             },
                             {
@@ -2881,8 +2886,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "th.gl.videogrid",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "th.gl.videogrid"
                                 }
                             },
                             {
@@ -2958,8 +2962,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "jit.underworld",
-                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
+                                    "text": "jit.underworld"
                                 }
                             },
                             {
@@ -3024,10 +3027,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 2537.010647573687, 2537.010647573687 ],
-                                    "pic": "av-extras02.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 2832.165219128964, 2832.165219128964 ],
+                                    "pic": "av-extras00.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 15.0, 678.1161648734587, 678.1161648734587 ]
+                                    "presentation_rect": [ 555.0, 15.0, 757.0078661358664, 757.0078661358664 ]
                                 }
                             }
                         ],
@@ -3169,7 +3172,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
@@ -3192,7 +3195,7 @@
                     },
                     "text": "FULL EXAMPLE",
                     "textjustification": 0,
-                    "textoncolor": [ 0.270112557475181, 0.270112486262571, 0.270112504871564, 1.0 ],
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
                     "truncate": 0,
                     "usebgoncolor": 1
@@ -3459,7 +3462,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "48:03:225"
+                    "text": "12:32:565"
                 }
             },
             {
@@ -3504,7 +3507,7 @@
                     "outlettype": [ "jit_gl_texture", "signal", "signal", "done" ],
                     "patching_rect": [ 542.0, 404.0, 63.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 360.0, 63.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 390.0, 63.0, 22.0 ],
                     "text": "av.movie~",
                     "varname": "av.movie~"
                 }
@@ -3704,7 +3707,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 411.0, 404.0, 109.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 420.0, 109.0, 22.0 ],
+                    "presentation_rect": [ 375.0, 420.0, 109.0, 22.0 ],
                     "text": "av.paramgenerator",
                     "varname": "av.paramgenerator"
                 }
@@ -4053,7 +4056,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "written by Timo Hoogland © 2023-2025, www.timohoogland.com"
+                    "text": "written by Timo Hoogland © 2023-2026, www.timohoogland.com"
                 }
             },
             {
@@ -4480,14 +4483,6 @@
         "parameters": {
             "obj-81::obj-1": [ "1039_automation_function", "1039_automation_function", 0 ],
             "obj-81::obj-5": [ "rslider", "rslider", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 1,
@@ -4504,7 +4499,7 @@
                 "valuedictionary": {
                     "parameter_values": {
                         "blob": {
-                            "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.5336856010568032, 0.8738170347003155, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
+                            "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
                             "rslider": [ 0.0, 1.0 ]
                         }
                     }
@@ -4526,7 +4521,7 @@
                             "valuedictionary": {
                                 "parameter_values": {
                                     "blob": {
-                                        "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.5336856010568032, 0.8738170347003155, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
+                                        "1039_automation_function": [ 1.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 0.064220183486239, 1.0, 0, 0.0, 0.204892966360856, 0.574712643678161, 0, 0.0, 0.327217125382263, 0.873563218390805, 0, 0.0, 0.529051987767584, 0.241379310344828, 0, 0.0, 0.767584097859327, 0.597701149425287, 0, 0.0, 1.0, 0.0, 0, 0.0, "curve" ],
                                         "rslider": [ 0.0, 1.0 ]
                                     }
                                 }
