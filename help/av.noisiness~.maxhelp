@@ -29,7 +29,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 709.0, 589.0 ],
+                        "rect": [ 0.0, 26.0, 709.0, 589.0 ],
                         "showontab": 2,
                         "boxes": [
                             {
@@ -39,7 +39,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 274.0, 186.0, 196.0, 167.0 ],
+                                    "patching_rect": [ 274.0, 186.0, 200.0, 167.0 ],
                                     "text": "notice that, when this sample plays and the threshold is -60dB, it measures quite some noisiness in the pauses, because it detects the noisefloor. When the sound plays the noisiness is close to 0 because it is a flute.\n\nBy setting the threshold to -16dB or so we reduce the measurement of noisiness in the gaps because the signal drops to 0."
                                 }
                             },
@@ -417,9 +417,28 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 709.0, 589.0 ],
+                        "rect": [ 100.0, 126.0, 709.0, 589.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
+                                    "fontname": "Arial Bold",
+                                    "hint": "",
+                                    "id": "obj-8",
+                                    "ignoreclick": 1,
+                                    "legacytextcolor": 1,
+                                    "maxclass": "textbutton",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 460.0, 246.0, 20.0, 20.0 ],
+                                    "rounded": 60.0,
+                                    "text": "3",
+                                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
@@ -433,7 +452,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 306.0, 466.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 321.0, 241.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "4",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -442,12 +461,12 @@
                             {
                                 "box": {
                                     "id": "obj-7",
-                                    "linecount": 2,
+                                    "linecount": 3,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 495.0, 176.0, 197.0, 33.0 ],
-                                    "text": "a visual of 2 textures, mixed based on the noisness"
+                                    "patching_rect": [ 480.0, 209.0, 213.0, 47.0 ],
+                                    "text": "a visual of 2 textures, mixed based on the noisness. Wait for the noisy part in the sound to see the difference."
                                 }
                             },
                             {
@@ -458,7 +477,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "float" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 297.0, 256.0, 53.0, 48.0 ],
+                                    "patching_rect": [ 282.0, 256.0, 53.0, 48.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 100 ],
@@ -481,7 +500,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 315.0, 450.0, 80.0, 20.0 ],
+                                    "patching_rect": [ 300.0, 450.0, 80.0, 20.0 ],
                                     "text": "<- look inside"
                                 }
                             },
@@ -492,7 +511,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 195.0, 483.0, 59.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 483.0, 59.0, 22.0 ],
                                     "text": "jit.gl.layer"
                                 }
                             },
@@ -788,7 +807,7 @@
                                         ],
                                         "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                                     },
-                                    "patching_rect": [ 195.0, 450.0, 117.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 450.0, 117.0, 22.0 ],
                                     "text": "p noise-textures-mix"
                                 }
                             },
@@ -801,7 +820,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 195.0, 367.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 180.0, 367.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -811,7 +830,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
-                                    "patching_rect": [ 297.0, 367.0, 184.0, 68.0 ],
+                                    "patching_rect": [ 282.0, 367.0, 184.0, 68.0 ],
                                     "range": [ -0.1, 1.0 ]
                                 }
                             },
@@ -946,32 +965,13 @@
                             },
                             {
                                 "box": {
-                                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
-                                    "fontname": "Arial Bold",
-                                    "hint": "",
-                                    "id": "obj-8",
-                                    "ignoreclick": 1,
-                                    "legacytextcolor": 1,
-                                    "maxclass": "textbutton",
-                                    "numinlets": 1,
-                                    "numoutlets": 3,
-                                    "outlettype": [ "", "", "int" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 337.0, 241.5, 20.0, 20.0 ],
-                                    "rounded": 60.0,
-                                    "text": "3",
-                                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
-                                }
-                            },
-                            {
-                                "box": {
                                     "fontface": 1,
                                     "id": "obj-17",
                                     "linecount": 3,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 317.0, 315.0, 79.0, 47.0 ],
+                                    "patching_rect": [ 302.0, 315.0, 79.0, 47.0 ],
                                     "text": "Arguments:\nattack (ms)\nrelease (ms)"
                                 }
                             },
@@ -982,7 +982,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 350.0, 256.0, 85.0, 47.0 ],
+                                    "patching_rect": [ 335.0, 256.0, 85.0, 47.0 ],
                                     "text": "set the smoothing for the analysis"
                                 }
                             },
@@ -1004,7 +1004,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "float" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 246.0, 256.0, 53.0, 48.0 ],
+                                    "patching_rect": [ 231.0, 256.0, 53.0, 48.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 10 ],
@@ -1046,7 +1046,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 270.0, 209.0, 192.0, 20.0 ],
+                                    "patching_rect": [ 255.0, 209.0, 192.0, 20.0 ],
                                     "text": "use render bang to get float output"
                                 }
                             },
@@ -1057,7 +1057,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 195.0, 209.0, 69.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 209.0, 69.0, 22.0 ],
                                     "text": "r help-bang"
                                 }
                             },
@@ -1067,7 +1067,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 495.0, 428.0, 71.0, 22.0 ],
+                                    "patching_rect": [ 480.0, 475.0, 71.0, 22.0 ],
                                     "text": "s help-bang"
                                 }
                             },
@@ -1083,7 +1083,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 495.0, 211.0, 195.0, 195.0 ],
+                                    "patching_rect": [ 480.0, 258.0, 195.0, 195.0 ],
                                     "sync": 1
                                 }
                             },
@@ -1097,6 +1097,7 @@
                                                 "filename": "FemVoice.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u276003133",
+                                                "selection": [ 0.3894736842105263, 0.8315789473684211 ],
                                                 "loop": 1,
                                                 "content_state": {
                                                     "loop": 1
@@ -1145,7 +1146,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 2,
                                     "outlettype": [ "float", "signal" ],
-                                    "patching_rect": [ 195.0, 315.0, 121.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 315.0, 121.0, 22.0 ],
                                     "text": "av.noisiness~ 10 100"
                                 }
                             },

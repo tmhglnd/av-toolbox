@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="av.ampgate~">
+
+	<digest>
+		Amplitude threshold gating
+	</digest>
+
+	<description>
+		An amplitude (in decibels) based gating system. An envelope follower tracks the volume in dBs and when the sound exceeds the threshold the gate opens. The gate can have an attack and release ramp for the open and closing parts in milliseconds to let it respond smoothly. The gate can also have a hold time in milliseconds, this determines how long the gate stays open. If another trigger is received within the hold time the hold is reset and starts over. Use this object when you want to have visuals appear/disappear when sound starts and stops.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!-- ARGUMENTS-->
+	<objarglist>
+		<objarg name="threshold" optional="1" type="float">
+			<digest>
+				Threshold for gate in decibels (default = -12dB)
+			</digest>
+			<description>
+				Threshold for gate in decibels (default = -12dB)
+			</description>
+		</objarg>
+		<objarg name="hold" optional="1" type="float">
+			<digest>
+				Hold time in milliseconds for gate (default = 50)
+			</digest>
+			<description>
+				Hold time in milliseconds for gate (default = 50)
+			</description>
+		</objarg>
+		<objarg name="attack" optional="1" type="float">
+			<digest>
+				Attack time in milliseconds (default = 1)
+			</digest>
+			<description>
+				Attack time in milliseconds (default = 1)
+			</description>
+		</objarg>
+		<objarg name="release" optional="1" type="float">
+			<digest>
+				Release time in milliseconds (default = 250)
+			</digest>
+			<description>
+				Release time in milliseconds (default = 250)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" optional="1" type="bang" />
+			</arglist>
+			<digest>
+				Get the gate signal value with the renderbang
+			</digest>
+			<description>
+				Get the gate signal value with the renderbang
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+				<arg name="float" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: none <br/>
+				Inlet 2: Set the threshold in decibels <br/>
+				Inlet 3: Set the hold time in milliseconds <br/>
+				Inlet 4: Set the attack time in milliseconds <br/>
+				Inlet 5: Set the release time in milliseconds <br/>
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Function depends on inlet. <br/>
+				<br/>
+				Inlet 1: none <br/>
+				Inlet 2: Set the threshold in decibels <br/>
+				Inlet 3: Set the hold time in milliseconds <br/>
+				Inlet 4: Set the attack time in milliseconds <br/>
+				Inlet 5: Set the release time in milliseconds <br/>
+			</description>
+		</method>
+		<method name="signal">
+			<arglist>
+				<arg name="signal" optional="1" type="signal" />
+			</arglist>
+			<digest>
+				Signal to gate
+			</digest>
+			<description>
+				Signal to gate
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="cutoffs" get='0' set='1' type='float' size='2'>
+			<arglist>
+				<arg name="cutoffs" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Cutoff frequencies for low and highcut filters in Hz (default = 20 18000)
+			</digest>
+			<description>
+				Cutoff frequencies for low and highcut filters in Hz (default = 20 18000)
+			</description>
+		</attribute>
+		<attribute name="follow" get='0' set='1' type='float' size='3'>
+			<arglist>
+				<arg name="follow" optional="1" type="float" />
+			</arglist>
+			<digest>
+				Envelop follower settings for attack, release and slow attack/release. See av.follow~ for more details. (default = 0.5 80 300)
+			</digest>
+			<description>
+				Envelop follower settings for attack, release and slow attack/release. See av.follow~ for more details. (default = 0.5 80 300)
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.camera.control"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.hidecursor"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.noisiness~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.pitch~"/>
+		<seealso name="av.screenshot"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>

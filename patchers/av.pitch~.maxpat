@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 782.0, 96.0, 680.0, 837.0 ],
+        "rect": [ 34.0, 96.0, 680.0, 837.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 178.5, 405.0, 39.0, 22.0 ],
+                    "text": "atodb"
+                }
+            },
             {
                 "box": {
                     "id": "obj-33",
@@ -18,7 +29,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 143.0, 495.0, 51.0, 22.0 ],
+                    "patching_rect": [ 142.5, 540.0, 51.0, 22.0 ],
                     "text": "unjoin 2"
                 }
             },
@@ -29,7 +40,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 143.0, 465.0, 45.0, 22.0 ],
+                    "patching_rect": [ 142.5, 510.0, 45.0, 22.0 ],
                     "text": "ftom 0."
                 }
             },
@@ -40,7 +51,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 314.5, 387.0, 19.0, 22.0 ],
+                    "patching_rect": [ 314.0, 405.0, 19.0, 22.0 ],
                     "text": "t f"
                 }
             },
@@ -258,7 +269,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 55.5, 555.0, 22.0, 22.0 ],
+                    "patching_rect": [ 55.5, 600.0, 22.0, 22.0 ],
                     "text": "t b"
                 }
             },
@@ -269,7 +280,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 187.0, 600.0, 29.5, 22.0 ],
+                    "patching_rect": [ 186.5, 645.0, 29.5, 22.0 ],
                     "text": "f"
                 }
             },
@@ -280,7 +291,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 266.0, 600.0, 31.0, 22.0 ],
+                    "patching_rect": [ 265.5, 645.0, 31.0, 22.0 ],
                     "text": "sig~"
                 }
             },
@@ -291,7 +302,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "float" ],
-                    "patching_rect": [ 255.0, 540.0, 29.5, 22.0 ],
+                    "patching_rect": [ 254.5, 585.0, 29.5, 22.0 ],
                     "text": "t f f"
                 }
             },
@@ -303,7 +314,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 266.0, 647.0, 30.0, 30.0 ]
+                    "patching_rect": [ 265.5, 692.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -314,7 +325,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 187.0, 647.0, 30.0, 30.0 ]
+                    "patching_rect": [ 186.5, 692.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -324,7 +335,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 120.0, 600.0, 31.0, 22.0 ],
+                    "patching_rect": [ 119.5, 645.0, 31.0, 22.0 ],
                     "text": "sig~"
                 }
             },
@@ -335,7 +346,7 @@
                     "numinlets": 6,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 120.0, 540.0, 130.0, 22.0 ],
+                    "patching_rect": [ 119.5, 585.0, 130.0, 22.0 ],
                     "text": "scale 31.35 99.08 0. 1."
                 }
             },
@@ -346,7 +357,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 85.0, 495.0, 45.0, 22.0 ],
+                    "patching_rect": [ 84.5, 540.0, 45.0, 22.0 ],
                     "text": "ftom 0."
                 }
             },
@@ -357,7 +368,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 179.0, 420.0, 29.5, 22.0 ],
+                    "patching_rect": [ 178.5, 450.0, 29.5, 22.0 ],
                     "text": "> 0."
                 }
             },
@@ -368,7 +379,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 85.0, 457.0, 32.0, 22.0 ],
+                    "patching_rect": [ 84.5, 502.0, 32.0, 22.0 ],
                     "text": "gate"
                 }
             },
@@ -391,7 +402,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 55.5, 600.0, 29.5, 22.0 ],
+                    "patching_rect": [ 55.5, 645.0, 29.5, 22.0 ],
                     "text": "f"
                 }
             },
@@ -437,7 +448,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "patching_rect": [ 314.0, 100.0, 139.0, 22.0 ],
-                    "text": "patcherargs 0.2 50 2500"
+                    "text": "patcherargs -24 50 2500"
                 }
             },
             {
@@ -469,7 +480,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Analyse the pitch of a signal as and output a normalized value between 0 and 1, where 0 means very low pitch and 1 a high pitch. The right outlet outputs the raw pitch as MIDI float (the floating point denotes the detuning). \n\nThe measurement is done per 256 samples on a block of 2048 samples, with the fzero~ object. You can set a detection range in Hz, or use a preset range for various instruments. You can specifiy a threshold, below which the detection doesn't output anything.\n\nThe tracking works best if the signal is: monophonic, as dry as possible, has least amount of extra noises (clicks, breath, fingers on strings, etc), high signal-to-noise ration. You can use [av.ampgate~] to only pass the signal if it crosses some threshold.\n\nArguments:\nthreshold (default = )\nlow detection range ()\nhigh detection range ()\n\nMessages/Attributes:\n@instrument - detection preset for instrument\n\nFor alternative pitch detection algorithms, also have a look at the FluidCorpusManipulation Package [fluid.pitch~], or other objects such as [retune~] and [sigmund~]"
+                    "text": "Analyse the pitch of a signal as and output a normalized value between 0 and 1, where 0 means very low pitch and 1 a high pitch. The right outlet outputs the raw pitch as MIDI float (the floating point denotes the detuning). \n\nThe measurement is done per 256 samples on a block of 2048 samples, with the fzero~ object. You can set a detection range in Hz, or use a preset range for various instruments. You can specifiy a threshold, below which the detection doesn't output anything.\n\nThe tracking works best if the signal is: monophonic, as dry as possible, has least amount of extra noises (clicks, breath, fingers on strings, etc), high signal-to-noise ration. You can use [av.ampgate~] to only pass the signal if it crosses some threshold.\n\nArguments:\nthreshold in dB (default = -24)\nlow detection range in Hz (default = 50)\nhigh detection range in Hz (default = 2500)\n\nMessages/Attributes:\n@instrument - detection preset for instrument\n\nFor alternative pitch detection algorithms, also have a look at the FluidCorpusManipulation Package [fluid.pitch~], or other objects such as [retune~] and [sigmund~]"
                 }
             },
             {
@@ -521,7 +532,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 120.0, 647.0, 30.0, 30.0 ]
+                    "patching_rect": [ 119.5, 692.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -532,7 +543,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 55.5, 647.0, 30.0, 30.0 ]
+                    "patching_rect": [ 55.5, 692.0, 30.0, 30.0 ]
                 }
             }
         ],
@@ -555,6 +566,12 @@
                     "destination": [ "obj-2", 1 ],
                     "order": 1,
                     "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-12", 0 ]
                 }
             },
             {
@@ -688,7 +705,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-23", 0 ],
-                    "midpoints": [ 340.0, 457.97265625, 152.5, 457.97265625 ],
+                    "midpoints": [ 340.0, 503.51953125, 152.0, 503.51953125 ],
                     "order": 0,
                     "source": [ "obj-39", 0 ]
                 }
@@ -702,14 +719,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-6", 1 ],
-                    "source": [ "obj-4", 0 ]
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-4", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-7", 0 ],
-                    "source": [ "obj-4", 1 ]
+                    "destination": [ "obj-6", 1 ],
+                    "source": [ "obj-4", 0 ]
                 }
             },
             {

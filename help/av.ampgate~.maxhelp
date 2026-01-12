@@ -663,13 +663,13 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 1,
-                                    "fontsize": 12.0,
+                                    "fontface": 2,
+                                    "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 660.0, 474.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 660.0, 373.0, 18.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -959,6 +959,14 @@
             "obj-2::obj-23": [ "live.dial", "threshold", 0 ],
             "obj-2::obj-24": [ "live.dial[1]", "hold", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,

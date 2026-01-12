@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 464.0, 251.0, 709.0, 615.0 ],
+        "rect": [ 100.0, 100.0, 709.0, 615.0 ],
         "showrootpatcherontab": 0,
         "showontab": 0,
         "boxes": [
@@ -614,7 +614,6 @@
                         "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                     },
                     "patching_rect": [ 69.0, 100.0, 81.0, 22.0 ],
-                    "presentation_linecount": 4,
                     "text": "p instruments"
                 }
             },
@@ -634,7 +633,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 464.0, 277.0, 709.0, 589.0 ],
+                        "rect": [ 0.0, 26.0, 709.0, 589.0 ],
                         "showontab": 2,
                         "boxes": [
                             {
@@ -645,7 +644,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 165.0, 451.0, 358.0, 33.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "apply a noise gate to the signal to reduce tracking of noisy parts between the sounds"
                                 }
                             },
@@ -690,15 +688,14 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 476.0, 301.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 479.0, 301.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
                                     "style": "helpfile_label",
-                                    "text": "The quality of the input signal directly affects the potential for av.pitch~, or any pitch tracker, to guess the right pitch. Some suggestions on how to improve input for pitch tracking, these suggestions are taken from the [fzero~] helpfile:\n\nTL;DR: Use a monophonic and dry signal with low signal-to-noise ratio.\n\n• av.pitch~ wants a monophonic signal. It will be unreliable if more than one pitch is presented at the same time. When tracking a polyphonic instrument, be careful not to let notes overlap.\n• Reverberation also creates an input with multiple notes at once. For best results, the signal should be as dry as possilbe. Usually, that means a closer microphone position is best. However...\n• Extra sounds, such as key clicks, breath noise, and fingers on strings should be minimized. If the input microphone has a low-cut filter, that would be helpful, as are wind screens and pop filters. If possible, a dedicated microphone for tracking might be wise, since the needs of recording or sound reinforcement are different than those of tracking.\n• av.pitch~ handles broad-spectrum noise relatively well, but trying to improve the signal-to-noise ratio is still a good idea.  Adjust the input level so that the signal to be tracked is substantially higher than the noise floor, and use good quaity equipment.\n\nBelow are some objects that can be used in combination with [av.pitch~] to optimize the tracking:",
-                                    "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
+                                    "text": "The quality of the input signal directly affects the potential for av.pitch~, or any pitch tracker, to guess the right pitch. Some suggestions on how to improve input for pitch tracking, these suggestions are taken from the [fzero~] helpfile:\n\nTL;DR: Use a monophonic and dry signal with low signal-to-noise ratio.\n\n• av.pitch~ wants a monophonic signal. It will be unreliable if more than one pitch is presented at the same time. When tracking a polyphonic instrument, be careful not to let notes overlap.\n• Reverberation also creates an input with multiple notes at once. For best results, the signal should be as dry as possilbe. Usually, that means a closer microphone position is best. However...\n• Extra sounds, such as key clicks, breath noise, and fingers on strings should be minimized. If the input microphone has a low-cut filter, that would be helpful, as are wind screens and pop filters. If possible, a dedicated microphone for tracking might be wise, since the needs of recording or sound reinforcement are different than those of tracking.\n• av.pitch~ handles broad-spectrum noise relatively well, but trying to improve the signal-to-noise ratio is still a good idea.  Adjust the input level so that the signal to be tracked is substantially higher than the noise floor, and use good quaity equipment.\n\nBelow are some objects that can be used in combination with [av.pitch~] to optimize the tracking:"
                                 }
                             },
                             {
@@ -760,7 +757,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 709.0, 589.0 ],
+                        "rect": [ 100.0, 126.0, 709.0, 589.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -875,8 +872,8 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 495.0, 210.0, 135.0, 33.0 ],
-                                    "text": "a visual changing color based on the pitch"
+                                    "patching_rect": [ 495.0, 210.0, 164.0, 33.0 ],
+                                    "text": "a visual changing color based on the detected pitch"
                                 }
                             },
                             {
@@ -943,45 +940,45 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 59.0, 115.0, 1000.0, 746.0 ],
+                                        "rect": [ 359.0, 187.0, 1000.0, 746.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
-                                                    "id": "obj-28",
-                                                    "maxclass": "message",
-                                                    "numinlets": 2,
-                                                    "numoutlets": 1,
-                                                    "outlettype": [ "" ],
-                                                    "patching_rect": [ 50.0, 90.0, 45.0, 22.0 ],
-                                                    "text": "amt $1"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "comment": "",
-                                                    "id": "obj-4",
-                                                    "index": 1,
-                                                    "maxclass": "outlet",
+                                                    "id": "obj-5",
+                                                    "maxclass": "comment",
                                                     "numinlets": 1,
                                                     "numoutlets": 0,
-                                                    "patching_rect": [ 120.0, 255.0, 30.0, 30.0 ]
+                                                    "patching_rect": [ 37.0, 79.0, 151.0, 20.0 ],
+                                                    "text": "small ramp over 5 frames"
                                                 }
                                             },
                                             {
                                                 "box": {
                                                     "id": "obj-2",
-                                                    "maxclass": "comment",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 0,
-                                                    "patching_rect": [ 190.0, 210.0, 299.0, 20.0 ],
-                                                    "text": "mix 2 different textures based on the noisiness amount"
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 3,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "float" ],
+                                                    "patching_rect": [ 50.0, 101.0, 53.0, 22.0 ],
+                                                    "text": "slide 5 5"
                                                 }
                                             },
                                             {
                                                 "box": {
-                                                    "id": "obj-25",
+                                                    "id": "obj-14",
+                                                    "linecount": 7,
+                                                    "maxclass": "comment",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 344.0, 175.0, 195.0, 100.0 ],
+                                                    "text": "Convert the incoming texture to Hue Saturation Lightness.\n\nAdd the pitch value to the Hue to offset the colors based on the pitch\n\nConvert back to RGB"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-1",
                                                     "maxclass": "newobj",
-                                                    "numinlets": 2,
+                                                    "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "jit_gl_texture", "" ],
                                                     "patcher": {
@@ -994,28 +991,72 @@
                                                             "modernui": 1
                                                         },
                                                         "classnamespace": "jit.gen",
-                                                        "rect": [ 59.0, 115.0, 600.0, 450.0 ],
+                                                        "rect": [ 815.0, 331.0, 600.0, 450.0 ],
                                                         "boxes": [
-                                                            {
-                                                                "box": {
-                                                                    "id": "obj-8",
-                                                                    "maxclass": "newobj",
-                                                                    "numinlets": 3,
-                                                                    "numoutlets": 1,
-                                                                    "outlettype": [ "" ],
-                                                                    "patching_rect": [ 75.5, 105.0, 40.0, 22.0 ],
-                                                                    "text": "mix"
-                                                                }
-                                                            },
                                                             {
                                                                 "box": {
                                                                     "id": "obj-5",
                                                                     "maxclass": "newobj",
-                                                                    "numinlets": 0,
+                                                                    "numinlets": 1,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 135.0, 45.0, 76.0, 22.0 ],
-                                                                    "text": "param amt 0"
+                                                                    "patching_rect": [ 177.0, 120.0, 62.0, 22.0 ],
+                                                                    "text": "swiz 1 2 3"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-14",
+                                                                    "linecount": 9,
+                                                                    "maxclass": "comment",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 0,
+                                                                    "patching_rect": [ 285.0, 30.0, 150.0, 127.0 ],
+                                                                    "text": "Convert the incoming texture to Hue Saturation Lightness.\n\nAdd the pitch value to the Hue to offset the colors based on the pitch\n\nConvert back to RGB"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-12",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 2,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "" ],
+                                                                    "patching_rect": [ 109.0, 165.0, 29.5, 22.0 ],
+                                                                    "text": "+"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-9",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "" ],
+                                                                    "patching_rect": [ 120.0, 60.0, 48.0, 22.0 ],
+                                                                    "text": "rgb2hsl"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-7",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "" ],
+                                                                    "patching_rect": [ 120.0, 120.0, 42.0, 22.0 ],
+                                                                    "text": "swiz 0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-6",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 2,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "" ],
+                                                                    "patching_rect": [ 109.0, 199.0, 64.0, 22.0 ],
+                                                                    "text": "concat 0 0"
                                                                 }
                                                             },
                                                             {
@@ -1025,7 +1066,7 @@
                                                                     "numinlets": 0,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 41.0, 45.0, 28.0, 22.0 ],
+                                                                    "patching_rect": [ 120.0, 30.0, 28.0, 22.0 ],
                                                                     "text": "in 1"
                                                                 }
                                                             },
@@ -1036,8 +1077,19 @@
                                                                     "numinlets": 0,
                                                                     "numoutlets": 1,
                                                                     "outlettype": [ "" ],
-                                                                    "patching_rect": [ 86.0, 45.0, 28.0, 22.0 ],
-                                                                    "text": "in 2"
+                                                                    "patching_rect": [ 30.0, 120.0, 76.0, 22.0 ],
+                                                                    "text": "param hue 0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "box": {
+                                                                    "id": "obj-3",
+                                                                    "maxclass": "newobj",
+                                                                    "numinlets": 1,
+                                                                    "numoutlets": 1,
+                                                                    "outlettype": [ "" ],
+                                                                    "patching_rect": [ 109.0, 240.0, 48.0, 22.0 ],
+                                                                    "text": "hsl2rgb"
                                                                 }
                                                             },
                                                             {
@@ -1046,7 +1098,7 @@
                                                                     "maxclass": "newobj",
                                                                     "numinlets": 1,
                                                                     "numoutlets": 0,
-                                                                    "patching_rect": [ 41.0, 180.0, 35.0, 22.0 ],
+                                                                    "patching_rect": [ 109.0, 285.0, 35.0, 22.0 ],
                                                                     "text": "out 1"
                                                                 }
                                                             }
@@ -1054,32 +1106,86 @@
                                                         "lines": [
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-8", 0 ],
+                                                                    "destination": [ "obj-9", 0 ],
                                                                     "source": [ "obj-1", 0 ]
                                                                 }
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-8", 1 ],
+                                                                    "destination": [ "obj-6", 0 ],
+                                                                    "source": [ "obj-12", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-12", 0 ],
                                                                     "source": [ "obj-2", 0 ]
                                                                 }
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-8", 2 ],
+                                                                    "destination": [ "obj-4", 0 ],
+                                                                    "source": [ "obj-3", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-6", 1 ],
                                                                     "source": [ "obj-5", 0 ]
                                                                 }
                                                             },
                                                             {
                                                                 "patchline": {
-                                                                    "destination": [ "obj-4", 0 ],
-                                                                    "source": [ "obj-8", 0 ]
+                                                                    "destination": [ "obj-3", 0 ],
+                                                                    "source": [ "obj-6", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-12", 1 ],
+                                                                    "source": [ "obj-7", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-5", 0 ],
+                                                                    "order": 0,
+                                                                    "source": [ "obj-9", 0 ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "patchline": {
+                                                                    "destination": [ "obj-7", 0 ],
+                                                                    "order": 1,
+                                                                    "source": [ "obj-9", 0 ]
                                                                 }
                                                             }
                                                         ]
                                                     },
-                                                    "patching_rect": [ 120.0, 210.0, 49.0, 22.0 ],
-                                                    "text": "jit.gl.pix"
+                                                    "patching_rect": [ 190.0, 209.0, 143.0, 22.0 ],
+                                                    "text": "jit.gl.pix @title hue-shifter"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-28",
+                                                    "maxclass": "message",
+                                                    "numinlets": 2,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "" ],
+                                                    "patching_rect": [ 50.0, 133.0, 45.0, 22.0 ],
+                                                    "text": "hue $1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-4",
+                                                    "index": 1,
+                                                    "maxclass": "outlet",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 0,
+                                                    "patching_rect": [ 190.0, 255.0, 30.0, 30.0 ]
                                                 }
                                             },
                                             {
@@ -1089,8 +1195,8 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "jit_gl_texture", "" ],
-                                                    "patching_rect": [ 120.0, 120.0, 373.0, 22.0 ],
-                                                    "text": "jit.gl.bfg @basis noise.simplex @dim 480 270 @zoom 2 @colorize 1"
+                                                    "patching_rect": [ 190.0, 133.0, 460.0, 22.0 ],
+                                                    "text": "jit.gl.bfg @basis noise.distorted @dim 480 270 @zoom 2 @colorize 1 @palette 2 1 0"
                                                 }
                                             },
                                             {
@@ -1100,7 +1206,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 225.0, 70.0, 79.0, 22.0 ],
+                                                    "patching_rect": [ 295.0, 70.0, 79.0, 22.0 ],
                                                     "text": "prepend time"
                                                 }
                                             },
@@ -1111,7 +1217,7 @@
                                                     "numinlets": 1,
                                                     "numoutlets": 2,
                                                     "outlettype": [ "", "" ],
-                                                    "patching_rect": [ 225.0, 40.0, 111.0, 22.0 ],
+                                                    "patching_rect": [ 295.0, 40.0, 111.0, 22.0 ],
                                                     "text": "jit.time @speed 0.2"
                                                 }
                                             },
@@ -1122,19 +1228,8 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 120.0, 70.0, 69.0, 22.0 ],
+                                                    "patching_rect": [ 190.0, 70.0, 69.0, 22.0 ],
                                                     "text": "r help-bang"
-                                                }
-                                            },
-                                            {
-                                                "box": {
-                                                    "id": "obj-3",
-                                                    "maxclass": "newobj",
-                                                    "numinlets": 1,
-                                                    "numoutlets": 2,
-                                                    "outlettype": [ "jit_gl_texture", "" ],
-                                                    "patching_rect": [ 150.0, 165.0, 460.0, 22.0 ],
-                                                    "text": "jit.gl.bfg @basis noise.distorted @dim 480 270 @zoom 5 @colorize 1 @palette 2 0 1"
                                                 }
                                             },
                                             {
@@ -1153,6 +1248,12 @@
                                         "lines": [
                                             {
                                                 "patchline": {
+                                                    "destination": [ "obj-4", 0 ],
+                                                    "source": [ "obj-1", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
                                                     "destination": [ "obj-19", 0 ],
                                                     "source": [ "obj-18", 0 ]
                                                 }
@@ -1160,66 +1261,44 @@
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-20", 0 ],
-                                                    "order": 1,
                                                     "source": [ "obj-19", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-3", 0 ],
-                                                    "order": 0,
-                                                    "source": [ "obj-19", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-25", 0 ],
-                                                    "source": [ "obj-20", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-4", 0 ],
-                                                    "source": [ "obj-25", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-25", 0 ],
-                                                    "source": [ "obj-28", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-25", 1 ],
-                                                    "source": [ "obj-3", 0 ]
                                                 }
                                             },
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-28", 0 ],
+                                                    "source": [ "obj-2", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-1", 0 ],
+                                                    "source": [ "obj-20", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-1", 0 ],
+                                                    "source": [ "obj-28", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-2", 0 ],
                                                     "source": [ "obj-30", 0 ]
                                                 }
                                             },
                                             {
                                                 "patchline": {
                                                     "destination": [ "obj-20", 0 ],
-                                                    "order": 1,
-                                                    "source": [ "obj-7", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
-                                                    "destination": [ "obj-3", 0 ],
-                                                    "order": 0,
                                                     "source": [ "obj-7", 0 ]
                                                 }
                                             }
                                         ],
                                         "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                                     },
-                                    "patching_rect": [ 195.0, 477.0, 117.0, 22.0 ],
-                                    "text": "p noise-textures-mix"
+                                    "patching_rect": [ 195.0, 477.0, 114.0, 22.0 ],
+                                    "text": "p textures-color-mix"
                                 }
                             },
                             {
@@ -1426,14 +1505,15 @@
                                     "patching_rect": [ 214.0, 240.0, 53.0, 48.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
-                                            "parameter_initial": [ 0.19685039370078794 ],
+                                            "parameter_initial": [ -20 ],
                                             "parameter_initial_enable": 1,
                                             "parameter_longname": "live.dial",
-                                            "parameter_mmax": 1.0,
+                                            "parameter_mmax": 0.0,
+                                            "parameter_mmin": -60.0,
                                             "parameter_modmode": 0,
                                             "parameter_shortname": "threshold",
                                             "parameter_type": 0,
-                                            "parameter_unitstyle": 1
+                                            "parameter_unitstyle": 4
                                         }
                                     },
                                     "varname": "live.dial"
@@ -1485,7 +1565,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 495.0, 447.0, 71.0, 22.0 ],
+                                    "patching_rect": [ 495.0, 450.0, 71.0, 22.0 ],
                                     "text": "s help-bang"
                                 }
                             },
@@ -1564,7 +1644,7 @@
                                     "numoutlets": 4,
                                     "outlettype": [ "float", "signal", "float", "signal" ],
                                     "patching_rect": [ 195.0, 315.0, 123.0, 22.0 ],
-                                    "text": "av.pitch~ 0.2 130 420"
+                                    "text": "av.pitch~ -20 130 420"
                                 }
                             },
                             {
@@ -1616,7 +1696,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Analyse the pitch of a signal as and output a normalized value between 0 and 1, where 0 means very low pitch and 1 a high pitch. The right outlet outputs the raw pitch as MIDI float (the floating point denotes the detuning). \n\nUse a monophonic and dry signal with low signal-to-noise ratio. You can set a detection range in Hz, or use a preset range for various instruments. You can specifiy a threshold, below which the detection doesn't output anything."
+                                    "text": "Analyse the pitch of a signal and output a normalized value between 0 and 1, where 0 means very low pitch and 1 a high pitch. The right outlet outputs the raw pitch as MIDI float (the floating point denotes the detuning). \n\nUse a monophonic and dry signal with low signal-to-noise ratio. You can set a detection range in Hz, or use a preset range for various instruments. You can specifiy a threshold, below which the detection doesn't output anything and holds the last detected pitch."
                                 }
                             },
                             {
