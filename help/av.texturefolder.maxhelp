@@ -88,9 +88,27 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 633.0, 695.0 ],
+                        "rect": [ 0.0, 26.0, 633.0, 695.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontface": 0,
+                                    "fontname": "Arial",
+                                    "fontsize": 40.0,
+                                    "id": "obj-22",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 30.0, 15.0, 367.0, 51.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "av.texturefolder"
+                                }
+                            },
                             {
                                 "box": {
                                     "fontface": 0,
@@ -101,7 +119,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 276.0, 195.0, 80.0, 35.0 ]
+                                    "patching_rect": [ 261.0, 225.0, 80.0, 35.0 ]
                                 }
                             },
                             {
@@ -111,7 +129,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 255.0, 557.0, 140.0, 22.0 ],
+                                    "patching_rect": [ 240.0, 587.0, 140.0, 22.0 ],
                                     "text": "jit.anim.node @scale 0.1"
                                 }
                             },
@@ -122,7 +140,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 169.0, 240.0, 55.0, 22.0 ],
+                                    "patching_rect": [ 154.0, 270.0, 55.0, 22.0 ],
                                     "text": "getcount"
                                 }
                             },
@@ -133,7 +151,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 45.0, 30.0, 402.0, 47.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 402.0, 47.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -149,7 +167,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 341.0, 285.0, 154.0, 74.0 ],
+                                    "patching_rect": [ 326.0, 315.0, 154.0, 74.0 ],
                                     "text": "texturenames are received and send to multiple, also a matrix of type char with ascending numbers for the textures is created"
                                 }
                             },
@@ -160,7 +178,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 45.0, 205.0, 150.0, 33.0 ],
+                                    "patching_rect": [ 30.0, 235.0, 150.0, 33.0 ],
                                     "text": "read a folder and get all the texturenames as a list"
                                 }
                             },
@@ -171,7 +189,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 49.0, 317.0, 91.0, 33.0 ],
+                                    "patching_rect": [ 34.0, 347.0, 91.0, 33.0 ],
                                     "text": "set the amount of planes"
                                 }
                             },
@@ -188,7 +206,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 30.0, 337.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 367.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "4",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -207,7 +225,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 330.0, 352.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 315.0, 382.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "3",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -226,7 +244,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 30.0, 225.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 255.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "2",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -245,7 +263,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 30.0, 90.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 15.0, 120.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "1",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -258,7 +276,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 255.0, 497.0, 35.0, 22.0 ],
+                                    "patching_rect": [ 240.0, 527.0, 35.0, 22.0 ],
                                     "text": "reset"
                                 }
                             },
@@ -270,7 +288,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 45.0, 352.0, 50.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 382.0, 50.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 100 ],
@@ -292,7 +310,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 45.0, 382.0, 78.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 412.0, 78.0, 22.0 ],
                                     "text": "dim $1, bang"
                                 }
                             },
@@ -303,7 +321,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 255.0, 527.0, 69.0, 22.0 ],
+                                    "patching_rect": [ 240.0, 557.0, 69.0, 22.0 ],
                                     "text": "jit.gl.handle"
                                 }
                             },
@@ -459,7 +477,7 @@
                                         ],
                                         "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
                                     },
-                                    "patching_rect": [ 195.0, 412.0, 54.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 442.0, 54.0, 22.0 ],
                                     "text": "p texMtx"
                                 }
                             },
@@ -470,7 +488,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 341.0, 442.0, 93.0, 22.0 ],
+                                    "patching_rect": [ 326.0, 472.0, 93.0, 22.0 ],
                                     "text": "prepend texture"
                                 }
                             },
@@ -481,7 +499,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 341.0, 367.0, 52.0, 22.0 ],
+                                    "patching_rect": [ 326.0, 397.0, 52.0, 22.0 ],
                                     "text": "r names"
                                 }
                             },
@@ -492,7 +510,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 195.0, 442.0, 126.0, 22.0 ],
+                                    "patching_rect": [ 180.0, 472.0, 126.0, 22.0 ],
                                     "text": "jit.matrix tex 1 char 10"
                                 }
                             },
@@ -504,7 +522,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 45.0, 600.0, 323.0, 35.0 ],
+                                    "patching_rect": [ 30.0, 630.0, 323.0, 35.0 ],
                                     "text": "jit.gl.gridshape @shape plane @color 1 1 1 1 @automatic 0 @scale 0.3 @blend_enable 1 @blend screen @dim 2 2"
                                 }
                             },
@@ -515,7 +533,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 45.0, 442.0, 127.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 472.0, 127.0, 22.0 ],
                                     "text": "jit.map @map 0 1 -8 8"
                                 }
                             },
@@ -526,7 +544,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 45.0, 412.0, 115.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 442.0, 115.0, 22.0 ],
                                     "text": "jit.noise 3 float32 10"
                                 }
                             },
@@ -538,7 +556,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 45.0, 497.0, 169.0, 35.0 ],
+                                    "patching_rect": [ 30.0, 527.0, 169.0, 35.0 ],
                                     "text": "jit.gl.multiple texfold2 2 @glparams position texture"
                                 }
                             },
@@ -549,7 +567,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 45.0, 240.0, 33.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 270.0, 33.0, 22.0 ],
                                     "text": "read"
                                 }
                             },
@@ -559,7 +577,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 45.0, 285.0, 53.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 315.0, 53.0, 22.0 ],
                                     "text": "s texfold"
                                 }
                             },
@@ -570,7 +588,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 90.0, 240.0, 61.0, 22.0 ],
+                                    "patching_rect": [ 75.0, 270.0, 61.0, 22.0 ],
                                     "text": "getnames"
                                 }
                             },
@@ -581,7 +599,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 45.0, 135.0, 118.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 165.0, 118.0, 22.0 ],
                                     "text": "enable $1, visible $1"
                                 }
                             },
@@ -593,7 +611,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 45.0, 105.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 30.0, 135.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -603,7 +621,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 45.0, 165.0, 481.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 195.0, 481.0, 22.0 ],
                                     "text": "jit.world texfold2 @enable 0 @size 480 270 @floating 1 @visible 0 @erase_color 0 0 0 1"
                                 }
                             }
@@ -748,7 +766,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 633.0, 695.0 ],
+                        "rect": [ 100.0, 126.0, 633.0, 695.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -802,7 +820,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -845,7 +863,7 @@
                                     "text": "go to my website",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -875,7 +893,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1111,12 +1129,12 @@
                             {
                                 "box": {
                                     "fontface": 2,
-                                    "fontsize": 12.0,
+                                    "fontsize": 10.0,
                                     "id": "obj-21",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 645.0, 497.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 660.0, 415.0, 18.0 ],
                                     "text": "written by Timo Hoogland © 2020-2025, www.timohoogland.com, formerly th.gl.texturefolder"
                                 }
                             },

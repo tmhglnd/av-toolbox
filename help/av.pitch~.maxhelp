@@ -1364,7 +1364,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1407,7 +1407,7 @@
                                     "text": "go to my website",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1437,7 +1437,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1668,7 +1668,7 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 0,
+                                    "fontface": 2,
                                     "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
@@ -1928,6 +1928,14 @@
             "obj-2::obj-3": [ "live.dial[2]", "low", 0 ],
             "obj-2::obj-42": [ "live.dial[3]", "high", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,

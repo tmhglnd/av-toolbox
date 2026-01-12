@@ -461,13 +461,13 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 1,
+                                    "fontface": 2,
                                     "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 540.0, 397.0, 18.0 ],
+                                    "patching_rect": [ 30.0, 542.0, 373.0, 18.0 ],
                                     "text": "written by Timo Hoogland (c) 2023, www.timohoogland.com, GNU GPL v3 License"
                                 }
                             },
@@ -479,8 +479,12 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 30.0, 68.0, 510.0, 74.0 ],
-                                    "text": "A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world).",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "A simple envelope follower that takes the absolute value of a signal, converts it to dbFS, uses a logarithmic sliding with attack and release times in milliseconds, converts back to signal and outputs either a float or the signal itself.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)."
                                 }
                             },
                             {
@@ -493,8 +497,12 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 30.0, 15.0, 160.0, 51.0 ],
-                                    "text": "av.amp~",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "av.amp~"
                                 }
                             },
                             {

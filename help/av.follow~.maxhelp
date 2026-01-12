@@ -36,12 +36,12 @@
                                 "box": {
                                     "fontface": 2,
                                     "id": "obj-19",
-                                    "linecount": 9,
+                                    "linecount": 10,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 543.0, 549.5, 155.0, 127.0 ],
-                                    "text": "Suggestion:\nIf you need to follow multiple frequency bands, look at [av.follow3~]\n\nAlso have a look at the Fluid Corpus Manipulation Package for more advanced audio descriptors"
+                                    "patching_rect": [ 543.0, 549.5, 159.0, 141.0 ],
+                                    "text": "Suggestion:\nIf you need to follow multiple frequency bands, look at [av.follow3~]\n\nAlso have a look at the Fluid Corpus Manipulation and DataKnot Packages for more advanced audio descriptors"
                                 }
                             },
                             {
@@ -51,7 +51,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 600.0, 429.0, 98.0, 74.0 ],
+                                    "patching_rect": [ 600.0, 452.0, 98.0, 74.0 ],
                                     "text": "Adjust low and hicut filters to narrow the analysis frequency range"
                                 }
                             },
@@ -68,7 +68,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 582.5, 465.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 582.5, 448.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "4",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -93,7 +93,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "float" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 551.5, 429.0, 41.0, 48.0 ],
+                                    "patching_rect": [ 552.0, 397.0, 41.0, 48.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_exponent": 3.0,
@@ -601,13 +601,13 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 1,
+                                    "fontface": 2,
                                     "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 31.0, 658.5, 397.0, 18.0 ],
+                                    "patching_rect": [ 30.0, 660.0, 373.0, 18.0 ],
                                     "text": "written by Timo Hoogland (c) 2023, www.timohoogland.com, GNU GPL v3 License"
                                 }
                             },
@@ -619,8 +619,12 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 30.0, 72.0, 507.0, 87.0 ],
-                                    "text": "A more sophisticated envelope follower using 2 amp~'s in parallel. One quick envelope follower and one slow envelope follower subtracted from the fast one to filter out the low frequency changes. Also includes a low and high cutoff filter to focus the spectrum to follow the amplitude from.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "A more sophisticated envelope follower using 2 amp~'s in parallel. One quick envelope follower and one slow envelope follower subtracted from the fast one to filter out the low frequency changes. Also includes a low and high cutoff filter to focus the spectrum to follow the amplitude from.\n\nSend a bang to get the floating value (control for example with the render bang from jit.world)"
                                 }
                             },
                             {
@@ -633,8 +637,12 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 30.0, 15.0, 185.0, 51.0 ],
-                                    "text": "av.follow~",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "av.follow~"
                                 }
                             },
                             {
@@ -856,14 +864,6 @@
             "obj-2::obj-24": [ "live.dial[1]", "release", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-2::obj-7": [ "live.dial[2]", "slow-release", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,

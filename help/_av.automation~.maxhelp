@@ -39,7 +39,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 315.0, 239.5, 85.0, 22.0 ],
+                                    "patching_rect": [ 315.0, 214.0, 85.0, 22.0 ],
                                     "text": "av.loadmess 1"
                                 }
                             },
@@ -56,7 +56,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 300.0, 311.5, 20.0, 20.0 ],
+                                    "patching_rect": [ 300.0, 286.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "4",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -69,7 +69,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 241.5, 262.5, 60.0, 33.0 ],
+                                    "patching_rect": [ 242.0, 237.0, 60.0, 33.0 ],
                                     "text": "Or select a preset"
                                 }
                             },
@@ -86,7 +86,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 232.5, 250.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 233.0, 225.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "2",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -105,7 +105,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 300.0, 377.5, 20.0, 20.0 ],
+                                    "patching_rect": [ 300.0, 352.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "5",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -117,7 +117,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 315.0, 366.5, 107.0, 20.0 ],
+                                    "patching_rect": [ 315.0, 341.0, 107.0, 20.0 ],
                                     "text": "interpolate presets"
                                 }
                             },
@@ -134,7 +134,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 197.0, 152.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 197.0, 127.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "3",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -147,7 +147,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 330.0, 262.5, 158.0, 60.0 ],
+                                    "patching_rect": [ 330.0, 237.0, 158.0, 60.0 ],
                                     "text": "function is automatically exposed to pattrstorage for preset storage (or can be stored with snapshots)"
                                 }
                             },
@@ -158,7 +158,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "float" ],
-                                    "patching_rect": [ 315.0, 411.5, 29.5, 22.0 ],
+                                    "patching_rect": [ 315.0, 386.0, 29.5, 22.0 ],
                                     "text": "+ 1."
                                 }
                             },
@@ -171,7 +171,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 315.0, 387.5, 111.0, 15.0 ],
+                                    "patching_rect": [ 315.0, 362.0, 111.0, 15.0 ],
                                     "size": 4.0
                                 }
                             },
@@ -182,7 +182,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 5,
                                     "outlettype": [ "preset", "int", "preset", "int", "" ],
-                                    "patching_rect": [ 315.0, 324.5, 105.0, 28.0 ],
+                                    "patching_rect": [ 315.0, 299.0, 105.0, 28.0 ],
                                     "pattrstorage": "avhelp"
                                 }
                             },
@@ -193,7 +193,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 315.0, 441.5, 111.0, 22.0 ],
+                                    "patching_rect": [ 315.0, 416.0, 111.0, 22.0 ],
                                     "saved_object_attributes": {
                                         "parameter_enable": 0,
                                         "parameter_mappable": 0
@@ -209,7 +209,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 39.0, 382.5, 193.0, 47.0 ],
+                                    "patching_rect": [ 39.0, 357.0, 193.0, 47.0 ],
                                     "text": "outputs both a signal and a float. The float is output with a bang (for example the world render-bang)"
                                 }
                             },
@@ -220,7 +220,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 30.0, 190.0, 139.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 165.0, 139.0, 22.0 ],
                                     "text": "pak i i i"
                                 }
                             },
@@ -231,7 +231,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
-                                    "patching_rect": [ 166.0, 444.5, 64.0, 49.5 ]
+                                    "patching_rect": [ 166.0, 419.0, 64.0, 49.5 ]
                                 }
                             },
                             {
@@ -240,7 +240,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 133.5, 240.5, 97.0, 20.0 ],
+                                    "patching_rect": [ 134.0, 215.0, 97.0, 20.0 ],
                                     "text": "draw automation"
                                 }
                             },
@@ -251,7 +251,7 @@
                                     "maxclass": "ezdac~",
                                     "numinlets": 2,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 260.0, 203.0, 45.0, 45.0 ]
+                                    "patching_rect": [ 260.0, 178.0, 45.0, 45.0 ]
                                 }
                             },
                             {
@@ -263,7 +263,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 722.5, 98.0, 300.0, 35.0 ],
+                                    "patching_rect": [ 723.0, 73.0, 300.0, 35.0 ],
                                     "text": ";\rmax launchbrowser https://www.gumroad.com/tmhglnd"
                                 }
                             },
@@ -276,7 +276,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 722.5, 53.0, 317.0, 35.0 ],
+                                    "patching_rect": [ 723.0, 28.0, 317.0, 35.0 ],
                                     "text": ";\rmax launchbrowser http://www.patreon.com/timohoogland"
                                 }
                             },
@@ -293,7 +293,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 570.0, 68.0, 120.0, 23.0 ],
+                                    "patching_rect": [ 570.0, 43.0, 120.0, 23.0 ],
                                     "text": "support me on patreon",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
@@ -311,7 +311,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 722.5, 143.0, 275.0, 35.0 ],
+                                    "patching_rect": [ 723.0, 118.0, 275.0, 35.0 ],
                                     "text": ";\rmax launchbrowser http://www.timohoogland.com"
                                 }
                             },
@@ -328,7 +328,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 570.0, 128.0, 120.0, 23.0 ],
+                                    "patching_rect": [ 570.0, 103.0, 120.0, 23.0 ],
                                     "text": "go to my website",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
@@ -350,7 +350,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 570.0, 98.0, 120.0, 23.0 ],
+                                    "patching_rect": [ 570.0, 73.0, 120.0, 23.0 ],
                                     "text": "visit my gumroad",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.599997520446777, 0.60001540184021, 0.600005149841309, 1.0 ],
@@ -366,7 +366,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 83.0, 436.0, 56.0, 33.0 ],
+                                    "patching_rect": [ 83.0, 411.0, 56.0, 33.0 ],
                                     "text": "controls morph"
                                 }
                             },
@@ -378,7 +378,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 30.0, 161.0, 50.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 136.0, 50.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 0 ],
@@ -400,7 +400,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 150.0, 161.0, 50.0, 22.0 ],
+                                    "patching_rect": [ 150.0, 136.0, 50.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 5 ],
@@ -422,7 +422,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 91.0, 161.0, 50.0, 22.0 ],
+                                    "patching_rect": [ 91.0, 136.0, 50.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
                                             "parameter_initial": [ 3 ],
@@ -638,19 +638,20 @@
                                             }
                                         ]
                                     },
-                                    "patching_rect": [ 30.0, 471.5, 109.0, 22.0 ],
+                                    "patching_rect": [ 30.0, 446.0, 109.0, 22.0 ],
                                     "text": "p morphingShapes"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-20",
+                                    "linecount": 2,
                                     "maxclass": "message",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 528.0, 444.5, 106.0, 22.0 ],
-                                    "text": "0 0 0."
+                                    "patching_rect": [ 528.0, 444.5, 106.0, 35.0 ],
+                                    "text": "112 48 598.908877"
                                 }
                             },
                             {
@@ -671,7 +672,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 315.0, 128.0, 151.0, 20.0 ],
+                                    "patching_rect": [ 315.0, 103.0, 151.0, 20.0 ],
                                     "text": "start transport and audio"
                                 }
                             },
@@ -688,7 +689,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 300.0, 143.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 300.0, 118.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "1",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -700,7 +701,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 137.0, 187.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 112.0, 187.0, 20.0 ],
                                     "text": "change the interval in min:sec:ms"
                                 }
                             },
@@ -710,7 +711,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 315.0, 181.0, 175.0, 20.0 ],
+                                    "patching_rect": [ 315.0, 156.0, 175.0, 20.0 ],
                                     "text": "start transport at 0 on restart"
                                 }
                             },
@@ -721,7 +722,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "" ],
-                                    "patching_rect": [ 409.0, 157.0, 34.0, 22.0 ],
+                                    "patching_rect": [ 409.0, 132.0, 34.0, 22.0 ],
                                     "text": "sel 1"
                                 }
                             },
@@ -733,7 +734,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 315.0, 156.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 315.0, 131.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -743,7 +744,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 9,
                                     "outlettype": [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-                                    "patching_rect": [ 315.0, 203.0, 128.0, 22.0 ],
+                                    "patching_rect": [ 315.0, 178.0, 128.0, 22.0 ],
                                     "text": "transport @tempo 120"
                                 }
                             },
@@ -760,19 +761,19 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 495.0, 190.0, 195.0, 165.0 ],
+                                    "patching_rect": [ 495.0, 190.0, 210.0, 170.0 ],
                                     "sync": 1
                                 }
                             },
                             {
                                 "box": {
-                                    "fontface": 1,
-                                    "fontsize": 12.0,
+                                    "fontface": 2,
+                                    "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 474.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 510.0, 373.0, 18.0 ],
                                     "text": "written by Timo Hoogland (c) 2023, www.timohoogland.com, GNU GPL v3 License"
                                 }
                             },
@@ -782,9 +783,14 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 90.0, 435.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 435.0, 20.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "Draw automation for parameters controlled by a time interval in min:sec:ms. ",
-                                    "textcolor": [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -797,8 +803,13 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 30.0, 15.0, 257.0, 51.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
                                     "text": "av.automation",
-                                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                                    "textcolor": [ 0.85, 0.85, 0.85, 1.0 ]
                                 }
                             },
                             {
@@ -818,7 +829,7 @@
                                     "numoutlets": 2,
                                     "offset": [ 0.0, 0.0 ],
                                     "outlettype": [ "float", "signal" ],
-                                    "patching_rect": [ 30.0, 262.5, 200.0, 100.0 ],
+                                    "patching_rect": [ 30.0, 237.0, 200.0, 100.0 ],
                                     "varname": "_av.automation~",
                                     "viewvisibility": 1
                                 }
@@ -828,7 +839,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-12", 0 ],
-                                    "midpoints": [ 504.5, 505.0, 239.0, 505.0, 239.0, 226.5, 39.5, 226.5 ],
+                                    "midpoints": [ 504.5, 451.65625, 239.0, 451.65625, 239.0, 226.5, 39.5, 226.5 ],
                                     "order": 2,
                                     "source": [ "obj-1", 0 ]
                                 }
@@ -995,6 +1006,14 @@
             "obj-2::obj-16": [ "number[1]", "number[1]", 0 ],
             "obj-2::obj-18": [ "number", "number", 0 ],
             "obj-2::obj-19": [ "number[2]", "number[2]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,

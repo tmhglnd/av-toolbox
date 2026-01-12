@@ -465,7 +465,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 480.0, 209.0, 213.0, 47.0 ],
+                                    "patching_rect": [ 480.0, 209.0, 215.0, 47.0 ],
                                     "text": "a visual of 2 textures, mixed based on the noisness. Wait for the noisy part in the sound to see the difference."
                                 }
                             },
@@ -885,7 +885,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -928,7 +928,7 @@
                                     "text": "go to my website",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -958,7 +958,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1171,7 +1171,7 @@
                             },
                             {
                                 "box": {
-                                    "fontface": 0,
+                                    "fontface": 2,
                                     "fontsize": 10.0,
                                     "id": "obj-76",
                                     "maxclass": "comment",
@@ -1395,14 +1395,6 @@
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-3::obj-23": [ "live.dial[1]", "threshold", 0 ],
             "obj-3::obj-46": [ "live.gain~[3]", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,

@@ -29,7 +29,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 100.0, 126.0, 631.0, 628.0 ],
+                        "rect": [ 0.0, 26.0, 631.0, 628.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -421,7 +421,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 30.0, 210.0, 231.0, 35.0 ],
+                                    "patching_rect": [ 30.0, 210.0, 234.0, 35.0 ],
                                     "text": "jit.world mlt-ctx @size 480 270 @visible 0 @erase_color 1 1 1 1 @floating 1"
                                 }
                             }
@@ -650,7 +650,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 631.0, 628.0 ],
+                        "rect": [ 100.0, 126.0, 631.0, 628.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -704,7 +704,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -747,7 +747,7 @@
                                     "text": "go to my website",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -777,7 +777,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 0,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
+                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1050,12 +1050,12 @@
                             {
                                 "box": {
                                     "fontface": 2,
-                                    "fontsize": 12.0,
+                                    "fontsize": 10.0,
                                     "id": "obj-21",
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 586.0, 445.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 586.0, 372.0, 18.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
