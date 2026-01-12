@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 528.0, 157.0, 942.0, 727.0 ],
+        "rect": [ 470.0, 114.0, 938.0, 684.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
@@ -60,7 +60,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 3,
+                    "linecount": 5,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -70,7 +70,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 2,
+                    "presentation_linecount": 3,
                     "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
                     "readonly": 1,
                     "saved_attribute_attributes": {
@@ -78,7 +78,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Gating signal from envelope follower",
+                    "text": "Take a screenshot from an incoming texture as png or jpeg",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -161,7 +161,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.ampgate~"
+                    "text": "av.screenshot"
                 }
             },
             {
@@ -1595,8 +1595,9 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 519.0, 148.0, 770.0, 489.0 ],
+                        "rect": [ 520.0, 148.0, 770.0, 489.0 ],
                         "openinpresentation": 1,
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -1675,7 +1676,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 666.0, 408.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 132.0, 328.0, 22.0 ],
+                                    "presentation_rect": [ 30.0, 117.0, 328.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1696,7 +1697,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 300.0, 570.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 346.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 422.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1719,8 +1720,8 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 450.0, 540.0, 176.0, 100.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 349.0, 471.0, 33.0 ],
+                                    "presentation_linecount": 3,
+                                    "presentation_rect": [ 212.0, 425.0, 325.0, 47.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1739,7 +1740,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 300.0, 540.0, 148.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 349.0, 101.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 425.0, 101.0, 27.0 ],
                                     "text": "pix.shaders",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1756,7 +1757,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 525.0, 435.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 431.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 192.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1779,7 +1780,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 675.0, 405.0, 176.0, 47.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 212.0, 438.0, 343.0, 20.0 ],
+                                    "presentation_rect": [ 212.0, 199.0, 343.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1798,7 +1799,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 525.0, 405.0, 148.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 435.0, 148.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 196.0, 148.0, 27.0 ],
                                     "text": "th.gl.texturefolder",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1815,7 +1816,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 180.0, 435.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 257.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 333.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1839,7 +1840,7 @@
                                     "patching_rect": [ 315.0, 405.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 260.0, 321.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 336.0, 321.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1858,7 +1859,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 180.0, 405.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 260.0, 122.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 336.0, 122.0, 27.0 ],
                                     "text": "th.gl.texteditor",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1875,7 +1876,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 480.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 301.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 377.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1899,7 +1900,7 @@
                                     "patching_rect": [ 645.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 304.0, 336.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 380.0, 336.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1918,7 +1919,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 480.0, 285.0, 155.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 304.0, 155.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 380.0, 155.0, 27.0 ],
                                     "text": "th.gl.commandline",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1935,7 +1936,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 139.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 211.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 287.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -1959,7 +1960,7 @@
                                     "patching_rect": [ 274.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 214.0, 315.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 290.0, 315.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -1978,7 +1979,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 139.0, 285.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 214.0, 123.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 290.0, 123.0, 27.0 ],
                                     "text": "th.gl.cornerpin",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -1995,7 +1996,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 405.0, 195.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 389.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 150.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -2018,7 +2019,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 540.0, 165.0, 241.0, 33.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 212.0, 396.0, 325.0, 20.0 ],
+                                    "presentation_rect": [ 212.0, 157.0, 325.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -2037,7 +2038,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 405.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 393.0, 121.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 154.0, 121.0, 27.0 ],
                                     "text": "th.gl.videogrid",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -2054,7 +2055,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 90.0, 195.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 165.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 241.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -2090,7 +2091,7 @@
                                     "patching_rect": [ 225.0, 165.0, 150.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 168.5, 272.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 245.0, 272.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -2109,7 +2110,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 168.5, 116.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 245.0, 116.0, 27.0 ],
                                     "text": "jit.underworld",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
@@ -2125,7 +2126,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 45.0, 474.0, 51.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 30.0, 332.0, 51.0 ],
+                                    "presentation_rect": [ 30.0, 15.0, 332.0, 51.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -2146,7 +2147,7 @@
                                     "patching_rect": [ 90.0, 98.0, 474.0, 47.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 30.0, 83.0, 383.0, 47.0 ],
+                                    "presentation_rect": [ 30.0, 68.0, 383.0, 47.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -2176,10 +2177,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 1448.7574973655778, 1448.7574973655778 ],
+                                    "patching_rect": [ 855.0, 180.0, 1610.845708840343, 1610.845708840343 ],
                                     "pic": "av-extras08.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 30.0, 387.2375856541138, 387.2375856541138 ]
+                                    "presentation_rect": [ 555.0, 15.0, 430.56205354374794, 430.56205354374794 ]
                                 }
                             }
                         ],
@@ -2602,7 +2603,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "82:34:565"
+                    "text": "98:30:225"
                 }
             },
             {

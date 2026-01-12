@@ -22,8 +22,6 @@ max definesubstitution av.camera jit.gl.camera @position 0 0 4 @locklook 1 @look
 max objectfile av.camera.drive av.camera.drive;
 max definesubstitution av.camera.drive jit.anim.drive @speed 5 @ease 0.5 @ui_listen 1;
 
-max objectfile av.loadmess patcherargs;
-
 max objectfile av.gridshape.sphere av.gridshape.sphere;
 max definesubstitution av.gridshape.sphere jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0;
 

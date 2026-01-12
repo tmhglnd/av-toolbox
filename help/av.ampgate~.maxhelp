@@ -34,6 +34,17 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-34",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 301.5, 255.0, 85.0, 22.0 ],
+                                    "text": "av.loadmess 3"
+                                }
+                            },
+                            {
+                                "box": {
                                     "fontface": 2,
                                     "id": "obj-30",
                                     "linecount": 5,
@@ -83,7 +94,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 365.0, 324.0, 97.0, 20.0 ],
+                                    "patching_rect": [ 364.5, 286.0, 97.0, 20.0 ],
                                     "text": "try some presets"
                                 }
                             },
@@ -94,7 +105,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 5,
                                     "outlettype": [ "preset", "int", "preset", "int", "" ],
-                                    "patching_rect": [ 302.0, 323.0, 60.0, 22.0 ],
+                                    "patching_rect": [ 301.5, 285.0, 60.0, 22.0 ],
                                     "preset_data": [
                                         {
                                             "number": 1,
@@ -103,6 +114,10 @@
                                         {
                                             "number": 2,
                                             "data": [ 5, "obj-46", "live.gain~", "float", -18.272401809692383, 5, "obj-4", "playlist~", "preset_count", 1, 7, "obj-4", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-4", "playlist~", "preset_clipstate", 1, "absolutepath", "drumLoop.aif", 7, "obj-4", "playlist~", "preset_clipstate", 1, "filename", "drumLoop.aif", 7, "obj-4", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-4", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-4", "playlist~", "preset_clipstate", 1, "id", "u009013790", 7, "obj-4", "playlist~", "preset_content", 1, "loop", 1, 4, "obj-4", "playlist~", "preset_execute", 5, "obj-23", "live.dial", "float", -11.968503952026367, 5, "obj-24", "live.dial", "float", 500.0, 5, "obj-16", "live.dial", "float", 0.6255130767822266, 5, "obj-12", "live.dial", "float", 1102.8031005859375 ]
+                                        },
+                                        {
+                                            "number": 3,
+                                            "data": [ 5, "obj-46", "live.gain~", "float", -18.272401809692383, 5, "obj-4", "playlist~", "preset_count", 1, 7, "obj-4", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-4", "playlist~", "preset_clipstate", 1, "absolutepath", "drumLoop.aif", 7, "obj-4", "playlist~", "preset_clipstate", 1, "filename", "drumLoop.aif", 7, "obj-4", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-4", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-4", "playlist~", "preset_clipstate", 1, "id", "u009013790", 7, "obj-4", "playlist~", "preset_content", 1, "loop", 1, 4, "obj-4", "playlist~", "preset_execute", 5, "obj-23", "live.dial", "float", -11.968503952026367, 5, "obj-24", "live.dial", "float", 318.89764404296875, 5, "obj-16", "live.dial", "float", 0.6255130767822266, 5, "obj-12", "live.dial", "float", 488.9864196777344 ]
                                         }
                                     ]
                                 }
@@ -377,7 +392,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 302.0, 224.0, 129.0, 33.0 ],
+                                    "patching_rect": [ 301.5, 219.0, 129.0, 33.0 ],
                                     "text": "set threshold in dB and hold-time in ms"
                                 }
                             },
@@ -638,7 +653,7 @@
                                     "numinlets": 5,
                                     "numoutlets": 2,
                                     "outlettype": [ "float", "signal" ],
-                                    "patching_rect": [ 195.0, 323.0, 77.0, 22.0 ],
+                                    "patching_rect": [ 195.5, 330.0, 77.0, 22.0 ],
                                     "text": "av.ampgate~"
                                 }
                             },
@@ -766,7 +781,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-2", 4 ],
-                                    "midpoints": [ 547.5, 494.0390625, 474.41015625, 494.0390625, 474.41015625, 310.37890625, 262.5, 310.37890625 ],
+                                    "midpoints": [ 547.5, 494.0390625, 474.41015625, 494.0390625, 474.41015625, 321.28125, 263.0, 321.28125 ],
                                     "source": [ "obj-12", 0 ]
                                 }
                             },
@@ -785,7 +800,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-2", 3 ],
-                                    "midpoints": [ 504.5, 482.109375, 484.6875, 482.109375, 484.6875, 300.92578125, 248.0, 300.92578125 ],
+                                    "midpoints": [ 504.5, 482.109375, 484.6875, 482.109375, 484.6875, 314.9140625, 248.5, 314.9140625 ],
                                     "source": [ "obj-16", 0 ]
                                 }
                             },
@@ -845,6 +860,12 @@
                                     "destination": [ "obj-5", 0 ],
                                     "order": 0,
                                     "source": [ "obj-25", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-31", 0 ],
+                                    "source": [ "obj-34", 0 ]
                                 }
                             },
                             {
