@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="av.loadmess">
+<c74object name="av.loadbang">
 
 	<digest>
-		Send a message after the whole patcher is loaded
+		Send a bang after the whole patcher is loaded
 	</digest>
 
 	<description>
-		The av.loadmess is an alternative to the standard [loadmess] object. This loadmess is defered to the end of the patcher loading time, which allows to automatically load presets after the patch is initialized. In many cases a regular loadbang/loadmess is not sufficient, because the arguments/attributes loaded by the object are initialized after the patchers loadbang/loadmess objects.
+		The av.loadbang is an alternative to the standard [loadbang] object. This loadbang is defered to the end of the patcher loading time, which allows to automatically load presets after the patch is initialized. In many cases a regular loadbang/loadmess is not sufficient, because the arguments/attributes loaded by the object are initialized after the patchers loadbang/loadmess objects.
 	</description>
 
 	<!--METADATA-->
@@ -32,14 +32,6 @@
 
 	<!-- ARGUMENTS-->
 	<objarglist>
-		<objarg name="message" optional="1" type="list">
-			<digest>
-				A list of arguments to be send on patcher initialisation
-			</digest>
-			<description>
-				A list of arguments to be send on patcher initialisation
-			</description>
-		</objarg>
 	</objarglist>
 
 	<!--MESSAGES-->
@@ -48,22 +40,11 @@
 
 	<!--ATTRIBUTES-->
 	<attributelist>
-		<!-- <attribute name="no-attributes"  get='0' set='1' size="1">
-			<arglist>
-				<arg name="no-attributes" optional="1" type="none"/>
-			</arglist>
-			<digest>
-				Attributes will be replaced on initalization by presets
-			</digest>
-			<description>
-				Attributes will be replaced on initalization by presets
-			</description>
-		</attribute> -->
 	</attributelist>
 
 	<!--SEEALSO-->
 	<seealsolist>
-		<seealso name="av.loadbang"/>
+		<seealso name="av.loadmess"/>
 		<seealso name="av.automation~"/>
 		<seealso name="av.amp~"/>
 		<seealso name="av.camera.control"/>

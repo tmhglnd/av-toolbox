@@ -97,8 +97,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 45.0, 75.0, 72.0, 22.0 ],
-                    "text": "patcherargs"
+                    "patching_rect": [ 45.0, 75.0, 102.0, 22.0 ],
+                    "text": "patcherargs bang"
                 }
             }
         ],
