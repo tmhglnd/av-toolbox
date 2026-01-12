@@ -4,8 +4,8 @@
 	"version" : "1.2.0",
 	"author" : "Timo Hoogland",
 	"authors" : [  ],
-	"description" : "This package contains abstractions to assist you in creating realtime audiovisual works. Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in a timeline with transport and extensions on objects in jitter. Objects like: av.timepoint, av.follow~, av.spectrum~ and av.movie~",
-	"tags" : [ "jitter", "max", "msp", "utility", "tool", "audiovisual", "av"],
+	"description" : "A package to help you start (and speed-up) Audio Visual projects with Jitter in Max!<br><br>This package contains abstractions that are designed to work together with the already wide range of Jitter and Max objects. All the abstractions are created with vanilla Max and have help and reference files.<br><br>Objects range from signal analysis (eg. av.follow~, av.spectrum~, av.pitch~) that can be used to control parameters in your visuals in real time, objects that allow controlling events on a timeline with the global transport (eg. av.phasor~, av.timetrigger~, av.chance) and extensions on objects in Jitter to improve the workflow (eg. av.texturefolder, av.videogrid, av.movieplay~, av.enable.xfade)",
+	"tags" : [ "jitter", "max", "msp", "utility", "tool", "audiovisual", "av", "analysis", "timeline", "abstractions" ],
 	"website" : "https://github.com/tmhglnd/av-toolbox",
 	"extends" : "",
 	"extensible" : 0,
@@ -26,7 +26,7 @@
 	"homepatcher" : "av-toolbox.maxpat",
 	"package_extra" : 	{
 		"reverse_domain" : "com.cycling74",
-		"copyright" : "Copyright (c) 2023 Timo Hoogland"
+		"copyright" : "Copyright (c) 2023-2026 Timo Hoogland"
 	}
 ,
 	"filelist" : 	{
