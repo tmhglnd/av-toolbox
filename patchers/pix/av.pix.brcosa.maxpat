@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 710.0, 96.0, 680.0, 837.0 ],
+        "rect": [ 34.0, 96.0, 680.0, 837.0 ],
         "boxes": [
             {
                 "box": {
@@ -33,11 +33,12 @@
                             {
                                 "box": {
                                     "id": "obj-21",
+                                    "linecount": 2,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 310.5, 46.0, 204.0, 20.0 ],
-                                    "text": "From brcosa.genjit shipped with Max"
+                                    "patching_rect": [ 310.5, 46.0, 204.0, 33.0 ],
+                                    "text": "From brcosa.genjit shipped with Max, with slight adaption"
                                 }
                             },
                             {
@@ -204,8 +205,8 @@
                                     "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 270.0, 120.0, 153.0, 22.0 ],
-                                    "text": "vec 0.2125 0.7154 0.0721"
+                                    "patching_rect": [ 270.0, 120.0, 147.0, 22.0 ],
+                                    "text": "vec 0.2126 0.7152 0.0722"
                                 }
                             },
                             {
