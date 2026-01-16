@@ -13,6 +13,16 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-12",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 435.0, 226.0, 239.0, 20.0 ],
+                    "text": "For Max9, jit.fx.brcosa can be used as well!"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-3",
                     "maxclass": "newobj",
                     "numinlets": 1,

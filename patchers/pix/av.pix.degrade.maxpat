@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-8",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 390.0, 264.5, 200.0, 33.0 ],
+                    "text": "Also look at jit.fx.bitcrush in max9, which includes dithering"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-4",
                     "maxclass": "newobj",
                     "numinlets": 2,
