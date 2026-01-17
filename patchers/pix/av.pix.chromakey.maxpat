@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-9",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 477.0, 60.0, 65.0, 22.0 ],
+                    "text": "route color"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-8",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -215,7 +226,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 495.0, 135.0, 195.0, 275.0 ],
+                    "patching_rect": [ 396.0, 285.0, 199.0, 275.0 ],
                     "text": "The av.pix.chromakey is based on the co.chromakey.hsv.jxs code. But instead of already blending 2 textures (where one is chromakeyed and the other is used as background), this object outputs a single texture with the alpha channel being part of the chromakeying\n\narguments:\n<float> tolerance\n<float> fade (rgb 0-1)\n\nattributes:\n@color - the color (rgb float)\n\nTimo Hoogland (c) 2026\nwww.timohoogland.com\nMIT License"
                 }
             },
@@ -253,7 +264,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 105.0, 30.0, 30.0, 30.0 ]
                 }
             },
@@ -351,8 +362,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-4", 0 ],
-                    "midpoints": [ 486.5, 274.90234375, 228.5, 274.90234375 ],
+                    "destination": [ "obj-9", 0 ],
                     "source": [ "obj-3", 1 ]
                 }
             },
@@ -396,6 +406,19 @@
                 "patchline": {
                     "destination": [ "obj-25", 0 ],
                     "source": [ "obj-8", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "midpoints": [ 532.5, 274.90234375, 228.5, 274.90234375 ],
+                    "source": [ "obj-9", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-9", 0 ]
                 }
             }
         ],
