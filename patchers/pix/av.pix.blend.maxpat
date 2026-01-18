@@ -194,7 +194,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
                     "patching_rect": [ 234.0, 45.0, 127.0, 22.0 ],
-                    "text": "patcherargs 1 additive"
+                    "text": "patcherargs additive 1"
                 }
             },
             {
@@ -278,7 +278,7 @@
             },
             {
                 "box": {
-                    "filename": "co.glow.jxs",
+                    "filename": "co.additive.jxs",
                     "fontname": "Arial",
                     "fontsize": 11.934731,
                     "id": "obj-20",
@@ -289,7 +289,7 @@
                     "patching_rect": [ 105.0, 630.0, 55.0, 22.0 ],
                     "text": "jit.gl.slab",
                     "textfile": {
-                        "filename": "co.glow.jxs",
+                        "filename": "co.additive.jxs",
                         "flags": 0,
                         "embed": 0,
                         "autowatch": 1
@@ -351,7 +351,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 29.0, 45.0, 30.0, 30.0 ]
                 }
             },
