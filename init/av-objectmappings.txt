@@ -41,13 +41,22 @@ max objectfile av.mesh.lines av.mesh.lines;
 max definesubstitution av.mesh.lines jit.gl.mesh @draw_mode line_strip @color 1 1 1 1 @line_width 1;
 
 max objectfile av.mesh.grid av.mesh.grid;
-max definesubstitution av.mesh.grid jit.gl.mesh @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @lighting_enable 1;
+max definesubstitution av.mesh.grid jit.gl.mesh @draw_mode quad_grid @poly_mode 1 1 @line_width 1 @color 1 1 1 1;
+
+max objectfile av.mesh.plane av.mesh.plane;
+max definesubstitution av.mesh.plane jit.gl.mesh @draw_mode quad_grid @poly_mode 0 0 @color 1 1 1 1 @lighting_enable 1 @auto_normals 1;
+
+max objectfile av.mesh.model av.mesh.model;
+max definesubstitution av.mesh.model jit.gl.mesh @draw_mode triangles @poly_mode 1 1 @color 1 1 1 1 @line_width 1;
 
 max objectfile av.texture av.texture;
 max definesubstitution av.texture jit.gl.texture @dim 1920 1080 @adapt 0 @type auto;
 
 max objectfile av.bfg av.bfg;
 max definesubstitution av.bfg jit.gl.bfg @zoom 2 @colorize 0 @basis noise.simplex @palette 1 2 3;
+
+max objectfile av.bfg.matrix av.bfg.matrix;
+max definesubstitution av.bfg.matrix jit.bfg @dim 50 50 1 @type float32 @planecount 3 @basis noise.simplex;
 
 max objectfile av.pbr av.pbr;
 max definesubstitution av.pbr jit.gl.pbr @roughness 0.3 @metalness 0.1 @mat_diffuse 1 1 1;
