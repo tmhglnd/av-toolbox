@@ -34,6 +34,22 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontface": 2,
+                                    "id": "obj-6",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 32.0, 90.0, 237.0, 20.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Note: Max9 users can also use jit.fx.brcosa"
+                                }
+                            },
+                            {
+                                "box": {
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -228,7 +244,6 @@
                                     "gizmos": 0,
                                     "id": "obj-1",
                                     "maxclass": "jit.pworld",
-                                    "name": "u604011962",
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
@@ -251,17 +266,16 @@
                             {
                                 "box": {
                                     "id": "obj-88",
-                                    "linecount": 2,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 375.0, 33.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 317.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "A wrapper for a BRightness COntrast SAturation adjustment shader. Max9 users can use jit.fx.brcosa as well!"
+                                    "text": "Change the BRightness COntrast SAturation for a texture."
                                 }
                             },
                             {

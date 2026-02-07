@@ -67,7 +67,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 169.0, 225.0, 48.0, 20.0 ],
+                                    "patching_rect": [ 180.0, 225.0, 48.0, 20.0 ],
                                     "text": "presets"
                                 }
                             },
@@ -87,8 +87,8 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 102.0, 278.0, 64.0, 20.0 ],
-                                    "text": "brightness"
+                                    "patching_rect": [ 119.5, 278.0, 61.0, 20.0 ],
+                                    "text": "saturation"
                                 }
                             },
                             {
@@ -122,7 +122,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 109.0, 195.0, 85.0, 22.0 ],
+                                    "patching_rect": [ 120.0, 195.0, 85.0, 22.0 ],
                                     "text": "av.loadmess 1"
                                 }
                             },
@@ -133,15 +133,19 @@
                                     "numinlets": 1,
                                     "numoutlets": 5,
                                     "outlettype": [ "preset", "int", "preset", "int", "" ],
-                                    "patching_rect": [ 109.0, 225.0, 57.0, 19.0 ],
+                                    "patching_rect": [ 120.0, 225.0, 57.0, 19.0 ],
                                     "preset_data": [
                                         {
                                             "number": 1,
-                                            "data": [ 5, "obj-7", "number", "float", 2.5999999046325684 ]
+                                            "data": [ 5, "obj-7", "number", "float", 3.430000066757202 ]
                                         },
                                         {
                                             "number": 2,
-                                            "data": [ 5, "obj-7", "number", "float", 0.6899999976158142 ]
+                                            "data": [ 5, "obj-7", "number", "float", -4.420000076293945 ]
+                                        },
+                                        {
+                                            "number": 3,
+                                            "data": [ 5, "obj-7", "number", "float", 0.0 ]
                                         }
                                     ]
                                 }
@@ -155,7 +159,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 109.0, 300.0, 50.0, 22.0 ]
+                                    "patching_rect": [ 120.0, 300.0, 50.0, 22.0 ]
                                 }
                             },
                             {
@@ -165,8 +169,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_gl_texture" ],
-                                    "patching_rect": [ 30.0, 375.0, 98.0, 22.0 ],
-                                    "text": "av.pix.brightness"
+                                    "patching_rect": [ 30.0, 375.0, 95.0, 22.0 ],
+                                    "text": "av.pix.saturation"
                                 }
                             },
                             {
@@ -225,13 +229,13 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 196.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 362.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Change the brightness of a texture."
+                                    "text": "Change the saturation for a texture. Uses the luminance algorithm."
                                 }
                             },
                             {
@@ -243,13 +247,13 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 15.0, 306.0, 51.0 ],
+                                    "patching_rect": [ 30.0, 15.0, 297.0, 51.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "av.pix.brightness"
+                                    "text": "av.pix.saturation"
                                 }
                             }
                         ],

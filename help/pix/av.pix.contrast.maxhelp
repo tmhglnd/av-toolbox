@@ -34,6 +34,22 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontface": 2,
+                                    "id": "obj-6",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 30.0, 90.0, 237.0, 20.0 ],
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Note: Max9 users can also use jit.fx.brcosa"
+                                }
+                            },
+                            {
+                                "box": {
                                     "fontface": 0,
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
@@ -184,7 +200,6 @@
                                     "gizmos": 0,
                                     "id": "obj-1",
                                     "maxclass": "jit.pworld",
-                                    "name": "u604011962",
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
@@ -216,7 +231,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "A wrapper for a contrast shader."
+                                    "text": "Change the contrast to a texture."
                                 }
                             },
                             {
