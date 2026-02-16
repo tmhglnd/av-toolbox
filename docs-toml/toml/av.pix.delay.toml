@@ -1,0 +1,48 @@
+[object]
+name = "av.pix.delay"
+digest = "A texture delay effect"
+description = "A texture delay effect"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Delay an incoming texture"
+description = "Delay an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: delaytime in frames (default = 5) <br/>
+inlet 2: maximum delay in frames (default = 20) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: delaytime in frames (default = 5) <br/>
+inlet 2: maximum delay in frames (default = 20) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.delaytime]
+optional = 1
+type = "int"
+digest = "delaytime in frames (default = 5)"
+
+[arguments.maximum-delay]
+optional = 1
+type = "int"
+digest = "maximum delay in frames (default = 20)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

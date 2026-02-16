@@ -34,6 +34,17 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontface": 2,
+                                    "id": "obj-6",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 30.0, 103.0, 198.0, 20.0 ],
+                                    "text": "Max9 users can also use jit.fx.delay"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-19",
                                     "linecount": 2,
                                     "maxclass": "comment",
@@ -398,6 +409,14 @@
         "lines": [],
         "parameters": {
             "obj-2::obj-18": [ "toggle", "toggle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,

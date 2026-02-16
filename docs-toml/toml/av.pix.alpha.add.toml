@@ -1,0 +1,18 @@
+[object]
+name = "av.pix.alpha.add"
+digest = "Add an alpha channel to a texture"
+description = "Add an alpha channel to a texture from another incoming texture on the right inlet."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet:<br/>
+inlet 0: texture to add alpha channel to<br/>
+inlet 1: texture to be used as alpha channel<br/>
+"""
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+# [arguments]
+
+# [attributes]

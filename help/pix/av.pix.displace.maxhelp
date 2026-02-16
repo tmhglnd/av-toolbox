@@ -34,6 +34,23 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "fontface": 2,
+                                    "id": "obj-6",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 30.0, 90.0, 494.0, 20.0 ],
+                                    "presentation_linecount": 2,
+                                    "saved_attribute_attributes": {
+                                        "textcolor": {
+                                            "expression": "themecolor.theme_textcolor"
+                                        }
+                                    },
+                                    "text": "Max9 users can also look at jit.fx.repos, Max8 users can also look at jit.gl.slab.lumadisplace"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-5",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
@@ -220,13 +237,13 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 420.0, 20.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 356.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Displace a texture based on an the color values from another texture"
+                                    "text": "Displace a texture based on the color values from another texture"
                                 }
                             },
                             {
@@ -333,14 +350,6 @@
         "lines": [],
         "parameters": {
             "obj-2::obj-18": [ "toggle", "toggle", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,

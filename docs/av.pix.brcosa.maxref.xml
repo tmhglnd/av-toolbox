@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name='av.pix.brcosa' category='' module=''>
+
+    <digest>
+        Change the BRightness, COntrast and SAturation for a texture.
+    </digest>
+
+    <description>
+        Change the BRightness, COntrast and SAturation for a texture.
+    </description>
+    
+    <discussion>
+        
+    </discussion>
+
+    <!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">av-toolbox</metadata>
+		<metadata name="tag">audiovisual</metadata>
+		<metadata name="tag">composition</metadata>
+		<metadata name="tag">live</metadata>
+		<metadata name="tag">jitter</metadata>
+		<metadata name="tag">opengl</metadata>
+		<metadata name="tag">graphics</metadata>
+		<metadata name="tag">analysis</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">max</metadata>
+	</metadatalist>
+
+    <!-- INLETS -->
+    <inletlist>
+    </inletlist>
+
+    <!-- OUTLETS -->
+    <outletlist>
+    </outletlist>
+
+    <!-- ARGUMENTS -->
+    <objarglist>
+        <objarg name='brightness' optional='1' type='float'>
+            <digest>adjust the brightness (default = 1)</digest>
+            <description>adjust the brightness (default = 1)</description>
+        </objarg>
+        <objarg name='contrast' optional='1' type='float'>
+            <digest>adjust the contrast (default = 1)</digest>
+            <description>adjust the contrast (default = 1)</description>
+        </objarg>
+        <objarg name='saturation' optional='1' type='float'>
+            <digest>adjust the saturation (default = 1)</digest>
+            <description>adjust the saturation (default = 1)</description>
+        </objarg>
+    </objarglist>
+
+    <!--MESSAGES-->
+    <methodlist>
+    <method name='jit_gl_texture'>
+        <arglist>
+        </arglist>
+        <digest>
+            Process an incoming texture
+        </digest>
+        <description>
+            Process an incoming texture
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
+        </arglist>
+        <digest>
+            Function depends on inlet
+        </digest>
+        <description>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: adjust the brightness (default = 1) <br/>
+inlet 2: adjust the contrast (default = 1) <br/>
+inlet 3: adjust the saturation (default = 1)
+
+        </description>
+    </method>
+    <method name='int'>
+        <arglist>
+            <arg name='int' optional='1' type='int' />
+        </arglist>
+        <digest>
+            Function depends on inlet
+        </digest>
+        <description>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: adjust the brightness (default = 1) <br/>
+inlet 2: adjust the contrast (default = 1) <br/>
+inlet 3: adjust the saturation (default = 1)
+
+        </description>
+    </method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+        <attribute 
+            name='bypass' 
+            type='bool' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                bypass the pixel processing
+            </digest>
+            <description>
+                bypass the pixel processing
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='bool' 
+                    size='1' 
+                    value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+	</attributelist>
+
+    <!-- INLETS -->
+    <misc name="Input">
+    </misc>
+
+    <!-- OUTLETS -->
+    <misc name="Output">
+    </misc>
+
+    <!--SEEALSO-->
+	<seealsolist>
+		<seealso name="av.automation~"/>
+		<seealso name="av.amp~"/>
+		<seealso name="av.camera.control"/>
+		<seealso name="av.catch~"/>
+		<seealso name="av.chance"/>
+		<seealso name="av.cross3~"/>
+		<seealso name="av.enable"/>
+		<seealso name="av.enable.xfade"/>
+		<seealso name="av.follow~"/> 
+		<seealso name="av.follow3~"/> 
+		<seealso name="av.hidecursor"/> 
+		<seealso name="av.midside~"/>
+		<seealso name="av.movie"/>
+		<seealso name="av.movie~"/>
+		<seealso name="av.movieplay~"/>
+		<seealso name="av.paramgenerator"/> 
+		<seealso name="av.phasor~"/>
+		<seealso name="av.screenshot"/>
+		<seealso name="av.spectrogram~"/>
+		<seealso name="av.spectrum~"/>
+		<seealso name="av.speedgate"/> 
+		<seealso name="av.sync~"/>
+		<seealso name="av.testpattern"/> 
+		<seealso name="av.timepoint"/> 
+		<seealso name="av.timetoticks"/> 
+		<seealso name="av.timetrigger~"/>
+		<seealso name="av.trigger~"/> 
+		<seealso name="av.when"/>
+	</seealsolist>
+</c74object>

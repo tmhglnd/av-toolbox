@@ -1,0 +1,55 @@
+[object]
+name = "av.pix.brcosa"
+digest = "Change the BRightness, COntrast and SAturation for a texture."
+description = "Change the BRightness, COntrast and SAturation for a texture."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: adjust the brightness (default = 1) <br/>
+inlet 2: adjust the contrast (default = 1) <br/>
+inlet 3: adjust the saturation (default = 1)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: adjust the brightness (default = 1) <br/>
+inlet 2: adjust the contrast (default = 1) <br/>
+inlet 3: adjust the saturation (default = 1)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.brightness]
+optional = 1
+type = "float"
+digest = "adjust the brightness (default = 1)"
+
+[arguments.contrast]
+optional = 1
+type = "float"
+digest = "adjust the contrast (default = 1)"
+
+[arguments.saturation]
+optional = 1
+type = "float"
+digest = "adjust the saturation (default = 1)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

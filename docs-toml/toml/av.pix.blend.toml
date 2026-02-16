@@ -1,0 +1,58 @@
+[object]
+name = "av.pix.blend"
+digest = "Blend two textures with various blending modes"
+description = "Blend two textures with various blending modes."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Function depends on inlet"
+ddescription = """
+inlet 0: Texture 1 to blend<br/>
+inlet 1: Texture 2 to blend<br/>
+"""
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: none <br/>
+inlet 2: adjust blend mode (default = 1) <br/>
+inlet 3: adjust blend amount (default = 1)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: none <br/>
+inlet 2: adjust blend mode (default = 1) <br/>
+inlet 3: adjust blend amount (default = 1)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.dump]
+digest = "Fill a umenu with blend modes"
+description = "Fill a umenu with blend modes"
+
+[arguments]
+[arguments.blendmode]
+optional = 1
+type = "symbol"
+digest = "blend mode (default = additive)"
+
+[arguments.blendamount]
+optional = 1
+type = "float"
+digest = "blend amount (default = 1)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

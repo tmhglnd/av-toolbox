@@ -1,0 +1,48 @@
+[object]
+name = "av.pix.degrade"
+digest = "A pixelate and color downsample effect"
+description = "A pixelate and color downsample effect"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: pixelate amount (default = 1) <br/>
+inlet 2: color depth (default = 1) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: pixelate amount from 0-1 (default = 0.25) <br/>
+inlet 2: color depth from 1-256 (default = 4) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.pixelate]
+optional = 1
+type = "float"
+digest = "adjust the pixelate amount from 0-1 (default = 0.25)"
+
+[arguments.colordepth]
+optional = 1
+type = "float"
+digest = "adjust the color depth from 1-256 (default = 4)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

@@ -1,0 +1,14 @@
+[object]
+name = "av.pix.alpha.remove"
+digest = "Remove the alpha channel from a texture"
+description = "Remove the alpha channel from a texture and replace it with full opacity (1). Output the alpha channel at the second outlet."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Texture to remove alpha channel from"
+description = "Texture to remove alpha channel from"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+# [arguments]
+
+# [attributes]
