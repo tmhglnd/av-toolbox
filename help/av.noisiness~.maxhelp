@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -24,7 +24,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -395,7 +395,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 74.0, 103.0, 42.0, 22.0 ],
                     "text": "p gate"
@@ -412,7 +412,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -420,6 +420,18 @@
                         "rect": [ 100.0, 126.0, 709.0, 589.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontface": 2,
+                                    "id": "obj-30",
+                                    "linecount": 5,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 535.0, 492.0, 155.0, 74.0 ],
+                                    "text": "Suggestion:\nAlso have a look at the Fluid Corpus Manipulation Package for more advanced audio descriptors"
+                                }
+                            },
                             {
                                 "box": {
                                     "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
@@ -527,7 +539,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 1,
+                                            "revision": 3,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -578,7 +590,7 @@
                                                         "appversion": {
                                                             "major": 9,
                                                             "minor": 1,
-                                                            "revision": 1,
+                                                            "revision": 3,
                                                             "architecture": "x64",
                                                             "modernui": 1
                                                         },
@@ -885,7 +897,7 @@
                                     "text": "support me on patreon",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -928,7 +940,7 @@
                                     "text": "go to my website",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -958,7 +970,7 @@
                                     "text": "visit my gumroad",
                                     "textjustification": 2,
                                     "textoncolor": [ 0.517898737005579, 0.51789861151792, 0.51789864430985, 1.0 ],
-                                    "textovercolor": [ 0.85, 0.85, 0.85, 1.0 ],
+                                    "textovercolor": [ 0.2, 0.2, 0.2, 1.0 ],
                                     "usebgoncolor": 1,
                                     "usetextovercolor": 1
                                 }
@@ -1067,7 +1079,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 480.0, 475.0, 71.0, 22.0 ],
+                                    "patching_rect": [ 480.0, 459.0, 71.0, 22.0 ],
                                     "text": "s help-bang"
                                 }
                             },
@@ -1357,7 +1369,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -1374,7 +1386,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1395,9 +1407,17 @@
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-3::obj-23": [ "live.dial[1]", "threshold", 0 ],
             "obj-3::obj-46": [ "live.gain~[3]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

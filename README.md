@@ -1,16 +1,18 @@
 # AudioVisual Toolbox
 
-**Consider to support by buying patches via http://gumroad.com/tmhglnd**
+**Consider supporting my work via:**
 
-**or become a patron on http://patreon.com/timohoogland**
+- https://ko-fi.com/tmhglnd
+- http://gumroad.com/tmhglnd
+- http://patreon.com/timohoogland
 
-Suggestions, bug reports and feature requests are much appreciated. Please add them to the issues.
+Suggestions, bug reports and feature requests are much appreciated. Please add them to the issues on github.
 
 ---
 
 ## About
 
-This package contains small abstractions to assist you in creating realtime audiovisual works. The objects are designed to work together with the already wide range of jitter objecst in Max. All the objects are created with vanilla Max, and therefore can be opened and inspected from the inside, and also have zero dependencies on other externals or packages.
+This package contains small abstractions to assist you in creating realtime audiovisual works. The objects are designed to work together with the already wide range of jitter objects in Max. All the objects are created with vanilla Max, and therefore can be opened and inspected from the inside, and also have zero dependencies on other externals or packages.
 
 Objects range from signal analysis that can be used to control visual parameters, objects that allow controlling events in time with transport, objects that extend/wrap some jitter objects, some object mappings to initialize jitter objects with common used attributes and more. Almost all of the objects have help-files with small examples and suggestions on how to use the objects.
 
@@ -32,6 +34,10 @@ Objects range from signal analysis that can be used to control visual parameters
 
 - **av.trigger~** - An envelope follower (using av.follow~) that outputs a bang and gate signal based on a set upper and lower threshold.
 
+- **av.pitch~** - Analyse the pitch of a sound.
+
+- **av.noisiness~** - Analyse the noisiness of a sound.
+
 - **av.catch~** - Catch amplitudes of 3 different signals in time and output as 3-plane matrix. Generates a 3-dimensional oscilloscope (X Y Z).
 
 - **av.spectrum~** - Grab an FFT frame (spectrum) from an incoming signal and output as a one-dimensional jitter matrix.
@@ -50,19 +56,21 @@ Objects range from signal analysis that can be used to control visual parameters
 
 - **av.timetrigger~** - Combine with (named) `[transport]`. Outputs a regular stream of bangs at a specified interval in `min:sec:ms`.
 
+- **av.loadbang** - Send a bang after the whole patcher is loaded.
+
+- **av.loadmess** - Send a message after the whole patcher is loaded.
+
 - **av.timetoticks** - Combine with (named) `[transport]`. Convert `min:sec:ms` to relative ticks.
+
+- **av.speedgate** - Cancel the throughput of bangs/messages for a specified amount of time.
+
+- **av.chance** - Pass a bang from the inlet to the outlet with a specified probability in percentage (0-100).
 
 - **av.phasor~** - Combine with (named) `[transport]`. A phasor locked to transport where the time-interval can be set in `min:sec:ms`.
 
 - **av.function** - Initialize a `[function]` object with settings: `[function @pointsize 4 @gridstep_x 0.1 @linethickness 2 @clicksustain 0 @legend 0 @grid 3 @domain 1 @mode 1 @outputmode 1]`.
 
 - **av.automation~** - A `[function]` wrapped in a bpatcher with zoom functionality and controlled by an av.phasor~ synced to global transport.
-
-- **av.speedgate** - Cancel the throughput of bangs/messages for a specified amount of time.
-
-- **av.chance** - Pass a bang from the inlet to the outlet with a specified probability in percentage (0-100).
-
-- **av.loadmess** - A loadmess that fires the message after all loadmess/loadbang objects and patcherargs in abstractions.
 
 ### Jitter extensions
 
@@ -76,19 +84,21 @@ Objects range from signal analysis that can be used to control visual parameters
 
 - **av.videogrid** - Display a texture in a grid with other textures.
 
-- **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
-
-- **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
-
-- **av.paramgenerator** - Generate flonum boxes combined with a pak object to control parameters in `jit.gl.slab` objects on shift+option+click.
+- **av.hidecursor** - Hides the cursor when inactive for a specified amount of time.
 
 - **av.enable** - Enable/disable the processing of a slab or pix object with a toggle and also output either processed or incoming texture.
 
 - **av.enable.xfade** - Enable/disable the processing of a slab or pix object with a float `0 - 1` and cross-fade between the images.
 
-- **av.screenshot** - Use a bang to take a screenshot of the incoming jitter texture.
+- **av.paramgenerator** - Generate flonum boxes combined with a pak object to control parameters in `jit.gl.slab` objects on shift+option+click.
 
 - **av.camera.control** - Control a camera position and panning with the keyboard and mouse. Use `asdw` for position and `jkli` or `mouse` for panning/lookat. Position and rotation are exposed to pattrstorage preset system to easily store positions.
+
+- **av.screenshot** - Use a bang to take a screenshot of the incoming jitter texture.
+
+- **av.sync~** - A short burst of noise combined with a white flash on a videoplane. Useful to synchronize a separate visuals and sound recording when editting.
+
+- **av.testpattern** - Display a testpattern image on a layer. Useful during mapping of a projector.
 
 ### Jitter Mappings
 
@@ -105,8 +115,6 @@ A set of objectmappings. When typing these names they will be substituted for a 
 - **av.camera** - Position a camera. Substitute for `[jit.gl.camera @position 0 0 4 @locklook 1 @lookat 0 0 0 @tripod 1 @lens_angle 45]`
 
 - **av.camera.drive** - Connec to a camera to control with keyboard and mouse. Substitute for `[jit.anim.drive @speed 5 @ease 0.5 @ui_listen 1]`
-
-- **av.movie** - Load and play a moviefile or image. Substitute for `[jit.movie @output_texture 1 @vol 0 @autostart 0 @engine viddll @cache_size 0.5]`
 
 - **av.gridshape.sphere** - Show a sphere. Substitute for `[jit.gl.gridshape @shape sphere @scale 0.5 @color 1 1 1 1 @smooth_shading 1 @lighting_enable 1 @dim 50 50 @matrixoutput 0]`
 
@@ -136,9 +144,7 @@ A set of objectmappings. When typing these names they will be substituted for a 
 
 - **av.light.directional** - Create a directional light. Substitute for `[jit.gl.light @type point @position 2 2 0 @diffuse 1 1 1]`
 
-### Utilities
-
-- **av.hidecursor** - Hides the cursor when inactive for a specified amount of time.
+- **av.environment** - Create an environment for a skybox and pbr shading. Substitute for `[jit.gl.environment @gamma_correction 0 @reflect_edge 512]`
 
 ### Slab/Shader/Pix/Pass Mappings
 

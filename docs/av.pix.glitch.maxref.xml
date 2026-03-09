@@ -114,6 +114,27 @@ inlet 2: generate new noise texture<br/>
 	<!--ATTRIBUTES-->
 	<attributelist>
         <attribute 
+            name='mode' 
+            type='int' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                displacement mode (options: 0: position, 1: red/cyan, 2: yellow/blue, 3: magenta/green, default = 3)
+            </digest>
+            <description>
+                displacement mode (options: 0: position, 1: red/cyan, 2: yellow/blue, 3: magenta/green, default = 3)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
             name='dim' 
             type='list' 
             size='2' 

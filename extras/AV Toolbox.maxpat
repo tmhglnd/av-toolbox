@@ -4,15 +4,288 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 350.0, 116.0, 938.0, 684.0 ],
+        "rect": [ 126.0, 77.0, 945.0, 792.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-51",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1614.0, 374.0, 39.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 504.0, 550.0, 39.0, 20.0 ],
+                    "text": "more:"
+                }
+            },
+            {
+                "box": {
+                    "align": 0,
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
+                    "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
+                    "fontface": 1,
+                    "fontsize": 12.0,
+                    "id": "obj-52",
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1614.0, 399.0, 95.0, 25.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 545.0, 549.0, 147.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_syntax_objectcolor"
+                        },
+                        "textoncolor": {
+                            "expression": "themecolor.theme_elementcolor"
+                        }
+                    },
+                    "text": "All av.pix objects",
+                    "textjustification": 0,
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
+                    "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
+                    "truncate": 0,
+                    "usebgoncolor": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-50",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1439.0, 437.0, 237.0, 22.0 ],
+                    "text": "loadunique av-toolbox-pix-example.maxpat"
+                }
+            },
+            {
+                "box": {
+                    "align": 0,
+                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
+                    "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
+                    "fontface": 1,
+                    "fontsize": 18.0,
+                    "id": "obj-48",
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1439.0, 399.0, 167.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 15.0, 214.0, 120.25, 57.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_syntax_objectcolor"
+                        },
+                        "textoncolor": {
+                            "expression": "themecolor.theme_elementcolor"
+                        }
+                    },
+                    "text": "AV.PIX EXAMPLE",
+                    "textjustification": 0,
+                    "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
+                    "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
+                    "truncate": 0,
+                    "usebgoncolor": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-47",
+                    "maxclass": "live.line",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 153.0, 465.0, 5.0, 100.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 150.0, 465.0, 542.0, 5.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-45",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_gl_texture", "" ],
+                    "patching_rect": [ 570.0, 950.0, 72.0, 22.0 ],
+                    "text": "av.pix.blend",
+                    "varname": "av.pix.blend"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-44",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 458.0, 952.0, 78.0, 22.0 ],
+                    "text": "av.pix.brcosa",
+                    "varname": "av.pix.brcosa"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-43",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 354.0, 952.0, 71.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 374.5, 549.0, 71.0, 22.0 ],
+                    "text": "av.pix.delay",
+                    "varname": "av.pix.delay"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-42",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 243.0, 952.0, 86.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 254.5, 549.0, 86.0, 22.0 ],
+                    "text": "av.pix.displace",
+                    "varname": "av.pix.displace"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-41",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 152.0, 952.0, 71.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 150.5, 549.0, 71.0, 22.0 ],
+                    "text": "av.pix.mask",
+                    "varname": "av.pix.mask"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-40",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_gl_texture", "" ],
+                    "patching_rect": [ 570.0, 912.0, 65.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 614.5, 519.0, 65.0, 22.0 ],
+                    "text": "av.pix.filter",
+                    "varname": "av.pix.filter"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-39",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 458.0, 912.0, 86.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 494.5, 519.0, 86.0, 22.0 ],
+                    "text": "av.pix.degrade",
+                    "varname": "av.pix.degrade"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-38",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 354.0, 912.0, 86.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 374.5, 519.0, 86.0, 22.0 ],
+                    "text": "av.pix.duotone",
+                    "varname": "av.pix.duotone"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-37",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 241.0, 912.0, 91.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 254.5, 519.0, 91.0, 22.0 ],
+                    "text": "av.pix.feedback",
+                    "varname": "av.pix.feedback"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-35",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 1,
+                    "outlettype": [ "jit_gl_texture" ],
+                    "patching_rect": [ 153.0, 912.0, 69.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 150.5, 519.0, 69.0, 22.0 ],
+                    "text": "av.pix.pong",
+                    "varname": "av.pix.pong"
+                }
+            },
+            {
+                "box": {
+                    "fontface": 2,
+                    "fontsize": 14.0,
+                    "id": "obj-32",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 289.0, 861.0, 372.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 292.5, 485.0, 266.0, 22.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "transform your images for colorful results "
+                }
+            },
+            {
+                "box": {
+                    "fontface": 0,
+                    "fontsize": 18.0,
+                    "id": "obj-19",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 148.0, 858.0, 141.0, 47.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 149.5, 482.0, 142.0, 27.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "Pixel Processing"
+                }
+            },
             {
                 "box": {
                     "id": "obj-18",
@@ -104,12 +377,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 140.0, 84.0, 1067.0, 775.0 ],
+                        "rect": [ 159.0, 123.0, 1067.0, 775.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "boxes": [
@@ -660,7 +933,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 30.0, 504.5, 97.0, 22.0 ],
                     "text": "p jitter-mappings"
@@ -673,9 +946,9 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 540.0, 625.0, 100.0, 22.0 ],
+                    "patching_rect": [ 540.0, 640.0, 100.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 630.0, 75.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 744.0, 75.0, 22.0 ],
                     "text": "av.loadmess",
                     "varname": "av.loadmess"
                 }
@@ -687,9 +960,9 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 424.0, 625.0, 100.0, 22.0 ],
+                    "patching_rect": [ 424.0, 640.0, 100.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 630.0, 73.0, 22.0 ],
+                    "presentation_rect": [ 149.5, 744.0, 73.0, 22.0 ],
                     "text": "av.loadbang",
                     "varname": "av.loadbang"
                 }
@@ -741,7 +1014,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 3,
+                    "linecount": 4,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -751,7 +1024,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 2,
+                    "presentation_linecount": 3,
                     "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
                     "readonly": 1,
                     "saved_attribute_attributes": {
@@ -759,7 +1032,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Get the transport time in min:sec:ms",
+                    "text": "Load a movie into ram for seemless loop and progress report",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -842,7 +1115,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.when"
+                    "text": "av.movie"
                 }
             },
             {
@@ -1036,7 +1309,7 @@
             {
                 "box": {
                     "coll_data": {
-                        "count": 36,
+                        "count": 46,
                         "data": [
                             {
                                 "key": "av.amp~",
@@ -1181,6 +1454,46 @@
                             {
                                 "key": "av.loadbang",
                                 "value": [ "Send a bang after the whole patcher is loaded" ]
+                            },
+                            {
+                                "key": "av.pix.pong",
+                                "value": [ "Range limit a texture (fold, wrap, clip)" ]
+                            },
+                            {
+                                "key": "av.pix.feedback",
+                                "value": [ "Mix a textures with itself in a feedback loop" ]
+                            },
+                            {
+                                "key": "av.pix.duotone",
+                                "value": [ "Convert an image to a duotone image" ]
+                            },
+                            {
+                                "key": "av.pix.degrade",
+                                "value": [ "Pixelate (downsample) and change the color depth for an image" ]
+                            },
+                            {
+                                "key": "av.pix.filter",
+                                "value": [ "Apply various convolution filters like sobel, emboss, laplace, dilate" ]
+                            },
+                            {
+                                "key": "av.pix.mask",
+                                "value": [ "Create a black/white mask for an image with transparency" ]
+                            },
+                            {
+                                "key": "av.pix.displace",
+                                "value": [ "Displace a texture with the color values from another texture" ]
+                            },
+                            {
+                                "key": "av.pix.delay",
+                                "value": [ "Delay a texture for a certain amount of frames" ]
+                            },
+                            {
+                                "key": "av.pix.brcosa",
+                                "value": [ "Adjust the brightness, contrast and saturation" ]
+                            },
+                            {
+                                "key": "av.pix.blend",
+                                "value": [ "Blend two textures with various blending modes" ]
                             }
                         ]
                     },
@@ -1361,7 +1674,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 417.0, 492.0, 100.0, 22.0 ],
+                    "patching_rect": [ 417.0, 507.0, 100.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 255.0, 390.0, 72.0, 22.0 ],
                     "text": "av.videogrid",
@@ -1375,7 +1688,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "" ],
-                    "patching_rect": [ 281.0, 492.0, 109.0, 22.0 ],
+                    "patching_rect": [ 281.0, 507.0, 109.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 255.0, 360.0, 109.0, 22.0 ],
                     "text": "av.texturefolder ctx",
@@ -1411,7 +1724,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 900.0, 300.0, 95.0, 49.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 259.0, 120.25, 49.0 ],
+                    "presentation_rect": [ 15.0, 318.0, 120.25, 49.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
                             "expression": "themecolor.theme_syntax_objectcolor"
@@ -1461,7 +1774,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -2197,7 +2510,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 645.0, 414.0, 70.0, 22.0 ],
+                    "patching_rect": [ 645.0, 429.0, 70.0, 22.0 ],
                     "text": "loadmess 0"
                 }
             },
@@ -2208,7 +2521,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 645.0, 450.0, 80.0, 22.0 ],
+                    "patching_rect": [ 645.0, 465.0, 80.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 255.0, 420.0, 80.0, 22.0 ],
                     "text": "av.hidecursor",
@@ -2222,7 +2535,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "jit_gl_texture" ],
-                    "patching_rect": [ 149.0, 492.0, 103.0, 22.0 ],
+                    "patching_rect": [ 149.0, 507.0, 103.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 495.0, 360.0, 103.0, 22.0 ],
                     "text": "av.camera.control",
@@ -2236,7 +2549,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "jit_matrix" ],
-                    "patching_rect": [ 542.0, 450.0, 82.0, 22.0 ],
+                    "patching_rect": [ 542.0, 465.0, 82.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 495.0, 390.0, 82.0, 22.0 ],
                     "text": "av.screenshot",
@@ -2250,7 +2563,7 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
-                    "patching_rect": [ 414.0, 450.0, 92.0, 22.0 ],
+                    "patching_rect": [ 414.0, 465.0, 92.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 375.0, 390.0, 92.0, 22.0 ],
                     "text": "av.enable.xfade",
@@ -2264,7 +2577,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
-                    "patching_rect": [ 281.0, 450.0, 60.0, 22.0 ],
+                    "patching_rect": [ 281.0, 465.0, 60.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 375.0, 360.0, 60.0, 22.0 ],
                     "text": "av.enable",
@@ -2278,7 +2591,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "" ],
-                    "patching_rect": [ 149.0, 450.0, 85.0, 22.0 ],
+                    "patching_rect": [ 149.0, 465.0, 85.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 420.0, 85.0, 22.0 ],
                     "text": "av.movieplay~",
@@ -2292,9 +2605,9 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "bang", "bang" ],
-                    "patching_rect": [ 331.0, 625.0, 62.0, 22.0 ],
+                    "patching_rect": [ 331.0, 640.0, 62.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 600.0, 62.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 714.0, 62.0, 22.0 ],
                     "text": "av.chance",
                     "varname": "av.chance"
                 }
@@ -2306,9 +2619,9 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 240.0, 625.0, 80.0, 22.0 ],
+                    "patching_rect": [ 240.0, 640.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 570.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 684.0, 80.0, 22.0 ],
                     "text": "av.speedgate",
                     "varname": "av.speedgate"
                 }
@@ -2328,7 +2641,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 773.0, 324.0, 95.0, 25.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 218.0, 120.25, 31.0 ],
+                    "presentation_rect": [ 15.0, 277.0, 120.25, 31.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
                             "expression": "themecolor.theme_syntax_objectcolor"
@@ -2378,7 +2691,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3027,10 +3340,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 2832.165219128964, 2832.165219128964 ],
+                                    "patching_rect": [ 855.0, 180.0, 5710.989196951616, 5710.989196951616 ],
                                     "pic": "av-extras00.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 15.0, 757.0078661358664, 757.0078661358664 ]
+                                    "presentation_rect": [ 555.0, 15.0, 1526.4871259307922, 1526.4871259307922 ]
                                 }
                             }
                         ],
@@ -3193,7 +3506,7 @@
                             "expression": "themecolor.theme_elementcolor"
                         }
                     },
-                    "text": "FULL EXAMPLE",
+                    "text": "FULL AV EXAMPLE",
                     "textjustification": 0,
                     "textoncolor": [ 0.28371677805385, 0.283716703861374, 0.283716723249053, 1.0 ],
                     "textovercolor": [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
@@ -3261,7 +3574,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 260.0, 709.0, 35.0, 22.0 ],
+                    "patching_rect": [ 260.0, 724.0, 35.0, 22.0 ],
                     "text": "0 2 0"
                 }
             },
@@ -3272,9 +3585,9 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 240.0, 782.0, 60.0, 43.0 ],
+                    "patching_rect": [ 240.0, 797.0, 60.0, 43.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 435.0, 527.0, 31.0, 19.0 ]
+                    "presentation_rect": [ 434.5, 641.0, 31.0, 19.0 ]
                 }
             },
             {
@@ -3284,7 +3597,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 240.0, 679.0, 68.0, 22.0 ],
+                    "patching_rect": [ 240.0, 694.0, 68.0, 22.0 ],
                     "text": "r av-launch"
                 }
             },
@@ -3295,7 +3608,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 170.0, 612.0, 50.0, 22.0 ],
+                    "patching_rect": [ 170.0, 627.0, 50.0, 22.0 ],
                     "text": "active 1"
                 }
             },
@@ -3306,7 +3619,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 150.0, 580.0, 68.0, 22.0 ],
+                    "patching_rect": [ 150.0, 595.0, 68.0, 22.0 ],
                     "text": "r av-launch"
                 }
             },
@@ -3322,7 +3635,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3442,7 +3755,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 150.0, 700.0, 83.0, 22.0 ],
+                    "patching_rect": [ 150.0, 715.0, 83.0, 22.0 ],
                     "text": "p clockdisplay"
                 }
             },
@@ -3454,15 +3767,15 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 150.0, 724.0, 73.0, 20.0 ],
+                    "patching_rect": [ 150.0, 739.0, 73.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 154.0, 549.0, 63.0, 20.0 ],
+                    "presentation_rect": [ 153.5, 663.0, 63.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "12:32:565"
+                    "text": "01:00:771"
                 }
             },
             {
@@ -3505,7 +3818,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "jit_gl_texture", "signal", "signal", "done" ],
-                    "patching_rect": [ 542.0, 404.0, 63.0, 22.0 ],
+                    "patching_rect": [ 542.0, 419.0, 63.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 390.0, 63.0, 22.0 ],
                     "text": "av.movie~",
@@ -3520,7 +3833,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 293.0, 378.0, 372.0, 22.0 ],
+                    "patching_rect": [ 293.0, 393.0, 372.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 293.0, 317.0, 303.0, 22.0 ],
                     "saved_attribute_attributes": {
@@ -3539,7 +3852,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 150.0, 375.0, 141.0, 27.0 ],
+                    "patching_rect": [ 150.0, 390.0, 141.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 150.0, 315.0, 141.0, 27.0 ],
                     "saved_attribute_attributes": {
@@ -3552,7 +3865,7 @@
             },
             {
                 "box": {
-                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 0.145161290322581, 1.0, 0, 0.0, 0.290322580645161, 0.509433962264151, 0, 0.0, 0.45652173913043476, 0.6444444444444445, 0, 0.0, 0.620967741935484, 0.924528301886792, 0, 0.0, 1.0, 0.056603773584906, 0, 0.0 ],
+                    "addpoints_with_curve": [ 0.0, 0.0, 0, 0.0, 0.145161290322581, 1.0, 0, 0.0, 0.290322580645161, 0.509433962264151, 0, 0.0, 0.6086956521739131, 0.022222222222222223, 0, 0.0, 0.620967741935484, 0.924528301886792, 0, 0.0, 0.9021739130434783, 0.8888888888888888, 0, 0.0, 1.0, 0.056603773584906, 0, 0.0 ],
                     "classic_curve": 1,
                     "clicksustain": 0,
                     "domain": 1.0,
@@ -3568,10 +3881,10 @@
                     "outlettype": [ "float", "", "", "bang" ],
                     "outputmode": 1,
                     "parameter_enable": 0,
-                    "patching_rect": [ 331.0, 679.0, 66.0, 44.0 ],
+                    "patching_rect": [ 331.0, 694.0, 66.0, 44.0 ],
                     "pointsize": 3.0,
                     "presentation": 1,
-                    "presentation_rect": [ 360.0, 570.0, 106.0, 59.0 ],
+                    "presentation_rect": [ 359.5, 684.0, 106.0, 59.0 ],
                     "varname": "av.function"
                 }
             },
@@ -3583,15 +3896,15 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 288.0, 537.0, 372.0, 22.0 ],
+                    "patching_rect": [ 288.0, 552.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 290.0, 483.0, 320.0, 22.0 ],
+                    "presentation_rect": [ 289.5, 597.0, 350.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "triggers, signals, automation synced with transport"
+                    "text": "triggers, signals, automation synced with transport time"
                 }
             },
             {
@@ -3602,7 +3915,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 50.5, 180.0, 5.0, 100.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 465.0, 542.0, 5.0 ]
+                    "presentation_rect": [ 149.5, 579.0, 542.0, 5.0 ]
                 }
             },
             {
@@ -3611,9 +3924,9 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 422.0, 794.0, 97.0, 20.0 ],
+                    "patching_rect": [ 422.0, 809.0, 97.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 480.0, 639.0, 97.0, 20.0 ],
+                    "presentation_rect": [ 479.5, 753.0, 97.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3650,9 +3963,9 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 331.0, 730.0, 72.0, 20.0 ],
+                    "patching_rect": [ 331.0, 745.0, 72.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 360.0, 631.0, 72.0, 20.0 ],
+                    "presentation_rect": [ 359.5, 745.0, 72.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3678,9 +3991,9 @@
                     "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "float", "signal" ],
-                    "patching_rect": [ 422.0, 679.0, 203.25, 111.25 ],
+                    "patching_rect": [ 422.0, 694.0, 203.25, 111.25 ],
                     "presentation": 1,
-                    "presentation_rect": [ 480.0, 525.0, 203.25, 111.25 ],
+                    "presentation_rect": [ 479.5, 639.0, 203.25, 111.25 ],
                     "varname": "_av.automation~",
                     "viewvisibility": 1
                 }
@@ -3692,9 +4005,9 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 240.0, 745.0, 67.0, 22.0 ],
+                    "patching_rect": [ 240.0, 760.0, 67.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 360.0, 525.0, 67.0, 22.0 ],
+                    "presentation_rect": [ 359.5, 639.0, 67.0, 22.0 ],
                     "text": "av.phasor~",
                     "varname": "av.phasor~"
                 }
@@ -3705,7 +4018,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 411.0, 404.0, 109.0, 22.0 ],
+                    "patching_rect": [ 411.0, 419.0, 109.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 375.0, 420.0, 109.0, 22.0 ],
                     "text": "av.paramgenerator",
@@ -3719,7 +4032,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "jit_gl_texture" ],
-                    "patching_rect": [ 280.0, 404.0, 80.0, 22.0 ],
+                    "patching_rect": [ 280.0, 419.0, 80.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 615.0, 390.0, 80.0, 22.0 ],
                     "text": "av.testpattern",
@@ -3733,7 +4046,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 150.0, 404.0, 55.0, 22.0 ],
+                    "patching_rect": [ 150.0, 419.0, 55.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 615.0, 360.0, 55.0, 22.0 ],
                     "text": "av.sync~",
@@ -3767,9 +4080,9 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "bang", "signal" ],
-                    "patching_rect": [ 422.0, 581.0, 87.0, 22.0 ],
+                    "patching_rect": [ 422.0, 596.0, 87.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 600.0, 87.0, 22.0 ],
+                    "presentation_rect": [ 149.5, 714.0, 87.0, 22.0 ],
                     "text": "av.timetrigger~",
                     "varname": "av.timetrigger~"
                 }
@@ -3781,9 +4094,9 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 331.0, 581.0, 80.0, 22.0 ],
+                    "patching_rect": [ 331.0, 596.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 525.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 639.0, 80.0, 22.0 ],
                     "text": "av.timetoticks",
                     "varname": "av.timetoticks"
                 }
@@ -3795,9 +4108,9 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 240.0, 581.0, 72.0, 22.0 ],
+                    "patching_rect": [ 240.0, 596.0, 72.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 570.0, 72.0, 22.0 ],
+                    "presentation_rect": [ 149.5, 684.0, 72.0, 22.0 ],
                     "text": "av.timepoint",
                     "varname": "av.timepoint"
                 }
@@ -3809,9 +4122,9 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 150.0, 656.0, 52.0, 22.0 ],
+                    "patching_rect": [ 150.0, 671.0, 52.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 525.0, 54.0, 22.0 ],
+                    "presentation_rect": [ 149.5, 639.0, 54.0, 22.0 ],
                     "text": "av.when",
                     "varname": "av.when"
                 }
@@ -3824,9 +4137,9 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 150.0, 537.0, 136.0, 27.0 ],
+                    "patching_rect": [ 150.0, 552.0, 136.0, 27.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 480.0, 136.0, 27.0 ],
+                    "presentation_rect": [ 149.5, 594.0, 136.0, 27.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -4449,6 +4762,24 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-50", 0 ],
+                    "source": [ "obj-48", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-202", 0 ],
+                    "source": [ "obj-50", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-50", 0 ],
+                    "source": [ "obj-52", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-109", 0 ],
                     "source": [ "obj-77", 0 ]
                 }
@@ -4483,6 +4814,14 @@
         "parameters": {
             "obj-81::obj-1": [ "1039_automation_function", "1039_automation_function", 0 ],
             "obj-81::obj-5": [ "rslider", "rslider", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 1,
@@ -4571,7 +4910,7 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ],
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ],
         "saved_attribute_attributes": {
             "locked_bgcolor": {
                 "expression": "themecolor.theme_locked_bgcolor"

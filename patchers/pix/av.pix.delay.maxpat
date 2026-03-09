@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -13,11 +13,22 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-24",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "int", "int" ],
+                    "patching_rect": [ 225.0, 165.0, 61.0, 22.0 ],
+                    "text": "maximum"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-4",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 390.0, 255.0, 205.0, 20.0 ],
+                    "patching_rect": [ 390.0, 308.0, 205.0, 20.0 ],
                     "text": "Max9 users can also use [jit.fx.delay]"
                 }
             },
@@ -77,7 +88,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -494,12 +505,12 @@
             {
                 "box": {
                     "id": "obj-19",
-                    "linecount": 14,
+                    "linecount": 19,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 390.0, 45.0, 211.0, 194.0 ],
-                    "text": "arguments:\n<int> delaytime in frame\n<int> maximum delaylength\n\nmessages:\n(clear) - clear all the textures\n\nA texture delay object. Set the delaytime in frames. Adjust maximum delaylength in frames. \n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
+                    "patching_rect": [ 390.0, 45.0, 211.0, 261.0 ],
+                    "text": "arguments:\n<int> delaytime in frame\n<int> maximum delaylength\n\nIf no maximum delaytime given, and the delaytime is larger than the default maximum, the maximum will be reset to the given delaytime.\n\nmessages:\n(clear) - clear all the textures\n\nA texture delay object. Set the delaytime in frames. Adjust maximum delaylength in frames. \n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
                 }
             },
             {
@@ -567,7 +578,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 90.0, 45.0, 30.0, 30.0 ]
                 }
             }
@@ -599,13 +610,21 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-17", 0 ],
+                    "destination": [ "obj-18", 0 ],
+                    "order": 1,
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-24", 1 ],
                     "source": [ "obj-12", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-18", 0 ],
+                    "destination": [ "obj-24", 0 ],
+                    "order": 0,
                     "source": [ "obj-12", 0 ]
                 }
             },
@@ -631,6 +650,12 @@
                 "patchline": {
                     "destination": [ "obj-1", 0 ],
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-17", 0 ],
+                    "source": [ "obj-24", 0 ]
                 }
             },
             {
@@ -754,6 +779,6 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

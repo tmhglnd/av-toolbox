@@ -51,6 +51,11 @@ type = "float"
 digest = "displacement amount (default = 0.1)"
 
 [attributes]
+[attributes.mode]
+digest = "displacement mode (options: 0: position, 1: red/cyan, 2: yellow/blue, 3: magenta/green, default = 3)"
+type = "int"
+size = 1
+
 [attributes.dim]
 digest = "set the noise dimensions in pixels (default = 3 160)"
 type = "list"
