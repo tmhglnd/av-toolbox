@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 126.0, 77.0, 945.0, 792.0 ],
+        "rect": [ 41.0, 96.0, 945.0, 792.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
@@ -382,10 +382,25 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 159.0, 123.0, 1067.0, 775.0 ],
+                        "rect": [ 122.0, 68.0, 1067.0, 798.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
+                        "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "linecount": 4,
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "jit_gl_texture", "" ],
+                                    "patching_rect": [ 223.0, 757.0, 100.0, 62.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 225.0, 748.0, 273.0, 22.0 ],
+                                    "text": "jit.grab @output_texture 1 @vdevice 0 @format 0"
+                                }
+                            },
                             {
                                 "box": {
                                     "comment": "",
@@ -726,15 +741,15 @@
                                     "fontface": 1,
                                     "fontsize": 13.4,
                                     "id": "obj-3",
-                                    "linecount": 41,
+                                    "linecount": 43,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 150.0, 136.0, 182.0, 620.0 ],
+                                    "patching_rect": [ 150.0, 136.0, 182.0, 650.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 41,
-                                    "presentation_rect": [ 30.0, 120.0, 182.0, 620.0 ],
-                                    "text": "[av.world]\n\n[av.node]\n\n[av.videoplane]\n\n[av.cornerpin]\n\n[av.camera]\n\n[av.camera.drive]\n\n[av.gridshape.sphere]\n\n[av.gridshape.cube]\n\n[av.gridshape.torus]\n\n[av.gridshape.plane]\n\n[av.mesh.points]\n\n[av.mesh.lines]\n\n[av.mesh.grid]\n\n[av.texture]\n\n[av.bfg]\n\n[av.pbr]\n\n[av.pbr.shadows]\n\n[av.light]\n\n[av.light.point]\n\n[av.light.shadows]\n\n[av.environment]",
+                                    "presentation_linecount": 43,
+                                    "presentation_rect": [ 30.0, 120.0, 182.0, 650.0 ],
+                                    "text": "[av.world]\n\n[av.node]\n\n[av.videoplane]\n\n[av.cornerpin]\n\n[av.camera]\n\n[av.camera.drive]\n\n[av.gridshape.sphere]\n\n[av.gridshape.cube]\n\n[av.gridshape.torus]\n\n[av.gridshape.plane]\n\n[av.mesh.points]\n\n[av.mesh.lines]\n\n[av.mesh.grid]\n\n[av.texture]\n\n[av.bfg]\n\n[av.pbr]\n\n[av.pbr.shadows]\n\n[av.light]\n\n[av.light.point]\n\n[av.light.shadows]\n\n[av.environment]\n\n[av.grab]",
                                     "textjustification": 2
                                 }
                             },
@@ -1032,7 +1047,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Load a movie into ram for seemless loop and progress report",
+                    "text": "Generate parameters for the gl.slab and gl.shader objects",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -1115,7 +1130,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.movie"
+                    "text": "av.paramgenerator"
                 }
             },
             {
@@ -3340,10 +3355,10 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 5710.989196951616, 5710.989196951616 ],
-                                    "pic": "av-extras00.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 6899.761260707037, 6899.761260707037 ],
+                                    "pic": "av-extras03.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 15.0, 1526.4871259307922, 1526.4871259307922 ]
+                                    "presentation_rect": [ 555.0, 15.0, 1844.233349642339, 1844.233349642339 ]
                                 }
                             }
                         ],
@@ -3775,7 +3790,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "01:00:771"
+                    "text": "29:22:465"
                 }
             },
             {

@@ -75,3 +75,6 @@ max definesubstitution av.light jit.gl.light @type directional @position 2 2 0 @
 
 max objectfile av.environment av.environment;
 max definesubstitution av.environment jit.gl.environment @gamma_correction 0 @reflect_edge 512;
+
+max objectfile av.grab av.grab;
+max definesubstitution av.grab jit.grab @output_texture 1 @vdevice 0 @format 0;

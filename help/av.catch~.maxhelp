@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -24,7 +24,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -32,6 +32,41 @@
                         "rect": [ 100.0, 126.0, 716.0, 561.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "format": 6,
+                                    "id": "obj-24",
+                                    "maxclass": "flonum",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 1,
+                                    "patching_rect": [ 125.5, 149.0, 50.0, 22.0 ],
+                                    "saved_attribute_attributes": {
+                                        "valueof": {
+                                            "parameter_initial": [ 100.0 ],
+                                            "parameter_initial_enable": 1,
+                                            "parameter_invisible": 1,
+                                            "parameter_longname": "number[3]",
+                                            "parameter_modmode": 0,
+                                            "parameter_shortname": "number[3]",
+                                            "parameter_type": 3
+                                        }
+                                    },
+                                    "varname": "number[3]"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-18",
+                                    "maxclass": "newobj",
+                                    "numinlets": 3,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 29.5, 183.0, 115.0, 22.0 ],
+                                    "text": "pak spread 10. 100."
+                                }
+                            },
                             {
                                 "box": {
                                     "hidden": 1,
@@ -199,7 +234,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "int" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 70.5, 111.0, 20.0, 20.0 ],
+                                    "patching_rect": [ 118.5, 106.0, 20.0, 20.0 ],
                                     "rounded": 60.0,
                                     "text": "2",
                                     "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -223,8 +258,8 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 81.5, 125.0, 169.0, 20.0 ],
-                                    "text": "generate 3 random sinewaves"
+                                    "patching_rect": [ 129.5, 120.0, 155.0, 20.0 ],
+                                    "text": "generate 3 sawtooth waves"
                                 }
                             },
                             {
@@ -339,10 +374,10 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 1,
-                                    "patching_rect": [ 29.5, 125.0, 50.0, 22.0 ],
+                                    "patching_rect": [ 77.5, 120.0, 50.0, 22.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
-                                            "parameter_initial": [ 150.0 ],
+                                            "parameter_initial": [ 105.0 ],
                                             "parameter_initial_enable": 1,
                                             "parameter_invisible": 1,
                                             "parameter_longname": "number[2]",
@@ -378,24 +413,13 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-14",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 29.5, 158.0, 87.0, 22.0 ],
-                                    "text": "deviate $1 300"
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-9",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "multichannelsignal" ],
-                                    "patching_rect": [ 29.5, 195.0, 120.0, 22.0 ],
-                                    "text": "mc.cycle~ @chans 3"
+                                    "patching_rect": [ 29.5, 213.0, 114.0, 22.0 ],
+                                    "text": "mc.saw~ @chans 3"
                                 }
                             },
                             {
@@ -449,7 +473,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 194.5, 477.0, 416.0, 22.0 ],
-                                    "text": "jit.gl.mesh @draw_mode line_loop @line_width 2 @color 1 1 1 1 @scale 0.5"
+                                    "text": "jit.gl.mesh @draw_mode line_loop @line_width 1.1 @color 1 1 1 1 @scale 1"
                                 }
                             },
                             {
@@ -546,7 +570,7 @@
                                     "patching_rect": [ 29.5, 380.0, 136.0, 47.0 ],
                                     "saved_attribute_attributes": {
                                         "valueof": {
-                                            "parameter_initial": [ -60.42519685039368 ],
+                                            "parameter_initial": [ -39.966616776208745 ],
                                             "parameter_initial_enable": 1,
                                             "parameter_longname": "live.gain~[2]",
                                             "parameter_mmax": 6.0,
@@ -586,12 +610,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-14", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-8", 2 ],
                                     "source": [ "obj-15", 2 ]
                                 }
@@ -616,7 +634,13 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-14", 0 ],
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-18", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 1 ],
                                     "source": [ "obj-19", 0 ]
                                 }
                             },
@@ -624,6 +648,12 @@
                                 "patchline": {
                                     "destination": [ "obj-8", 0 ],
                                     "source": [ "obj-23", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 2 ],
+                                    "source": [ "obj-24", 0 ]
                                 }
                             },
                             {
@@ -714,7 +744,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -731,7 +761,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -748,6 +778,7 @@
         "lines": [],
         "parameters": {
             "obj-2::obj-19": [ "number[2]", "number[2]", 0 ],
+            "obj-2::obj-24": [ "number[3]", "number[3]", 0 ],
             "obj-2::obj-25": [ "number", "number", 0 ],
             "obj-2::obj-29": [ "number[1]", "number[1]", 0 ],
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
@@ -762,6 +793,6 @@
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }
