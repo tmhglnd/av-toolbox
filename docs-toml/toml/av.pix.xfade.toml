@@ -1,0 +1,46 @@
+[object]
+name = "av.pix.xfade"
+digest = "Crossfade between two textures"
+description = "Like jit.fxade, a basic crossfade between 2 texture inputs with a cosine ramp for easing in the fade."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Function depends on inlet"
+description = """
+inlet 0: Texture 1 to crossfade<br/>
+inlet 1: Texture 2 to crossfade<br/>
+"""
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: <br/>
+inlet 2: adjust crossfade amount (default = 0.5) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: <br/>
+inlet 2: adjust crossfade amount (default = 0.5) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[arguments]
+[arguments.amount]
+optional = 1
+type = "float"
+digest = "crossfade amount (default = 0.5)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

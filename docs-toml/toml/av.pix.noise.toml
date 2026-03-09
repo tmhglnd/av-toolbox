@@ -1,0 +1,51 @@
+[object]
+name = "av.pix.noise"
+digest = "Generate noise for the dimensions of the incoming texture."
+description = "Generate noise for the dimensions of the incoming texture. Based on: http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: refresh speed of noise in ms (default = 16) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: refresh speed of noise in ms (default = 16) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.speed]
+digest = "refresh speed of noise in ms (default = 16)"
+type = "float"
+optional = 1
+
+[attributes]
+[attributes.colorize]
+digest = "generate colored noise for RGB channels (default = 0)"
+type = "bool"
+size = 1
+
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }
+
+[attributes.filter]
+digest = "filter for the texture resampling (options: linear, none)"
+type = "symbol"
+size = 1
+default = { value = "linear", size = 1, type = 'symbol' }

@@ -1,0 +1,54 @@
+[object]
+name = "av.pix.frame"
+digest = "Create a frame/letterbox around a texture"
+description = "Create a frame/letterbox around a texture"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: width of the frame (default = 0.05) <br/>
+inlet 2: height of the frame (default = 0.2) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: width of the frame (default = 0.05) <br/>
+inlet 2: height of the frame (default = 0.2) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.width]
+optional = 1
+type = "float"
+digest = "width of the frame (default = 0.05)"
+
+[arguments.height]
+optional = 1
+type = "float"
+digest = "height of the frame (default = 0.2)"
+
+[attributes]
+[attributes.color]
+digest = "color of the frame (rgba, default = 0. 0. 0. 1.)"
+type = "list"
+size = 4
+default = { value = [0, 0, 0, 1], size = 1, type = 'bool' }
+
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

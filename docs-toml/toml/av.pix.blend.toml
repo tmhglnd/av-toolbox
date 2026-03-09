@@ -6,7 +6,7 @@ description = "Blend two textures with various blending modes."
 [messages]
 [messages.jit_gl_texture]
 digest = "Function depends on inlet"
-ddescription = """
+description = """
 inlet 0: Texture 1 to blend<br/>
 inlet 1: Texture 2 to blend<br/>
 """

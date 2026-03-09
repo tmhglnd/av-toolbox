@@ -1,0 +1,73 @@
+[object]
+name = "av.pix.pong"
+digest = "Range limit (fold, wrap, clip) a texture"
+description = """Various range limiting modes for textures, such as fold, wrap and clip. Similar to pong/pong~ in event and signal domain. Preserves the alpha channel (doesn't wrap/fold/clip it). Works best when using floating-point types such as float16 or float32.<br/><br/>
+
+The range limiting modes:
+mode 0: fold <br/>
+mode 1: wrap <br/>
+mode 2: clip <br/>
+mode 3: none <br/>
+"""
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: lower value (default = 0) <br/>
+inlet 2: upper value (default = 1) <br/>
+inlet 3: range limiting mode (options: 0: fold, 1: wrap, 2: clip, 3: none, default = 0)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: lower value (default = 0) <br/>
+inlet 2: upper value (default = 1) <br/>
+inlet 3: range limiting mode (options: 0: fold, 1: wrap, 2: clip, 3: none, default = 0)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+# [messages.list]
+
+[arguments]
+[arguments.lower]
+digest = "lower range (default = 0)"
+type = "float"
+optional = 1
+
+[arguments.upper]
+digest = "upper range (default = 1)"
+type = "float"
+optional = 1
+
+[arguments.mode]
+digest = "limiting mode (default = 0 (fold))"
+type = "float"
+optional = 1
+
+[attributes]
+[attributes.range]
+digest = "set limiting range as a list (default = 0 1)"
+type = "list"
+size = 2
+
+[attributes.mode]
+digest = "set limiting mode as a symbol (default = fold)"
+type = "symbol"
+size = 1
+
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

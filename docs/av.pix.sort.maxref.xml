@@ -1,14 +1,17 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.brightness' category='' module=''>
+<c74object name='av.pix.sort' category='' module=''>
 
     <digest>
-        Change the brightness of a texture
+        Very basic pixel sorting
     </digest>
 
     <description>
-        Change the brightness of a texture
+        A very basic pixel sorting between cell and neighbouring pixel based on hue (color) value. Works well in a feedback loop with av.pix.feedback. The sorting should happen iteratively over a feedback loop to have a proper effect, but it is a quite naive sorting.<br/><br/>
+
+Note: Max 9 users can have a look at jit.fx.pixelsorting and jit.fx.ge.lineinterp for similar effects.
+
     </description>
     
     <discussion>
@@ -40,9 +43,13 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='brightness' optional='1' type='float'>
-            <digest>adjust the brightness (default = 1)</digest>
-            <description>adjust the brightness (default = 1)</description>
+        <objarg name='sort_x' optional='1' type='float'>
+            <digest>sorting direction X-axis in pixels (default = 0.5)</digest>
+            <description>sorting direction X-axis in pixels (default = 0.5)</description>
+        </objarg>
+        <objarg name='sort_y' optional='1' type='float'>
+            <digest>sorting direction Y-axis in pixels (default = 0.5)</digest>
+            <description>sorting direction Y-axis in pixels (default = 0.5)</description>
         </objarg>
     </objarglist>
 
@@ -67,8 +74,9 @@
         </digest>
         <description>
             Function depends on inlet<br/><br/>
-inlet 0: adjust the brightness (default = 1) <br/>
-inlet 1: adjust the brightness (default = 1) <br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: sorting direction X-axis in pixels (default = 0.5) <br/>
+inlet 2: sorting direction Y-axis in pixels (default = 0.5) <br/>
 
         </description>
     </method>
@@ -82,7 +90,8 @@ inlet 1: adjust the brightness (default = 1) <br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: adjust the brightness (default = 1) <br/>
+inlet 1: sorting direction X-axis in pixels (default = 0.5) <br/>
+inlet 2: sorting direction Y-axis in pixels (default = 0.5) <br/>
 
         </description>
     </method>
@@ -96,10 +105,10 @@ inlet 1: adjust the brightness (default = 1) <br/>
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>
@@ -108,6 +117,27 @@ inlet 1: adjust the brightness (default = 1) <br/>
                     type='bool' 
                     size='1' 
                     value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='filter' 
+            type='symbol' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                filter for the texture resampling (options: linear, none)
+            </digest>
+            <description>
+                filter for the texture resampling (options: linear, none)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='symbol' 
+                    size='1' 
+                    value='linear' 
                     get='1' set='1' />
             </attributelist>
         </attribute>

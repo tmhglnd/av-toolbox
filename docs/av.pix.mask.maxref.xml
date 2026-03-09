@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.degrade' category='' module=''>
+<c74object name='av.pix.mask' category='' module=''>
 
     <digest>
-        A pixelate and color downsample effect
+        Create a black/white mask from an image
     </digest>
 
     <description>
-        A pixelate and color downsample effect
+        Create a black/white mask from an incoming texture based on a specified range. Use either brightness or hue for the range-test to create the mask. Also generates an alpha channel for the mask to be combined with blending in a layer.
     </description>
     
     <discussion>
@@ -40,13 +40,17 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='pixelate' optional='1' type='float'>
-            <digest>adjust the pixelate amount from 0-1 (default = 0.25)</digest>
-            <description>adjust the pixelate amount from 0-1 (default = 0.25)</description>
+        <objarg name='lower' optional='1' type='float'>
+            <digest>lower detection threshold (default = 0.3)</digest>
+            <description>lower detection threshold (default = 0.3)</description>
         </objarg>
-        <objarg name='colordepth' optional='1' type='float'>
-            <digest>adjust the color depth from 1-256 (default = 4)</digest>
-            <description>adjust the color depth from 1-256 (default = 4)</description>
+        <objarg name='upper' optional='1' type='float'>
+            <digest>upper detection threshold (default = 0.45)</digest>
+            <description>upper detection threshold (default = 0.45)</description>
+        </objarg>
+        <objarg name='tolerance' optional='1' type='float'>
+            <digest>tolerance for detection (default = 0.1)</digest>
+            <description>tolerance for detection (default = 0.1)</description>
         </objarg>
     </objarglist>
 
@@ -72,8 +76,9 @@
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: pixelate amount (default = 1) <br/>
-inlet 2: color depth (default = 1) <br/>
+inlet 1: lower detection threshold (default = 0.3) <br/>
+inlet 2: upper detection threshold (default = 0.45) <br/>
+inlet 3: tolerance for detection (default = 0.1)
 
         </description>
     </method>
@@ -87,8 +92,9 @@ inlet 2: color depth (default = 1) <br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: pixelate amount from 0-1 (default = 0.25) <br/>
-inlet 2: color depth from 1-256 (default = 4) <br/>
+inlet 1: lower detection threshold (default = 0.3) <br/>
+inlet 2: upper detection threshold (default = 0.45) <br/>
+inlet 3: tolerance for detection (default = 0.1)
 
         </description>
     </method>
@@ -96,6 +102,27 @@ inlet 2: color depth from 1-256 (default = 4) <br/>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
+        <attribute 
+            name='mode' 
+            type='int' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                detection mode (options: 0: luma, 1: hue, default = 0)
+            </digest>
+            <description>
+                detection mode (options: 0: luma, 1: hue, default = 0)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
         <attribute 
             name='bypass' 
             type='bool' 

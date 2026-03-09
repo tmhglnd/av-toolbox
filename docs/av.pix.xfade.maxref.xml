@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.xfade' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Crossfade between two textures
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Like jit.fxade, a basic crossfade between 2 texture inputs with a cosine ramp for easing in the fade.
     </description>
     
     <discussion>
@@ -40,13 +40,9 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
-        </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
+        <objarg name='amount' optional='1' type='float'>
+            <digest>crossfade amount (default = 0.5)</digest>
+            <description>crossfade amount (default = 0.5)</description>
         </objarg>
     </objarglist>
 
@@ -60,8 +56,8 @@
             Function depends on inlet
         </digest>
         <description>
-            inlet 0: Texture 1 to blend<br/>
-inlet 1: Texture 2 to blend<br/>
+            inlet 0: Texture 1 to crossfade<br/>
+inlet 1: Texture 2 to crossfade<br/>
 
         </description>
     </method>
@@ -75,9 +71,8 @@ inlet 1: Texture 2 to blend<br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: <br/>
+inlet 2: adjust crossfade amount (default = 0.5) <br/>
 
         </description>
     </method>
@@ -91,20 +86,9 @@ inlet 3: adjust blend amount (default = 1)
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: <br/>
+inlet 2: adjust crossfade amount (default = 0.5) <br/>
 
-        </description>
-    </method>
-    <method name='dump'>
-        <arglist>
-        </arglist>
-        <digest>
-            Fill a umenu with blend modes
-        </digest>
-        <description>
-            Fill a umenu with blend modes
         </description>
     </method>
 	</methodlist>
@@ -117,10 +101,10 @@ inlet 3: adjust blend amount (default = 1)
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>

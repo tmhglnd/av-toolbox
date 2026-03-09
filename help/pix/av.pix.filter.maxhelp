@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -24,7 +24,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -269,7 +269,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Various convolution filter modes for texture inputs. Use an index to select blendmode and dump to fill a umenu for easy selection through names. Collects many built-in .jxs filters"
+                                    "text": "Various convolution filter modes for texture inputs. Use an index to select filtermode and dump to fill a umenu for easy selection through names. Collects many built-in .jxs filters"
                                 }
                             },
                             {
@@ -363,7 +363,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -380,7 +380,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -408,6 +408,6 @@
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

@@ -1,0 +1,72 @@
+[object]
+name = "av.pix.duotone"
+digest = "Convert an image to a duotone"
+description = "Convert an image to a duotone. Provide the two colors through inlets and set the curve for the grayscale image to affect the color range. Based on Micron's Duotone patch: https://www.patreon.com/posts/easy-duotone-19824702"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: <br/>
+inlet 2: <br/>
+inlet 3: adjust the color curvature (default = 1)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: <br/>
+inlet 2: <br/>
+inlet 3: adjust the color curvature (default = 1)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[messages.list]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: <br/>
+inlet 1: Color 1 list (rgba) <br/>
+inlet 2: Color 2 list (rgba) <br/>
+inlet 3: 
+"""
+args = [ { name = "list", type = "list", optional = 1 } ]
+
+[arguments]
+# [arguments.brightness]
+
+[attributes]
+[attributes.color1]
+digest = "set the color for the dark parts of the image"
+type = "list"
+
+[attributes.color2]
+digest = "set the color for the bright parts of the image"
+type = "list"
+
+[attributes.curve]
+digest = "apply a curvature to the color mapping"
+type = "float"
+size = 1
+default = { value = 1, size = 1, type = 'float' }
+
+[attributes.bypass]
+digest = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }
+
+[attributes.filter]
+digest = "filter for the texture resampling (options: linear, none)"
+type = "symbol"
+size = 1
+default = { value = "linear", size = 1, type = 'symbol' }

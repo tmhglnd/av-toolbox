@@ -1,0 +1,13 @@
+[object]
+name = "av.pix.texturedim"
+digest = "Get the texture dimension"
+description = "Get the dimension from a texture. Similar to jit.matrixinfo. Max9 users can use jit.gl.textureinfo as well."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+# [arguments]
+
+# [attributes]

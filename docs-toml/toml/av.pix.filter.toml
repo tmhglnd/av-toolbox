@@ -1,0 +1,59 @@
+[object]
+name = "av.pix.filter"
+digest = "Apply a convolution filter like sobel, dilate, emboss, etc."
+description = "Various convolution filter modes for texture inputs. Filters include: Blur, edgedetect, sobel, dilate, emboss, erode, laplace, radialblur, sharpen. Use an index to select filtermode and dump to fill a umenu for easy selection through names. Collects many built-in .jxs filters"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: filter mode (default = sobel) <br/>
+inlet 3: filter amount (default = 1)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: filter mode (default = sobel) <br/>
+inlet 3: filter amount (default = 1)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.dump]
+digest = "Fill a umenu with filter modes"
+description = "Fill a umenu with filter modes"
+
+[arguments]
+[arguments.mode]
+digest = "filter mode (default = sobel, see helpfile for options)"
+type = "symbol"
+optional = 1
+
+[arguments.feedback]
+digest = "filter amount (default = 1)"
+type = "float"
+optional = 1
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }
+
+# [attributes.filter]
+# digest = "filter for the texture resampling (options: linear, none)"
+# type = "symbol"
+# size = 1
+# default = { value = "linear", size = 1, type = 'symbol' }

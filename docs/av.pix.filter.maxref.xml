@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.filter' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Apply a convolution filter like sobel, dilate, emboss, etc.
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Various convolution filter modes for texture inputs. Filters include: Blur, edgedetect, sobel, dilate, emboss, erode, laplace, radialblur, sharpen. Use an index to select filtermode and dump to fill a umenu for easy selection through names. Collects many built-in .jxs filters
     </description>
     
     <discussion>
@@ -40,13 +40,13 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
+        <objarg name='mode' optional='1' type='symbol'>
+            <digest>filter mode (default = sobel, see helpfile for options)</digest>
+            <description>filter mode (default = sobel, see helpfile for options)</description>
         </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
+        <objarg name='feedback' optional='1' type='float'>
+            <digest>filter amount (default = 1)</digest>
+            <description>filter amount (default = 1)</description>
         </objarg>
     </objarglist>
 
@@ -57,12 +57,10 @@
             <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
-            Function depends on inlet
+            Process an incoming texture
         </digest>
         <description>
-            inlet 0: Texture 1 to blend<br/>
-inlet 1: Texture 2 to blend<br/>
-
+            Process an incoming texture
         </description>
     </method>
     <method name='int'>
@@ -75,9 +73,8 @@ inlet 1: Texture 2 to blend<br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: filter mode (default = sobel) <br/>
+inlet 3: filter amount (default = 1)
 
         </description>
     </method>
@@ -91,9 +88,8 @@ inlet 3: adjust blend amount (default = 1)
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: filter mode (default = sobel) <br/>
+inlet 3: filter amount (default = 1)
 
         </description>
     </method>
@@ -101,10 +97,10 @@ inlet 3: adjust blend amount (default = 1)
         <arglist>
         </arglist>
         <digest>
-            Fill a umenu with blend modes
+            Fill a umenu with filter modes
         </digest>
         <description>
-            Fill a umenu with blend modes
+            Fill a umenu with filter modes
         </description>
     </method>
 	</methodlist>

@@ -1,14 +1,20 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.glitch' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Glitch a texture by displacing it with noise
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Glitch a texture by displacing it with noise. Choose your own noise dimensions for different glitch resolutions. Send a bang to trigger a new noise.<br/><br/>
+
+mode 0: no color displacement, only position <br/>
+mode 1: red/cyan displacement <br/>
+mode 2: yellow/blue displacement <br/>
+mode 3: magenta/green displacement
+
     </description>
     
     <discussion>
@@ -40,13 +46,9 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
-        </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
+        <objarg name='amount' optional='1' type='float'>
+            <digest>displacement amount (default = 0.1)</digest>
+            <description>displacement amount (default = 0.1)</description>
         </objarg>
     </objarglist>
 
@@ -57,12 +59,10 @@
             <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
-            Function depends on inlet
+            Process an incoming texture
         </digest>
         <description>
-            inlet 0: Texture 1 to blend<br/>
-inlet 1: Texture 2 to blend<br/>
-
+            Process an incoming texture
         </description>
     </method>
     <method name='int'>
@@ -75,9 +75,8 @@ inlet 1: Texture 2 to blend<br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: glitch amount (default = 0.05) <br/>
+inlet 2: <br/>
 
         </description>
     </method>
@@ -91,20 +90,23 @@ inlet 3: adjust blend amount (default = 1)
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: glitch amount (default = 0.05) <br/>
+inlet 2: <br/>
 
         </description>
     </method>
-    <method name='dump'>
+    <method name='bang'>
         <arglist>
         </arglist>
         <digest>
-            Fill a umenu with blend modes
+            Function depends on inlet
         </digest>
         <description>
-            Fill a umenu with blend modes
+            Function depends on inlet<br/><br/>
+inlet 0: <br/>
+inlet 1: <br/>
+inlet 2: generate new noise texture<br/>
+
         </description>
     </method>
 	</methodlist>
@@ -112,15 +114,36 @@ inlet 3: adjust blend amount (default = 1)
 	<!--ATTRIBUTES-->
 	<attributelist>
         <attribute 
+            name='dim' 
+            type='list' 
+            size='2' 
+            get='1' set='1'>
+            <digest>
+                set the noise dimensions in pixels (default = 3 160)
+            </digest>
+            <description>
+                set the noise dimensions in pixels (default = 3 160)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
             name='bypass' 
             type='bool' 
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>
@@ -129,6 +152,27 @@ inlet 3: adjust blend amount (default = 1)
                     type='bool' 
                     size='1' 
                     value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='filter' 
+            type='symbol' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                filter for the texture resampling (options: linear, none)
+            </digest>
+            <description>
+                filter for the texture resampling (options: linear, none)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='symbol' 
+                    size='1' 
+                    value='linear' 
                     get='1' set='1' />
             </attributelist>
         </attribute>

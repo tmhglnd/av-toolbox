@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -24,7 +24,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -320,17 +320,17 @@
                             {
                                 "box": {
                                     "id": "obj-88",
-                                    "linecount": 5,
+                                    "linecount": 6,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 630.0, 74.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 434.0, 87.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Glitch a texture by displacing it with noise. Set the dimensions, interpolation, \nmode 0: no color displacement, only position\nmode 1: red/cyan displacement\nmode 2: yellow/blue displacement\nmode 3: magenta/green displacement"
+                                    "text": "Glitch a texture by displacing it with noise. Choose your own noise dimensions for different glitch resolutions. Send a bang to trigger a new noise.\nmode 0: no color displacement, only position\nmode 1: red/cyan displacement\nmode 2: yellow/blue displacement\nmode 3: magenta/green displacement"
                                 }
                             },
                             {
@@ -494,7 +494,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -511,7 +511,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -539,6 +539,6 @@
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

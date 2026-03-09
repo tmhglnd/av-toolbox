@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.delay' category='' module=''>
+<c74object name='av.pix.feedback' category='' module=''>
 
     <digest>
-        A texture delay effect
+        Mix two textures with feedback
     </digest>
 
     <description>
-        A texture delay effect
+        Mix two textures with feedback and various feedback modes
     </description>
     
     <discussion>
@@ -40,13 +40,13 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='delaytime' optional='1' type='int'>
-            <digest>delaytime in frames (default = 5)</digest>
-            <description>delaytime in frames (default = 5)</description>
+        <objarg name='feedback' optional='1' type='float'>
+            <digest>feedback amount (default = 0.95)</digest>
+            <description>feedback amount (default = 0.95)</description>
         </objarg>
-        <objarg name='maximum-delay' optional='1' type='int'>
-            <digest>maximum delay in frames (default = 20)</digest>
-            <description>maximum delay in frames (default = 20)</description>
+        <objarg name='mode' optional='1' type='int'>
+            <digest>feedback mode (options: 0: mix, 1: add, 2: max, 3: sub-falloff-add, default = 0)</digest>
+            <description>feedback mode (options: 0: mix, 1: add, 2: max, 3: sub-falloff-add, default = 0)</description>
         </objarg>
     </objarglist>
 
@@ -54,26 +54,14 @@
     <methodlist>
     <method name='jit_gl_texture'>
         <arglist>
-        </arglist>
-        <digest>
-            Delay an incoming texture
-        </digest>
-        <description>
-            Delay an incoming texture
-        </description>
-    </method>
-    <method name='float'>
-        <arglist>
-            <arg name='float' optional='1' type='float' />
+            <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
             Function depends on inlet
         </digest>
         <description>
-            Function depends on inlet<br/><br/>
-inlet 0: enable/disable processing <br/>
-inlet 1: delaytime in frames (default = 5) <br/>
-inlet 2: maximum delay in frames (default = 20) <br/>
+            inlet 0: Process incoming texture<br/>
+inlet 1: Feed back the output texture<br/>
 
         </description>
     </method>
@@ -87,8 +75,25 @@ inlet 2: maximum delay in frames (default = 20) <br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: delaytime in frames (default = 5) <br/>
-inlet 2: maximum delay in frames (default = 20) <br/>
+inlet 1: none <br/>
+inlet 2: feedback amount (default = 0.95) <br/>
+inlet 3: feedback mode (default = 0, linear mix)
+
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
+        </arglist>
+        <digest>
+            Function depends on inlet
+        </digest>
+        <description>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: none <br/>
+inlet 2: feedback amount (default = 0.95) <br/>
+inlet 3: feedback mode (default = 0, 0: mix, 1: add, 2: max, 3: sub-falloff-add)
 
         </description>
     </method>
@@ -114,6 +119,27 @@ inlet 2: maximum delay in frames (default = 20) <br/>
                     type='bool' 
                     size='1' 
                     value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='filter' 
+            type='symbol' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                filter for the texture resampling (options: linear, none)
+            </digest>
+            <description>
+                filter for the texture resampling (options: linear, none)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='symbol' 
+                    size='1' 
+                    value='linear' 
                     get='1' set='1' />
             </attributelist>
         </attribute>

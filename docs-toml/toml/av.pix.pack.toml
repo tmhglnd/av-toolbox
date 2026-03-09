@@ -1,0 +1,24 @@
+[object]
+name = "av.pix.pack"
+digest = "Pack 4 textures into one (r g b a)"
+description = """Pack a jitter texture from 4 individual textures in the order of components (r, g, b, a), send out as a single texture. <br/><br/>
+
+Note: In general it might be more efficient to code per plane processing yourself in a jit.gl.pix with [swiz] and [vec]. But sometimes it might be useful to just combine a texture quickly, or get a single plane from a texture in a larger patch without diving into jit.gl.pix/slab.
+"""
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: Texture to pack in R plane <br/>
+inlet 1: Texture to pack in G plane <br/>
+inlet 2: Texture to pack in B plane <br/>
+inlet 3: Texture to pack in A plane <br/>
+"""
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+
+# [arguments]
+
+# [attributes]

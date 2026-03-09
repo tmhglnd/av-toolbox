@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.saturation' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Change the saturation of a texture
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Change the saturation for a texture. Uses the luminance algorithm. Note: Max9 users can also use jit.fx.brcosa
     </description>
     
     <discussion>
@@ -40,13 +40,9 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
-        </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
+        <objarg name='saturation' optional='1' type='float'>
+            <digest>adjust the saturation (default = 1)</digest>
+            <description>adjust the saturation (default = 1)</description>
         </objarg>
     </objarglist>
 
@@ -54,13 +50,26 @@
     <methodlist>
     <method name='jit_gl_texture'>
         <arglist>
-            <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
+        </arglist>
+        <digest>
+            Process an incoming texture
+        </digest>
+        <description>
+            Process an incoming texture
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
         </arglist>
         <digest>
             Function depends on inlet
         </digest>
         <description>
-            
+            Function depends on inlet<br/><br/>
+inlet 0: adjust the saturation (default = 1) <br/>
+inlet 1: adjust the saturation (default = 1) <br/>
+
         </description>
     </method>
     <method name='int'>
@@ -73,36 +82,8 @@
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: adjust the saturation (default = 1) <br/>
 
-        </description>
-    </method>
-    <method name='float'>
-        <arglist>
-            <arg name='float' optional='1' type='float' />
-        </arglist>
-        <digest>
-            Function depends on inlet
-        </digest>
-        <description>
-            Function depends on inlet<br/><br/>
-inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
-
-        </description>
-    </method>
-    <method name='dump'>
-        <arglist>
-        </arglist>
-        <digest>
-            Fill a umenu with blend modes
-        </digest>
-        <description>
-            Fill a umenu with blend modes
         </description>
     </method>
 	</methodlist>
@@ -115,10 +96,10 @@ inlet 3: adjust blend amount (default = 1)
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.grid' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Generate a black/white grid for an incoming texture
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Generate a black/white grid for the dimensions of an incoming texture
     </description>
     
     <discussion>
@@ -40,13 +40,17 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
+        <objarg name='width' optional='1' type='float'>
+            <digest>width of the grid (default = 16)</digest>
+            <description>width of the grid (default = 16)</description>
         </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
+        <objarg name='height' optional='1' type='float'>
+            <digest>height of the grid (default = 9)</digest>
+            <description>height of the grid (default = 9)</description>
+        </objarg>
+        <objarg name='linewidth' optional='1' type='float'>
+            <digest>linewidth of the grid in pixels (default = 3)</digest>
+            <description>linewidth of the grid in pixels (default = 3)</description>
         </objarg>
     </objarglist>
 
@@ -57,11 +61,25 @@
             <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
+            Process an incoming texture
+        </digest>
+        <description>
+            Process an incoming texture
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
+        </arglist>
+        <digest>
             Function depends on inlet
         </digest>
         <description>
-            inlet 0: Texture 1 to blend<br/>
-inlet 1: Texture 2 to blend<br/>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: width of the grid (default = 16) <br/>
+inlet 2: height of the grid (default = 9) <br/>
+inlet 3: linewidth of the grid in pixels (default = 3) <br/>
 
         </description>
     </method>
@@ -75,36 +93,10 @@ inlet 1: Texture 2 to blend<br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: width of the grid (default = 16) <br/>
+inlet 2: height of the grid (default = 9) <br/>
+inlet 3: linewidth of the grid in pixels (default = 3) <br/>
 
-        </description>
-    </method>
-    <method name='float'>
-        <arglist>
-            <arg name='float' optional='1' type='float' />
-        </arglist>
-        <digest>
-            Function depends on inlet
-        </digest>
-        <description>
-            Function depends on inlet<br/><br/>
-inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
-
-        </description>
-    </method>
-    <method name='dump'>
-        <arglist>
-        </arglist>
-        <digest>
-            Fill a umenu with blend modes
-        </digest>
-        <description>
-            Fill a umenu with blend modes
         </description>
     </method>
 	</methodlist>
@@ -117,10 +109,10 @@ inlet 3: adjust blend amount (default = 1)
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.blend' category='' module=''>
+<c74object name='av.pix.duotone' category='' module=''>
 
     <digest>
-        Blend two textures with various blending modes
+        Convert an image to a duotone
     </digest>
 
     <description>
-        Blend two textures with various blending modes.
+        Convert an image to a duotone. Provide the two colors through inlets and set the curve for the grayscale image to affect the color range. Based on Micron's Duotone patch: https://www.patreon.com/posts/easy-duotone-19824702
     </description>
     
     <discussion>
@@ -40,28 +40,33 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='blendmode' optional='1' type='symbol'>
-            <digest>blend mode (default = additive)</digest>
-            <description>blend mode (default = additive)</description>
-        </objarg>
-        <objarg name='blendamount' optional='1' type='float'>
-            <digest>blend amount (default = 1)</digest>
-            <description>blend amount (default = 1)</description>
-        </objarg>
     </objarglist>
 
     <!--MESSAGES-->
     <methodlist>
     <method name='jit_gl_texture'>
         <arglist>
-            <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
+        </arglist>
+        <digest>
+            Process an incoming texture
+        </digest>
+        <description>
+            Process an incoming texture
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
         </arglist>
         <digest>
             Function depends on inlet
         </digest>
         <description>
-            inlet 0: Texture 1 to blend<br/>
-inlet 1: Texture 2 to blend<br/>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: <br/>
+inlet 2: <br/>
+inlet 3: adjust the color curvature (default = 1)
 
         </description>
     </method>
@@ -75,42 +80,95 @@ inlet 1: Texture 2 to blend<br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 1: <br/>
+inlet 2: <br/>
+inlet 3: adjust the color curvature (default = 1)
 
         </description>
     </method>
-    <method name='float'>
+    <method name='list'>
         <arglist>
-            <arg name='float' optional='1' type='float' />
+            <arg name='list' optional='1' type='list' />
         </arglist>
         <digest>
             Function depends on inlet
         </digest>
         <description>
             Function depends on inlet<br/><br/>
-inlet 0: enable/disable processing <br/>
-inlet 1: none <br/>
-inlet 2: adjust blend mode (default = 1) <br/>
-inlet 3: adjust blend amount (default = 1)
+inlet 0: <br/>
+inlet 1: Color 1 list (rgba) <br/>
+inlet 2: Color 2 list (rgba) <br/>
+inlet 3: 
 
-        </description>
-    </method>
-    <method name='dump'>
-        <arglist>
-        </arglist>
-        <digest>
-            Fill a umenu with blend modes
-        </digest>
-        <description>
-            Fill a umenu with blend modes
         </description>
     </method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
+        <attribute 
+            name='color1' 
+            type='list' 
+            size='' 
+            get='1' set='1'>
+            <digest>
+                set the color for the dark parts of the image
+            </digest>
+            <description>
+                set the color for the dark parts of the image
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='color2' 
+            type='list' 
+            size='' 
+            get='1' set='1'>
+            <digest>
+                set the color for the bright parts of the image
+            </digest>
+            <description>
+                set the color for the bright parts of the image
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='curve' 
+            type='float' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                apply a curvature to the color mapping
+            </digest>
+            <description>
+                apply a curvature to the color mapping
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='float' 
+                    size='1' 
+                    value='1' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
         <attribute 
             name='bypass' 
             type='bool' 
@@ -129,6 +187,27 @@ inlet 3: adjust blend amount (default = 1)
                     type='bool' 
                     size='1' 
                     value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='filter' 
+            type='symbol' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                filter for the texture resampling (options: linear, none)
+            </digest>
+            <description>
+                filter for the texture resampling (options: linear, none)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='symbol' 
+                    size='1' 
+                    value='linear' 
                     get='1' set='1' />
             </attributelist>
         </attribute>

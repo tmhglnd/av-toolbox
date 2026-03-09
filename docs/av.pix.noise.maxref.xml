@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.contrast' category='' module=''>
+<c74object name='av.pix.noise' category='' module=''>
 
     <digest>
-        Change the contrast of a texture
+        Generate noise for the dimensions of the incoming texture.
     </digest>
 
     <description>
-        Change the contrast of a texture
+        Generate noise for the dimensions of the incoming texture. Based on: http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
     </description>
     
     <discussion>
@@ -40,9 +40,9 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
-        <objarg name='contrast' optional='1' type='float'>
-            <digest>adjust the contrast (default = 1)</digest>
-            <description>adjust the contrast (default = 1)</description>
+        <objarg name='speed' optional='1' type='float'>
+            <digest>refresh speed of noise in ms (default = 16)</digest>
+            <description>refresh speed of noise in ms (default = 16)</description>
         </objarg>
     </objarglist>
 
@@ -67,8 +67,8 @@
         </digest>
         <description>
             Function depends on inlet<br/><br/>
-inlet 0: adjust the contrast (default = 1) <br/>
-inlet 1: adjust the contrast (default = 1) <br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: refresh speed of noise in ms (default = 16) <br/>
 
         </description>
     </method>
@@ -82,7 +82,7 @@ inlet 1: adjust the contrast (default = 1) <br/>
         <description>
             Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: adjust the contrast (default = 1) <br/>
+inlet 1: refresh speed of noise in ms (default = 16) <br/>
 
         </description>
     </method>
@@ -91,15 +91,36 @@ inlet 1: adjust the contrast (default = 1) <br/>
 	<!--ATTRIBUTES-->
 	<attributelist>
         <attribute 
+            name='colorize' 
+            type='bool' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                generate colored noise for RGB channels (default = 0)
+            </digest>
+            <description>
+                generate colored noise for RGB channels (default = 0)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='' 
+                    size='' 
+                    value='' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
             name='bypass' 
             type='bool' 
             size='1' 
             get='1' set='1'>
             <digest>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </digest>
             <description>
-                bypass the pixel processing
+                bypass the pixel processing (default = 0)
             </description>
 
             <attributelist>
@@ -108,6 +129,27 @@ inlet 1: adjust the contrast (default = 1) <br/>
                     type='bool' 
                     size='1' 
                     value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
+        <attribute 
+            name='filter' 
+            type='symbol' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                filter for the texture resampling (options: linear, none)
+            </digest>
+            <description>
+                filter for the texture resampling (options: linear, none)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='symbol' 
+                    size='1' 
+                    value='linear' 
                     get='1' set='1' />
             </attributelist>
         </attribute>

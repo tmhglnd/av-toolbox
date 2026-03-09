@@ -1,0 +1,46 @@
+[object]
+name = "av.pix.technicolor"
+digest = "Apply a technicolor filter"
+description = "Applies a technicolor filter, giving the image a vintage/retro saturated look. Based on the technicolor film processing popular between the '30s and '50s"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: technicolor amount (default = 1) <br/>
+inlet 2: technicolor mode (default = 0) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: technicolor amount (default = 1) <br/>
+inlet 2: technicolor mode (default = 0) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments.amount]
+digest = "adjust the technicolor amount (default = 1)"
+type = "float"
+optional = 1
+
+[arguments.mode]
+digest = "adjust the technicolor mode (0, 1, 2) (default = 0)"
+type = "int"
+optional = 1
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

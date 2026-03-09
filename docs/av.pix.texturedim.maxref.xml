@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.alpha.add' category='' module=''>
+<c74object name='av.pix.texturedim' category='' module=''>
 
     <digest>
-        Add an alpha channel to a texture
+        Get the texture dimension
     </digest>
 
     <description>
-        Add an alpha channel to a texture from another incoming texture on the right inlet.
+        Get the dimension from a texture. Similar to jit.matrixinfo. Max9 users can use jit.gl.textureinfo as well.
     </description>
     
     <discussion>
@@ -46,16 +46,12 @@
     <methodlist>
     <method name='jit_gl_texture'>
         <arglist>
-            <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
-            Function depends on inlet
+            Process an incoming texture
         </digest>
         <description>
-            Function depends on inlet:<br/>
-inlet 0: texture to add alpha channel to<br/>
-inlet 1: texture to be used as alpha channel<br/>
-
+            Process an incoming texture
         </description>
     </method>
 	</methodlist>

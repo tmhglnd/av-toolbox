@@ -1,0 +1,57 @@
+[object]
+name = "av.pix.grid"
+digest = "Generate a black/white grid for an incoming texture"
+description = "Generate a black/white grid for the dimensions of an incoming texture"
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: width of the grid (default = 16) <br/>
+inlet 2: height of the grid (default = 9) <br/>
+inlet 3: linewidth of the grid in pixels (default = 3) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: width of the grid (default = 16) <br/>
+inlet 2: height of the grid (default = 9) <br/>
+inlet 3: linewidth of the grid in pixels (default = 3) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.width]
+optional = 1
+type = "float"
+digest = "width of the grid (default = 16)"
+
+[arguments.height]
+optional = 1
+type = "float"
+digest = "height of the grid (default = 9)"
+
+[arguments.linewidth]
+optional = 1
+type = "float"
+digest = "linewidth of the grid in pixels (default = 3)"
+
+# [attributes]
+
+[attributes.bypass]
+digest = "bypass the pixel processing (default = 0)"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

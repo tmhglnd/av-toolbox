@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 782.0, 96.0, 680.0, 837.0 ],
+        "rect": [ 20.0, 96.0, 680.0, 837.0 ],
         "boxes": [
             {
                 "box": {
@@ -40,7 +40,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 397.5, 270.0, 62.0, 22.0 ],
+                    "patching_rect": [ 397.5, 240.0, 62.0, 22.0 ],
                     "text": "route filter"
                 }
             },
@@ -141,7 +141,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 435.0, 53.0, 210.0, 194.0 ],
+                    "patching_rect": [ 481.0, 53.0, 210.0, 194.0 ],
                     "text": "arguments:\n<float> direction x\n<float> direction y\n\nSimple pixel sorting between cell and neighbouring pixel based on hue (color) value. Works well in a feedback loop with av.pix.feedback. The sorting should happen iteratively over a feedback loop instead.\n\nTimo Hoogland (c) 2022-2026\nwww.timohoogland.com\nMIT License"
                 }
             },
@@ -179,7 +179,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -561,7 +561,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 75.0, 45.0, 30.0, 30.0 ]
                 }
             }
@@ -686,6 +686,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-4", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-20", 0 ],
                     "source": [ "obj-5", 1 ]
                 }
@@ -786,6 +792,6 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

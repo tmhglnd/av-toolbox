@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -77,7 +77,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -364,8 +364,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 207.0, 76.0, 82.0, 22.0 ],
-                    "text": "patcherargs 0"
+                    "patching_rect": [ 207.0, 76.0, 92.0, 22.0 ],
+                    "text": "patcherargs 0.5"
                 }
             },
             {
@@ -411,7 +411,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 90.0, 45.0, 30.0, 30.0 ]
                 }
             }
@@ -573,6 +573,6 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

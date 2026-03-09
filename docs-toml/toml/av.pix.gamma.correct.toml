@@ -1,0 +1,18 @@
+[object]
+name = "av.pix.gamma.correct"
+digest = "Convert from linear color space to sRGB"
+description = """Convert from lin (linear) color space to sRGB (standard Red Green Blue). Also called gamma-correction.<br/><br/>
+
+Useful for when processing the colors of a movie. First convert the movie to linear colorspace with expand. Then process the colors. Then convert back to sRGB colorspace with correct. Also useful when converting a full 3D generated scene to sRGB colorspace (only gamma-correction).<br/><br/>
+
+Note: Max9 users can also use jit.fx.srgb2lin and jit.fx.lin2srgb"""
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Texture to convert from linear color space to sRGB"
+description = "Texture to convert from linear color space to sRGB"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+# [arguments]
+
+# [attributes]

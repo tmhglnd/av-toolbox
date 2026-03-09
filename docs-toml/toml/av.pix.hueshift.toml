@@ -1,0 +1,44 @@
+[object]
+name = "av.pix.hueshift"
+digest = "Shift the color of an image"
+description = """Shift/rotate the hue (color) of an image with a value between 0 and 1.<br/><br/>
+Note: Max9 users can also use jit.fx.hue
+"""
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: amount of hue shift (default = 0.5) <br/>
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: amount of hue shift (default = 0.5) <br/>
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+[arguments]
+[arguments.hueshift]
+optional = 1
+type = "float"
+digest = "amount of hue shift (default = 0.5)"
+
+[attributes]
+[attributes.bypass]
+digest = "bypass the pixel processing"
+description = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }

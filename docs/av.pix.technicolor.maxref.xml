@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name='av.pix.alpha.remove' category='' module=''>
+<c74object name='av.pix.technicolor' category='' module=''>
 
     <digest>
-        Remove the alpha channel from a texture
+        Apply a technicolor filter
     </digest>
 
     <description>
-        Remove the alpha channel from a texture and replace it with full opacity (1). Output the alpha channel at the second outlet.
+        Applies a technicolor filter, giving the image a vintage/retro saturated look. Based on the technicolor film processing popular between the '30s and '50s
     </description>
     
     <discussion>
@@ -40,25 +40,83 @@
 
     <!-- ARGUMENTS -->
     <objarglist>
+        <objarg name='amount' optional='1' type='float'>
+            <digest>adjust the technicolor amount (default = 1)</digest>
+            <description>adjust the technicolor amount (default = 1)</description>
+        </objarg>
+        <objarg name='mode' optional='1' type='int'>
+            <digest>adjust the technicolor mode (0, 1, 2) (default = 0)</digest>
+            <description>adjust the technicolor mode (0, 1, 2) (default = 0)</description>
+        </objarg>
     </objarglist>
 
     <!--MESSAGES-->
     <methodlist>
     <method name='jit_gl_texture'>
         <arglist>
-            <arg name='jit_gl_texture' optional='0' type='jit_gl_texture' />
         </arglist>
         <digest>
-            Texture to remove alpha channel from
+            Process an incoming texture
         </digest>
         <description>
-            Texture to remove alpha channel from
+            Process an incoming texture
+        </description>
+    </method>
+    <method name='float'>
+        <arglist>
+            <arg name='float' optional='1' type='float' />
+        </arglist>
+        <digest>
+            Function depends on inlet
+        </digest>
+        <description>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: technicolor amount (default = 1) <br/>
+inlet 2: technicolor mode (default = 0) <br/>
+
+        </description>
+    </method>
+    <method name='int'>
+        <arglist>
+            <arg name='int' optional='1' type='int' />
+        </arglist>
+        <digest>
+            Function depends on inlet
+        </digest>
+        <description>
+            Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: technicolor amount (default = 1) <br/>
+inlet 2: technicolor mode (default = 0) <br/>
+
         </description>
     </method>
 	</methodlist>
 
 	<!--ATTRIBUTES-->
 	<attributelist>
+        <attribute 
+            name='bypass' 
+            type='bool' 
+            size='1' 
+            get='1' set='1'>
+            <digest>
+                bypass the pixel processing (default = 0)
+            </digest>
+            <description>
+                bypass the pixel processing (default = 0)
+            </description>
+
+            <attributelist>
+                <attribute 
+                    name='default' 
+                    type='bool' 
+                    size='1' 
+                    value='0' 
+                    get='1' set='1' />
+            </attributelist>
+        </attribute>
 	</attributelist>
 
     <!-- INLETS -->

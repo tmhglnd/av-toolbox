@@ -1,0 +1,17 @@
+[object]
+name = "av.pix.unpack"
+digest = "Unpack a texture into components (r g b a)"
+description = """Unpack a jitter texture into its 4 color components (r, g, b, a), send as individual textures to the output (note that these textures are actually 4-plane textures contain in the form of rrrr, gggg, bbbb, aaaa).<br/><br/>
+
+Note: In general it might be more efficient to code per plane processing yourself in a jit.gl.pix with [swiz] and [vec]. But sometimes it might be useful to just combine a texture quickly, or get a single plane from a texture in a larger patch without diving into jit.gl.pix/slab.
+"""
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Texture to unpack"
+description = "Texture to unpack"
+args = [ { name = "jit_gl_texture", type = "jit_gl_texture", optional = 0 } ]
+
+# [arguments]
+
+# [attributes]
