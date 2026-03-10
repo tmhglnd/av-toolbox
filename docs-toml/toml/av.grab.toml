@@ -1,0 +1,10 @@
+[object]
+name = "av.grab"
+digest = "Initialize a jit.grab with preset attributes"
+description = "Initialize a jit.grab with preset attributes such as @output_texture 1, @vdevice 0, @format 0"
+
+# [messages]
+
+# [arguments]
+
+# [attributes]

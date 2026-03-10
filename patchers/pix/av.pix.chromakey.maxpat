@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 783.0, 141.0, 660.0, 785.0 ],
+        "rect": [ 765.0, 116.0, 660.0, 785.0 ],
         "boxes": [
             {
                 "box": {
@@ -18,7 +18,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 477.0, 60.0, 65.0, 22.0 ],
+                    "patching_rect": [ 323.0, 60.0, 65.0, 22.0 ],
                     "text": "route color"
                 }
             },
@@ -34,7 +34,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -92,7 +92,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 105.0, 435.0, 167.0, 22.0 ],
+                    "patching_rect": [ 90.0, 435.0, 167.0, 22.0 ],
                     "text": "jit.gl.pix @title chromakey-hsv"
                 }
             },
@@ -103,7 +103,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 278.0, 315.0, 29.5, 22.0 ],
+                    "patching_rect": [ 263.0, 315.0, 29.5, 22.0 ],
                     "text": "!- 1"
                 }
             },
@@ -114,7 +114,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 219.0, 285.0, 137.0, 22.0 ],
+                    "patching_rect": [ 204.0, 285.0, 137.0, 22.0 ],
                     "text": "route int float bypass list"
                 }
             },
@@ -125,7 +125,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 105.0, 240.0, 133.0, 22.0 ],
+                    "patching_rect": [ 90.0, 240.0, 133.0, 22.0 ],
                     "text": "routepass jit_gl_texture"
                 }
             },
@@ -136,7 +136,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
-                    "patching_rect": [ 64.0, 375.0, 60.0, 22.0 ],
+                    "patching_rect": [ 49.0, 375.0, 60.0, 22.0 ],
                     "text": "av.enable"
                 }
             },
@@ -147,7 +147,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 232.0, 135.0, 82.0, 22.0 ],
+                    "patching_rect": [ 405.0, 135.0, 82.0, 22.0 ],
                     "text": "prepend color"
                 }
             },
@@ -156,12 +156,12 @@
                     "comment": "(list) color (rgb 0-1)",
                     "cool": 1,
                     "id": "obj-6",
-                    "index": 2,
+                    "index": 4,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 231.0, 30.0, 30.0, 30.0 ]
+                    "patching_rect": [ 405.0, 30.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -171,7 +171,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 364.0, 195.0, 90.0, 22.0 ],
+                    "patching_rect": [ 221.0, 195.0, 90.0, 22.0 ],
                     "text": "prepend param"
                 }
             },
@@ -182,7 +182,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 424.0, 60.0, 51.0, 22.0 ],
+                    "patching_rect": [ 270.0, 60.0, 51.0, 22.0 ],
                     "text": "unjoin 2"
                 }
             },
@@ -193,7 +193,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 364.0, 135.0, 49.0, 22.0 ],
+                    "patching_rect": [ 221.0, 135.0, 49.0, 22.0 ],
                     "text": "fade $1"
                 }
             },
@@ -204,7 +204,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 319.0, 135.0, 38.0, 22.0 ],
+                    "patching_rect": [ 165.0, 135.0, 38.0, 22.0 ],
                     "text": "tol $1"
                 }
             },
@@ -215,7 +215,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 424.0, 30.0, 72.0, 22.0 ],
+                    "patching_rect": [ 270.0, 30.0, 72.0, 22.0 ],
                     "text": "patcherargs"
                 }
             },
@@ -226,21 +226,21 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 396.0, 285.0, 199.0, 275.0 ],
-                    "text": "The av.pix.chromakey is based on the co.chromakey.hsv.jxs code. But instead of already blending 2 textures (where one is chromakeyed and the other is used as background), this object outputs a single texture with the alpha channel being part of the chromakeying\n\narguments:\n<float> tolerance\n<float> fade (rgb 0-1)\n\nattributes:\n@color - the color (rgb float)\n\nTimo Hoogland (c) 2026\nwww.timohoogland.com\nMIT License"
+                    "patching_rect": [ 381.0, 285.0, 199.0, 275.0 ],
+                    "text": "The av.pix.chromakey is based on the co.chromakey.hsv.jxs code. But instead of already blending 2 textures (where one is chromakeyed and the other is used as background), this object outputs a single texture with the alpha channel being part of the chromakeying\n\narguments:\n<float> tolerance\n<float> edge fade\n\nattributes:\n@color - the color (rgb float)\n\nTimo Hoogland (c) 2026\nwww.timohoogland.com\nMIT License"
                 }
             },
             {
                 "box": {
-                    "comment": "(list) edge fade",
+                    "comment": "(float) edge fade",
                     "cool": 1,
                     "id": "obj-19",
-                    "index": 4,
+                    "index": 3,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 364.0, 30.0, 30.0, 30.0 ]
+                    "patching_rect": [ 221.0, 30.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -248,12 +248,12 @@
                     "comment": "(float) tolerance",
                     "cool": 1,
                     "id": "obj-22",
-                    "index": 3,
+                    "index": 2,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 319.0, 30.0, 30.0, 30.0 ]
+                    "patching_rect": [ 165.0, 30.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -264,8 +264,8 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
-                    "patching_rect": [ 105.0, 30.0, 30.0, 30.0 ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 90.0, 30.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -276,7 +276,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.0, 495.0, 30.0, 30.0 ]
+                    "patching_rect": [ 49.0, 495.0, 30.0, 30.0 ]
                 }
             }
         ],
@@ -349,8 +349,14 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-27", 2 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "midpoints": [ 373.5, 410.87890625, 114.5, 410.87890625 ],
+                    "midpoints": [ 230.5, 410.87890625, 99.5, 410.87890625 ],
                     "source": [ "obj-28", 0 ]
                 }
             },
@@ -411,7 +417,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "midpoints": [ 532.5, 274.90234375, 228.5, 274.90234375 ],
+                    "midpoints": [ 378.5, 274.90234375, 213.5, 274.90234375 ],
                     "source": [ "obj-9", 1 ]
                 }
             },
@@ -487,6 +493,6 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

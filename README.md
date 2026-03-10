@@ -163,18 +163,26 @@ In case you want to try out the newest features before it is released in the Pac
 
 ```
 1. download zip
-2. unzip and place in Max Packages (on MacOS ~/Documents/Max 8/Packages)
-3. restart Max8, open Package manager, Launch av-toolbox
+2. unzip and place in Max Packages (on MacOS ~/Documents/Max 9/Packages)
+3. restart Max9, open Package manager, Launch av-toolbox
 ```
 
 ```
 1. open terminal
-2. navigate to Max Packages (on MacOS cd ~/Documents/Max\ 8/Packages)
+2. navigate to Max Packages (on MacOS cd ~/Documents/Max\ 9/Packages)
 3. $ git clone https://github.com/tmhglnd/av-toolbox.git
-4. restart Max8, open Package manager, Launch av-toolbox
+4. restart Max9, open Package manager, Launch av-toolbox
 ```
 
-## Ideas
+## Docs
+
+The refpages are generated with the [documax](https://github.com/jamesb93/documax) tool from `*.toml` files based on a `.mustache` template. To build the docs, run:
+
+```
+documax -i ./docs-toml/toml -o ./docs -t ./docs-toml/template/av-toolbox-ref-template.mustache
+```
+
+## Ideas / To-Do's
 
 - [ ] **av.param~** - Control parameters of shaders with signals and include smoothing/easing
 
@@ -187,3 +195,4 @@ In case you want to try out the newest features before it is released in the Pac
 - [ ] **av.screen2world** - Convert pixel/mouse coordinates to jitter world coordinates
 
 - [ ] **av.world2screen** - Convert jitter world coordinates to pixel/mouse coordinates
+
