@@ -1,0 +1,61 @@
+[object]
+name = "av.pix.chromakey"
+digest = "Use chromakeying to create a transparent background"
+description = "Apply a chromakeying effect, where the selected color is removed from the image, leaving a transparent spot. The av.pix.chromakey is based on the co.chromakey.hsv.jxs code. But instead of already blending 2 textures (where one is chromakeyed and the other is used as background), this object outputs a single texture with the alpha channel being part of the chromakeying."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: tolerance for detection (default = 0.5) <br/>
+inlet 2: edge fade for detection (default = 0.1) <br/>
+inlet 3: color for keying as rgb (default = 0 1 0) 
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: tolerance for detection (default = 0.5) <br/>
+inlet 2: edge fade for detection (default = 0.1) <br/>
+inlet 3: color for keying as rgb (default = 0 1 0) 
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+# [messages.list]
+
+[arguments]
+[arguments.tolerance]
+digest = "tolerance for detection (default = 0.5)"
+type = "float"
+optional = 1
+
+[arguments.edge_fade]
+digest = "edge fade for detection (default = 0.1)"
+type = "float"
+optional = 1
+
+# [arguments.color]
+# digest = "color for keying as rgb (default = 0 1 0)"
+# type = "list"
+# optional = 1
+
+[attributes]
+[attributes.color]
+digest = "color for keying as rgb (default = 0 1 0)"
+type = "list"
+size = 3
+
+[attributes.bypass]
+digest = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }
