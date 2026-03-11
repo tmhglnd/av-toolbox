@@ -1,0 +1,66 @@
+[object]
+name = "av.pix.tiltblur"
+digest = "Apply a tilt-blur effect"
+description = "Apply a gaussian tilt-blur effect. The tiltblur has either a circular, vertical or horizontal shape. You can change the blur amount, the width of the focus and the edge fade from no-blur into the blurred area of the image. A common used technique to apply some depth-of-field and focus to a 2D image."
+
+[messages]
+[messages.jit_gl_texture]
+digest = "Process an incoming texture"
+description = "Process an incoming texture"
+
+[messages.float]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: blur amount (default = 3) <br/>
+inlet 2: focus width/radius (default = 0.2) <br/>
+inlet 3: edge fade (default = 0.3)
+"""
+args = [ { name = "float", type = "float", optional = 1 } ]
+
+[messages.int]
+digest = "Function depends on inlet"
+description = """
+Function depends on inlet<br/><br/>
+inlet 0: enable/disable processing <br/>
+inlet 1: blur amount (default = 3) <br/>
+inlet 2: focus width/radius (default = 0.2) <br/>
+inlet 3: edge fade (default = 0.3)
+"""
+args = [ { name = "int", type = "int", optional = 1 } ]
+
+# [messages.list]
+
+[arguments]
+[arguments.blur_amount]
+digest = "blur amount (default = 3)"
+type = "float"
+optional = 1
+
+[arguments.focus_width]
+digest = "focus width/radius (default = 0.2)"
+type = "float"
+optional = 1
+
+[arguments.edge_fade]
+digest = "edge fade (default = 0.3)"
+type = "float"
+optional = 1
+
+[attributes]
+[attributes.shape]
+digest = "blurring shape (options: 0: circular, 1: horizontal, 2: vertical, default = 0)"
+type = "int"
+size = 1
+
+[attributes.offset]
+digest = "focus point XY (-1 to 1) (default = 0 0)"
+type = "float"
+size = 1
+
+[attributes.bypass]
+digest = "bypass the pixel processing"
+type = "bool"
+size = 1
+default = { value = 0, size = 1, type = 'bool' }
