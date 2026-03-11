@@ -360,7 +360,7 @@
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Apply a gaussian tilt-blur effect. The tiltblur has either a circular, vertical or horizontal shape. You can change the blur amount, the width of the focus and the edge fade from no-blur into the blurred area of the image. Use the offset attribute to change the focus point in the image. A common used technique to apply some depth-of-field and focus to a 2D image."
+                                    "text": "Apply a gaussian tilt-blur effect (sometimes called tilt-shift). The tiltblur has either a circular, vertical or horizontal shape. You can change the blur amount, the width of the focus and the edge fade from no-blur into the blurred area of the image. Use the offset attribute to change the focus point in the image. A common used technique to simulate a shallow depth-of-field in post-processing."
                                 }
                             },
                             {
