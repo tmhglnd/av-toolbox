@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 98.0, 100.0, 724.0, 609.0 ],
+        "rect": [ 207.0, 162.0, 724.0, 609.0 ],
         "showrootpatcherontab": 0,
         "showontab": 0,
         "boxes": [
@@ -24,14 +24,13 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
                         "rect": [ 0.0, 26.0, 724.0, 583.0 ],
                         "showontab": 1,
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -184,8 +183,8 @@
                                     "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 210.0, 210.0, 147.0, 22.0 ],
-                                    "text": "av.spectrum~ 0 0 4096 32"
+                                    "patching_rect": [ 210.0, 210.0, 140.0, 22.0 ],
+                                    "text": "av.spectrum~ 0 0 4096 8"
                                 }
                             },
                             {
@@ -351,7 +350,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 127.0, 161.0, 71.0, 22.0 ],
                     "text": "p advanced"
@@ -368,14 +367,137 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 98.0, 126.0, 724.0, 583.0 ],
+                        "rect": [ 207.0, 188.0, 724.0, 583.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "fontface": 2,
+                                    "id": "obj-18",
+                                    "linecount": 2,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 447.5, 461.0, 150.0, 33.0 ],
+                                    "text": "jit.graph with jit.pwindow for a quick spectroscope~"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-9",
+                                    "maxclass": "jit.pwindow",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "jit_matrix", "" ],
+                                    "patching_rect": [ 194.0, 461.0, 252.0, 84.0 ],
+                                    "sync": 1
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-8",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "jit_matrix", "" ],
+                                    "patching_rect": [ 194.0, 428.0, 252.0, 22.0 ],
+                                    "text": "jit.graph @mode 3 @rangelo 0 @brgb 0 0 0 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-6",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patcher": {
+                                        "fileversion": 1,
+                                        "appversion": {
+                                            "major": 9,
+                                            "minor": 1,
+                                            "revision": 3,
+                                            "architecture": "x64",
+                                            "modernui": 1
+                                        },
+                                        "classnamespace": "box",
+                                        "rect": [ 0.0, 0.0, 1000.0, 746.4000000000001 ],
+                                        "boxes": [
+                                            {
+                                                "box": {
+                                                    "id": "obj-3",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 109.0, 136.0, 69.0, 22.0 ],
+                                                    "text": "jit.gl.handle"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-8",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 8,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 80.0, 100.0, 193.0, 22.0 ],
+                                                    "text": "jit.gl.material @mat_diffuse 1 1 1 1"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "id": "obj-6",
+                                                    "maxclass": "newobj",
+                                                    "numinlets": 1,
+                                                    "numoutlets": 2,
+                                                    "outlettype": [ "", "" ],
+                                                    "patching_rect": [ 50.0, 172.0, 250.0, 22.0 ],
+                                                    "text": "jit.gl.graph @scale 0.5 0.1 0.1 @circpoints 32"
+                                                }
+                                            },
+                                            {
+                                                "box": {
+                                                    "comment": "",
+                                                    "id": "obj-5",
+                                                    "index": 1,
+                                                    "maxclass": "inlet",
+                                                    "numinlets": 0,
+                                                    "numoutlets": 1,
+                                                    "outlettype": [ "jit_matrix" ],
+                                                    "patching_rect": [ 50.0, 40.0, 30.0, 30.0 ]
+                                                }
+                                            }
+                                        ],
+                                        "lines": [
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-3", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-5", 0 ]
+                                                }
+                                            },
+                                            {
+                                                "patchline": {
+                                                    "destination": [ "obj-6", 0 ],
+                                                    "source": [ "obj-8", 0 ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "patching_rect": [ 223.0, 392.0, 62.0, 22.0 ],
+                                    "text": "p gl.graph"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-12",
@@ -383,19 +505,8 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 303.0, 334.0, 150.0, 47.0 ],
+                                    "patching_rect": [ 305.0, 309.0, 150.0, 47.0 ],
                                     "text": "advanced:\nfft-size (default = 1024)\noverlap (default = 4)"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-3",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "" ],
-                                    "patching_rect": [ 254.0, 459.0, 69.0, 22.0 ],
-                                    "text": "jit.gl.handle"
                                 }
                             },
                             {
@@ -406,7 +517,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 303.0, 285.0, 107.0, 47.0 ],
+                                    "patching_rect": [ 305.0, 260.0, 107.0, 47.0 ],
                                     "text": "Arguments:\nattack in frames\nrelease in frames"
                                 }
                             },
@@ -428,30 +539,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 224.0, 390.0, 193.0, 22.0 ],
+                                    "patching_rect": [ 262.0, 360.5, 193.0, 22.0 ],
                                     "sync": 1
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-8",
-                                    "maxclass": "newobj",
-                                    "numinlets": 8,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "" ],
-                                    "patching_rect": [ 225.0, 423.0, 193.0, 22.0 ],
-                                    "text": "jit.gl.material @mat_diffuse 1 1 1 1"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-6",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "" ],
-                                    "patching_rect": [ 195.0, 495.0, 250.0, 22.0 ],
-                                    "text": "jit.gl.graph @scale 0.5 0.1 0.1 @circpoints 32"
                                 }
                             },
                             {
@@ -610,7 +699,7 @@
                             },
                             {
                                 "box": {
-                                    "clipheight": 25.666666666666668,
+                                    "clipheight": 20.0,
                                     "data": {
                                         "clips": [
                                             {
@@ -638,6 +727,16 @@
                                                 "filename": "prim.loop.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u842009614",
+                                                "loop": 1,
+                                                "content_state": {
+                                                    "loop": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "duduk.aif",
+                                                "filename": "duduk.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u250004086",
                                                 "loop": 1,
                                                 "content_state": {
                                                     "loop": 1
@@ -833,13 +932,13 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 68.0, 420.0, 47.0 ],
+                                    "patching_rect": [ 30.0, 68.0, 436.0, 47.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "Grab a FFT frame (spectrum) from an incoming signal and output as a one-dimensional jitter matrix. Output the matrix using a bang from the jit.world renderer."
+                                    "text": "Grab an FFT frame (spectrum) from an incoming signal and output as a one-dimensional jitter matrix. Output the matrix using a bang from the jit.world renderer. Applies the MEL-scale for perceptual mapping of the frequencies."
                                 }
                             },
                             {
@@ -933,6 +1032,13 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-8", 0 ],
+                                    "order": 2,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-2", 1 ],
                                     "source": [ "obj-23", 0 ]
                                 }
@@ -941,12 +1047,6 @@
                                 "patchline": {
                                     "destination": [ "obj-2", 2 ],
                                     "source": [ "obj-24", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-6", 0 ],
-                                    "source": [ "obj-3", 0 ]
                                 }
                             },
                             {
@@ -1000,12 +1100,12 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-6", 0 ],
+                                    "destination": [ "obj-9", 0 ],
                                     "source": [ "obj-8", 0 ]
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -1022,7 +1122,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1043,9 +1143,17 @@
             "obj-2::obj-46": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-3::obj-16": [ "live.dial[2]", "scale", 0 ],
             "obj-3::obj-46": [ "live.gain~[3]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }
