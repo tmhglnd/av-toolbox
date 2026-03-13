@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -24,7 +24,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -32,6 +32,110 @@
                         "rect": [ 98.0, 126.0, 720.0, 603.0 ],
                         "showontab": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "signal" ],
+                                    "patching_rect": [ 55.0, 270.0, 40.0, 22.0 ],
+                                    "text": "*~ 0.5"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "clipheight": 20.0,
+                                    "data": {
+                                        "clips": [
+                                            {
+                                                "absolutepath": "jongly.aif",
+                                                "filename": "jongly.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u725010024",
+                                                "loop": 1,
+                                                "content_state": {
+                                                    "loop": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "drumLoop.aif",
+                                                "filename": "drumLoop.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u746008955",
+                                                "loop": 1,
+                                                "content_state": {
+                                                    "loop": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "prim.loop.aif",
+                                                "filename": "prim.loop.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u842009614",
+                                                "loop": 1,
+                                                "content_state": {
+                                                    "loop": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "duduk.aif",
+                                                "filename": "duduk.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u250004086",
+                                                "loop": 1,
+                                                "content_state": {
+                                                    "loop": 1
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "id": "obj-4",
+                                    "maxclass": "playlist~",
+                                    "mode": "basic",
+                                    "numinlets": 1,
+                                    "numoutlets": 5,
+                                    "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 30.0, 150.0, 150.0, 80.0 ],
+                                    "quality": "basic",
+                                    "saved_attribute_attributes": {
+                                        "candicane2": {
+                                            "expression": ""
+                                        },
+                                        "candicane3": {
+                                            "expression": ""
+                                        },
+                                        "candicane4": {
+                                            "expression": ""
+                                        },
+                                        "candicane5": {
+                                            "expression": ""
+                                        },
+                                        "candicane6": {
+                                            "expression": ""
+                                        },
+                                        "candicane7": {
+                                            "expression": ""
+                                        },
+                                        "candicane8": {
+                                            "expression": ""
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "box": {
+                                    "fontface": 2,
+                                    "id": "obj-18",
+                                    "linecount": 4,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 450.0, 528.0, 256.0, 60.0 ],
+                                    "text": "Also recommend: spectrogram~ by Zachary Seldess for alternative buffer display:\n\nhttps://www.zacharyseldess.com/spectrogram/"
+                                }
+                            },
                             {
                                 "box": {
                                     "hidden": 1,
@@ -144,7 +248,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 450.0, 465.0, 69.0, 22.0 ],
+                                    "patching_rect": [ 451.0, 454.0, 69.0, 22.0 ],
                                     "text": "jit.gl.handle"
                                 }
                             },
@@ -179,7 +283,7 @@
                                     "numinlets": 8,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 345.0, 465.0, 92.5, 22.0 ],
+                                    "patching_rect": [ 344.0, 454.0, 92.5, 22.0 ],
                                     "text": "jit.gl.material"
                                 }
                             },
@@ -190,7 +294,7 @@
                                     "numinlets": 9,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 195.0, 525.0, 126.0, 22.0 ],
+                                    "patching_rect": [ 196.0, 510.0, 126.0, 22.0 ],
                                     "text": "jit.gl.mesh @scale 0.7"
                                 }
                             },
@@ -201,7 +305,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 195.0, 465.0, 130.0, 22.0 ],
+                                    "patching_rect": [ 196.0, 454.0, 130.0, 22.0 ],
                                     "text": "jit.op @op pass pass +"
                                 }
                             },
@@ -212,7 +316,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 195.0, 418.0, 340.0, 22.0 ],
+                                    "patching_rect": [ 196.0, 422.0, 340.0, 22.0 ],
                                     "text": "jit.gl.gridshape @shape plane @matrixoutput 1 @dim 128 128"
                                 }
                             },
@@ -230,23 +334,12 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-15",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "signal" ],
-                                    "patching_rect": [ 65.0, 225.0, 40.0, 22.0 ],
-                                    "text": "*~ 0.2"
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-14",
                                     "maxclass": "jit.pwindow",
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_matrix", "" ],
-                                    "patching_rect": [ 225.0, 315.0, 111.5, 60.0 ],
+                                    "patching_rect": [ 226.0, 303.0, 110.0, 82.0 ],
                                     "sync": 1
                                 }
                             },
@@ -406,56 +499,6 @@
                             },
                             {
                                 "box": {
-                                    "data": {
-                                        "clips": [
-                                            {
-                                                "absolutepath": "jongly.aif",
-                                                "filename": "jongly.aif",
-                                                "filekind": "audiofile",
-                                                "id": "u725010024",
-                                                "loop": 1,
-                                                "content_state": {
-                                                    "loop": 1
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    "id": "obj-4",
-                                    "maxclass": "playlist~",
-                                    "mode": "basic",
-                                    "numinlets": 1,
-                                    "numoutlets": 5,
-                                    "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 30.0, 150.0, 150.0, 30.0 ],
-                                    "quality": "basic",
-                                    "saved_attribute_attributes": {
-                                        "candicane2": {
-                                            "expression": ""
-                                        },
-                                        "candicane3": {
-                                            "expression": ""
-                                        },
-                                        "candicane4": {
-                                            "expression": ""
-                                        },
-                                        "candicane5": {
-                                            "expression": ""
-                                        },
-                                        "candicane6": {
-                                            "expression": ""
-                                        },
-                                        "candicane7": {
-                                            "expression": ""
-                                        },
-                                        "candicane8": {
-                                            "expression": ""
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-2",
                                     "maxclass": "newobj",
                                     "numinlets": 4,
@@ -589,12 +632,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-2", 0 ],
-                                    "source": [ "obj-15", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-2", 1 ],
                                     "source": [ "obj-16", 0 ]
                                 }
@@ -609,9 +646,15 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-5", 1 ],
-                                    "midpoints": [ 204.5, 397.0, 315.5, 397.0 ],
+                                    "midpoints": [ 204.5, 397.0, 316.5, 397.0 ],
                                     "order": 0,
                                     "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
@@ -634,7 +677,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-15", 0 ],
+                                    "destination": [ "obj-20", 0 ],
                                     "order": 0,
                                     "source": [ "obj-4", 0 ]
                                 }
@@ -694,7 +737,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 45.0, 60.0, 47.0, 22.0 ],
                     "text": "p basic"
@@ -711,7 +754,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -742,6 +785,6 @@
             "inherited_shortname": 1
         },
         "autosave": 0,
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }

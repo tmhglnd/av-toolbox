@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 207.0, 162.0, 724.0, 609.0 ],
+        "rect": [ 100.0, 100.0, 724.0, 609.0 ],
         "showrootpatcherontab": 0,
         "showontab": 0,
         "boxes": [
@@ -372,7 +372,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 207.0, 188.0, 724.0, 583.0 ],
+                        "rect": [ 100.0, 126.0, 724.0, 583.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -528,7 +528,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "signal" ],
-                                    "patching_rect": [ 140.0, 245.0, 40.0, 22.0 ],
+                                    "patching_rect": [ 65.0, 251.0, 40.0, 22.0 ],
                                     "text": "*~ 0.5"
                                 }
                             },
