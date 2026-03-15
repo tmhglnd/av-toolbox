@@ -113,30 +113,6 @@
             },
             {
                 "box": {
-                    "id": "obj-45",
-                    "maxclass": "newobj",
-                    "numinlets": 4,
-                    "numoutlets": 2,
-                    "outlettype": [ "jit_gl_texture", "" ],
-                    "patching_rect": [ 570.0, 950.0, 72.0, 22.0 ],
-                    "text": "av.pix.blend",
-                    "varname": "av.pix.blend"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-44",
-                    "maxclass": "newobj",
-                    "numinlets": 4,
-                    "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
-                    "patching_rect": [ 458.0, 952.0, 78.0, 22.0 ],
-                    "text": "av.pix.brcosa",
-                    "varname": "av.pix.brcosa"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-43",
                     "maxclass": "newobj",
                     "numinlets": 3,
@@ -385,7 +361,6 @@
                         "rect": [ 122.0, 68.0, 1067.0, 798.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -395,7 +370,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 223.0, 757.0, 100.0, 62.0 ],
+                                    "patching_rect": [ 223.0, 757.0, 101.0, 62.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 225.0, 748.0, 273.0, 22.0 ],
                                     "text": "jit.grab @output_texture 1 @vdevice 0 @format 0"
@@ -1047,7 +1022,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Generate parameters for the gl.slab and gl.shader objects",
+                    "text": "Control a loaded movie with a signal, similar to play~",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -1130,7 +1105,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.paramgenerator"
+                    "text": "av.movieplay~"
                 }
             },
             {
@@ -2511,7 +2486,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 900.0, 420.0, 80.0, 22.0 ],
                     "text": "p resources",
@@ -2711,7 +2686,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 520.0, 148.0, 770.0, 489.0 ],
+                        "rect": [ 451.0, 225.0, 770.0, 489.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "boxes": [
@@ -2847,7 +2822,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 300.0, 570.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 422.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 235.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -2857,27 +2832,26 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 300.0, 615.0, 228.0, 22.0 ],
-                                    "text": "https://github.com/tmhglnd/gl-pix-shaders"
+                                    "patching_rect": [ 300.0, 615.0, 237.0, 22.0 ],
+                                    "text": "loadunique av-toolbox-pix-example.maxpat"
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-36",
-                                    "linecount": 7,
+                                    "linecount": 2,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 450.0, 540.0, 176.0, 100.0 ],
+                                    "patching_rect": [ 450.0, 540.0, 176.0, 33.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 3,
-                                    "presentation_rect": [ 212.0, 425.0, 325.0, 47.0 ],
+                                    "presentation_rect": [ 212.0, 238.0, 296.0, 20.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
                                         }
                                     },
-                                    "text": "A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders."
+                                    "text": "Deprecated, now included as [av.pix.*] in the package!"
                                 }
                             },
                             {
@@ -2890,7 +2864,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 300.0, 540.0, 148.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 425.0, 101.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 238.0, 101.0, 27.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -2974,7 +2948,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 180.0, 435.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 333.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 370.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -2998,7 +2972,7 @@
                                     "patching_rect": [ 315.0, 405.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 336.0, 321.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 373.0, 321.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3017,7 +2991,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 180.0, 405.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 336.0, 122.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 373.0, 122.0, 27.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3038,7 +3012,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 480.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 377.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 414.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -3062,7 +3036,7 @@
                                     "patching_rect": [ 645.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 380.0, 336.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 417.0, 336.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3081,7 +3055,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 480.0, 285.0, 155.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 380.0, 155.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 417.0, 155.0, 27.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3102,7 +3076,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 139.0, 315.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 287.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 324.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -3126,7 +3100,7 @@
                                     "patching_rect": [ 274.0, 285.0, 176.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 290.0, 315.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 327.0, 315.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3145,7 +3119,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 139.0, 285.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 290.0, 123.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 327.0, 123.0, 27.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3229,7 +3203,7 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 90.0, 195.0, 126.0, 34.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 241.0, 180.0, 34.0 ]
+                                    "presentation_rect": [ 30.0, 278.0, 180.0, 34.0 ]
                                 }
                             },
                             {
@@ -3265,7 +3239,7 @@
                                     "patching_rect": [ 225.0, 165.0, 150.0, 60.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 2,
-                                    "presentation_rect": [ 212.0, 245.0, 272.0, 33.0 ],
+                                    "presentation_rect": [ 212.0, 282.0, 272.0, 33.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3284,7 +3258,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 90.0, 165.0, 126.0, 27.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 245.0, 116.0, 27.0 ],
+                                    "presentation_rect": [ 30.0, 282.0, 116.0, 27.0 ],
                                     "saved_attribute_attributes": {
                                         "textcolor": {
                                             "expression": "themecolor.theme_textcolor"
@@ -3348,17 +3322,16 @@
                             },
                             {
                                 "box": {
-                                    "autofit": 1,
-                                    "forceaspect": 1,
+                                    "autofit": 2,
                                     "id": "obj-45",
                                     "maxclass": "fpic",
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
-                                    "patching_rect": [ 855.0, 180.0, 6899.761260707037, 6899.761260707037 ],
-                                    "pic": "av-extras03.jpg",
+                                    "patching_rect": [ 855.0, 180.0, 9148.847409495549, 9148.847409495549 ],
+                                    "pic": "av-extras07.jpg",
                                     "presentation": 1,
-                                    "presentation_rect": [ 555.0, 15.0, 1844.233349642339, 1844.233349642339 ]
+                                    "presentation_rect": [ 570.0, 15.0, 185.0, 180.0 ]
                                 }
                             }
                         ],
@@ -3443,7 +3416,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
+                                    "destination": [ "obj-2", 0 ],
                                     "source": [ "obj-35", 0 ]
                                 }
                             },
@@ -3490,7 +3463,7 @@
                                 }
                             }
                         ],
-                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+                        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
                     },
                     "patching_rect": [ 773.0, 420.0, 83.0, 22.0 ],
                     "text": "p \"other tools\"",
@@ -3790,7 +3763,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "29:22:465"
+                    "text": "02:23:215"
                 }
             },
             {
