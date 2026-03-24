@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 92.0, 170.0, 1016.0, 589.0 ],
+        "rect": [ 249.0, 211.0, 1016.0, 589.0 ],
         "boxes": [
             {
                 "box": {
@@ -132,7 +132,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 782.0, 96.0, 680.0, 837.0 ],
+                        "rect": [ 676.0, 96.0, 680.0, 837.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -163,8 +163,8 @@
                                     "numinlets": 4,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_gl_texture" ],
-                                    "patching_rect": [ 2530.1111111111113, 274.0, 128.0, 22.0 ],
-                                    "text": "av.pix.feedback 0.99 2"
+                                    "patching_rect": [ 2530.1111111111113, 274.0, 179.0, 22.0 ],
+                                    "text": "av.pix.feedback 1 3 @filter none"
                                 }
                             },
                             {
@@ -182,11 +182,11 @@
                                 "box": {
                                     "id": "obj-115",
                                     "maxclass": "newobj",
-                                    "numinlets": 3,
+                                    "numinlets": 4,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_gl_texture" ],
-                                    "patching_rect": [ 2530.1111111111113, 310.0, 62.0, 22.0 ],
-                                    "text": "av.pix.sort"
+                                    "patching_rect": [ 2568.0, 319.0, 174.0, 22.0 ],
+                                    "text": "av.pix.sort 0 -2 0 @falloff 0.001"
                                 }
                             },
                             {
@@ -635,7 +635,16 @@
                         "lines": [
                             {
                                 "patchline": {
+                                    "destination": [ "obj-111", 0 ],
+                                    "midpoints": [ 2539.6111111111113, 438.5, 59.5, 438.5 ],
+                                    "order": 1,
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-115", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-1", 0 ]
                                 }
                             },
@@ -694,15 +703,6 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-1", 1 ],
-                                    "order": 0,
-                                    "source": [ "obj-115", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-111", 0 ],
-                                    "midpoints": [ 2539.6111111111113, 438.5, 59.5, 438.5 ],
-                                    "order": 1,
                                     "source": [ "obj-115", 0 ]
                                 }
                             },
