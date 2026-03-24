@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 41.0, 96.0, 945.0, 792.0 ],
+        "rect": [ 100.0, 111.0, 945.0, 792.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "boxes": [
@@ -21,7 +21,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1614.0, 374.0, 39.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 504.0, 550.0, 39.0, 20.0 ],
+                    "presentation_rect": [ 503.5, 533.0, 39.0, 20.0 ],
                     "text": "more:"
                 }
             },
@@ -40,7 +40,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1614.0, 399.0, 95.0, 25.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 545.0, 549.0, 147.0, 22.0 ],
+                    "presentation_rect": [ 544.5, 532.0, 147.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
                             "expression": "themecolor.theme_syntax_objectcolor"
@@ -108,7 +108,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 153.0, 465.0, 5.0, 100.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 465.0, 542.0, 5.0 ]
+                    "presentation_rect": [ 150.0, 450.0, 542.0, 5.0 ]
                 }
             },
             {
@@ -120,7 +120,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 354.0, 952.0, 71.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 374.5, 549.0, 71.0, 22.0 ],
+                    "presentation_rect": [ 374.5, 532.0, 71.0, 22.0 ],
                     "text": "av.pix.delay",
                     "varname": "av.pix.delay"
                 }
@@ -134,7 +134,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 243.0, 952.0, 86.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 549.0, 86.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 532.0, 86.0, 22.0 ],
                     "text": "av.pix.displace",
                     "varname": "av.pix.displace"
                 }
@@ -148,7 +148,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 152.0, 952.0, 71.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.5, 549.0, 71.0, 22.0 ],
+                    "presentation_rect": [ 150.5, 532.0, 71.0, 22.0 ],
                     "text": "av.pix.mask",
                     "varname": "av.pix.mask"
                 }
@@ -162,7 +162,7 @@
                     "outlettype": [ "jit_gl_texture", "" ],
                     "patching_rect": [ 570.0, 912.0, 65.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 614.5, 519.0, 65.0, 22.0 ],
+                    "presentation_rect": [ 614.5, 502.0, 65.0, 22.0 ],
                     "text": "av.pix.filter",
                     "varname": "av.pix.filter"
                 }
@@ -176,7 +176,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 458.0, 912.0, 86.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 494.5, 519.0, 86.0, 22.0 ],
+                    "presentation_rect": [ 494.5, 502.0, 86.0, 22.0 ],
                     "text": "av.pix.degrade",
                     "varname": "av.pix.degrade"
                 }
@@ -190,7 +190,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 354.0, 912.0, 86.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 374.5, 519.0, 86.0, 22.0 ],
+                    "presentation_rect": [ 374.5, 502.0, 86.0, 22.0 ],
                     "text": "av.pix.duotone",
                     "varname": "av.pix.duotone"
                 }
@@ -204,7 +204,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 241.0, 912.0, 91.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 519.0, 91.0, 22.0 ],
+                    "presentation_rect": [ 254.5, 502.0, 91.0, 22.0 ],
                     "text": "av.pix.feedback",
                     "varname": "av.pix.feedback"
                 }
@@ -218,7 +218,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 153.0, 912.0, 69.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.5, 519.0, 69.0, 22.0 ],
+                    "presentation_rect": [ 150.5, 502.0, 69.0, 22.0 ],
                     "text": "av.pix.pong",
                     "varname": "av.pix.pong"
                 }
@@ -233,7 +233,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 289.0, 861.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 292.5, 485.0, 266.0, 22.0 ],
+                    "presentation_rect": [ 292.5, 468.0, 266.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -253,7 +253,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 148.0, 858.0, 141.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 482.0, 142.0, 27.0 ],
+                    "presentation_rect": [ 149.5, 465.0, 142.0, 27.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -271,7 +271,7 @@
                     "outlettype": [ "jit_gl_texture", "done" ],
                     "patching_rect": [ 150.0, 355.0, 63.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 360.0, 56.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 345.0, 56.0, 22.0 ],
                     "text": "av.movie",
                     "varname": "av.movie"
                 }
@@ -284,7 +284,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 30.0, 377.5, 39.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 504.0, 432.0, 39.0, 20.0 ],
+                    "presentation_rect": [ 504.0, 417.0, 39.0, 20.0 ],
                     "text": "more:"
                 }
             },
@@ -303,7 +303,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 30.0, 402.5, 95.0, 25.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 545.0, 431.0, 147.0, 22.0 ],
+                    "presentation_rect": [ 545.0, 416.0, 147.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
                             "expression": "themecolor.theme_syntax_objectcolor"
@@ -358,7 +358,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 122.0, 68.0, 1067.0, 798.0 ],
+                        "rect": [ 207.0, 106.0, 1067.0, 798.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "boxes": [
@@ -938,7 +938,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 540.0, 640.0, 100.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 744.0, 75.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 727.0, 75.0, 22.0 ],
                     "text": "av.loadmess",
                     "varname": "av.loadmess"
                 }
@@ -952,7 +952,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 424.0, 640.0, 100.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 744.0, 73.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 727.0, 73.0, 22.0 ],
                     "text": "av.loadbang",
                     "varname": "av.loadbang"
                 }
@@ -1004,7 +1004,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 4,
+                    "linecount": 2,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -1014,7 +1014,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 3,
+                    "presentation_linecount": 2,
                     "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
                     "readonly": 1,
                     "saved_attribute_attributes": {
@@ -1022,7 +1022,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Control a loaded movie with a signal, similar to play~",
+                    "text": "Analyse the pitch of a sound",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -1105,7 +1105,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.movieplay~"
+                    "text": "av.pitch~"
                 }
             },
             {
@@ -1666,7 +1666,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 417.0, 507.0, 100.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 390.0, 72.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 375.0, 72.0, 22.0 ],
                     "text": "av.videogrid",
                     "varname": "av.videogrid"
                 }
@@ -1680,7 +1680,7 @@
                     "outlettype": [ "jit_gl_texture", "" ],
                     "patching_rect": [ 281.0, 507.0, 109.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 360.0, 109.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 345.0, 109.0, 22.0 ],
                     "text": "av.texturefolder ctx",
                     "varname": "av.texturefolder"
                 }
@@ -2513,7 +2513,7 @@
                     "outlettype": [ "int" ],
                     "patching_rect": [ 645.0, 465.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 255.0, 420.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 405.0, 80.0, 22.0 ],
                     "text": "av.hidecursor",
                     "varname": "av.hidecursor"
                 }
@@ -2527,7 +2527,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 149.0, 507.0, 103.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 495.0, 360.0, 103.0, 22.0 ],
+                    "presentation_rect": [ 495.0, 345.0, 103.0, 22.0 ],
                     "text": "av.camera.control",
                     "varname": "av.camera.control"
                 }
@@ -2541,7 +2541,7 @@
                     "outlettype": [ "jit_matrix" ],
                     "patching_rect": [ 542.0, 465.0, 82.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 495.0, 390.0, 82.0, 22.0 ],
+                    "presentation_rect": [ 495.0, 375.0, 82.0, 22.0 ],
                     "text": "av.screenshot",
                     "varname": "av.screenshot"
                 }
@@ -2555,7 +2555,7 @@
                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
                     "patching_rect": [ 414.0, 465.0, 92.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 375.0, 390.0, 92.0, 22.0 ],
+                    "presentation_rect": [ 375.0, 375.0, 92.0, 22.0 ],
                     "text": "av.enable.xfade",
                     "varname": "av.enable.xfade"
                 }
@@ -2569,7 +2569,7 @@
                     "outlettype": [ "jit_gl_texture", "jit_gl_texture" ],
                     "patching_rect": [ 281.0, 465.0, 60.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 375.0, 360.0, 60.0, 22.0 ],
+                    "presentation_rect": [ 375.0, 345.0, 60.0, 22.0 ],
                     "text": "av.enable",
                     "varname": "av.enable"
                 }
@@ -2583,7 +2583,7 @@
                     "outlettype": [ "jit_gl_texture", "" ],
                     "patching_rect": [ 149.0, 465.0, 85.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 420.0, 85.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 405.0, 85.0, 22.0 ],
                     "text": "av.movieplay~",
                     "varname": "av.movieplay~"
                 }
@@ -2597,7 +2597,7 @@
                     "outlettype": [ "bang", "bang" ],
                     "patching_rect": [ 331.0, 640.0, 62.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 714.0, 62.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 697.0, 62.0, 22.0 ],
                     "text": "av.chance",
                     "varname": "av.chance"
                 }
@@ -2611,7 +2611,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 240.0, 640.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 684.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 667.0, 80.0, 22.0 ],
                     "text": "av.speedgate",
                     "varname": "av.speedgate"
                 }
@@ -3575,7 +3575,7 @@
                     "outlettype": [ "bang" ],
                     "patching_rect": [ 240.0, 797.0, 60.0, 43.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 434.5, 641.0, 31.0, 19.0 ]
+                    "presentation_rect": [ 435.0, 624.0, 31.0, 19.0 ]
                 }
             },
             {
@@ -3757,13 +3757,13 @@
                     "numoutlets": 0,
                     "patching_rect": [ 150.0, 739.0, 73.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 153.5, 663.0, 63.0, 20.0 ],
+                    "presentation_rect": [ 154.0, 646.0, 63.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "02:23:215"
+                    "text": "42:49:880"
                 }
             },
             {
@@ -3808,7 +3808,7 @@
                     "outlettype": [ "jit_gl_texture", "signal", "signal", "done" ],
                     "patching_rect": [ 542.0, 419.0, 63.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 390.0, 63.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 375.0, 63.0, 22.0 ],
                     "text": "av.movie~",
                     "varname": "av.movie~"
                 }
@@ -3823,7 +3823,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 293.0, 393.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 293.0, 317.0, 303.0, 22.0 ],
+                    "presentation_rect": [ 293.0, 302.0, 303.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3842,7 +3842,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 150.0, 390.0, 141.0, 27.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 315.0, 141.0, 27.0 ],
+                    "presentation_rect": [ 150.0, 300.0, 141.0, 27.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3872,7 +3872,7 @@
                     "patching_rect": [ 331.0, 694.0, 66.0, 44.0 ],
                     "pointsize": 3.0,
                     "presentation": 1,
-                    "presentation_rect": [ 359.5, 684.0, 106.0, 59.0 ],
+                    "presentation_rect": [ 360.0, 667.0, 106.0, 59.0 ],
                     "varname": "av.function"
                 }
             },
@@ -3886,7 +3886,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 288.0, 552.0, 372.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 289.5, 597.0, 350.0, 22.0 ],
+                    "presentation_rect": [ 289.5, 588.0, 350.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3903,7 +3903,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 50.5, 180.0, 5.0, 100.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 579.0, 542.0, 5.0 ]
+                    "presentation_rect": [ 149.5, 568.0, 542.0, 5.0 ]
                 }
             },
             {
@@ -3914,7 +3914,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 422.0, 809.0, 97.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 479.5, 753.0, 97.0, 20.0 ],
+                    "presentation_rect": [ 480.0, 736.0, 97.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3931,7 +3931,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 37.0, 180.0, 5.0, 100.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 150.0, 300.0, 542.0, 5.0 ]
+                    "presentation_rect": [ 150.0, 290.0, 542.0, 5.0 ]
                 }
             },
             {
@@ -3953,7 +3953,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 331.0, 745.0, 72.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 359.5, 745.0, 72.0, 20.0 ],
+                    "presentation_rect": [ 360.0, 728.0, 72.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -3981,7 +3981,7 @@
                     "outlettype": [ "float", "signal" ],
                     "patching_rect": [ 422.0, 694.0, 203.25, 111.25 ],
                     "presentation": 1,
-                    "presentation_rect": [ 479.5, 639.0, 203.25, 111.25 ],
+                    "presentation_rect": [ 480.0, 622.0, 203.25, 111.25 ],
                     "varname": "_av.automation~",
                     "viewvisibility": 1
                 }
@@ -3995,7 +3995,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 240.0, 760.0, 67.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 359.5, 639.0, 67.0, 22.0 ],
+                    "presentation_rect": [ 360.0, 622.0, 67.0, 22.0 ],
                     "text": "av.phasor~",
                     "varname": "av.phasor~"
                 }
@@ -4008,7 +4008,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 411.0, 419.0, 109.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 375.0, 420.0, 109.0, 22.0 ],
+                    "presentation_rect": [ 375.0, 405.0, 109.0, 22.0 ],
                     "text": "av.paramgenerator",
                     "varname": "av.paramgenerator"
                 }
@@ -4022,7 +4022,7 @@
                     "outlettype": [ "jit_gl_texture" ],
                     "patching_rect": [ 280.0, 419.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 615.0, 390.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 615.0, 375.0, 80.0, 22.0 ],
                     "text": "av.testpattern",
                     "varname": "av.testpattern"
                 }
@@ -4036,7 +4036,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 150.0, 419.0, 55.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 615.0, 360.0, 55.0, 22.0 ],
+                    "presentation_rect": [ 615.0, 345.0, 55.0, 22.0 ],
                     "text": "av.sync~",
                     "varname": "av.sync~"
                 }
@@ -4070,7 +4070,7 @@
                     "outlettype": [ "bang", "signal" ],
                     "patching_rect": [ 422.0, 596.0, 87.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 714.0, 87.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 697.0, 87.0, 22.0 ],
                     "text": "av.timetrigger~",
                     "varname": "av.timetrigger~"
                 }
@@ -4084,7 +4084,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 331.0, 596.0, 80.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 254.5, 639.0, 80.0, 22.0 ],
+                    "presentation_rect": [ 255.0, 622.0, 80.0, 22.0 ],
                     "text": "av.timetoticks",
                     "varname": "av.timetoticks"
                 }
@@ -4098,7 +4098,7 @@
                     "outlettype": [ "bang" ],
                     "patching_rect": [ 240.0, 596.0, 72.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 684.0, 72.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 667.0, 72.0, 22.0 ],
                     "text": "av.timepoint",
                     "varname": "av.timepoint"
                 }
@@ -4112,7 +4112,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 150.0, 671.0, 52.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 639.0, 54.0, 22.0 ],
+                    "presentation_rect": [ 150.0, 622.0, 54.0, 22.0 ],
                     "text": "av.when",
                     "varname": "av.when"
                 }
@@ -4127,7 +4127,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 150.0, 552.0, 136.0, 27.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 149.5, 594.0, 136.0, 27.0 ],
+                    "presentation_rect": [ 149.5, 585.0, 136.0, 27.0 ],
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
