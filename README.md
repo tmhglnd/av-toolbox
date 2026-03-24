@@ -20,7 +20,7 @@ Objects range from signal analysis that can be used to control visual parameters
 
 ## Contains
 
-![](/media/av-screenshot.png)
+![](/media/av-screenshot-v1.2.png)
 
 ### Signal analysis
 
