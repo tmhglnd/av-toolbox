@@ -1,9 +1,9 @@
 [object]
 name = "av.pix.sort"
 digest = "Very basic pixel sorting"
-description = """A very basic pixel sorting between cell and neighbouring pixel based on hue (color) value. Works well in a feedback loop with av.pix.feedback. The sorting should happen iteratively over a feedback loop to have a proper effect, but it is a quite naive sorting.<br/><br/>
+description = """A simple and basic/naive pixel sorting/smearing effect between a pixel and neighbouring pixel.  The sorting can happen based on lightness, hue (color), saturation or all three values. This object is meant to work in a feedback loop (eg. with av.pix.feedback or your own feedback effect). The sorting should happen iteratively over a feedback loop to see the pixels smear over the screen. Disabling the filter helps to make the sorting more crispy and precise. Set the sorting direction in pixels.<br/><br/>
 
-Note: Max 9 users can have a look at jit.fx.pixelsorting and jit.fx.ge.lineinterp for similar effects.
+Note: Max 9 users can have a look at jit.fx.pixelsorting and jit.fx.ge.lineinterp for similar (and more sophisticated) effects.
 """
 
 [messages]
@@ -16,8 +16,9 @@ digest = "Function depends on inlet"
 description = """
 Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: sorting direction X-axis in pixels (default = 0.5) <br/>
-inlet 2: sorting direction Y-axis in pixels (default = 0.5) <br/>
+inlet 1: sorting direction X-axis in pixels (default = 0) <br/>
+inlet 2: sorting direction Y-axis in pixels (default = -1) <br/>
+inlet 3: sorting mode (0: hue, 1: saturation, 2: lightness, 3: all, default = 0) <br/>
 """
 args = [ { name = "float", type = "float", optional = 1 } ]
 
@@ -26,21 +27,27 @@ digest = "Function depends on inlet"
 description = """
 Function depends on inlet<br/><br/>
 inlet 0: enable/disable processing <br/>
-inlet 1: sorting direction X-axis in pixels (default = 0.5) <br/>
-inlet 2: sorting direction Y-axis in pixels (default = 0.5) <br/>
+inlet 1: sorting direction X-axis in pixels (default = 0) <br/>
+inlet 2: sorting direction Y-axis in pixels (default = -1) <br/>
+inlet 3: sorting mode (0: hue, 1: saturation, 2: lightness, 3: all, default = 0) <br/>
 """
 args = [ { name = "int", type = "int", optional = 1 } ]
 
 [arguments]
 [arguments.sort_x]
 optional = 1
-type = "float"
-digest = "sorting direction X-axis in pixels (default = 0.5)"
+type = "int"
+digest = "sorting direction X-axis in pixels (default = 0)"
 
 [arguments.sort_y]
 optional = 1
-type = "float"
-digest = "sorting direction Y-axis in pixels (default = 0.5)"
+type = "int"
+digest = "sorting direction Y-axis in pixels (default = -1)"
+
+[arguments.mode]
+optional = 1
+type = "int"
+digest = "sorting mode (0: hue, 1: saturation, 2: lightness, 3: all, default = 0)"
 
 [attributes]
 [attributes.bypass]
@@ -52,5 +59,11 @@ default = { value = 0, size = 1, type = 'bool' }
 [attributes.filter]
 digest = "filter for the texture resampling (options: linear, none)"
 type = "symbol"
+size = 1
+default = { value = "linear", size = 1, type = 'symbol' }
+
+[attributes.falloff]
+digest = "small subtraction to reduce the feedback over long term"
+type = "float"
 size = 1
 default = { value = "linear", size = 1, type = 'symbol' }

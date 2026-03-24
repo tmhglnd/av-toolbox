@@ -44,7 +44,7 @@
             <digest>filter mode (default = sobel, see helpfile for options)</digest>
             <description>filter mode (default = sobel, see helpfile for options)</description>
         </objarg>
-        <objarg name='feedback' optional='1' type='float'>
+        <objarg name='amount' optional='1' type='float'>
             <digest>filter amount (default = 1)</digest>
             <description>filter amount (default = 1)</description>
         </objarg>

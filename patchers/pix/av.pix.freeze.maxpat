@@ -9,19 +9,8 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 116.0, 96.0, 680.0, 837.0 ],
+        "rect": [ 782.0, 96.0, 680.0, 837.0 ],
         "boxes": [
-            {
-                "box": {
-                    "id": "obj-10",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "float" ],
-                    "patching_rect": [ 300.0, 147.0, 57.0, 22.0 ],
-                    "text": "pow 0.33"
-                }
-            },
             {
                 "box": {
                     "id": "obj-12",
@@ -89,9 +78,9 @@
                 "box": {
                     "id": "obj-25",
                     "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "jit_gl_texture", "" ],
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "jit_gl_texture", "jit_gl_texture", "" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
@@ -102,78 +91,77 @@
                             "modernui": 1
                         },
                         "classnamespace": "jit.gen",
-                        "rect": [ 358.0, 148.0, 723.0, 722.0 ],
+                        "rect": [ 379.0, 139.0, 723.0, 722.0 ],
                         "boxes": [
                             {
                                 "box": {
-                                    "id": "obj-8",
-                                    "maxclass": "newobj",
-                                    "numinlets": 0,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 656.0, 30.0, 28.0, 22.0 ],
-                                    "text": "in 2"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "code": "Param feedback(0.9, min=0, max=1);\r\nParam subtract(1.001);\r\nParam falloff(0.001);\r\nParam mode(0);\r\n\r\n// mode 0: mix\r\nif (mode < 1){\r\n    out1 = mix(in1, in2, feedback);\r\n}\r\n// mode 1: add\r\nelse if (mode < 2){\r\n    out1 = in1 + in2 * feedback;\r\n}\r\n// mode 2: max\r\n// thanks to algorithm from Marcel Wierckx\r\nelse if (mode < 3){\r\n    out1 = mix(in1, max(in1, in2), feedback);\r\n}\r\n// mode 3: additive feedback with subtractive falloff \r\n// (allows full feedback without blowing out to white\r\n// thanks to algorithm from Jaromir Mulders\r\nelse {\r\n    out1 = in1 + clip(((in2 - in1 * subtract) - falloff) * feedback, 0, 1);\r\n} ",
-                                    "fontface": 0,
-                                    "fontname": "<Monospaced>",
-                                    "fontsize": 12.0,
-                                    "id": "obj-7",
-                                    "maxclass": "codebox",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 30.0, 75.0, 645.0, 525.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-6",
+                                    "id": "obj-3",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 30.0, 630.0, 35.0, 22.0 ],
-                                    "text": "out 1"
+                                    "patching_rect": [ 596.0, 660.0, 35.0, 22.0 ],
+                                    "text": "out 2"
                                 }
                             },
                             {
                                 "box": {
+                                    "code": "Param width(1);\r\nParam falloff(0.0001);\r\n\r\ndir = normalize(direction) * width;\r\n\r\nn0 = sample(in1, (cell + vec(-1, 0) * width) / (dim-1));\r\nn1 = sample(in1, (cell + vec(1, 0) * width) / (dim-1));\r\nn2 = sample(in1, (cell + vec(0, -1) * width) / (dim-1));\r\nn3 = sample(in1, (cell + vec(0, 1) * width) / (dim-1));\r\nctr = in1;\r\n\r\nsorted = max(max(min(n0, n1), min(n2, n3)), ctr);\r\n\r\nout1 = sorted;\r\n\r\nout2 = sorted - falloff;",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
                                     "id": "obj-5",
+                                    "maxclass": "codebox",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 49.0, 80.0, 566.0, 550.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 30.0, 30.0, 28.0, 22.0 ],
+                                    "patching_rect": [ 49.0, 30.0, 28.0, 22.0 ],
                                     "text": "in 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 49.0, 660.0, 35.0, 22.0 ],
+                                    "text": "out 1"
                                 }
                             }
                         ],
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [ "obj-7", 0 ],
+                                    "destination": [ "obj-5", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-5", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
                                     "source": [ "obj-5", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-6", 0 ],
-                                    "source": [ "obj-7", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-7", 1 ],
-                                    "source": [ "obj-8", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [ 83.0, 405.0, 194.0, 22.0 ],
-                    "text": "jit.gl.pix @title feedback-algorithms"
+                    "patching_rect": [ 83.0, 405.0, 148.0, 22.0 ],
+                    "text": "jit.gl.pix @title pixel-freeze"
                 }
             },
             {
@@ -236,7 +224,7 @@
                     "comment": "(int) feedback mode",
                     "cool": 1,
                     "id": "obj-11",
-                    "index": 4,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
@@ -260,11 +248,11 @@
                     "comment": "(texture) jit_gl_texture 2",
                     "cool": 1,
                     "id": "obj-2",
-                    "index": 2,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 258.0, 45.0, 30.0, 30.0 ]
                 }
             },
@@ -316,7 +304,7 @@
                 "box": {
                     "comment": "(texture) processed output",
                     "id": "obj-28",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
@@ -339,11 +327,11 @@
                     "comment": "(float) feedback factor",
                     "cool": 1,
                     "id": "obj-6",
-                    "index": 3,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 300.0, 45.0, 30.0, 30.0 ]
                 }
             },
@@ -351,22 +339,16 @@
                 "box": {
                     "comment": "(texture) jit_gl_texture, (bool) enable, (list) params",
                     "id": "obj-107",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "jit_gl_texture" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 48.0, 45.0, 30.0, 30.0 ]
                 }
             }
         ],
         "lines": [
-            {
-                "patchline": {
-                    "destination": [ "obj-10", 0 ],
-                    "source": [ "obj-1", 0 ]
-                }
-            },
             {
                 "patchline": {
                     "destination": [ "obj-30", 0 ],
@@ -376,7 +358,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "source": [ "obj-10", 0 ]
+                    "source": [ "obj-1", 0 ]
                 }
             },
             {
@@ -516,7 +498,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-10", 0 ],
+                    "destination": [ "obj-8", 0 ],
                     "source": [ "obj-6", 0 ]
                 }
             },
@@ -537,14 +519,9 @@
                     "destination": [ "obj-4", 0 ],
                     "source": [ "obj-8", 0 ]
                 }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-25", 1 ],
-                    "source": [ "obj-9", 0 ]
-                }
             }
         ],
+        "autosave": 0,
         "styles": [
             {
                 "name": "AudioStatus_Menu",

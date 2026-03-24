@@ -39,7 +39,7 @@ digest = "filter mode (default = sobel, see helpfile for options)"
 type = "symbol"
 optional = 1
 
-[arguments.feedback]
+[arguments.amount]
 digest = "filter amount (default = 1)"
 type = "float"
 optional = 1
