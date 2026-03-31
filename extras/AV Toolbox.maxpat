@@ -28,7 +28,7 @@
             {
                 "box": {
                     "align": 0,
-                    "bgcolor": [ 0.956590352327427, 0.76614891786161, 0.452834090916593, 1.0 ],
+                    "bgcolor": [ 0.922234290352602, 0.71007200526417, 0.329758341965716, 1.0 ],
                     "bgoncolor": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fontface": 1,
                     "fontsize": 12.0,
@@ -43,7 +43,7 @@
                     "presentation_rect": [ 544.5, 532.0, 147.0, 22.0 ],
                     "saved_attribute_attributes": {
                         "bgcolor": {
-                            "expression": "themecolor.theme_syntax_objectcolor"
+                            "expression": "themecolor.theme_selectioncolor"
                         },
                         "textoncolor": {
                             "expression": "themecolor.theme_elementcolor"
@@ -1004,7 +1004,7 @@
                     "bordercolor": [ 0.2823529411764706, 0.2823529411764706, 0.2823529411764706, 0.0 ],
                     "fontsize": 18.0,
                     "id": "obj-5",
-                    "linecount": 2,
+                    "linecount": 5,
                     "maxclass": "textedit",
                     "nosymquotes": 1,
                     "numinlets": 1,
@@ -1014,7 +1014,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1095.0, 479.5, 151.0, 127.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 2,
+                    "presentation_linecount": 4,
                     "presentation_rect": [ 720.0, 277.0, 207.0, 163.0 ],
                     "readonly": 1,
                     "saved_attribute_attributes": {
@@ -1022,7 +1022,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "Analyse the pitch of a sound",
+                    "text": "Apply various convolution filters like sobel, emboss, laplace, dilate",
                     "textcolor": [ 0.2, 0.2, 0.2, 1.0 ]
                 }
             },
@@ -1105,7 +1105,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "av.pitch~"
+                    "text": "av.pix.filter"
                 }
             },
             {
@@ -3329,7 +3329,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_matrix" ],
                                     "patching_rect": [ 855.0, 180.0, 9148.847409495549, 9148.847409495549 ],
-                                    "pic": "av-extras07.jpg",
+                                    "pic": "av-extras08.jpg",
                                     "presentation": 1,
                                     "presentation_rect": [ 570.0, 15.0, 185.0, 180.0 ]
                                 }
@@ -3763,7 +3763,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "42:49:880"
+                    "text": "00:49:682"
                 }
             },
             {

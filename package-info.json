@@ -1,7 +1,7 @@
 {
 	"name" : "av-toolbox",
 	"displayname" : "AV Toolbox",
-	"version" : "1.2.0",
+	"version" : "1.2.1",
 	"author" : "Timo Hoogland",
 	"authors" : [  ],
 	"description" : "A package to help you start (and speed-up) Audio Visual projects with Jitter in Max!<br><br>This package contains abstractions that are designed to work together with the already wide range of Jitter and Max objects. All the abstractions are created with vanilla Max and have help and reference files.<br><br>Objects range from signal analysis (eg. av.follow~, av.spectrum~, av.pitch~) that can be used to control parameters in your visuals in real time, objects that allow controlling events on a timeline with the global transport (eg. av.phasor~, av.timetrigger~, av.chance) and extensions on objects in Jitter to improve the workflow (eg. av.texturefolder, av.videogrid, av.movieplay~, av.enable.xfade)",

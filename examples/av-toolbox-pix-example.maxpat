@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 249.0, 211.0, 1016.0, 589.0 ],
+        "rect": [ 249.0, 211.0, 620.0, 589.0 ],
         "boxes": [
             {
                 "box": {
@@ -1079,10 +1079,11 @@
                             "expression": "themecolor.theme_elementcolor"
                         },
                         "textcolor": {
-                            "expression": "themecolor.theme_syntax_objargcolor"
+                            "expression": "themecolor.theme_textcolor_inverse"
                         }
                     },
-                    "tabs": [ "brcosa", "mask", "filter", "degrade", "duotone", "technicolor", "pong", "glitch", "blend", "displace", "xfade", "delay", "feedback", "hueshift", "edgedetect", "frame", "sort", "chromakey", "noise", "grid" ]
+                    "tabs": [ "brcosa", "mask", "filter", "degrade", "duotone", "technicolor", "pong", "glitch", "blend", "displace", "xfade", "delay", "feedback", "hueshift", "edgedetect", "frame", "sort", "chromakey", "noise", "grid" ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ]
                 }
             },
             {
