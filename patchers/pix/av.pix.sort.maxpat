@@ -149,8 +149,8 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 75.0, 435.0, 174.0, 22.0 ],
-                    "text": "jit.gl.pix @title sort @filter none"
+                    "patching_rect": [ 75.0, 435.0, 106.0, 22.0 ],
+                    "text": "jit.gl.pix @title sort"
                 }
             },
             {
@@ -330,7 +330,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 75.0, 45.0, 30.0, 30.0 ]
                 }
             }

@@ -4,13 +4,46 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
         "rect": [ 34.0, 96.0, 680.0, 837.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-103",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 305.75, 472.0, 19.0, 22.0 ],
+                    "text": "t l"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-16",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 329.75, 434.0, 108.0, 22.0 ],
+                    "text": "prepend sendinput"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 305.75, 405.0, 115.0, 22.0 ],
+                    "text": "prepend sendoutput"
+                }
+            },
             {
                 "box": {
                     "id": "obj-1",
@@ -111,7 +144,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -431,7 +464,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 413.0, 285.0, 224.0, 181.0 ],
+                    "patching_rect": [ 432.0, 225.0, 224.0, 181.0 ],
                     "text": "arguments/params:\n<float list> color 1 (rgb 0-1)\n<float list> color 2 (rgb 0-1)\n<float> contrast (default = 1)\n\nConvert an image to a duotone. Provide the two colors through inlets and set the curve for the grayscale image to affect the color range.\n\nBased on Micron's Duotone patch:\nhttps://www.patreon.com/posts/easy-duotone-19824702"
                 }
             },
@@ -515,7 +548,7 @@
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [ "int" ],
+                    "outlettype": [ "" ],
                     "patching_rect": [ 90.0, 30.0, 30.0, 30.0 ]
                 }
             }
@@ -547,6 +580,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-91", 0 ],
+                    "source": [ "obj-103", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-27", 0 ],
                     "source": [ "obj-107", 0 ]
                 }
@@ -559,7 +598,15 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-91", 0 ],
+                    "destination": [ "obj-16", 0 ],
+                    "order": 0,
+                    "source": [ "obj-13", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "order": 1,
                     "source": [ "obj-13", 0 ]
                 }
             },
@@ -567,6 +614,12 @@
                 "patchline": {
                     "destination": [ "obj-17", 0 ],
                     "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-103", 0 ],
+                    "source": [ "obj-16", 0 ]
                 }
             },
             {
@@ -676,6 +729,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-103", 0 ],
+                    "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-91", 0 ],
                     "source": [ "obj-7", 0 ]
                 }
@@ -764,6 +823,6 @@
                 "multi": 0
             }
         ],
-        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager" ]
+        "toolbaradditions": [ "audiomute", "audiosolo", "packagemanager", "Data Knot" ]
     }
 }
