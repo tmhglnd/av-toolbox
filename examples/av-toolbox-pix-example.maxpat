@@ -3,13 +3,13 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 3,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 249.0, 211.0, 620.0, 589.0 ],
+        "rect": [ 115.0, 144.0, 1012.0, 592.0 ],
         "boxes": [
             {
                 "box": {
@@ -58,16 +58,21 @@
             {
                 "box": {
                     "auto_handle": 0,
+                    "depthbuffer": 1,
+                    "doublebuffer": 1,
                     "enable": 1,
                     "erase_color": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fps": 30.0,
+                    "fsaa": 0,
                     "gizmos": 0,
                     "id": "obj-120",
                     "maxclass": "jit.pworld",
                     "numinlets": 1,
                     "numoutlets": 2,
-                    "outlettype": [ "jit_matrix", "" ],
+                    "outlettype": [ "jit_gl_texture", "" ],
                     "patching_rect": [ 345.0, 306.0, 90.0, 54.0 ],
+                    "pwinoutlettype": 1,
+                    "stereo": 0,
                     "sync": 1
                 }
             },
@@ -126,8 +131,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 3,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -182,7 +187,7 @@
                                 "box": {
                                     "id": "obj-115",
                                     "maxclass": "newobj",
-                                    "numinlets": 4,
+                                    "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "jit_gl_texture" ],
                                     "patching_rect": [ 2568.0, 319.0, 174.0, 22.0 ],
@@ -1063,7 +1068,7 @@
             },
             {
                 "box": {
-                    "htabcolor": [ 0.922234290352602, 0.71007200526417, 0.329758341965716, 1.0 ],
+                    "htabcolor": [ 0.922234290352602, 0.7100720052641699, 0.3297583419657164, 1.0 ],
                     "id": "obj-103",
                     "maxclass": "tab",
                     "numinlets": 1,
@@ -1082,8 +1087,7 @@
                             "expression": "themecolor.theme_textcolor_inverse"
                         }
                     },
-                    "tabs": [ "brcosa", "mask", "filter", "degrade", "duotone", "technicolor", "pong", "glitch", "blend", "displace", "xfade", "delay", "feedback", "hueshift", "edgedetect", "frame", "sort", "chromakey", "noise", "grid" ],
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ]
+                    "tabs": [ "brcosa", "mask", "filter", "degrade", "duotone", "technicolor", "pong", "glitch", "blend", "displace", "xfade", "delay", "feedback", "hueshift", "edgedetect", "frame", "sort", "chromakey", "noise", "grid" ]
                 }
             },
             {
@@ -1157,9 +1161,12 @@
             {
                 "box": {
                     "auto_handle": 0,
+                    "depthbuffer": 1,
+                    "doublebuffer": 1,
                     "enable": 1,
                     "erase_color": [ 0.0, 0.0, 0.0, 1.0 ],
                     "fps": 60.0,
+                    "fsaa": 0,
                     "gizmos": 0,
                     "id": "obj-2",
                     "maxclass": "jit.pworld",
@@ -1167,6 +1174,8 @@
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
                     "patching_rect": [ 525.0, 165.0, 465.0, 285.0 ],
+                    "pwinoutlettype": 0,
+                    "stereo": 0,
                     "sync": 1
                 }
             }
